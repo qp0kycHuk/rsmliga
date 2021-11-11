@@ -1,0 +1,150 @@
+@import '../ui/_variables.less';
+
+:root {
+	--media-md: @md;
+	--media-lg: @lg;
+
+
+	@color-primary        : #D21C4B;
+	--color-primary       : @color-primary;
+	--color-primary-10    : fade(@color-primary, 10);
+	--color-primary-15    : fade(@color-primary, 15);
+	--color-primary-20    : fade(@color-primary, 20);
+	--color-primary-30    : fade(@color-primary, 30);
+	--color-primary-40    : fade(@color-primary, 40);
+	--color-primary-50    : fade(@color-primary, 50);
+	--color-primary-60    : fade(@color-primary, 50);
+	--color-primary-70    : fade(@color-primary, 70);
+	--color-primary-80    : fade(@color-primary, 80);
+	--color-yellow--light: lighten(@color-primary, 5%);
+	--color-primary--dark : darken(@color-primary, 5%);
+
+	@color-yellow        : #FF9820;
+	--color-yellow       : @color-yellow;
+	--color-yellow-10    : fade(@color-yellow, 10);
+	--color-yellow-20    : fade(@color-yellow, 20);
+	--color-yellow-30    : fade(@color-yellow, 30);
+	--color-yellow-40    : fade(@color-yellow, 40);
+	--color-yellow-50    : fade(@color-yellow, 50);
+	--color-yellow-60    : fade(@color-yellow, 50);
+	--color-yellow-70    : fade(@color-yellow, 70);
+	--color-yellow-80    : fade(@color-yellow, 80);
+	--color-yellow--light: lighten(@color-yellow, 5%);
+	--color-yellow--dark : darken(@color-yellow, 5%);
+
+	@color-green        : #31A043;
+	--color-green       : @color-green;
+	--color-green-10    : fade(@color-green, 10);
+	--color-green-20    : fade(@color-green, 20);
+	--color-green-30    : fade(@color-green, 30);
+	--color-green-40    : fade(@color-green, 40);
+	--color-green-50    : fade(@color-green, 50);
+	--color-green-60    : fade(@color-green, 50);
+	--color-green-70    : fade(@color-green, 70);
+	--color-green-80    : fade(@color-green, 80);
+	--color-green--light: lighten(@color-green, 5%);
+	--color-green--dark : darken(@color-green, 5%);
+
+	@color-red        : #EB5757;
+	--color-red       : @color-red;
+	--color-red-10    : fade(@color-red, 10);
+	--color-red-20    : fade(@color-red, 20);
+	--color-red-30    : fade(@color-red, 30);
+	--color-red-40    : fade(@color-red, 40);
+	--color-red-50    : fade(@color-red, 50);
+	--color-red-60    : fade(@color-red, 50);
+	--color-red-70    : fade(@color-red, 70);
+	--color-red-80    : fade(@color-red, 80);
+	--color-red--light: lighten(@color-red, 5%);
+	--color-red--dark : darken(@color-red, 5%);
+
+	@color-icon        : #828A99;
+	--color-icon       : @color-icon;
+	--color-icon-10    : fade(@color-icon, 10);
+	--color-icon-20    : fade(@color-icon, 20);
+	--color-icon-30    : fade(@color-icon, 30);
+	--color-icon-40    : fade(@color-icon, 40);
+	--color-icon-50    : fade(@color-icon, 50);
+	--color-icon-60    : fade(@color-icon, 50);
+	--color-icon-70    : fade(@color-icon, 70);
+	--color-icon-80    : fade(@color-icon, 80);
+	--color-icon--light: lighten(@color-icon, 5%);
+	--color-icon--dark : darken(@color-icon, 5%);
+
+
+
+
+
+
+	@color-text       : #313131;
+	--color-text      : @color-text;
+	--color-text-dark : darken(@color-text, 5%);
+	--color-text-light: lighten(@color-text, 5%);
+	--color-text-10   : fade(@color-text, 10);
+	--color-text-20   : fade(@color-text, 20);
+	--color-text-40   : fade(@color-text, 40);
+	--color-text-60   : fade(@color-text, 60);
+	--color-text-80   : #52575C;
+
+
+	@spacing : 4px;
+	--spacing: @spacing;
+
+
+	--radius-small : 3px;
+	--radius-middle: 5px;
+	--radius-large : 8px;
+
+	--media-lg: @lg;
+	--media-md: @md;
+	--media-sm: @sm;
+
+
+	--font-base: ~"'SFProDisplay', Arial, Helvetica, sans-serif";
+
+
+	--zi-l1: 321;
+	--zi-l2: 322;
+	--zi-l3: 323;
+	--zi-l4: 324;
+	--zi-l5: 325;
+	--zi-l6: 326;
+	--zi-l7: 327;
+	--zi-l8: 328;
+	--zi-l9: 329;
+}
+
+body {
+
+	color     : var(--color-text);
+	background: #F5F7FB;
+
+	* {
+		font-family: var(--font-base);
+	}
+
+	&.catalog-filter-opened {
+		@media (max-width:@md) {
+			overflow: hidden;
+		}
+	}
+}
+
+.w-100 {
+	width: 100%;
+}
+
+.h-100 {
+	height: 100%;
+}
+
+.bd-top {
+	border-top: 1px solid #E2E8F0;
+}
+
+.bd-bottom {
+	border-bottom: 1px solid #E2E8F0;
+}
+
+
+

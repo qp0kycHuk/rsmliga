@@ -1,0 +1,80 @@
+.form-range .irs {
+  --gap: 7px;
+  --height: 5px;
+  height: var(--height);
+}
+.form-range-slider {
+  position: absolute;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+}
+.form-range .irs-line {
+  top: calc(-1 * var(--gap));
+  height: calc(var(--height) + var(--gap) * 2);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 10px, #CDD5E0 10px, #CDD5E0 calc(100% - 10px), rgba(0, 0, 0, 0) calc(100% - 10px));
+  background-clip: content-box;
+  padding-top: var(--gap);
+  padding-bottom: var(--gap);
+}
+.form-range .irs-line:after,
+.form-range .irs-line:before {
+  background: #CDD5E0;
+}
+.form-range .irs-line:after,
+.form-range .irs-bar:after,
+.form-range .irs-line:before,
+.form-range .irs-bar:before {
+  content: '';
+  width: 20px;
+  height: var(--height);
+  position: absolute;
+  top: var(--gap);
+  border-radius: 0 0 11px 11px;
+  max-width: 100%;
+}
+.form-range .irs-line:before,
+.form-range .irs-bar:before {
+  left: 0;
+}
+.form-range .irs-line:after,
+.form-range .irs-bar:after {
+  right: 0;
+}
+.form-range .irs-bar {
+  top: calc(-1 * var(--gap));
+  height: calc(var(--height) + var(--gap) * 2);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 10px, var(--color-primary) 10px, var(--color-primary) calc(100% - 10px), rgba(0, 0, 0, 0) calc(100% - 10px));
+  background-clip: content-box;
+  padding-top: var(--gap);
+  padding-bottom: var(--gap);
+  border-radius: 0 0 11px 11px;
+  overflow: hidden;
+}
+.form-range .irs-bar:after,
+.form-range .irs-bar:before {
+  background: var(--color-primary);
+}
+.form-range .irs-bar.state_hover,
+.form-range .irs-bar:hover {
+  background-clip: content-box;
+}
+.form-range .irs-handle {
+  width: 22px;
+  height: 22px;
+  top: calc(50% - 11px);
+  background: #fff radial-gradient(var(--color-primary) 7px, #fff 8px);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.16);
+  border: 0.5px solid rgba(0, 0, 0, 0.04);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.form-range-once .irs-bar {
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+.form-range .form-input {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  height: 50px;
+  line-height: 40px;
+}

@@ -1,0 +1,42 @@
+// out:./
+
+
+
+.copy-element-wrap {
+  position: relative;
+}
+
+.copy-element-btn {
+  position: absolute;
+  right   : calc(100% + 10px);
+  top     : 0;
+
+  background   : #333;
+  border-radius: 4px;
+  padding      : 6px;
+  color        : #fff;
+  font-size    : 12px;
+  width        : max-content;
+
+  &:hover {
+    background: #444;
+  }
+
+  opacity   : 0;
+  visibility: hidden;
+  transform : translateX(-10px);
+
+  transition: .2s;
+}
+
+.copy-element-wrap:hover .copy-element-btn {
+  transition: .2s;
+  visibility: visible;
+  opacity   : 1;
+  transform : none;
+}
+
+.copy-element-btn.active {
+
+  background: rgb(9, 163, 43);
+}

@@ -1,0 +1,110 @@
+<div class="lk-form-dialog fancybox-content card p-6">
+	<div class="form-dialog-header mb-6">
+		<div class="form-dialog-title title text-subtitle-2 text-md-h6">Редактирование команды</div>
+	</div>
+	<form class="form-dialog-content">
+		<div class="form-dialog-fields">
+			<label class="form-field w-100">
+				<div class="text-body-2 text--demibold mb-2">Название команды <span class="color-primary">*</span></div>
+				<div class="form-input-cover">
+					<input type="text" class="form-input" name="name" required>
+				</div>
+			</label>
+			<label class="form-field w-100 mt-4">
+				<div class="text-body-2 text--demibold mb-2">Полное наименование образовательного
+					учреждения <span class="color-primary">*</span></div>
+				<div class="form-input-cover">
+					<input type="text" class="form-input" name="name" required>
+				</div>
+			</label>
+			<label class="form-field w-100 mt-4">
+				<div class="text-body-2 text--demibold mb-2">Краткое наименование команды <span class="color-primary">*</span>
+				</div>
+				<div class="form-input-cover">
+					<input type="text" class="form-input" name="name" required>
+				</div>
+			</label>
+			<label class="form-field w-100 mt-4">
+				<div class="text-body-2 text--demibold mb-2">Сайт образовательного учреждения</div>
+				<div class="form-input-cover">
+					<input type="text" class="form-input" name="site" required>
+				</div>
+			</label>
+
+			<label class="form-field w-100 mt-4 -soc-field-">
+				<div class="text-body-2 text--demibold mb-2">Ссылка на соцсеть</div>
+				<div class="form-input-cover">
+					<input type="text" class="form-input" name="soc" required>
+				</div>
+			</label>
+			<button class="btn btn--primary btn--link mt-1 -add-soc-" type="button">Добавить еще</button>
+
+			<label class="form-field w-100 mt-4">
+				<div class="text-body-2 text--demibold mb-2">Контактный телефон представителя <span
+						class="color-primary">*</span></div>
+				<div class="form-input-cover">
+					<input type="text" class="form-input" name="team" required>
+				</div>
+			</label>
+			<label class="form-field w-100 mt-4">
+				<div class="text-body-2 text--demibold mb-2">E-mail представителя <span class="color-primary">*</span></div>
+				<div class="form-input-cover">
+					<input type="email" class="form-input" name="email" required>
+				</div>
+			</label>
+
+
+		</div>
+		<div class="grid">
+			<div class="grid-col-md-6">
+				<button class="form-btn btn btn--primary btn--fill mt-5 w-100">Отправить</button>
+			</div>
+			<div class="grid-col-md-6">
+				<button class="form-btn btn btn--primary btn--light mt-5 w-100" data-fancybox-close type="button">Отмена</button>
+			</div>
+		</div>
+		<div class="form-agree text-small fade-60 mt-5">Отправляя форму Вы даете согласие на обработку Ваших персональных
+			данных</div>
+	</form>
+</div>
+
+
+
+<script>
+	(() => {
+		let field = null;
+		let socCounter = 1;
+		let maxSoc = 5
+
+		document.querySelector('.-add-soc-').addEventListener('click', (event) => {
+			if (socCounter >= maxSoc) return
+			if (!field) {
+				field = document.querySelector('.-soc-field-');
+			}
+
+			const addBtn = event.target
+			const clone = field.cloneNode(true);
+			clone.querySelector('input').value = ''
+
+			const close = document.createElement('button');
+			close.type = 'button'
+			close.className = 'btn btn--primary btn--link ml-2';
+			close.innerHTML = '<svg class="icon"><use xlink:href="img/icons.svg#cross" /></svg>';
+			close.addEventListener('click', (event) => {
+				setTimeout(() => {
+					clone.parentElement.removeChild(clone)
+					socCounter--
+					if (socCounter < maxSoc) addBtn.disabled = false
+				}, 100)
+			})
+
+			clone.querySelector('.form-input-cover').appendChild(close);
+
+			addBtn.insertAdjacentElement('beforebegin', clone);
+			socCounter++
+
+			if (socCounter >= maxSoc) addBtn.disabled = true
+		})
+	})();
+
+</script>

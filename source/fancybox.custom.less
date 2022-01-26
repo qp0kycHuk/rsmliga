@@ -3,8 +3,12 @@
 
 
 .fancybox-custom-modal {
+
+  // overflow: auto;
   .fancybox__slide {
-    padding: 15px;
+    padding      : 15px;
+    padding-left : calc(50% - var(--section-width) / 2);
+    padding-right: calc(50% - var(--section-width) / 2);
 
     @media(max-width:@sm) {
       padding: 0;

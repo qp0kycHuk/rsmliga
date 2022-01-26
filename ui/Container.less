@@ -31,7 +31,7 @@ section {
 
 @media (min-width: @md) {
   :root {
-    --section-width: 650px;
+    --section-width: calc(@md - 30px);
   }
 }
 
@@ -42,14 +42,14 @@ section {
 //     --section-gap-bottom: 64px;
 //   }
 // }
-@media (min-width: 1016px) {
-  :root {
-    --section-width: 1000px;
-  }
-}
+// @media (min-width: 1016px) {
+//   :root {
+//     --section-width: 1000px;
+//   }
+// }
 
-@media (min-width: 1054px) {
+@media (min-width: @lg) {
   :root {
-    --section-width: 1024px;
+    --section-width: calc(@lg - 30px);
   }
 }

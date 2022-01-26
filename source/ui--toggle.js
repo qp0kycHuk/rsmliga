@@ -30,12 +30,6 @@
 	function toggle(toggleId, toggleLink) {
 		const id = toggleLink ? (toggleLink.getAttribute(attr.link) ? toggleLink.getAttribute(attr.link) : toggleId) : toggleId;
 
-		
-		if (!id) {
-			console.error('toggleId not found!');
-			return;
-		}
-
 		const toggleCover = document.getElementById(id) ||
 			(toggleLink ? toggleLink.closest('[' + attr.cover + ']').querySelector('[' + attr.content + ']') : null) ||
 			(toggleLink ? toggleLink.closest('[' + attr.cover + ']') : null);

@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Журнал "РСМ-лига"</title>
+
+
+	<link rel="stylesheet" href="source/fancybox.css">
+	<link rel="stylesheet" href="source/fancybox.custom.css">
+	<link rel="stylesheet" href="source/swiper-bundle.min.css">
+	<link rel="stylesheet" href="source/swiper-custom.css">
+
+	<script src="source/swiper-bundle.min.js"></script>
+
+
+	<link rel="stylesheet" href="css/ui-reset.css">
+	<link rel="stylesheet" href="css/ui-core.css">
+	<link rel="stylesheet" href="css/frontend--fonts.css">
+	<link rel="stylesheet" href="css/frontend--style.css">
+</head>
+
+<body>
+	<header class="header-top flex py-1 flex-align-center">
+		<div class="header-top-address d-flex flex-align-center">
+			<svg class="icon fade-40 mr-2">
+				<use xlink:href="img/icons.svg#map" />
+			</svg>
+			<div class="text-small fade-60">г. Ростов-на-дону, ул. 1-й конной армии 4е</div>
+		</div>
+		<div class="header-top-soc d-flex ml-5">
+			<a href="" target="_blank" class="p-2"><img src="img/sempl/inst.png" alt="" class="icon"></a>
+			<a href="" target="_blank" class="p-2"><img src="img/sempl/yt.png" alt="" class="icon"></a>
+			<a href="" target="_blank" class="p-2"><img src="img/sempl/vk.png" alt="" class="icon"></a>
+		</div>
+		<a class="header-top-auth d-flex flex-align-center ml-auto">
+			<svg class="icon mr-1 fade-60">
+				<use xlink:href="img/icons.svg#user" />
+			</svg>
+			<div class="text-body-2">Личный кабинет</div>
+		</a>
+		<button class="header-top-btn px-3 btn btn--primary btn--fill ml-8">Заявить команду</button>
+	</header>
+	<header class="header-nav d-flex flex-align-center">
+		<a href="/" class="header-nav-logo d-flex flex-align-center">
+			<div class="header-nav-logo-img">
+				<img src="img/logo.png" alt="">
+			</div>
+			<div class="header-nav-logo-text ml-3">
+				<div class="text-body-2 text-md-body-0 text--demibold">Ростсельмаш-лига</div>
+				<div class="text-small fade-60">Детская лига регби</div>
+			</div>
+		</a>
+		<div class="header-nav-list flex ml-auto">
+			<div class="header-nav-item" data-toggle-cover>
+
+				<button class="header-nav-link py-2 px-3 " data-toggle-link>
+					Об ассоциации
+					<svg class="icon fade-40 ml-1 text-small">
+						<use xlink:href="img/icons.svg#dropdown" />
+					</svg>
+				</button>
+
+				<div class="header-nav-submenu" data-toggle-content>
+					<a href="" class="text-body-2 fade-80 p-2">Все</a>
+					<a href="" class="text-body-2 fade-80 p-2">Новое</a>
+					<a href="" class="text-body-2 fade-80 p-2">Популярное</a>
+					<a href="" class="text-body-2 fade-80 p-2">Ассоциация РСМ</a>
+					<a href="" class="text-body-2 fade-80 p-2">Кубок “Ростсельмаш”</a>
+					<a href="" class="text-body-2 fade-80 p-2">Муниципальные</a>
+				</div>
+			</div>
+			<div class="header-nav-item" data-toggle-cover>
+				<button class="header-nav-link py-2 px-3 " data-toggle-link>
+					Соревнования
+					<svg class="icon fade-40 ml-1 text-small">
+						<use xlink:href="img/icons.svg#dropdown" />
+					</svg>
+				</button>
+				<div class="header-nav-submenu" data-toggle-content>
+					<a href="" class="text-body-2 fade-80 p-2">Все</a>
+					<a href="" class="text-body-2 fade-80 p-2">Новое</a>
+					<a href="" class="text-body-2 fade-80 p-2">Популярное</a>
+					<a href="" class="text-body-2 fade-80 p-2">Ассоциация РСМ</a>
+					<a href="" class="text-body-2 fade-80 p-2">Кубок “Ростсельмаш”</a>
+					<a href="" class="text-body-2 fade-80 p-2">Муниципальные</a>
+				</div>
+			</div>
+			<div class="header-nav-item" data-toggle-cover>
+				<button class="header-nav-link py-2 px-3  " data-toggle-link>
+					Новости
+					<svg class="icon fade-40 ml-1 text-small">
+						<use xlink:href="img/icons.svg#dropdown" />
+					</svg>
+				</button>
+				<div class="header-nav-submenu" data-toggle-content>
+					<a href="" class="text-body-2 fade-80 p-2">Все</a>
+					<a href="" class="text-body-2 fade-80 p-2">Новое</a>
+					<a href="" class="text-body-2 fade-80 p-2">Популярное</a>
+					<a href="" class="text-body-2 fade-80 p-2">Ассоциация РСМ</a>
+					<a href="" class="text-body-2 fade-80 p-2">Кубок “Ростсельмаш”</a>
+					<a href="" class="text-body-2 fade-80 p-2">Муниципальные</a>
+				</div>
+			</div>
+			<div class="header-nav-item" data-toggle-cover>
+				<button class="header-nav-link py-2 px-3 active" data-toggle-link>
+					Медиа
+					<svg class="icon fade-40 ml-1 text-small">
+						<use xlink:href="img/icons.svg#dropdown" />
+					</svg>
+				</button>
+				<div class="header-nav-submenu" data-toggle-content>
+					<a href="" class="text-body-2 fade-80 p-2">Все</a>
+					<a href="" class="text-body-2 fade-80 p-2">Новое</a>
+					<a href="" class="text-body-2 fade-80 p-2">Популярное</a>
+					<a href="" class="text-body-2 fade-80 p-2">Ассоциация РСМ</a>
+					<a href="" class="text-body-2 fade-80 p-2">Кубок “Ростсельмаш”</a>
+					<a href="" class="text-body-2 fade-80 p-2">Муниципальные</a>
+				</div>
+			</div>
+			<div class="header-nav-item"><a href="" class="header-nav-link py-2 px-3 ">Партнеры</a></div>
+			<div class="header-nav-item"><a href="" class="header-nav-link py-2 px-3 ">Контакты</a></div>
+		</div>
+		<button class="btn-burger btn btn--primary btn--fill d-lg-none ml-auto px-3" data-toggle-link="mobile-menu">
+			<svg class="icon">
+				<use xlink:href="img/icons.svg#menu" />
+			</svg>
+			<div class="text-body-1 ml-2 ">Меню</div>
+		</button>
+	</header>
+
+
+	<div class="mobile-menu d-lg-none" id="mobile-menu">
+		<a href="/" class="header-nav-logo d-flex flex-align-center">
+			<div class="header-nav-logo-img">
+				<img src="img/logo.png" alt="">
+			</div>
+			<div class="header-nav-logo-text ml-3">
+				<div class="text-body-2 text-md-body-0 text--demibold">Ростсельмаш-лига</div>
+				<div class="text-small fade-60">Детская лига регби</div>
+			</div>
+		</a>
+		<a class="header-top-auth d-flex flex-align-center ml-auto p-3 mb-5">
+			<svg class="icon mr-1 fade-60">
+				<use xlink:href="img/icons.svg#user" />
+			</svg>
+			<div class="text-body-2">Личный кабинет</div>
+		</a>
+		<button class="header-top-btn px-3 btn btn--primary btn--fill ml-3 mb-5">Заявить команду</button>
+		<div class="mobile-menu-item" data-toggle-cover>
+
+			<button class="mobile-menu-link py-2 px-3 " data-toggle-link>
+				Об ассоциации
+				<svg class="icon fade-40 ml-1 text-small">
+					<use xlink:href="img/icons.svg#dropdown" />
+				</svg>
+			</button>
+
+			<div class="mobile-menu-submenu" data-toggle-content data-toggle-height data-toggle-static>
+				<a href="" class="text-body-2 fade-80 py-1 px-3">Все</a>
+				<a href="" class="text-body-2 fade-80 py-1 px-3">Новое</a>
+				<a href="" class="text-body-2 fade-80 py-1 px-3">Популярное</a>
+				<a href="" class="text-body-2 fade-80 py-1 px-3">Ассоциация РСМ</a>
+				<a href="" class="text-body-2 fade-80 py-1 px-3">Кубок “Ростсельмаш”</a>
+				<a href="" class="text-body-2 fade-80 py-1 px-3">Муниципальные</a>
+			</div>
+		</div>
+		<div class="mobile-menu-item" data-toggle-cover>
+			<button class="mobile-menu-link py-2 px-3 " data-toggle-link>
+				Соревнования
+				<svg class="icon fade-40 ml-1 text-small">
+					<use xlink:href="img/icons.svg#dropdown" />
+				</svg>
+			</button>
+			<div class="mobile-menu-submenu" data-toggle-content data-toggle-height data-toggle-static>
+				<a href="" class="text-body-2 fade-80 py-1 px-3">Все</a>
+				<a href="" class="text-body-2 fade-80 py-1 px-3">Новое</a>
+				<a href="" class="text-body-2 fade-80 py-1 px-3">Популярное</a>
+				<a href="" class="text-body-2 fade-80 py-1 px-3">Ассоциация РСМ</a>
+				<a href="" class="text-body-2 fade-80 py-1 px-3">Кубок “Ростсельмаш”</a>
+				<a href="" class="text-body-2 fade-80 py-1 px-3">Муниципальные</a>
+			</div>
+		</div>
+		<div class="mobile-menu-item" data-toggle-cover>
+			<button class="mobile-menu-link py-2 px-3 " data-toggle-link>
+				Новости
+				<svg class="icon fade-40 ml-1 text-small">
+					<use xlink:href="img/icons.svg#dropdown" />
+				</svg>
+			</button>
+			<div class="mobile-menu-submenu" data-toggle-content data-toggle-height data-toggle-static>
+				<a href="" class="text-body-2 fade-80 py-1 px-3">Все</a>
+				<a href="" class="text-body-2 fade-80 py-1 px-3">Новое</a>
+				<a href="" class="text-body-2 fade-80 py-1 px-3">Популярное</a>
+				<a href="" class="text-body-2 fade-80 py-1 px-3">Ассоциация РСМ</a>
+				<a href="" class="text-body-2 fade-80 py-1 px-3">Кубок “Ростсельмаш”</a>
+				<a href="" class="text-body-2 fade-80 py-1 px-3">Муниципальные</a>
+			</div>
+		</div>
+		<div class="mobile-menu-item" data-toggle-cover>
+			<button class="mobile-menu-link py-2 px-3 " data-toggle-link>
+				Медиа
+				<svg class="icon fade-40 ml-1 text-small">
+					<use xlink:href="img/icons.svg#dropdown" />
+				</svg>
+			</button>
+			<div class="mobile-menu-submenu" data-toggle-content data-toggle-height data-toggle-static>
+				<a href="" class="text-body-2 fade-80 py-1 px-3">Все</a>
+				<a href="" class="text-body-2 fade-80 py-1 px-3">Новое</a>
+				<a href="" class="text-body-2 fade-80 py-1 px-3">Популярное</a>
+				<a href="" class="text-body-2 fade-80 py-1 px-3">Ассоциация РСМ</a>
+				<a href="" class="text-body-2 fade-80 py-1 px-3">Кубок “Ростсельмаш”</a>
+				<a href="" class="text-body-2 fade-80 py-1 px-3">Муниципальные</a>
+			</div>
+		</div>
+		<div class="mobile-menu-item"><a href="" class="mobile-menu-link p-3 ">Партнеры</a></div>
+		<div class="mobile-menu-item"><a href="" class="mobile-menu-link p-3 ">Контакты</a></div>
+
+
+		<div class="header-top-soc d-flex mt-5 px-3">
+			<a href="" target="_blank" class="p-2"><img src="img/sempl/inst.png" alt="" class="icon"></a>
+			<a href="" target="_blank" class="p-2"><img src="img/sempl/yt.png" alt="" class="icon"></a>
+			<a href="" target="_blank" class="p-2"><img src="img/sempl/vk.png" alt="" class="icon"></a>
+		</div>
+		<div class="d-flex flex-align-center mt-5 px-3">
+			<svg class="icon fade-40 mr-2">
+				<use xlink:href="img/icons.svg#map" />
+			</svg>
+			<div class="text-small fade-60">г. Ростов-на-дону, ул. 1-й конной армии 4е</div>
+		</div>
+	</div>
+
+	<section class="page-top">
+		<div class="page-top-inner">
+			<div class="page-top-breadcrumps">
+				<div class="text-small fade-60"><a href="">Главная</a> - Журнал "РСМ-лига"</div>
+			</div>
+			<div class="text-h6 text-md-h4">Журнал "РСМ-лига"</div>
+		</div>
+	</section>
+
+
+	<section class="magazin">
+		<div class="grid grid-spacing-md-5 grid-spacing-2">
+			<div class="grid-col-6 grid-col-md-4 grid-col-lg-3">
+				<div class="magazin-card h-100">
+					<div class="magazin-card-img">
+						<img src="img/sempl/pdf.png" alt="">
+					</div>
+					<div class="magazin-card-content">
+						<div class="text-body-2 text--demibold">Журнал "РСМ-лига", апрель 2021</div>
+						<button class="magazin-card-btn btn btn--primary btn--link mt-1">
+							<div class="text--regular">Смотреть</div>
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="grid-col-6 grid-col-md-4 grid-col-lg-3">
+				<div class="magazin-card h-100">
+					<div class="magazin-card-img">
+						<img src="img/sempl/pdf.png" alt="">
+					</div>
+					<div class="magazin-card-content">
+						<div class="text-body-2 text--demibold">Журнал "РСМ-лига", апрель 2021</div>
+						<button class="magazin-card-btn btn btn--primary btn--link mt-1">
+							<div class="text--regular">Смотреть</div>
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="grid-col-6 grid-col-md-4 grid-col-lg-3">
+				<div class="magazin-card h-100">
+					<div class="magazin-card-img">
+						<img src="img/sempl/pdf.png" alt="">
+					</div>
+					<div class="magazin-card-content">
+						<div class="text-body-2 text--demibold">Журнал "РСМ-лига", апрель 2021</div>
+						<button class="magazin-card-btn btn btn--primary btn--link mt-1">
+							<div class="text--regular">Смотреть</div>
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="grid-col-6 grid-col-md-4 grid-col-lg-3">
+				<div class="magazin-card h-100">
+					<div class="magazin-card-img">
+						<img src="img/sempl/pdf.png" alt="">
+					</div>
+					<div class="magazin-card-content">
+						<div class="text-body-2 text--demibold">Журнал "РСМ-лига", апрель 2021</div>
+						<button class="magazin-card-btn btn btn--primary btn--link mt-1">
+							<div class="text--regular">Смотреть</div>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<footer class="footer">
+		<div class="footer-inner">
+			<div class="footer-info">
+				<img src="img/logo-white.png" alt="">
+				<div class="text-body-1 text--demibold mt-6">
+					Ассоциация <br>
+					"Ростсельмаш-лига"
+				</div>
+				<div class="text-body-2 fade-60">Детская лига регби</div>
+
+			</div>
+			<div class="footer-nav d-none d-lg-block">
+				<div class="text-body-1 text--demibold mb-3">Об ассоциации</div>
+				<div class="text-body-2 fade-80 mb-3">Цели и задачи</div>
+				<div class="text-body-2 fade-80 mb-3">Документы</div>
+				<div class="text-body-2 fade-80 mb-3">Руководство</div>
+				<div class="text-body-2 fade-80 mb-3">Совет тренеров</div>
+				<div class="text-body-2 fade-80 mb-3">Судейство</div>
+				<div class="text-body-2 fade-80">Правила игры</div>
+			</div>
+			<div class="footer-nav ">
+				<div class="text-body-1 text--demibold mb-3">Соревнования</div>
+				<div class="text-body-2 fade-80 mb-3">Кубок “Ростсельмаш по регби”</div>
+				<div class="text-body-2 fade-80 mb-3">Кубок “Ростсельмаш по регби-7”</div>
+				<div class="text-body-2 fade-80">Rugby Fest</div>
+			</div>
+			<div class="footer-nav d-none d-lg-block">
+				<div class="text-body-1 text--demibold mb-3">Обучение</div>
+				<div class="text-body-2 fade-80 mb-3">Обучение учителей СОШ</div>
+				<div class="text-body-2 fade-80 mb-3">Обучение тренеров спорт школ </div>
+				<div class="text-body-2 fade-80">Методические материалы</div>
+			</div>
+			<div class="footer-nav">
+				<div class="text-body-1 text--demibold mb-3">Контакты</div>
+
+				<div class="flex flex-align-center mb-3">
+					<svg class="icon mr-2">
+						<use xlink:href="img/icons.svg#map" />
+					</svg>
+					Ростов-на-дону, <br>
+					ул. 1-й конной армии 4е
+				</div>
+				<div class="flex flex-align-center mb-3">
+					<svg class="icon mr-2">
+						<use xlink:href="img/icons.svg#phone" />
+					</svg>
+					+7(863)333-26-63
+
+				</div>
+				<div class="flex flex-align-center">
+					<svg class="icon mr-2">
+						<use xlink:href="img/icons.svg#mail" />
+					</svg>
+					info@rsmliga.ru
+				</div>
+
+				<div class="footer-soc mt-10">
+					<a href="" class="footer-soc-item btn btn--white btn--fill btn-fab"><img src="img/sempl/inst.png" alt=""
+							class="icon text-subtitle-2"> </a>
+					<a href="" class="footer-soc-item btn btn--white btn--fill btn-fab"><img src="img/sempl/yt.png" alt=""
+							class="icon text-subtitle-2"> </a>
+					<a href="" class="footer-soc-item btn btn--white btn--fill btn-fab"><img src="img/sempl/vk.png" alt=""
+							class="icon text-subtitle-2"> </a>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer-bottom flex text-body-2 color-text mt-10 text--demibold">
+			<div class="footer-copy">© 2021</div>
+			<div class="footer-designer ml-auto">Разработка: Студия К.И.Т.</div>
+		</div>
+	</footer>
+
+
+
+
+	<!-- fancybox modals -->
+	<script src="source/fancybox.umd.js"></script>
+	<script src="source/fancybox.custom.js"></script>
+
+	<script src="source/ui--toggle.js"></script>
+
+	<script src="js/script.js"></script>
+</body>
+
+</html>

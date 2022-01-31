@@ -758,18 +758,18 @@ body.menu-opened > *:not(.mobile-menu) {
   -webkit-border-radius: 12px;
           border-radius: 12px;
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .tournament-item-dude img {
   -webkit-transform: translateY(-35px);
           transform: translateY(-35px);
-  margin-bottom: -68px;
+  margin-bottom: -48px;
   position: relative;
   z-index: 1;
+  height: 300px;
 }
 @media (max-width: 729.98px) {
   .tournament-item-dude img {
-    height: 300px;
     -webkit-transform: translateY(-15px);
             transform: translateY(-15px);
     margin-bottom: -30px;

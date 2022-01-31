@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Личный кабинет</title>
+
+
+  <link rel="stylesheet" href="source/fancybox.css">
+  <link rel="stylesheet" href="source/fancybox.custom.css">
+  <link rel="stylesheet" href="source/swiper-bundle.min.css">
+  <link rel="stylesheet" href="source/swiper-custom.css">
+
+  <script src="source/swiper-bundle.min.js"></script>
+
+
+  <link rel="stylesheet" href="css/ui-reset.css">
+  <link rel="stylesheet" href="css/ui-core.css">
+  <link rel="stylesheet" href="css/frontend--fonts.css">
+  <link rel="stylesheet" href="css/frontend--style.css">
+</head>
+
+<body>
+
+
+  <header class="admin-header">
+    <div class="admin-header-user flex flex-align-center">
+      <div class="admin-header-user__img image image--round image--box image--cover mr-2" style="width: 34px;">
+        <img src="https://d.radikal.ru/d30/2102/dc/ab0fd85247a7.jpg" alt="">
+      </div>
+      <div class="text-body-2 text--demibold">Евгения Лиссова</div>
+
+      <button class="admin-header-user__exit ml-auto btn btn--primary btn--light btn-icon">
+        <svg class="icon">
+          <use xlink:href="img/icons.svg#exit" />
+        </svg>
+      </button>
+    </div>
+
+    <button class="btn btn--primary btn--fill admin-header-btn">На сайт</button>
+  </header>
+
+  <div class="admin-menu toggle-active" data-toggle-cover>
+    <button class="admin-menu__item btn btn--primary mb-1" data-toggle-link>
+      <svg class="icon text-h6">
+        <use xlink:href="img/icons.svg#menu" />
+      </svg>
+      <div class="text-body-1 color-text ml-2 active-enabled">Свернуть меню</div>
+    </button>
+    <button class="admin-menu__item btn btn--primary btn--light">
+      <svg class="icon text-subtitle-2">
+        <use xlink:href="img/icons.svg#doc" />
+      </svg>
+      <div class="text-body-1 text--demibold color-text ml-3 active-enabled">Заявки</div>
+    </button>
+  </div>
+
+  <section class="admin-content">
+
+
+
+
+    <div class="text-h3 mb-6">Новые заявки</div>
+    <table class="admin-table">
+      <tr class="admin-table-head">
+        <td class="admin-table-td">
+          <div class="text-body-2 text--demibold">Дата</div>
+        </td>
+        <td class="admin-table-td">
+          <div class="text-body-2 text--demibold">E-mail представителя</div>
+        </td>
+        <td class="admin-table-td">
+          <div class="text-body-2 text--demibold">Номер телефона представителя</div>
+        </td>
+        <td class="admin-table-td">
+          <div class="text-body-2 text--demibold">Название команды</div>
+        </td>
+        <td class="admin-table-td">
+          <div class="text-body-2 text--demibold">Полное наименование образовательного учреждения</div>
+        </td>
+        <td class="admin-table-td" colspan="2"> </td>
+      </tr>
+      <tr>
+        <td class="admin-table-td">
+          <div class="text-body-2 fade-80">25.01.22</div>
+        </td>
+        <td class="admin-table-td pl-3 pr-2">
+          <div class="text-body-2 fade-80">vladimirrugby@mail.ru</div>
+        </td>
+        <td class="admin-table-td pl-3 pr-2">
+          <div class="text-body-2 fade-80">8 918 000 00 00</div>
+        </td>
+        <td class="admin-table-td pl-3 pr-2">
+          <div class="text-body-2 fade-80">Аксайские броненосцы</div>
+        </td>
+        <td class="admin-table-td pl-3 pr-2">
+          <div class="text-body-2 fade-80">Орловская СОШ №3</div>
+        </td>
+        <td class="admin-table-td p-1">
+          <button class="admin-table-btn btn btn--green btn--light btn-icon" data-fancybox-modal data-src="dialog-add--admin.html" data-type="ajax">
+            <img src="img/icons/check-circle.svg" alt="" class="icon">
+          </button>
+        </td>
+        <td class="admin-table-td p-1">
+          <button class="admin-table-btn btn btn--red btn--light btn-icon" data-fancybox-modal data-src="dialog-remove--admin.html" data-type="ajax">
+            <img src="img/icons/x-circle.svg" alt="" class="icon">
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td class="admin-table-td">
+          <div class="text-body-2 fade-80">25.01.22</div>
+        </td>
+        <td class="admin-table-td pl-3 pr-2">
+          <div class="text-body-2 fade-80">vladimirrugby@mail.ru</div>
+        </td>
+        <td class="admin-table-td pl-3 pr-2">
+          <div class="text-body-2 fade-80">8 918 000 00 00</div>
+        </td>
+        <td class="admin-table-td pl-3 pr-2">
+          <div class="text-body-2 fade-80">Аксайские броненосцы</div>
+        </td>
+        <td class="admin-table-td pl-3 pr-2">
+          <div class="text-body-2 fade-80">Орловская СОШ №3</div>
+        </td>
+        <td class="admin-table-td p-1">
+          <button class="admin-table-btn btn btn--green btn--light btn-icon" data-fancybox-modal data-src="dialog-add--admin.html" data-type="ajax">
+            <img src="img/icons/check-circle.svg" alt="" class="icon">
+          </button>
+        </td>
+        <td class="admin-table-td p-1">
+          <button class="admin-table-btn btn btn--red btn--light btn-icon" data-fancybox-modal data-src="dialog-remove--admin.html" data-type="ajax">
+            <img src="img/icons/x-circle.svg" alt="" class="icon">
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td class="admin-table-td">
+          <div class="text-body-2 fade-80">25.01.22</div>
+        </td>
+        <td class="admin-table-td pl-3 pr-2">
+          <div class="text-body-2 fade-80">vladimirrugby@mail.ru</div>
+        </td>
+        <td class="admin-table-td pl-3 pr-2">
+          <div class="text-body-2 fade-80">8 918 000 00 00</div>
+        </td>
+        <td class="admin-table-td pl-3 pr-2">
+          <div class="text-body-2 fade-80">Аксайские броненосцы</div>
+        </td>
+        <td class="admin-table-td pl-3 pr-2">
+          <div class="text-body-2 fade-80">Орловская СОШ №3</div>
+        </td>
+        <td class="admin-table-td p-1">
+          <button class="admin-table-btn btn btn--green btn--light btn-icon" data-fancybox-modal data-src="dialog-add--admin.html" data-type="ajax">
+            <img src="img/icons/check-circle.svg" alt="" class="icon">
+          </button>
+        </td>
+        <td class="admin-table-td p-1">
+          <button class="admin-table-btn btn btn--red btn--light btn-icon" data-fancybox-modal data-src="dialog-remove--admin.html" data-type="ajax">
+            <img src="img/icons/x-circle.svg" alt="" class="icon">
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td class="admin-table-td">
+          <div class="text-body-2 fade-80">25.01.22</div>
+        </td>
+        <td class="admin-table-td pl-3 pr-2">
+          <div class="text-body-2 fade-80">vladimirrugby@mail.ru</div>
+        </td>
+        <td class="admin-table-td pl-3 pr-2">
+          <div class="text-body-2 fade-80">8 918 000 00 00</div>
+        </td>
+        <td class="admin-table-td pl-3 pr-2">
+          <div class="text-body-2 fade-80">Аксайские броненосцы</div>
+        </td>
+        <td class="admin-table-td pl-3 pr-2">
+          <div class="text-body-2 fade-80">Орловская СОШ №3</div>
+        </td>
+        <td class="admin-table-td p-1">
+          <button class="admin-table-btn btn btn--green btn--light btn-icon" data-fancybox-modal data-src="dialog-add--admin.html" data-type="ajax">
+            <img src="img/icons/check-circle.svg" alt="" class="icon">
+          </button>
+        </td>
+        <td class="admin-table-td p-1">
+          <button class="admin-table-btn btn btn--red btn--light btn-icon" data-fancybox-modal data-src="dialog-remove--admin.html" data-type="ajax">
+            <img src="img/icons/x-circle.svg" alt="" class="icon">
+          </button>
+        </td>
+      </tr>
+    </table>
+  </section>
+
+
+
+  <!-- fancybox modals -->
+  <script src="source/fancybox.umd.js"></script>
+  <script src="source/fancybox.custom.js"></script>
+
+  <script src="source/ui--toggle.js"></script>
+
+  <script src="js/script.js"></script>
+
+  <script>
+
+  </script>
+</body>
+
+</html>

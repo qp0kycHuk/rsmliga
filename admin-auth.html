@@ -28,8 +28,8 @@
     body {
       background:
         url("img/sempl/admin-auth-top.png") repeat-x top center / auto,
-        url("img/sempl/admin-dude2.png") no-repeat 42% 60% / auto,
-        url("img/sempl/admin-dude1.png") no-repeat 26% 60% / auto,
+        url("img/sempl/admin-dude2.png") no-repeat 42% 70% / auto 80%,
+        url("img/sempl/admin-dude1.png") no-repeat 26% 70% / auto 80%,
         url("img/sempl/admin-auth-bg.jpg") no-repeat center / cover, var(--color-primary);
     }
 
@@ -73,8 +73,16 @@
         <label class="form-field w-100 mt-4">
           <div class="text-body-1 text--demibold mb-2">Пароль</div>
           <div class="form-input-cover">
-            <input type="password" class="form-input" name="phone" required>
+            <input type="password" class="form-input" name="password" required id="password">
+            <div class="form-input-end pr-2">
+              <button class="btn btn--link btn-active--primary" data-show-pass="password">
+                <svg class="icon">
+                  <use xlink:href="img/icons.svg#eye" />
+                </svg>
+              </button>
+            </div>
           </div>
+
         </label>
 
       </div>
@@ -94,6 +102,7 @@
 
   <script src="source/ui--toggle.js"></script>
 
+  <script src="js/show-pass.js"></script>
   <script src="js/script.js"></script>
 
   <script>

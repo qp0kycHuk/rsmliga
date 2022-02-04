@@ -203,6 +203,21 @@
 		}
 	}
 
+	&.active&-active--primary,
+	&.tab-active&-active--primary,
+	&.toggle-active&-active--primary {
+		--btn-color      : var(--color-primary);
+		--btn-color-light: var(--color-primary-10);
+		--btn-text       : #fff;
+
+		@media (hover) {
+			&:hover {
+				--btn-color      : var(--color-primary--dark);
+				--btn-color-light: var(--color-primary-30);
+			}
+		}
+	}
+
 
 	&.active&-active--fill,
 	&.tab-active&-active--fill,

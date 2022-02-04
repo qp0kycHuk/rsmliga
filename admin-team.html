@@ -49,11 +49,17 @@
       </svg>
       <div class="text-body-1 color-text ml-2 active-enabled">Свернуть меню</div>
     </button>
-    <button class="admin-menu__item btn btn--primary btn--light">
+    <button class="admin-menu__item btn btn--primary ">
       <svg class="icon text-subtitle-2">
         <use xlink:href="img/icons.svg#doc" />
       </svg>
       <div class="text-body-1 text--demibold color-text ml-3 active-enabled">Заявки</div>
+    </button>
+    <button class="admin-menu__item btn btn--primary btn--light">
+      <svg class="icon text-subtitle-2">
+        <use xlink:href="img/icons.svg#user-group" />
+      </svg>
+      <div class="text-body-1 text--demibold color-text ml-3 active-enabled">Команды и участники</div>
     </button>
   </div>
 
@@ -62,17 +68,11 @@
 
 
 
-    <div class="text-h3 mb-6">Новые заявки</div>
+    <div class="text-h3 mb-6">Команды и участники</div>
     <table class="admin-table">
       <tr class="admin-table-head">
         <td class="admin-table-td">
-          <div class="text-small text--demibold">Дата</div>
-        </td>
-        <td class="admin-table-td">
-          <div class="text-small text--demibold">E-mail представителя</div>
-        </td>
-        <td class="admin-table-td">
-          <div class="text-small text--demibold">Телефон представителя</div>
+          <div class="text-small text--demibold">Лого</div>
         </td>
         <td class="admin-table-td">
           <div class="text-small text--demibold">Название команды</div>
@@ -81,44 +81,59 @@
           <div class="text-small text--demibold">Полное наименование образовательного учреждения</div>
         </td>
         <td class="admin-table-td">
+          <div class="text-small text--demibold">E-mail представителя</div>
+        </td>
+        <td class="admin-table-td">
+          <div class="text-small text--demibold">Телефон представителя</div>
+        </td>
+        <td class="admin-table-td">
           <div class="text-small text--demibold">Соревнование</div>
         </td>
-        <td class="admin-table-td" colspan="2"> </td>
+        <td class="admin-table-td">
+          <div class="text-small text--demibold">Город</div>
+        </td>
       </tr>
       <tr>
         <td class="admin-table-td">
-          <div class="text-body-2 fade-80">25.01.22</div>
+          <a href="admin-team-detail.html" class="d-block py-2 px-2">
+            <div class="image image--cover image--round image--box d-block" style="width: 36px;">
+              <img src="https://picsum.photos/id/1020/600/400" alt="">
+            </div>
+          </a>
         </td>
-        <td class="admin-table-td pl-2 pr-2">
-          <div class="text-body-2 fade-80">vladimirrugby@mail.ru</div>
+        <td class="admin-table-td">
+          <a href="admin-team-detail.html" class="text-body-2 fade-80 text--underline py-2 px-2 d-block">Аксайские
+            броненосцы</a>
         </td>
-        <td class="admin-table-td pl-2 pr-2">
-          <div class="text-body-2 fade-80">8 918 000 00 00</div>
+        <td class="admin-table-td">
+          <a href="admin-team-detail.html" class="d-block py-2 px-2">
+            <div class="text-body-2 fade-80">Орловская СОШ №3</div>
+          </a>
         </td>
-        <td class="admin-table-td pl-2 pr-2">
-          <div class="text-body-2 fade-80">Аксайские броненосцы</div>
+        <td class="admin-table-td">
+          <a href="admin-team-detail.html" class="d-block py-2 px-2">
+            <div class="text-body-2 fade-80">vladimirrugby@mail.ru</div>
+          </a>
         </td>
-        <td class="admin-table-td pl-2 pr-2">
-          <div class="text-body-2 fade-80">Орловская СОШ №3</div>
+        <td class="admin-table-td">
+          <a href="admin-team-detail.html" class="d-block py-2 px-2">
+            <div class="text-body-2 fade-80">8 918 000 00 00</div>
+          </a>
         </td>
-        <td class="admin-table-td pl-2 pr-2">
-          <div class="text-body-2 fade-80">
-            Спартакиада по тэг-регби среди учащихся 5-6 классов
-            общеобразовательных учреждений Ростовской области
-          </div>
+        <td class="admin-table-td">
+          <a href="admin-team-detail.html" class="d-block py-2 px-2">
+            <div class="text-body-2 fade-80">
+              Спартакиада по тэг-регби среди учащихся 5-6 классов
+              общеобразовательных учреждений Ростовской области
+            </div>
+          </a>
         </td>
-        <td class="admin-table-td p-1">
-          <button class="admin-table-btn btn btn--green btn--light btn-icon" data-fancybox-modal
-            data-src="dialog-add--admin.html" data-type="ajax">
-            <img src="img/icons/check-circle.svg" alt="" class="icon">
-          </button>
+        <td class="admin-table-td py-2 px-2">
+          <a href="admin-team-detail.html" class="d-block py-2 px-2">
+            <div class="text-body-2 fade-80">Геленджик</div>
+          </a>
         </td>
-        <td class="admin-table-td p-1">
-          <button class="admin-table-btn btn btn--red btn--light btn-icon" data-fancybox-modal
-            data-src="dialog-remove--admin.html" data-type="ajax">
-            <img src="img/icons/x-circle.svg" alt="" class="icon">
-          </button>
-        </td>
+
       </tr>
 
 

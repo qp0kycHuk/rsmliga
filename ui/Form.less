@@ -84,6 +84,8 @@
 		background-color: rgb(255, 255, 255);
 		border          : 1px solid #CFCFCF;
 
+		max-width: 100%;
+
 		&:first-of-type {
 			border-start-start-radius: 6px;
 			border-end-start-radius  : 6px;
@@ -154,7 +156,15 @@
 			min-height: 136px;
 		}
 	}
-
+	&-input-end {
+		position   : absolute;
+		right      : 0;
+		top        : 0;
+		height     : 100%;
+		display    : flex;
+		align-items: center;
+		z-index    : 3;
+	}
 
 
 	&-field--lg &-input {

@@ -187,6 +187,75 @@ body {
 }
 
 
+.tab {
+	&-links {
+		border-bottom: 1px solid #E2E8F0;
+
+		position: relative;
+		display : flex;
+
+		overflow: auto;
+	}
+
+	&-link {
+		font-size     : 14px;
+		padding-bottom: 12px;
+		padding-top   : 12px;
+
+		white-space: nowrap;
+
+		&.tab-active {
+			font-weight: 600;
+		}
+
+		&+& {
+			margin-left: 32px;
+		}
+	}
+
+	&-plate {
+		position        : absolute;
+		left            : 0;
+		bottom          : 0;
+		height          : 3px;
+		background-color: var(--color-primary);
+		border-radius   : 3px 3px 0 0;
+
+		transition: .3s ease;
+	}
+
+	&-content-cover {
+		position: relative;
+	}
+
+	&-content {
+		transition : .3s ease .2s;
+		padding-top: 1px;
+
+		&-inner {
+			position: relative;
+		}
+
+		&:not(.tab-active) {
+			transition    : .3s ease;
+			position      : absolute;
+			left          : 0;
+			top           : 0;
+			pointer-events: none;
+			opacity       : 0;
+			width         : 100%;
+			transform     : translateY(10px);
+			max-height    : 100%;
+			overflow      : hidden;
+		}
+	}
+}
+
+
+
+
+
+
 .header-top {
 	@media(max-width:@md) {
 		display: none;
@@ -759,7 +828,7 @@ body {
 
 .tournament {
 	&-item {
-		margin-top    : 35px;
+		// margin-top    : 35px;
 		background    : #FFFFFF;
 		border-radius : 12px;
 		padding       : 8px;
@@ -1752,6 +1821,17 @@ body {
 	&__add {
 		height: 42px;
 	}
+
+
+	.form-input-checkbox:checked~.lk-team-table__check .form-checkbox-target .icon {
+		color            : var(--color-primary);
+		-webkit-transform: scale(1);
+		transform        : scale(1);
+	}
+
+	.form-input-checkbox:not(:checked)~* {
+		opacity: .6;
+	}
 }
 
 
@@ -1809,6 +1889,12 @@ body {
 	display       : flex;
 	z-index       : var(--zi-l2);
 	border-bottom : 1px solid #DDDDDD;
+	position      : sticky;
+	top           : 0;
+
+	@media(min-width: 1350px) {
+		--section-width: 1320px;
+	}
 
 	&-user {
 		width        : 300px;
@@ -1826,6 +1912,12 @@ body {
 		height     : 32px;
 		margin-left: auto;
 		padding    : 0 42px;
+	}
+}
+
+.admin-content {
+	@media(min-width: 1350px) {
+		--section-width: 1320px;
 	}
 }
 
@@ -1855,8 +1947,10 @@ body {
 
 	&-head &-td {
 		background   : #F4F5F6;
-		padding      : 8px 12px;
+		padding      : 8px 8px;
 		padding-right: 8px;
+
+
 	}
 }
 
@@ -1927,8 +2021,9 @@ body {
 }
 
 .admin-success {
-	width    : 500px;
-	max-width: 100%;
+	background: #FFFFFF url("../img/sempl/admin-confirm-head.png") no-repeat center top;
+	width     : 500px;
+	max-width : 100%;
 }
 
 .admin-auth {
@@ -2039,4 +2134,248 @@ body {
 			align-self  : flex-start;
 		}
 	}
+}
+
+
+
+.lk-tabs {
+	display      : flex;
+	background   : #FFFFFF;
+	border-radius: 12px;
+	margin-bottom: 15px;
+	padding-left : 24px;
+
+	@media(max-width:@md) {
+		border-radius: 0;
+		width        : calc(100% + 30px);
+		margin-left  : -15px;
+		padding-left : 15px;
+		padding-right: 15px;
+	}
+
+	&__item {
+		position      : relative;
+		padding-bottom: 15px;
+
+		&.active {
+			font-weight: 600;
+
+		}
+
+		&.active:before {
+			content      : '';
+			position     : absolute;
+			left         : 0;
+			bottom       : 0;
+			height       : 3px;
+			width        : 100%;
+			border-radius: 2px 2px 0 0;
+			background   : var(--color-primary);
+		}
+	}
+}
+
+.lk-games {
+	&-table {
+		width          : 100%;
+		border-collapse: collapse;
+		display        : flex;
+		flex-direction : column;
+
+		[data-fancybox-modal] {
+			cursor: pointer;
+		}
+
+		tr {
+			padding-bottom: 10px;
+			margin-bottom : 10px;
+
+			display       : flex;
+			width         : 100%;
+			border-radius : 12px;
+			padding-left  : 24px;
+			padding-top   : 10px;
+			padding-bottom: 10px;
+			padding-right : 8px;
+			background    : #fff;
+			position      : relative;
+			padding-right : 40px;
+
+			@media (max-width:@lg) {
+				flex-wrap: wrap;
+
+			}
+
+			@media (max-width:@md) {
+				width        : calc(100% + 30px);
+				margin-left  : -15px;
+				border-radius: 0;
+				padding-left : 15px;
+				padding-right: 15px;
+			}
+		}
+
+		td {
+			display    : flex;
+			align-items: center;
+
+
+		}
+
+		&__name {
+
+			@media (min-width:@lg) {
+				min-width: 210px;
+				width    : 210px;
+			}
+
+			@media (max-width:@lg) {
+				width: calc(50% - 40px);
+			}
+
+			@media (max-width:@md) {
+				width        : 100%;
+				margin-bottom: 8px;
+			}
+		}
+
+		&__score {
+			@media (min-width:@lg) {
+				min-width: 106px;
+				width    : 106px;
+			}
+
+			@media (max-width:@lg) {
+				width: 80px;
+			}
+		}
+
+		&__date {
+			@media (min-width:@lg) {
+				min-width: 106px;
+				width    : 106px;
+			}
+
+			@media (max-width:@lg) {
+				width: calc(50% - 40px);
+			}
+
+			@media (max-width:@md) {
+				width: calc(100% - 80px);
+			}
+		}
+
+		&__location {
+			@media (min-width:@lg) {
+				min-width: 248px;
+				width    : 248px;
+			}
+
+			@media (max-width:@lg) {
+				width     : 100%;
+				margin-top: 8px;
+			}
+		}
+
+		&__step {
+			@media (min-width:@lg) {
+				min-width: 142px;
+				width    : 142px;
+			}
+
+			@media (max-width:@lg) {
+				width     : 100%;
+				margin-top: 5px;
+			}
+		}
+
+		&__tour {
+			flex-grow: 1;
+
+			@media (max-width:@lg) {
+				width     : 100%;
+				margin-top: 5px;
+			}
+		}
+
+
+		&__edit {
+			@media (max-width:@lg) {
+				position: absolute;
+				right   : 8px;
+				top     : 8px;
+
+			}
+		}
+	}
+
+	&-table &-head {
+		padding-top   : 12px;
+		padding-bottom: 12px;
+		background    : rgba(232, 236, 242, 0.8);
+
+		@media (max-width:@lg) {
+			display: none;
+		}
+	}
+}
+
+
+.lk-games-dialog {
+	width    : var(--section-width);
+	max-width: 100%;
+	overflow : hidden;
+	margin   : 0 auto;
+
+	&-header {
+		text-align     : center;
+		height         : 125px;
+		display        : flex;
+		align-items    : center;
+		justify-content: center;
+		background     : url("../img/sempl/lk-games-dialog-header.png") repeat-x center / auto 100%;
+
+		@media (max-width:@md) {
+			height: 50px;
+		}
+	}
+
+	.lk-team {
+		margin-top: 40px;
+	}
+
+	.lk-team-header {
+		background    : #E8ECF2;
+		border-radius : 12px;
+		margin-bottom : 0;
+		padding-top   : 10px;
+		padding-bottom: 10px;
+
+		@media (max-width:@md) {
+			width        : calc(100% + 48px);
+			margin-left  : -24px;
+			border-radius: 0;
+			padding-left : 12px;
+			padding-right: 12px;
+		}
+	}
+
+	.lk-team-table {
+		@media (max-width:@md) {
+			padding-left : 0;
+			padding-right: 0;
+		}
+	}
+
+	.lk-team-table__date {
+		@media (max-width:@md) {
+			display: none;
+		}
+	}
+}
+
+.admin-back {
+	height       : 32px;
+	padding-left : 10px;
+	padding-right: 20px;
 }

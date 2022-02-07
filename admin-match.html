@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Личный кабинет</title>
+
+
+  <link rel="stylesheet" href="source/fancybox.css">
+  <link rel="stylesheet" href="source/fancybox.custom.css">
+  <link rel="stylesheet" href="source/swiper-bundle.min.css">
+  <link rel="stylesheet" href="source/swiper-custom.css">
+
+  <script src="source/swiper-bundle.min.js"></script>
+
+
+  <link rel="stylesheet" href="css/ui-reset.css">
+  <link rel="stylesheet" href="css/ui-core.css">
+  <link rel="stylesheet" href="css/frontend--fonts.css">
+  <link rel="stylesheet" href="css/frontend--style.css">
+</head>
+
+<body>
+
+
+  <header class="admin-header">
+    <div class="admin-header-user flex flex-align-center">
+      <div class="admin-header-user__img image image--round image--box image--cover mr-2" style="width: 34px;">
+        <img src="https://d.radikal.ru/d30/2102/dc/ab0fd85247a7.jpg" alt="">
+      </div>
+      <div class="text-body-2 text--demibold">Евгения Лиссова</div>
+
+      <button class="admin-header-user__exit ml-auto btn btn--primary btn--light btn-icon">
+        <svg class="icon">
+          <use xlink:href="img/icons.svg#exit" />
+        </svg>
+      </button>
+    </div>
+
+    <button class="btn btn--primary btn--fill admin-header-btn">На сайт</button>
+  </header>
+
+  <div class="admin-menu " data-toggle-cover data-toggle-static>
+    <button class="admin-menu__item btn btn--primary mb-1" data-toggle-link>
+      <svg class="icon text-h6">
+        <use xlink:href="img/icons.svg#menu" />
+      </svg>
+      <div class="text-body-1 color-text ml-2 active-enabled">Свернуть меню</div>
+    </button>
+    <button class="admin-menu__item btn btn--primary mb-1">
+      <svg class="icon text-subtitle-2">
+        <use xlink:href="img/icons.svg#doc" />
+      </svg>
+      <div class="text-body-1 text--demibold color-text ml-3 active-enabled">Заявки</div>
+    </button>
+    <button class="admin-menu__item btn btn--primary btn--light">
+      <svg class="icon text-subtitle-2">
+        <use xlink:href="img/icons.svg#ball" />
+      </svg>
+      <div class="text-body-1 text--demibold color-text ml-3 active-enabled">Матчи</div>
+      <div class="btn btn-fab btn--primary btn--white-bg active-enabled ml-auto admin-menu__add">
+        <svg class="icon"><use xlink:href="img/icons.svg#plus" /></svg>
+      </div>
+    </button>
+  </div>
+
+  <section class="admin-content">
+
+
+
+    <div class="flex flex-align-center mb-6">
+      <div class="text-h3">Новые заявки</div>
+      <button class=" ml-auto btn btn--primary btn--link" data-fancybox-modal data-src="dialog-match.html"
+        data-type="ajax">
+        <svg class="icon mr-2">
+          <use xlink:href="img/icons.svg#plus" />
+        </svg>
+        <div class="text-body-2 text--demibold">Добавить матч</div>
+      </button>
+    </div>
+    <table class="admin-table">
+      <tr class="admin-table-head">
+        <td class="admin-table-td">
+          <div class="text-small text--demibold">Название команды</div>
+        </td>
+        <td class="admin-table-td">
+          <div class="text-small text--demibold">Результат</div>
+        </td>
+        <td class="admin-table-td">
+          <div class="text-small text--demibold">Дата</div>
+        </td>
+        <td class="admin-table-td">
+          <div class="text-small text--demibold">Место проведения</div>
+        </td>
+        <td class="admin-table-td">
+          <div class="text-small text--demibold">Соревнование</div>
+        </td>
+        <td class="admin-table-td">
+          <div class="text-small text--demibold">Протокол</div>
+        </td>
+        <td class="admin-table-td" colspan="2">
+          <div class="text-small text--demibold">Статус</div>
+        </td>
+
+        <td class="admin-table-td"> </td>
+      </tr>
+      <tr>
+        <td class="admin-table-td pl-2 pr-2">
+          <div class="text-body-2 fade-80">Броненосцы vs Титаны</div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2">
+          <div class="text-body-2 fade-80">21:3</div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2">
+          <div class="text-body-2 fade-80">25.01.22</div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2">
+          <div class="text-body-2 fade-80">Геленджик</div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2">
+          <div class="text-body-2 fade-80">
+            Спартакиада по тэг-регби среди учащихся 5-6 классов
+            общеобразовательных учреждений Ростовской области
+          </div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2">
+          <div class="flex">
+            <button class="btn btn--link">Скачать</button>
+            <button class="btn btn--primary btn--light btn-fab btn-small ml-4">
+              <svg class="icon">
+                <use xlink:href="img/icons.svg#delete" />
+              </svg>
+            </button>
+          </div>
+        </td>
+        <td class="admin-table-td p-1">
+          <button class="admin-table-btn btn btn--green btn--light btn-icon" data-fancybox-modal
+            data-src="dialog-add--admin.html" data-type="ajax">
+            <img src="img/icons/check-circle.svg" alt="" class="icon">
+          </button>
+        </td>
+        <td class="admin-table-td p-1">
+          <button class="admin-table-btn btn btn--red btn--light btn-icon" data-fancybox-modal
+            data-src="dialog-remove--admin.html" data-type="ajax">
+            <img src="img/icons/x-circle.svg" alt="" class="icon">
+          </button>
+        </td>
+        <td class="admin-table-td p-1">
+          <button class="lk-team__edit btn btn--primary btn--light btn-icon">
+            <svg class="icon">
+              <use xlink:href="img/icons.svg#setting"></use>
+            </svg>
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td class="admin-table-td pl-2 pr-2">
+          <div class="text-body-2 fade-80">Броненосцы vs Титаны</div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2">
+          <div class="text-body-2 fade-80">21:3</div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2">
+          <div class="text-body-2 fade-80">25.01.22</div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2">
+          <div class="text-body-2 fade-80">Геленджик</div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2">
+          <div class="text-body-2 fade-80">
+            Спартакиада по тэг-регби среди учащихся 5-6 классов
+            общеобразовательных учреждений Ростовской области
+          </div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2">
+          <div class="flex">
+            <label class="btn btn--link btn--primary">
+              <input type="file" accept="application/pdf">
+              Добавить
+            </label>
+
+          </div>
+        </td>
+        <td class="admin-table-td p-1">
+          <button class="admin-table-btn btn btn--green btn--light btn-icon" data-fancybox-modal
+            data-src="dialog-add--admin.html" data-type="ajax">
+            <img src="img/icons/check-circle.svg" alt="" class="icon">
+          </button>
+        </td>
+        <td class="admin-table-td p-1">
+          <button class="admin-table-btn btn btn--red btn--light btn-icon" data-fancybox-modal
+            data-src="dialog-remove--admin.html" data-type="ajax">
+            <img src="img/icons/x-circle.svg" alt="" class="icon">
+          </button>
+        </td>
+        <td class="admin-table-td p-1">
+          <button class="lk-team__edit btn btn--primary btn--light btn-icon">
+            <svg class="icon">
+              <use xlink:href="img/icons.svg#setting"></use>
+            </svg>
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td class="admin-table-td pl-2 pr-2">
+          <div class="text-body-2 fade-80">Броненосцы vs Титаны</div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2">
+          <div class="text-body-2 fade-80">21:3</div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2">
+          <div class="text-body-2 fade-80">25.01.22</div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2">
+          <div class="text-body-2 fade-80">Геленджик</div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2">
+          <div class="text-body-2 fade-80">
+            Спартакиада по тэг-регби среди учащихся 5-6 классов
+            общеобразовательных учреждений Ростовской области
+          </div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2">
+          <div class="flex">
+            <label class="btn btn--link btn--primary">
+              <input type="file" accept="application/pdf">
+              Добавить
+            </label>
+
+          </div>
+        </td>
+        <td class="admin-table-td p-1" colspan="2">
+          <div class="text-body-2 fade-80">Загружен</div>
+        </td>
+        <td class="admin-table-td p-1">
+          <button class="lk-team__edit btn btn--primary btn--light btn-icon">
+            <svg class="icon">
+              <use xlink:href="img/icons.svg#setting"></use>
+            </svg>
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td class="admin-table-td pl-2 pr-2">
+          <div class="text-body-2 fade-80">Броненосцы vs Титаны</div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2">
+          <div class="text-body-2 fade-80">21:3</div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2">
+          <div class="text-body-2 fade-80">25.01.22</div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2">
+          <div class="text-body-2 fade-80">Геленджик</div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2">
+          <div class="text-body-2 fade-80">
+            Спартакиада по тэг-регби среди учащихся 5-6 классов
+            общеобразовательных учреждений Ростовской области
+          </div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2">
+          <div class="flex">
+            <label class="btn btn--link btn--primary disabled" >
+              <input type="file" accept="application/pdf">
+              Добавить
+            </label>
+
+          </div>
+        </td>
+        <td class="admin-table-td p-1" colspan="2">
+          <div class="text-body-2 fade-80">Загружен</div>
+        </td>
+        <td class="admin-table-td p-1">
+          <button class="lk-team__edit btn btn--primary btn--light btn-icon">
+            <svg class="icon">
+              <use xlink:href="img/icons.svg#setting"></use>
+            </svg>
+          </button>
+        </td>
+      </tr>
+
+
+    </table>
+  </section>
+
+
+
+  <!-- fancybox modals -->
+  <script src="source/fancybox.umd.js"></script>
+  <script src="source/fancybox.custom.js"></script>
+
+  <script src="source/ui--toggle.js"></script>
+
+  <script src="js/script.js"></script>
+
+  <script>
+
+  </script>
+</body>
+
+</html>

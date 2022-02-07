@@ -2057,7 +2057,7 @@ body.menu-opened > *:not(.mobile-menu) {
   -webkit-border-radius: 12px;
           border-radius: 12px;
   padding-left: 16px;
-  padding-right: 16px;
+  padding-right: 8px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   white-space: nowrap;
@@ -2072,6 +2072,11 @@ body.menu-opened > *:not(.mobile-menu) {
 }
 .admin-menu:not(.toggle-active) .admin-menu__item .icon {
   font-size: 16px;
+}
+.admin-menu__add {
+  width: 36px;
+  height: 36px;
+  font-size: 20px;
 }
 .active-enabled {
   display: none !important;

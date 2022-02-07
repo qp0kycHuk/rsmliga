@@ -299,6 +299,12 @@ section {
   -webkit-justify-content: center;
           justify-content: center;
 }
+.btn-small.btn-fab {
+  width: 24px;
+  height: 24px;
+  font-size: 14px;
+}
+.btn.disabled,
 .btn:disabled {
   opacity: 0.4;
   pointer-events: none;

@@ -2488,3 +2488,18 @@ body.menu-opened > *:not(.mobile-menu) {
   padding-left: 10px;
   padding-right: 20px;
 }
+.lk-teams {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+.lk-teams__item {
+  -webkit-border-radius: 100px;
+          border-radius: 100px;
+  height: 34px;
+  margin: 0 4px 8px;
+}

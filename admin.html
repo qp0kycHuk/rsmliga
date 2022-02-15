@@ -63,6 +63,31 @@
 
 
     <div class="text-h3 mb-6">Новые заявки</div>
+
+    <div class="lk-tabs tab-links">
+      <button class="lk-tabs__item tab-link active">Новые</button>
+      <button class="lk-tabs__item tab-link ">Принятые</button>
+      <button class="lk-tabs__item tab-link ">Отклоненные</button>
+
+    </div>
+
+    <div class="flex mb-6">
+      <div class="admin-select" data-toggle-cover>
+        <div class="text-body-2 text--demibold">Соревнование</div>
+        <button class="admin-select-btn btn btn--primary btn--link ml-2" data-toggle-link>
+          Любое
+          <svg class="icon ml-1 text-small-2">
+            <use xlink:href="img/icons.svg#triangle-right" />
+          </svg>
+        </button>
+        <div class="admin-select-list card py-1" data-toggle-content>
+          <div class="admin-select__item fade-60 py-1 px-4 text-body-2 text--demibold">Любое</div>
+          <a href="javascript:;" class="admin-select__item py-1 px-4 text-body-2 text--demibold">Не Любое</a>
+        </div>
+      </div>
+    </div>
+
+
     <table class="admin-table">
       <tr class="admin-table-head">
         <td class="admin-table-td">

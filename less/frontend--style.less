@@ -2399,3 +2399,39 @@ body {
 		margin: 0 4px 8px;
 	}
 }
+
+
+.admin-select {
+	display : flex;
+	position: relative;
+
+	&-btn {
+		.icon {
+			transform: rotateZ(90deg);
+		}
+	}
+
+	&-list {
+		position  : absolute;
+		right     : 0;
+		top       : calc(100% + 5px);
+		box-shadow: 0 0 12px rgba(0, 0, 0, 0.16);
+		transition: .3s ease;
+
+		&:not(.toggle-active) {
+			opacity       : 0;
+			transform     : translateY(5px);
+			pointer-events: none;
+		}
+	}
+
+	a&__item {
+		@media(hover) {
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+
+
+}

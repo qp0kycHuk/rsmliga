@@ -299,6 +299,9 @@ section {
   -webkit-justify-content: center;
           justify-content: center;
 }
+.btn-small {
+  height: 32px;
+}
 .btn-small.btn-fab {
   width: 24px;
   height: 24px;

@@ -2503,3 +2503,34 @@ body.menu-opened > *:not(.mobile-menu) {
   height: 34px;
   margin: 0 4px 8px;
 }
+.admin-select {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  position: relative;
+}
+.admin-select-btn .icon {
+  -webkit-transform: rotateZ(90deg);
+          transform: rotateZ(90deg);
+}
+.admin-select-list {
+  position: absolute;
+  right: 0;
+  top: -webkit-calc(100% + 5px);
+  top: calc(100% + 5px);
+  -webkit-box-shadow: 0 0 12px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 0 12px rgba(0, 0, 0, 0.16);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.admin-select-list:not(.toggle-active) {
+  opacity: 0;
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+  pointer-events: none;
+}
+@media (hover) {
+  a.admin-select__item:hover {
+    text-decoration: underline;
+  }
+}

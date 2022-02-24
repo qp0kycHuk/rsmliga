@@ -2207,6 +2207,7 @@ body.menu-opened > *:not(.mobile-menu) {
   top: calc(100% + 5px);
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.16);
   transition: 0.3s ease;
+  z-index: 2;
 }
 .admin-select-list:not(.toggle-active) {
   opacity: 0;

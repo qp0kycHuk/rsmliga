@@ -2435,3 +2435,26 @@ body {
 
 
 }
+
+
+.nf {
+	display        : flex;
+	flex-direction : column;
+	align-items    : center;
+	justify-content: center;
+	text-align     : center;
+	flex-grow      : 1;
+	background     : #F5F7FB;
+
+	&-title {}
+
+	&-subtitle {
+		@media(max-width:@md) {
+			br {
+				display: none;
+			}
+		}
+	}
+
+	&-btn {}
+}

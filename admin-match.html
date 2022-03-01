@@ -61,7 +61,9 @@
       </svg>
       <div class="text-body-1 text--demibold color-text ml-3 active-enabled">Матчи</div>
       <div class="btn btn-fab btn--primary btn--white-bg active-enabled ml-auto admin-menu__add">
-        <svg class="icon"><use xlink:href="img/icons.svg#plus" /></svg>
+        <svg class="icon">
+          <use xlink:href="img/icons.svg#plus" />
+        </svg>
       </div>
     </button>
   </div>
@@ -71,7 +73,47 @@
 
 
     <div class="flex flex-align-center mb-6">
-      <div class="text-h3">Новые заявки</div>
+      <div class="text-h3">Матчи</div>
+      
+    </div>
+
+
+
+    <div class="lk-tabs tab-links">
+      <button class="lk-tabs__item tab-link active">Новые</button>
+      <button class="lk-tabs__item tab-link ">Принятые</button>
+      <button class="lk-tabs__item tab-link ">Отклоненные</button>
+
+    </div>
+
+    <div class="flex mb-6">
+      <div class="admin-select" data-toggle-cover>
+        <div class="text-body-2 text--demibold">Соревнование</div>
+        <button class="admin-select-btn btn btn--primary btn--link ml-2" data-toggle-link>
+          Спартакиада по тэг-регби среди учащихся 5-6 классов общ...
+          <svg class="icon ml-1 text-small-2">
+            <use xlink:href="img/icons.svg#triangle-right" />
+          </svg>
+        </button>
+        <div class="admin-select-list card py-1" data-toggle-content>
+          <div class="admin-select__item fade-60 py-1 px-4 text-body-2 text--demibold">Спартакиада по тэг-регби среди учащихся 5-6 классов общ...</div>
+          <a href="javascript:;" class="admin-select__item py-1 px-4 text-body-2 text--demibold">Не Спартакиада по тэг-регби среди учащихся 5-6 классов общ...</a>
+        </div>
+      </div>
+      <div class="admin-select ml-10" data-toggle-cover>
+        <div class="text-body-2 text--demibold">Этап</div>
+        <button class="admin-select-btn btn btn--primary btn--link ml-2" data-toggle-link>
+          Муниципальный
+          <svg class="icon ml-1 text-small-2">
+            <use xlink:href="img/icons.svg#triangle-right" />
+          </svg>
+        </button>
+        <div class="admin-select-list card py-1" data-toggle-content>
+          <div class="admin-select__item fade-60 py-1 px-4 text-body-2 text--demibold">Муниципальный</div>
+          <a href="javascript:;" class="admin-select__item py-1 px-4 text-body-2 text--demibold">Не Муниципальный</a>
+        </div>
+      </div>
+
       <button class=" ml-auto btn btn--primary btn--link" data-fancybox-modal data-src="dialog-match.html"
         data-type="ajax">
         <svg class="icon mr-2">
@@ -80,206 +122,138 @@
         <div class="text-body-2 text--demibold">Добавить матч</div>
       </button>
     </div>
-    <table class="admin-table">
+
+
+    <table class="admin-table w-100">
       <tr class="admin-table-head">
+        <td class="admin-table-td"> </td>
         <td class="admin-table-td">
-          <div class="text-small text--demibold">Название команды</div>
+          <div class="text-small text--demibold">Соперники</div>
         </td>
         <td class="admin-table-td">
-          <div class="text-small text--demibold">Результат</div>
+          <div class="text-small text--demibold">Счет</div>
         </td>
         <td class="admin-table-td">
-          <div class="text-small text--demibold">Дата</div>
+          <div class="text-small text--demibold">Дата / Время</div>
+        </td>
+        <td class="admin-table-td">
+          <div class="text-small text--demibold">Судья</div>
         </td>
         <td class="admin-table-td">
           <div class="text-small text--demibold">Место проведения</div>
         </td>
         <td class="admin-table-td">
-          <div class="text-small text--demibold">Соревнование</div>
+          <div class="text-small text--demibold">Город</div>
+        </td>
+        <td class="admin-table-td">
+          <div class="text-small text--demibold">Этап</div>
+        </td>
+        <td class="admin-table-td">
+          <div class="text-small text--demibold">Группа</div>
         </td>
         <td class="admin-table-td">
           <div class="text-small text--demibold">Протокол</div>
         </td>
-        <td class="admin-table-td" colspan="2">
+        <td class="admin-table-td">
           <div class="text-small text--demibold">Статус</div>
         </td>
+        <td class="admin-table-td">
+        </td>
 
-        <td class="admin-table-td"> </td>
       </tr>
       <tr>
+        <td class="admin-table-td">
+          <div class="text-body-2 fade-80 px-3">1</div>
+        </td>
         <td class="admin-table-td pl-2 pr-2">
-          <div class="text-body-2 fade-80">Броненосцы vs Титаны</div>
+          <div class="text-body-2 fade-80">Броненосцы / Титаны</div>
         </td>
         <td class="admin-table-td pl-2 pr-2">
           <div class="text-body-2 fade-80">21:3</div>
         </td>
         <td class="admin-table-td pl-2 pr-2">
-          <div class="text-body-2 fade-80">25.01.22</div>
-        </td>
-        <td class="admin-table-td pl-2 pr-2">
-          <div class="text-body-2 fade-80">Геленджик</div>
-        </td>
-        <td class="admin-table-td pl-2 pr-2">
           <div class="text-body-2 fade-80">
-            Спартакиада по тэг-регби среди учащихся 5-6 классов
-            общеобразовательных учреждений Ростовской области
+            25.01.22 <br>
+            14:00
           </div>
         </td>
         <td class="admin-table-td pl-2 pr-2">
-          <div class="flex">
-            <button class="btn btn--link">Скачать</button>
-            <button class="btn btn--primary btn--light btn-fab btn-small ml-4">
-              <svg class="icon">
-                <use xlink:href="img/icons.svg#delete" />
-              </svg>
-            </button>
-          </div>
-        </td>
-        <td class="admin-table-td p-1">
-          <button class="admin-table-btn btn btn--green btn--light btn-icon" data-fancybox-modal
-            data-src="dialog-add--admin.html" data-type="ajax">
-            <img src="img/icons/check-circle.svg" alt="" class="icon">
-          </button>
-        </td>
-        <td class="admin-table-td p-1">
-          <button class="admin-table-btn btn btn--red btn--light btn-icon" data-fancybox-modal
-            data-src="dialog-remove--admin.html" data-type="ajax">
-            <img src="img/icons/x-circle.svg" alt="" class="icon">
-          </button>
-        </td>
-        <td class="admin-table-td p-1">
-          <button class="lk-team__edit btn btn--primary btn--light btn-icon">
-            <svg class="icon">
-              <use xlink:href="img/icons.svg#setting"></use>
-            </svg>
-          </button>
-        </td>
-      </tr>
-      <tr>
-        <td class="admin-table-td pl-2 pr-2">
-          <div class="text-body-2 fade-80">Броненосцы vs Титаны</div>
+          <div class="text-body-2 fade-80">Константинов И.</div>
         </td>
         <td class="admin-table-td pl-2 pr-2">
-          <div class="text-body-2 fade-80">21:3</div>
+          <div class="text-body-2 fade-80">Дворец спорта Олимп</div>
         </td>
         <td class="admin-table-td pl-2 pr-2">
-          <div class="text-body-2 fade-80">25.01.22</div>
+          <div class="text-body-2 fade-80">Ростов</div>
         </td>
-        <td class="admin-table-td pl-2 pr-2">
-          <div class="text-body-2 fade-80">Геленджик</div>
-        </td>
-        <td class="admin-table-td pl-2 pr-2">
-          <div class="text-body-2 fade-80">
-            Спартакиада по тэг-регби среди учащихся 5-6 классов
-            общеобразовательных учреждений Ростовской области
-          </div>
-        </td>
-        <td class="admin-table-td pl-2 pr-2">
-          <div class="flex">
-            <label class="btn btn--link btn--primary">
-              <input type="file" accept="application/pdf">
-              Добавить
-            </label>
 
-          </div>
-        </td>
-        <td class="admin-table-td p-1">
-          <button class="admin-table-btn btn btn--green btn--light btn-icon" data-fancybox-modal
-            data-src="dialog-add--admin.html" data-type="ajax">
-            <img src="img/icons/check-circle.svg" alt="" class="icon">
-          </button>
-        </td>
-        <td class="admin-table-td p-1">
-          <button class="admin-table-btn btn btn--red btn--light btn-icon" data-fancybox-modal
-            data-src="dialog-remove--admin.html" data-type="ajax">
-            <img src="img/icons/x-circle.svg" alt="" class="icon">
-          </button>
-        </td>
-        <td class="admin-table-td p-1">
-          <button class="lk-team__edit btn btn--primary btn--light btn-icon">
-            <svg class="icon">
-              <use xlink:href="img/icons.svg#setting"></use>
-            </svg>
-          </button>
-        </td>
-      </tr>
-      <tr>
         <td class="admin-table-td pl-2 pr-2">
-          <div class="text-body-2 fade-80">Броненосцы vs Титаны</div>
+          <div class="text-body-2 fade-80">Муниципальный</div>
         </td>
         <td class="admin-table-td pl-2 pr-2">
-          <div class="text-body-2 fade-80">21:3</div>
+          <div class="text-body-2 fade-80 text--center">А</div>
         </td>
         <td class="admin-table-td pl-2 pr-2">
-          <div class="text-body-2 fade-80">25.01.22</div>
+          <button class="btn btn--text btn--link">Скачать</button>
         </td>
         <td class="admin-table-td pl-2 pr-2">
-          <div class="text-body-2 fade-80">Геленджик</div>
-        </td>
-        <td class="admin-table-td pl-2 pr-2">
-          <div class="text-body-2 fade-80">
-            Спартакиада по тэг-регби среди учащихся 5-6 классов
-            общеобразовательных учреждений Ростовской области
-          </div>
-        </td>
-        <td class="admin-table-td pl-2 pr-2">
-          <div class="flex">
-            <label class="btn btn--link btn--primary">
-              <input type="file" accept="application/pdf">
-              Добавить
-            </label>
-
-          </div>
-        </td>
-        <td class="admin-table-td p-1" colspan="2">
           <div class="text-body-2 fade-80">Загружен</div>
         </td>
-        <td class="admin-table-td p-1">
+        <td class="admin-table-td p-2">
           <button class="lk-team__edit btn btn--primary btn--light btn-icon">
             <svg class="icon">
               <use xlink:href="img/icons.svg#setting"></use>
             </svg>
           </button>
         </td>
+
       </tr>
       <tr>
+        <td class="admin-table-td">
+          <div class="text-body-2 fade-80 px-3">1</div>
+        </td>
         <td class="admin-table-td pl-2 pr-2">
-          <div class="text-body-2 fade-80">Броненосцы vs Титаны</div>
+          <div class="text-body-2 fade-80">Броненосцы / Титаны</div>
         </td>
         <td class="admin-table-td pl-2 pr-2">
           <div class="text-body-2 fade-80">21:3</div>
         </td>
         <td class="admin-table-td pl-2 pr-2">
-          <div class="text-body-2 fade-80">25.01.22</div>
-        </td>
-        <td class="admin-table-td pl-2 pr-2">
-          <div class="text-body-2 fade-80">Геленджик</div>
-        </td>
-        <td class="admin-table-td pl-2 pr-2">
           <div class="text-body-2 fade-80">
-            Спартакиада по тэг-регби среди учащихся 5-6 классов
-            общеобразовательных учреждений Ростовской области
+            25.01.22 <br>
+            14:00
           </div>
         </td>
         <td class="admin-table-td pl-2 pr-2">
-          <div class="flex">
-            <label class="btn btn--link btn--primary disabled" >
-              <input type="file" accept="application/pdf">
-              Добавить
-            </label>
-
-          </div>
+          <div class="text-body-2 fade-80">Константинов И.</div>
         </td>
-        <td class="admin-table-td p-1" colspan="2">
+        <td class="admin-table-td pl-2 pr-2">
+          <div class="text-body-2 fade-80">Дворец спорта Олимп</div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2">
+          <div class="text-body-2 fade-80">Ростов</div>
+        </td>
+
+        <td class="admin-table-td pl-2 pr-2">
+          <div class="text-body-2 fade-80">Муниципальный</div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2">
+          <div class="text-body-2 fade-80 text--center">А</div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2">
+          <button class="btn btn--primary btn--link">Добавить</button>
+        </td>
+        <td class="admin-table-td pl-2 pr-2">
           <div class="text-body-2 fade-80">Загружен</div>
         </td>
-        <td class="admin-table-td p-1">
+        <td class="admin-table-td p-2">
           <button class="lk-team__edit btn btn--primary btn--light btn-icon">
             <svg class="icon">
               <use xlink:href="img/icons.svg#setting"></use>
             </svg>
           </button>
         </td>
+
       </tr>
 
 

@@ -2527,7 +2527,37 @@ body {
 }
 
 
-.large-dialog{
-	width: var(--section-width);
+.large-dialog {
+	width    : var(--section-width);
 	max-width: 100%;
+}
+
+.protocol-modal {
+	&-team {
+		&-table {
+			.admin-table-td {
+				border: none;
+			}
+
+			tr {
+				border: 1px solid #DDDDDD;
+			}
+
+			input.form-input {
+				width      : 68px;
+				height     : 36px;
+				line-height: 36px;
+			}
+		}
+	}
+
+	&-edit-table {
+		&__number {
+			width: 50px;
+		}
+
+		input.form-input {
+			border: none;
+		}
+	}
 }

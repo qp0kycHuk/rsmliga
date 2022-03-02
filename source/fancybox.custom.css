@@ -1,9 +1,8 @@
 .fancybox-custom-modal .fancybox__slide {
   padding: 15px;
-  padding-left: -webkit-calc(50% - var(--section-width) / 2);
   padding-left: calc(50% - var(--section-width) / 2);
-  padding-right: -webkit-calc(50% - var(--section-width) / 2);
   padding-right: calc(50% - var(--section-width) / 2);
+  overflow-x: hidden;
 }
 @media (max-width: 425.98px) {
   .fancybox-custom-modal .fancybox__slide {
@@ -19,8 +18,7 @@
     width: 100%;
     height: 100%;
     margin-top: 60px;
-    -webkit-border-radius: 16px 16px 0 0;
-            border-radius: 16px 16px 0 0;
+    border-radius: 16px 16px 0 0;
   }
 }
 .fancybox-custom-modal .carousel__button.is-close {
@@ -39,8 +37,7 @@
     top: 16px;
     right: 16px;
     padding: 0;
-    -webkit-border-radius: 50%;
-            border-radius: 50%;
+    border-radius: 50%;
     background: #F3F3F5;
   }
 }

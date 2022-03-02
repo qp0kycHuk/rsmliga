@@ -2297,3 +2297,20 @@ body.menu-opened > *:not(.mobile-menu) {
   width: var(--section-width);
   max-width: 100%;
 }
+.protocol-modal-team-table .admin-table-td {
+  border: none;
+}
+.protocol-modal-team-table tr {
+  border: 1px solid #DDDDDD;
+}
+.protocol-modal-team-table input.form-input {
+  width: 68px;
+  height: 36px;
+  line-height: 36px;
+}
+.protocol-modal-edit-table__number {
+  width: 50px;
+}
+.protocol-modal-edit-table input.form-input {
+  border: none;
+}

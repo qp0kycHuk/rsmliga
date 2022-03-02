@@ -2561,3 +2561,58 @@ body {
 		}
 	}
 }
+
+
+.color-select {
+	display      : flex;
+	align-items  : center;
+	background   : #F3F3F3;
+	border-radius: 6px;
+
+	position: relative;
+
+	&-title {
+		padding: 5px;
+	}
+
+	&-input {
+		display: none;
+	}
+
+	&-item {
+		display    : flex;
+		align-items: center;
+
+		&+& {
+			margin-top: 8px;
+		}
+
+		&__color {
+			width        : 26px;
+			height       : 26px;
+			border-radius: 6px;
+		}
+	}
+
+	&-list {
+		position     : absolute;
+		top          : 100%;
+		right        : 0;
+		background   : #FFFFFF;
+		box-shadow   : 0px 4px 20px rgba(26, 26, 26, 0.3);
+		border-radius: 6px;
+		padding      : 5px;
+		transition   : .2s ease;
+
+		&:not(.toggle-active) {
+			opacity       : 0;
+			pointer-events: none;
+			transform     : translateY(10px);
+
+		}
+	}
+
+	&-list &-item:hover {
+		text-decoration: underline;
+	}
+}

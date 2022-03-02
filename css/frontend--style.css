@@ -2314,3 +2314,51 @@ body.menu-opened > *:not(.mobile-menu) {
 .protocol-modal-edit-table input.form-input {
   border: none;
 }
+.color-select {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+          align-items: center;
+  background: #F3F3F3;
+  border-radius: 6px;
+  position: relative;
+}
+.color-select-title {
+  padding: 5px;
+}
+.color-select-input {
+  display: none;
+}
+.color-select-item {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.color-select-item + .color-select-item {
+  margin-top: 8px;
+}
+.color-select-item__color {
+  width: 26px;
+  height: 26px;
+  border-radius: 6px;
+}
+.color-select-list {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 20px rgba(26, 26, 26, 0.3);
+  border-radius: 6px;
+  padding: 5px;
+  transition: 0.2s ease;
+}
+.color-select-list:not(.toggle-active) {
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+}
+.color-select-list .color-select-item:hover {
+  text-decoration: underline;
+}

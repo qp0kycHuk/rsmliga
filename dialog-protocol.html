@@ -581,14 +581,14 @@
 				<td class="admin-table-td ">
 					<label class="form-field ">
 						<div class="form-input-cover">
-							<input type="text" class="form-input">
+							<input type="text" class="form-input" value="test value">
 						</div>
 					</label>
 				</td>
 				<td class="admin-table-td ">
 					<label class="form-field ">
 						<div class="form-input-cover">
-							<input type="text" class="form-input">
+							<input type="text" class="form-input" value="test value">
 						</div>
 					</label>
 				</td>
@@ -697,9 +697,11 @@
 
 	(() => {
 		const warning_table = document.querySelector('#warning-table')
-		const warning_row = warning_table.querySelector('.protocol-modal-edit-table__row').cloneNode(true)
+		const warning_row = warning_table.querySelector('.protocol-modal-edit-table__row').cloneNode(true);
+		[...warning_row.querySelectorAll('input, select, textarea')].map((input) => input.value = '')
 		const error_table = document.querySelector('#error-table')
-		const error_row = error_table.querySelector('.protocol-modal-edit-table__row').cloneNode(true)
+		const error_row = error_table.querySelector('.protocol-modal-edit-table__row').cloneNode(true);
+		[...error_row.querySelectorAll('input, select, textarea')].map((input) => input.value = '')
 
 		function clickHandler(event) {
 			if (event.target.closest('.-add-warning-')) {

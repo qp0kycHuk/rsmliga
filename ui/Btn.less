@@ -15,7 +15,8 @@
 	align-items    : center;
 	justify-content: center;
 
-	height       : 46px;
+	--size       : 46px;
+	height       : var(--size);
 	padding      : 0 22px;
 	border-radius: 4px;
 
@@ -309,21 +310,10 @@
 
 
 
-	&-fab {
-		width        : 44px;
-		height       : 44px;
-		border-radius: 50%;
-		padding      : 0;
 
-		display        : flex;
-		align-items    : center;
-		justify-content: center;
-
-
-	}
 
 	&-small {
-		height: 32px;
+		--size: 32px;
 	}
 
 	&-small&-fab {
@@ -351,8 +341,14 @@
 	}
 
 
+
+	&-fab,
 	&-icon {
-		width  : 32px;
+		width  : var(--size);
 		padding: 0;
+	}
+
+	&-fab {
+		border-radius: 50%;
 	}
 }

@@ -305,6 +305,7 @@ body {
 		right         : 12px;
 		top           : 100%;
 		width         : max-content;
+		max-width     : 242px;
 		background    : #FFFFFF;
 		box-shadow    : 0px 4px 20px rgba(26, 26, 26, 0.3);
 		border-radius : 12px;
@@ -326,6 +327,33 @@ body {
 				}
 			}
 		}
+
+		&-link {
+			display      : flex;
+			align-items  : center;
+			border-radius: 8px;
+			transition   : .2s ease;
+
+			@media(hover) {
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+
+			&:active {
+				transform: translateY(1px);
+			}
+
+			&.toggle-active {
+				background: #F1F3F5;
+			}
+		}
+	}
+
+	&-submenu &-submenu {
+		right: auto;
+		left : calc(100% + 2px);
+		top  : 0;
 	}
 
 	&-link {

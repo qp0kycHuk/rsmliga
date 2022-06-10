@@ -80,7 +80,7 @@
 			toggleCover.style.height = isNaN(parseInt(height)) ? '0px' : parseInt(height) + 'px';
 			toggleCover.style.transition = toggleCover.scrollHeight / 2 + 'ms ease';
 			setTimeout(() => toggleCover.style.height = toggleCover.scrollHeight + 'px', 10);
-			// setTimeout(() => isActive() ? toggleCover.style.height = '' : null, 10 + toggleCover.scrollHeight);
+			setTimeout(() => isActive() ? toggleCover.style.height = '' : null, 10 + toggleCover.scrollHeight);
 			setTimeout(() => isActive() ? toggleCover.style.overflow = 'visible' : null, 10 + toggleCover.scrollHeight / 2);
 		}
 		const closeHeight = () => {

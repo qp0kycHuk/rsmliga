@@ -131,9 +131,11 @@ body.menu-opened > *:not(.mobile-menu) {
   }
 }
 @media (hover) {
+  .hover-link:hover,
   .hover-link-wrap:hover .hover-link {
     color: var(--color-primary);
     text-decoration: underline;
+    cursor: pointer;
   }
 }
 .hover-link-wrap:focus .hover-link {
@@ -2124,6 +2126,7 @@ body.menu-opened > *:not(.mobile-menu) {
   bottom: 100%;
   left: 0;
 }
+.dialog-large,
 .large-dialog {
   width: var(--section-width);
   max-width: 100%;
@@ -2187,4 +2190,53 @@ body.menu-opened > *:not(.mobile-menu) {
 }
 .color-select-list .color-select-item:hover {
   text-decoration: underline;
+}
+.color-turquoise {
+  color: #27A4AC;
+}
+.admin-table-td:first-of-type {
+  width: 50px;
+}
+.admin-table-td--title {
+  width: 300px;
+}
+@media (max-width: 1149.98px) {
+  .dialog-contest .pleyof-grid {
+    width: calc(100% + 32px);
+    margin-left: -16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    overflow: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .dialog-contest .pleyof-area {
+    width: -webkit-max-content;
+    width: max-content;
+  }
+  .dialog-contest .admin-table-td--title {
+    width: 128px;
+  }
+}
+@media (max-width: 729.98px) {
+  .dialog-contest .pleyof-item {
+    width: 152px;
+    height: 34px;
+  }
+}
+.dialog-team .lk-dude .lk-top-info__link {
+  background: #fff;
+}
+.dialog-header {
+  background: linear-gradient(180deg, #F3F3F3 calc(100% - 50px), rgba(0, 0, 0, 0) calc(100% - 50px)), url("../img/sempl/dialog-header-clouds.png") repeat-x bottom center / auto;
+  padding-top: 20px;
+  padding-bottom: 54px;
+  border-radius: 12px 12px 0px 0px;
+}
+@media (max-width: 729.98px) {
+  .dialog-header {
+    padding-bottom: 44px;
+    padding-right: 32px;
+    padding-left: 32px;
+  }
 }

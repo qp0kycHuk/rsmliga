@@ -2,24 +2,15 @@
   padding: 15px;
   padding-left: calc(50% - var(--section-width) / 2);
   padding-right: calc(50% - var(--section-width) / 2);
-  overflow-x: hidden;
 }
 @media (max-width: 425.98px) {
-  .fancybox-custom-modal .fancybox__slide {
-    padding: 0;
-  }
 }
 .fancybox-custom-modal .fancybox__content {
   padding: 0;
   background: none;
+  max-width: 100%;
 }
 @media (max-width: 425.98px) {
-  .fancybox-custom-modal .fancybox__content {
-    width: 100%;
-    height: 100%;
-    margin-top: 60px;
-    border-radius: 16px 16px 0 0;
-  }
 }
 .fancybox-custom-modal .carousel__button.is-close {
   position: fixed;
@@ -34,8 +25,8 @@
     position: absolute;
     width: 32px;
     height: 32px;
-    top: 16px;
-    right: 16px;
+    top: 4px;
+    right: 4px;
     padding: 0;
     border-radius: 50%;
     background: #F3F3F5;
@@ -43,8 +34,7 @@
 }
 @media (max-width: 425.98px) {
   .fancybox-custom-modal .carousel__button.is-close svg {
-    -webkit-filter: none;
-            filter: none;
+    filter: none;
     color: #000;
     width: 12px;
     height: 12px;

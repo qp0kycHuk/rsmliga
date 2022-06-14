@@ -175,9 +175,12 @@ body {
 }
 
 @media(hover) {
+
+	.hover-link:hover,
 	.hover-link-wrap:hover .hover-link {
 		color          : var(--color-primary);
 		text-decoration: underline;
+		cursor         : pointer;
 	}
 }
 
@@ -2554,7 +2557,7 @@ body {
 	}
 }
 
-
+.dialog-large,
 .large-dialog {
 	width    : var(--section-width);
 	max-width: 100%;
@@ -2642,5 +2645,70 @@ body {
 
 	&-list &-item:hover {
 		text-decoration: underline;
+	}
+}
+
+.color-turquoise {
+	color: #27A4AC;
+}
+
+.admin-table-td:first-of-type {
+	width: 50px;
+}
+
+.admin-table-td--title {
+	width: 300px;
+}
+
+.dialog-contest {
+	@media(max-width:@lg) {
+
+		// width: max-content;
+		.pleyof-grid {
+			width         : calc(100% + 32px);
+			margin-left   : -16px;
+			padding-left  : 16px;
+			padding-right : 16px;
+			overflow      : auto;
+			padding-top   : 20px;
+			padding-bottom: 20px;
+		}
+
+		.pleyof-area {
+			width: max-content;
+		}
+
+		.admin-table-td--title {
+			width: 128px;
+		}
+	}
+
+	@media(max-width:@md) {
+		.pleyof-item {
+			width : 152px;
+			height: 34px;
+		}
+	}
+
+}
+
+.dialog-team {
+	.lk-dude .lk-top-info__link {
+		background: #fff;
+	}
+}
+
+.dialog-header {
+	background:
+		linear-gradient(180deg, #F3F3F3 calc(100% - 50px), rgba(0, 0, 0, 0) calc(100% - 50px)),
+		url("../img/sempl/dialog-header-clouds.png") repeat-x bottom center / auto;
+	padding-top   : 20px;
+	padding-bottom: 54px;
+	border-radius : 12px 12px 0px 0px;
+
+	@media(max-width:@md) {
+		padding-bottom: 44px;
+		padding-right: 32px;
+		padding-left: 32px;
 	}
 }

@@ -2240,3 +2240,12 @@ body.menu-opened > *:not(.mobile-menu) {
     padding-left: 32px;
   }
 }
+.admin-search {
+  width: 356px;
+}
+.admin-search .form-input {
+  height: 40px;
+}
+input.admin-search .form-input {
+  line-height: 40;
+}

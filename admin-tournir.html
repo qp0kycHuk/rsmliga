@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Личный кабинет</title>
+
+
+  <link rel="stylesheet" href="source/fancybox.css">
+  <link rel="stylesheet" href="source/fancybox.custom.css">
+  <link rel="stylesheet" href="source/swiper-bundle.min.css">
+  <link rel="stylesheet" href="source/swiper-custom.css">
+  <link rel="stylesheet" href="source/air-datepicker.css">
+
+  <script src="source/swiper-bundle.min.js"></script>
+  <script src="source/air-datepicker.js"></script>
+
+  <link rel="stylesheet" href="css/ui-reset.css">
+  <link rel="stylesheet" href="css/ui-core.css">
+  <link rel="stylesheet" href="css/frontend--fonts.css">
+  <link rel="stylesheet" href="css/frontend--style.css">
+</head>
+
+<body>
+
+
+  <header class="admin-header">
+    <div class="admin-header-user flex flex-align-center">
+      <div class="admin-header-user__img image image--round image--box image--cover mr-2" style="width: 34px;">
+        <img src="https://d.radikal.ru/d30/2102/dc/ab0fd85247a7.jpg" alt="">
+      </div>
+      <div class="text-body-2 text--demibold">Евгения Лиссова</div>
+
+      <button class="admin-header-user__exit ml-auto btn btn--primary btn--light btn-icon">
+        <svg class="icon">
+          <use xlink:href="img/icons.svg#exit" />
+        </svg>
+      </button>
+    </div>
+
+    <button class="btn btn--primary btn--fill admin-header-btn">На сайт</button>
+  </header>
+
+  <div class="admin-menu " data-toggle-cover data-toggle-static>
+    <button class="admin-menu__item btn btn--primary mb-1" data-toggle-link>
+      <svg class="icon text-h6">
+        <use xlink:href="img/icons.svg#menu" />
+      </svg>
+      <div class="text-body-1 color-text ml-2 active-enabled">Свернуть меню</div>
+    </button>
+    <button class="admin-menu__item btn btn--primary mb-1">
+      <svg class="icon text-subtitle-2">
+        <use xlink:href="img/icons.svg#doc" />
+      </svg>
+      <div class="text-body-1 text--demibold color-text ml-3 active-enabled">Заявки</div>
+    </button>
+    <button class="admin-menu__item btn btn--primary btn--light">
+      <svg class="icon text-subtitle-2">
+        <use xlink:href="img/icons.svg#ball" />
+      </svg>
+      <div class="text-body-1 text--demibold color-text ml-3 active-enabled">Матчи</div>
+      <div class="btn btn-fab btn--primary btn--white-bg active-enabled ml-auto admin-menu__add">
+        <svg class="icon">
+          <use xlink:href="img/icons.svg#plus" />
+        </svg>
+      </div>
+    </button>
+  </div>
+
+  <section class="admin-content">
+
+
+
+    <div class="flex flex-align-center mb-6">
+      <div class="text-h3">Матчи</div>
+
+    </div>
+
+
+
+    <div class="lk-tabs tab-links print-d-none">
+      <button class="lk-tabs__item tab-link active">Новые</button>
+      <button class="lk-tabs__item tab-link ">Принятые</button>
+      <button class="lk-tabs__item tab-link ">Отклоненные</button>
+
+    </div>
+
+    <div class="flex mb-6 print-d-none">
+      <div class="admin-select" data-toggle-cover>
+        <div class="text-body-2 text--demibold">Соревнование</div>
+        <button class="admin-select-btn btn btn--primary btn--link ml-2" data-toggle-link>
+          Спартакиада по тэг-регби среди учащихся 5-6 классов общ...
+          <svg class="icon ml-1 text-small-2">
+            <use xlink:href="img/icons.svg#triangle-right" />
+          </svg>
+        </button>
+        <div class="admin-select-list card py-1" data-toggle-content>
+          <div class="admin-select__item fade-60 py-1 px-4 text-body-2 text--demibold">Спартакиада по тэг-регби среди
+            учащихся 5-6 классов общ...</div>
+          <a href="javascript:;" class="admin-select__item py-1 px-4 text-body-2 text--demibold">Не Спартакиада по
+            тэг-регби среди учащихся 5-6 классов общ...</a>
+        </div>
+      </div>
+      <div class="admin-select ml-10" data-toggle-cover>
+        <div class="text-body-2 text--demibold">Этап</div>
+        <button class="admin-select-btn btn btn--primary btn--link ml-2" data-toggle-link>
+          Муниципальный
+          <svg class="icon ml-1 text-small-2">
+            <use xlink:href="img/icons.svg#triangle-right" />
+          </svg>
+        </button>
+        <div class="admin-select-list card py-1" data-toggle-content>
+          <div class="admin-select__item fade-60 py-1 px-4 text-body-2 text--demibold">Муниципальный</div>
+          <a href="javascript:;" class="admin-select__item py-1 px-4 text-body-2 text--demibold">Не Муниципальный</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="text-subtitle-2 text--bold mb-3">Группа А</div>
+
+    <table class="admin-table w-100 mb-6">
+      <tr class="admin-table-head">
+        <td class="admin-table-td">
+          <div class="text-small text--demibold py-1 text--center">№ ПП</div>
+        </td>
+        <td class="admin-table-td">
+          <div class="text-small text--demibold py-1">Название команды</div>
+        </td>
+        <td class="admin-table-td">
+          <div class="text-small text--demibold py-1 text--center">1</div>
+        </td>
+        <td class="admin-table-td">
+          <div class="text-small text--demibold py-1 text--center">2</div>
+        </td>
+        <td class="admin-table-td">
+          <div class="text-small text--demibold py-1 text--center">3</div>
+        </td>
+        <td class="admin-table-td">
+          <div class="text-small text--demibold py-1 text--center">Игры</div>
+        </td>
+        <td class="admin-table-td">
+          <div class="text-small text--demibold py-1 text--center">Разница мячей</div>
+        </td>
+        <td class="admin-table-td">
+          <div class="text-small text--demibold py-1 text--center">Очки</div>
+        </td>
+        <td class="admin-table-td">
+          <div class="text-small text--demibold py-1 text--center">Место</div>
+        </td>
+
+      </tr>
+      <tr>
+        <td class="admin-table-td py-4">
+          <div class="text-body-2 fade-80 px-3 text--center">1</div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2 py-4">
+          <div class="text-body-2 fade-80">Броненосцы</div>
+        </td>
+        <td class="admin-table-td px-4 py-4 bg-light"> </td>
+        <td class="admin-table-td px-4 py-4">
+          <div class="text-body-2 fade-80 text--center">21:3</div>
+        </td>
+        <td class="admin-table-td px-4 py-4">
+          <div class="text-body-2 fade-80 text--center">21:3</div>
+        </td>
+
+        <td class="admin-table-td pl-2 pr-2 py-4">
+          <div class="text-body-2 fade-80 text--center">2</div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2 py-4">
+          <div class="text-body-2 fade-80 text--center">27:44</div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2 py-4">
+          <div class="text-body-2 fade-80 text--center">6</div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2 py-4">
+          <div class="text-body-2 fade-80 text--center">1</div>
+        </td>
+
+
+
+      </tr>
+      <tr>
+        <td class="admin-table-td py-4">
+          <div class="text-body-2 fade-80 px-3 text--center">1</div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2 py-4">
+          <div class="text-body-2 fade-80">Титаны</div>
+        </td>
+        <td class="admin-table-td px-4 py-4">
+          <div class="text-body-2 fade-80 text--center">21:3</div>
+        </td>
+        <td class="admin-table-td px-4 py-4 bg-light"> </td>
+        <td class="admin-table-td px-4 py-4">
+          <div class="text-body-2 fade-80 text--center">21:3</div>
+        </td>
+
+        <td class="admin-table-td pl-2 pr-2 py-4">
+          <div class="text-body-2 fade-80 text--center">2</div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2 py-4">
+          <div class="text-body-2 fade-80 text--center">27:44</div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2 py-4">
+          <div class="text-body-2 fade-80 text--center">6</div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2 py-4">
+          <div class="text-body-2 fade-80 text--center">1</div>
+        </td>
+
+
+
+      </tr>
+      <tr>
+        <td class="admin-table-td py-4">
+          <div class="text-body-2 fade-80 px-3 text--center">1</div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2 py-4">
+          <div class="text-body-2 fade-80">Маугли</div>
+        </td>
+        <td class="admin-table-td px-4 py-4">
+          <div class="text-body-2 fade-80 text--center">21:3</div>
+        </td>
+        <td class="admin-table-td px-4 py-4">
+          <div class="text-body-2 fade-80 text--center">21:3</div>
+        </td>
+        <td class="admin-table-td px-4 py-4 bg-light"> </td>
+
+        <td class="admin-table-td pl-2 pr-2 py-4">
+          <div class="text-body-2 fade-80 text--center">2</div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2 py-4">
+          <div class="text-body-2 fade-80 text--center">27:44</div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2 py-4">
+          <div class="text-body-2 fade-80 text--center">6</div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2 py-4">
+          <div class="text-body-2 fade-80 text--center">1</div>
+        </td>
+
+
+
+      </tr>
+
+
+
+    </table>
+
+    <div class="text-subtitle-2 text--bold mb-3">Группа AZAZAZAXAZAXAZA</div>
+
+    <table class="admin-table w-100 mb-6">
+      <tr class="admin-table-head">
+        <td class="admin-table-td">
+          <div class="text-small text--demibold py-1 text--center">№ ПП</div>
+        </td>
+        <td class="admin-table-td">
+          <div class="text-small text--demibold py-1">Название команды</div>
+        </td>
+        <td class="admin-table-td">
+          <div class="text-small text--demibold py-1 text--center">1</div>
+        </td>
+        <td class="admin-table-td">
+          <div class="text-small text--demibold py-1 text--center">2</div>
+        </td>
+        <td class="admin-table-td">
+          <div class="text-small text--demibold py-1 text--center">3</div>
+        </td>
+        <td class="admin-table-td">
+          <div class="text-small text--demibold py-1 text--center">Игры</div>
+        </td>
+        <td class="admin-table-td">
+          <div class="text-small text--demibold py-1 text--center">Разница мячей</div>
+        </td>
+        <td class="admin-table-td">
+          <div class="text-small text--demibold py-1 text--center">Очки</div>
+        </td>
+        <td class="admin-table-td">
+          <div class="text-small text--demibold py-1 text--center">Место</div>
+        </td>
+
+      </tr>
+      <tr>
+        <td class="admin-table-td py-4">
+          <div class="text-body-2 fade-80 px-3 text--center">1</div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2 py-4">
+          <div class="text-body-2 fade-80">Броненосцы</div>
+        </td>
+        <td class="admin-table-td px-4 py-4 bg-light"> </td>
+        <td class="admin-table-td px-4 py-4">
+          <div class="text-body-2 fade-80 text--center">21:3</div>
+        </td>
+        <td class="admin-table-td px-4 py-4">
+          <div class="text-body-2 fade-80 text--center">21:3</div>
+        </td>
+
+        <td class="admin-table-td pl-2 pr-2 py-4">
+          <div class="text-body-2 fade-80 text--center">2</div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2 py-4">
+          <div class="text-body-2 fade-80 text--center">27:44</div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2 py-4">
+          <div class="text-body-2 fade-80 text--center">6</div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2 py-4">
+          <div class="text-body-2 fade-80 text--center">1</div>
+        </td>
+
+
+
+      </tr>
+      <tr>
+        <td class="admin-table-td py-4">
+          <div class="text-body-2 fade-80 px-3 text--center">1</div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2 py-4">
+          <div class="text-body-2 fade-80">Титаны</div>
+        </td>
+        <td class="admin-table-td px-4 py-4">
+          <div class="text-body-2 fade-80 text--center">21:3</div>
+        </td>
+        <td class="admin-table-td px-4 py-4 bg-light"> </td>
+        <td class="admin-table-td px-4 py-4">
+          <div class="text-body-2 fade-80 text--center">21:3</div>
+        </td>
+
+        <td class="admin-table-td pl-2 pr-2 py-4">
+          <div class="text-body-2 fade-80 text--center">2</div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2 py-4">
+          <div class="text-body-2 fade-80 text--center">27:44</div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2 py-4">
+          <div class="text-body-2 fade-80 text--center">6</div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2 py-4">
+          <div class="text-body-2 fade-80 text--center">1</div>
+        </td>
+
+
+
+      </tr>
+      <tr>
+        <td class="admin-table-td py-4">
+          <div class="text-body-2 fade-80 px-3 text--center">1</div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2 py-4">
+          <div class="text-body-2 fade-80">Маугли</div>
+        </td>
+        <td class="admin-table-td px-4 py-4">
+          <div class="text-body-2 fade-80 text--center">21:3</div>
+        </td>
+        <td class="admin-table-td px-4 py-4">
+          <div class="text-body-2 fade-80 text--center">21:3</div>
+        </td>
+        <td class="admin-table-td px-4 py-4 bg-light"> </td>
+
+        <td class="admin-table-td pl-2 pr-2 py-4">
+          <div class="text-body-2 fade-80 text--center">2</div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2 py-4">
+          <div class="text-body-2 fade-80 text--center">27:44</div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2 py-4">
+          <div class="text-body-2 fade-80 text--center">6</div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2 py-4">
+          <div class="text-body-2 fade-80 text--center">1</div>
+        </td>
+
+
+
+      </tr>
+
+
+
+    </table>
+  </section>
+
+
+
+  <!-- fancybox modals -->
+  <script src="source/fancybox.umd.js"></script>
+  <script src="source/fancybox.custom.js"></script>
+
+  <script src="source/ui--toggle.js"></script>
+
+  <script src="js/script.js"></script>
+
+  <script>
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Личный кабинет</title>
+
+
+  <link rel="stylesheet" href="source/fancybox.css">
+  <link rel="stylesheet" href="source/fancybox.custom.css">
+  <link rel="stylesheet" href="source/swiper-bundle.min.css">
+  <link rel="stylesheet" href="source/swiper-custom.css">
+  <link rel="stylesheet" href="dist/style.css">
+  <script src="dist/index.js"></script>
+
+  <script src="source/swiper-bundle.min.js"></script>
+
+
+  <link rel="stylesheet" href="css/ui-reset.css">
+  <link rel="stylesheet" href="css/ui-core.css">
+  <link rel="stylesheet" href="css/frontend--fonts.css">
+  <link rel="stylesheet" href="css/frontend--style.css">
+</head>
+
+<body>
+
+  <header class="admin-header">
+    <div class="admin-header-user flex flex-align-center">
+      <div class="admin-header-user__img image image--round image--box image--cover mr-2" style="width: 34px;">
+        <img src="https://d.radikal.ru/d30/2102/dc/ab0fd85247a7.jpg" alt="">
+      </div>
+      <div class="text-body-2 text--demibold">Евгения Лиссова</div>
+
+      <button class="admin-header-user__exit ml-auto btn btn--primary btn--light btn-icon">
+        <svg class="icon">
+          <use xlink:href="img/icons.svg#exit" />
+        </svg>
+      </button>
+    </div>
+
+    <button class="btn btn--primary btn--fill admin-header-btn">На сайт</button>
+  </header>
+
+  <div class="admin-menu " data-toggle-cover data-toggle-static>
+    <button class="admin-menu__item btn btn--primary mb-1" data-toggle-link>
+      <svg class="icon text-h6">
+        <use xlink:href="img/icons.svg#menu" />
+      </svg>
+      <div class="text-body-1 color-text ml-2 active-enabled">Свернуть меню</div>
+    </button>
+    <button class="admin-menu__item btn btn--primary">
+      <svg class="icon text-subtitle-2">
+        <use xlink:href="img/icons.svg#doc" />
+      </svg>
+      <div class="text-body-1 text--demibold color-text ml-3 active-enabled">Заявки</div>
+    </button>
+    <button class="admin-menu__item btn btn--primary mb-1">
+      <svg class="icon text-subtitle-2">
+        <use xlink:href="img/icons.svg#ball" />
+      </svg>
+      <div class="text-body-1 text--demibold color-text ml-3 active-enabled">Матчи</div>
+      <div class="btn btn-fab btn--primary btn--white-bg active-enabled ml-auto admin-menu__add">
+        <svg class="icon">
+          <use xlink:href="img/icons.svg#plus" />
+        </svg>
+      </div>
+    </button>
+    <button class="admin-menu__item btn btn--primary btn--light">
+      <svg class="icon text-subtitle-2">
+        <use xlink:href="img/icons.svg#contest" />
+      </svg>
+      <div class="text-body-1 text--demibold color-text ml-3 active-enabled">Сореванования</div>
+      <div class="btn btn-fab btn--primary btn--white-bg active-enabled ml-auto admin-menu__add">
+        <svg class="icon">
+          <use xlink:href="img/icons.svg#plus" />
+        </svg>
+      </div>
+    </button>
+  </div>
+
+  <section class="admin-content">
+    <div class="text-h3 mb-6">Соревнования</div>
+    <div class="flex mb-6">
+      <div class="admin-select" data-toggle-cover="">
+        <div class="text-body-2 text--demibold">Сезон</div>
+        <button class="admin-select-btn btn btn--primary btn--link ml-2" data-toggle-link="">
+          2020 -2021
+          <svg class="icon ml-1 text-small-2">
+            <use xlink:href="img/icons.svg#triangle-right"></use>
+          </svg>
+        </button>
+        <div class="admin-select-list card py-1" data-toggle-content="">
+          <div class="admin-select__item fade-60 py-1 px-4 text-body-2 text--demibold">2020 -2021</div>
+          <a href="javascript:;" class="admin-select__item py-1 px-4 text-body-2 text--demibold">2020 -2022</a>
+          <a href="javascript:;" class="admin-select__item py-1 px-4 text-body-2 text--demibold">2020 -2023</a>
+        </div>
+      </div>
+
+      <button class=" ml-auto btn btn--primary btn--link" data-fancybox-modal="" data-src="dialog-lk-contest.html"
+        data-type="ajax">
+        <svg class="icon mr-2">
+          <use xlink:href="img/icons.svg#plus"></use>
+        </svg>
+        <div class="text-body-2 text--demibold">Добавить сорвнование</div>
+      </button>
+    </div>
+
+    <table class="admin-table w-100">
+      <tr class="admin-table-head">
+        <td class="admin-table-td"> </td>
+        <td class="admin-table-td">
+          <div class="text-small text--demibold">Название</div>
+        </td>
+        <td class="admin-table-td">
+          <div class="text-small text--demibold">Сезон</div>
+        </td>
+        <td class="admin-table-td">
+          <div class="text-small text--demibold">Этапы проведения</div>
+        </td>
+        <td class="admin-table-td"> </td>
+
+      </tr>
+      <tr>
+        <td class="admin-table-td">
+          <div class="text-body-2 fade-80 px-3">1</div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2">
+          <div class="text-body-2 fade-80">
+            Соревнования по тэг-регби среди команд 2011-2012 г.р. общеобразовательных учреждений <br>
+            Ростовской области
+          </div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2">
+          <div class="text-body-2 fade-80">2020-2021</div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2">
+          <div class="text-body-2 fade-80">
+            1. Внтуришкольный 2. Муниципальный 3. Зональный 4. Финал
+          </div>
+        </td>
+
+        <td class="admin-table-td p-2">
+          <button class="lk-team__edit btn btn--primary btn--light btn-icon">
+            <svg class="icon">
+              <use xlink:href="img/icons.svg#setting"></use>
+            </svg>
+          </button>
+        </td>
+
+      </tr>
+      <tr>
+        <td class="admin-table-td">
+          <div class="text-body-2 fade-80 px-3">1</div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2">
+          <div class="text-body-2 fade-80">
+            Соревнования по тэг-регби среди команд 2011-2012 г.р. общеобразовательных учреждений <br>
+            Ростовской области
+          </div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2">
+          <div class="text-body-2 fade-80">2020-2021</div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2">
+          <div class="text-body-2 fade-80">
+            1. Внтуришкольный 2. Муниципальный 3. Зональный 4. Финал
+          </div>
+        </td>
+
+        <td class="admin-table-td p-2">
+          <button class="lk-team__edit btn btn--primary btn--light btn-icon">
+            <svg class="icon">
+              <use xlink:href="img/icons.svg#setting"></use>
+            </svg>
+          </button>
+        </td>
+
+      </tr>
+      <tr>
+        <td class="admin-table-td">
+          <div class="text-body-2 fade-80 px-3">1</div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2">
+          <div class="text-body-2 fade-80">
+            Соревнования по тэг-регби среди команд 2011-2012 г.р. общеобразовательных учреждений <br>
+            Ростовской области
+          </div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2">
+          <div class="text-body-2 fade-80">2020-2021</div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2">
+          <div class="text-body-2 fade-80">
+            1. Внтуришкольный 2. Муниципальный 3. Зональный 4. Финал
+          </div>
+        </td>
+
+        <td class="admin-table-td p-2">
+          <button class="lk-team__edit btn btn--primary btn--light btn-icon">
+            <svg class="icon">
+              <use xlink:href="img/icons.svg#setting"></use>
+            </svg>
+          </button>
+        </td>
+
+      </tr>
+
+
+    </table>
+  </section>
+
+
+
+
+  <script src="source/fancybox.umd.js"></script>
+  <script src="source/fancybox.custom.js"></script>
+
+  <script src="source/ui--toggle.js"></script>
+
+  <script src="js/script.js"></script>
+
+  <script>
+
+  </script>
+</body>
+
+</html>

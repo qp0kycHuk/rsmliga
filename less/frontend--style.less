@@ -2724,3 +2724,55 @@ body {
 		}
 	}
 }
+
+@media print {
+	body {
+		background: none;
+
+	}
+
+	section,
+	footer,
+	header,
+	.container {
+		width        : 100%;
+		padding-left : 0;
+		padding-right: 0;
+
+	}
+
+	.print-d-none,
+	.admin-menu,
+	.admin-header {
+		display: none;
+	}
+
+	.admin-table tr {
+		page-break-inside: avoid;
+	}
+}
+
+.air-datepicker-global-container {
+	z-index: 1152;
+}
+
+.air-datepicker {
+	--adp-accent-color                        : var(--color-primary);
+	--adp-cell-background-color-selected      : var(--color-primary);
+	--adp-cell-background-color-selected-hover: var(--color-primary--dark);
+}
+
+.contest-image {
+	&__btn {}
+
+	&__name {}
+
+	&:not(.added) &__delete,
+	&:not(.added) &__name {
+		display: none;
+	}
+
+	&.added &__btn {
+		display: none;
+	}
+}

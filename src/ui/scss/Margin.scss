@@ -1,0 +1,102 @@
+
+@mixin Margin($direction:false) {
+	@for $i from 0 through 10 {
+		&-#{$i} {
+			@if $direction==x {
+				margin-left : calc(var(--spacing) * #{$i});
+				margin-right: calc(var(--spacing) * #{$i});
+
+			}
+
+			@else if $direction==y {
+				margin-top   : calc(var(--spacing) * #{$i});
+				margin-bottom: calc(var(--spacing) * #{$i});
+
+			}
+
+			@else if $direction {
+				margin-#{$direction} : calc(var(--spacing) * #{$i});
+
+			}
+
+			@else if $direction==false {
+				margin : calc(var(--spacing) * #{$i});
+
+			}
+		}
+	}
+
+	&-auto {
+		@if $direction==x {
+			margin-left : auto;
+			margin-right: auto;
+
+		}
+
+		@else if $direction==y {
+			margin-top   : auto;
+			margin-bottom: auto;
+
+		}
+
+		@else if $direction {
+			margin-#{$direction}: auto;
+
+		}
+
+		@else if $direction==false {
+			margin: auto;
+
+		}
+	}
+}
+
+.m {
+	@include AddMedia {
+		@include Margin;
+
+	}
+
+
+	&x {
+		@include AddMedia {
+			@include Margin(x);
+
+		}
+	}
+
+	&y {
+		@include AddMedia {
+			@include Margin(y);
+
+		}
+	}
+
+	&b {
+		@include AddMedia {
+			@include Margin(bottom);
+
+		}
+	}
+
+	&t {
+		@include AddMedia {
+			@include Margin(top);
+
+		}
+	}
+
+	&l {
+		@include AddMedia {
+			@include Margin(left);
+
+		}
+	}
+
+	&r {
+		@include AddMedia {
+			@include Margin(right);
+
+		}
+	}
+}

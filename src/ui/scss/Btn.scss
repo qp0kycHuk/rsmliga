@@ -1,0 +1,344 @@
+// out: false
+
+@mixin btnColor($name, $accent:#fff) {
+	&--#{$name} {
+		--btn-color      : var(--color-#{$name});
+		--btn-color-light: var(--color-#{$name}-10);
+		--btn-text       : #{$accent};
+
+		@media (hover) {
+			&:hover {
+				--btn-color      : var(--color-#{$name}--dark);
+				--btn-color-light: var(--color-#{$name}-20);
+			}
+		}
+	}
+}
+
+.btn {
+	--btn-color-light: var(--color-text-20);
+	--btn-color      : var(--color-text);
+	--btn-text       : var(--bg3);
+
+	background : none;
+	border     : none;
+	outline    : none;
+	user-select: none;
+	position   : relative;
+
+	display        : flex;
+	align-items    : center;
+	justify-content: center;
+
+	--size       : 40px;
+	height       : var(--size);
+	padding      : 0 calc(var(--size) / 2);
+	border-radius: var(--radius-small);
+
+	font-size  : 14px;
+	font-family: var(--font-base);
+	font-weight: bold;
+
+	transition: .2s ease;
+
+
+	// default variant
+	color: var(--btn-color);
+
+
+	&:focus:not(:active) {
+		background: var(--btn-color-light);
+
+	}
+
+	&:focus {
+		z-index: 2;
+
+	}
+
+
+	@media (hover) {
+		&:hover {
+			--btn-color      : var(--color-text--dark);
+			--btn-color-light: var(--color-text-40);
+		}
+	}
+
+	&:active {
+		transform: translateY(2px);
+	}
+
+	&:not(a, button, label):active {
+		transform: none;
+	}
+
+	// size
+	&-lg,
+	&-large {
+		--size   : 52px;
+		font-size: 16px;
+	}
+
+	&-small {
+		--size   : 28px;
+		font-size: 12px;
+	}
+
+	// color
+	@include btnColor(#{"primary"});
+	@include btnColor(#{"sec"});
+	@include btnColor(#{"red"});
+	@include btnColor(#{"blue"});
+	@include btnColor(#{"green"});
+	@include btnColor(#{"yellow"});
+
+	&--color-icon {
+		--btn-color      : var(--color-icon);
+		--btn-color-light: var(--color-icon-20);
+		--btn-text       : #fff;
+
+		@media (hover) {
+			&:hover {
+				--btn-color      : var(--color-icon--dark);
+				--btn-color-light: var(--color-icon-30);
+			}
+		}
+	}
+
+
+
+	&--white {
+		--btn-color      : #fff;
+		--btn-color-light: rgba(255, 255, 255, 0.6);
+		--btn-text       : var(--color-text);
+
+		@media (hover) {
+			&:hover {
+				--btn-color      : #fff;
+				--btn-color-light: rgba(255, 255, 255, 0.7);
+			}
+		}
+	}
+
+	&--gray {
+		--btn-color      : rgba(49, 49, 49, 0.6);
+		--btn-color-light: #F5F7FB;
+		--btn-text       : #fff;
+
+		@media (hover) {
+			&:hover {
+				--btn-color      : rgba(49, 49, 49, 0.6);
+				--btn-color-light: #eef0f5;
+			}
+		}
+	}
+
+
+
+	&:not(&--fill):not(&--light):not(&--contur):not(&--link):not(&--white-bg) {
+		@media(hover) {
+			&:hover {
+				background: var(--btn-color-light);
+
+			}
+		}
+	}
+
+
+	// variant
+
+
+
+	&--fill {
+		background: var(--btn-color);
+		color     : var(--btn-text);
+		border    : transparent;
+
+
+
+		&:focus:not(:active) {
+			background: var(--btn-color);
+			box-shadow: 0 0 0 5px var(--btn-color-light);
+
+		}
+
+	}
+
+	&--light {
+		background: var(--btn-color-light);
+		color     : var(--btn-color);
+
+		&:focus:not(:active) {
+			box-shadow: 0 0 0 2px var(--btn-color);
+			background: var(--btn-color-light);
+		}
+	}
+
+	&--contur {
+		background: transparent;
+		border    : 1px solid var(--btn-color);
+		color     : var(--btn-color);
+
+		@media(hover) {
+			&:hover {
+				background: var(--btn-color-light);
+			}
+		}
+
+		&:focus:not(:active) {
+			background: var(--btn-color-light);
+			box-shadow: 0 0 0 1px var(--btn-color), 0 0 0 5px var(--btn-color-light);
+		}
+	}
+
+	&--link {
+		padding: 0;
+		width  : auto;
+		height : auto;
+
+		background: transparent;
+		color     : var(--btn-color);
+
+		// border-bottom: 1px solid var(--btn-color);
+		border-radius: 0;
+
+
+		&:focus:not(:active) {
+			background: var(--btn-color-light);
+			box-shadow: 0 0 0 5px var(--btn-color-light);
+		}
+	}
+
+	&--white-bg {
+		background: var(--bg3);
+		box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
+
+		@media(hover) {
+			&:hover {
+				background: var(--bg3);
+				box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12), 0 0 0 1px var(--btn-color);
+			}
+		}
+
+		&:focus:not(:active) {
+			background: var(--bg3);
+			box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12), 0 0 0 2px var(--btn-color);
+
+		}
+	}
+
+	// mod
+	&--shadow {
+		box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+
+		&:focus:not(:active) {
+			box-shadow:
+				0px 4px 10px rgba(0, 0, 0, 0.08),
+				0 0 0 5px var(--btn-color-light);
+		}
+	}
+
+	&:disabled {
+		opacity       : 0.4;
+		pointer-events: none;
+	}
+
+	&-fab,
+	&-icon {
+		width  : var(--size);
+		padding: 0;
+	}
+
+	&-fab {
+		border-radius: 50%;
+	}
+
+	&-active--primary.active,
+	&-active--primary.tab-active,
+	&-active--primary.toggle-active {
+		--btn-color      : var(--color-primary);
+		--btn-color-light: var(--color-primary-10);
+		--btn-text       : #fff;
+
+		@media (hover) {
+			&:hover {
+				--btn-color      : var(--color-primary--dark);
+				--btn-color-light: var(--color-primary-30);
+			}
+		}
+	}
+
+
+	&-active--fill.active,
+	&-active--fill.tab-active,
+	&-active--fill.toggle-active {
+		background: var(--btn-color);
+		color     : var(--btn-text);
+		border    : transparent;
+
+		&:focus:not(:active) {
+			background: var(--btn-color);
+			box-shadow: 0 0 0 5px var(--btn-color-light);
+
+		}
+
+	}
+
+	&-active--light.active,
+	&-active--light.tab-active,
+	&-active--light.toggle-active {
+		background: var(--btn-color-light);
+		color     : var(--btn-color);
+
+		&:focus:not(:active) {
+			box-shadow: 0 0 0 2px var(--btn-color);
+
+		}
+	}
+
+	&-active--contur.active,
+	&-active--contur.tab-active,
+	&-active--contur.toggle-active {
+		background: transparent;
+		border    : 1px solid var(--btn-color);
+		color     : var(--btn-color);
+
+		&:focus:not(:active) {
+			background: var(--btn-color-light);
+			box-shadow: 0 0 0 5px var(--btn-color-light);
+		}
+	}
+
+	&-active--link.active,
+	&-active--link.tab-active,
+	&-active--link.toggle-active {
+		padding: 0;
+		width  : auto;
+		height : auto;
+
+		background: transparent;
+		color     : var(--btn-color);
+
+		border-bottom: 1px solid var(--btn-color);
+		border-radius: 0;
+
+
+		&:focus:not(:active) {
+			background: var(--btn-color-light);
+			box-shadow: 0 0 0 5px var(--btn-color-light);
+		}
+	}
+
+	&-active--white-bg.active,
+	&-active--white-bg.tab-active,
+	&-active--white-bg.toggle-active {
+		background: #FFFFFF;
+		box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
+
+		&:focus:not(:active) {
+			background: #FFFFFF;
+			box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12), 0 0 0 2px var(--btn-color);
+
+		}
+	}
+}

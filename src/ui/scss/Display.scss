@@ -1,0 +1,31 @@
+// out:false
+
+@mixin Display {
+  &-flex {
+    display: flex !important;
+  }
+
+  &-none {
+    display: none !important;
+  }
+
+  &-block {
+    display: block !important;
+  }
+
+  &-inline {
+    display: inline !important;
+  }
+
+  &-inline-flex {
+    display: inline-flex !important;
+  }
+}
+
+.d {
+  @include AddMedia {
+    @include Display;
+
+  }
+
+}

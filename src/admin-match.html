@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Личный кабинет</title>
+
+
+
+</head>
+
+<body>
+
+
+  <header class="admin-header">
+    <div class="admin-header-user flex flex-align-center">
+      <div class="admin-header-user__img image image--round image--box image--cover mr-2" style="width: 34px;">
+        <img src="https://d.radikal.ru/d30/2102/dc/ab0fd85247a7.jpg" alt="">
+      </div>
+      <div class="text-body-2 text--demibold">Евгения Лиссова</div>
+
+      <button class="admin-header-user__exit ml-auto btn btn--primary btn--light btn-icon">
+        <svg class="icon">
+          <use xlink:href="img/icons.svg#exit" />
+        </svg>
+      </button>
+    </div>
+
+    <button class="btn btn--primary btn--fill admin-header-btn">На сайт</button>
+  </header>
+
+  <div class="admin-menu " data-toggle-cover data-toggle-static>
+    <button class="admin-menu__item btn btn--primary mb-1" data-toggle-link>
+      <svg class="icon text-h6">
+        <use xlink:href="img/icons.svg#menu" />
+      </svg>
+      <div class="text-body-1 color-text ml-2 active-enabled">Свернуть меню</div>
+    </button>
+    <button class="admin-menu__item btn btn--primary mb-1">
+      <svg class="icon text-subtitle-2">
+        <use xlink:href="img/icons.svg#doc" />
+      </svg>
+      <div class="text-body-1 text--demibold color-text ml-3 active-enabled">Заявки</div>
+    </button>
+    <button class="admin-menu__item btn btn--primary btn--light">
+      <svg class="icon text-subtitle-2">
+        <use xlink:href="img/icons.svg#ball" />
+      </svg>
+      <div class="text-body-1 text--demibold color-text ml-3 active-enabled">Матчи</div>
+      <div class="btn btn-fab btn--primary btn--white-bg active-enabled ml-auto admin-menu__add">
+        <svg class="icon">
+          <use xlink:href="img/icons.svg#plus" />
+        </svg>
+      </div>
+    </button>
+  </div>
+
+  <section class="admin-content">
+
+
+
+    <div class="flex flex-align-center mb-6">
+      <div class="text-h3">Матчи</div>
+
+    </div>
+
+
+
+    <div class="lk-tabs tab-links">
+      <button class="lk-tabs__item tab-link active">Новые</button>
+      <button class="lk-tabs__item tab-link ">Принятые</button>
+      <button class="lk-tabs__item tab-link ">Отклоненные</button>
+
+    </div>
+
+    <div class="flex mb-6">
+      <div class="admin-select" data-toggle-cover>
+        <div class="text-body-2 text--demibold">Соревнование</div>
+        <button class="admin-select-btn btn btn--primary btn--link ml-2" data-toggle-link>
+          Спартакиада по тэг-регби среди учащихся 5-6 классов общ...
+          <svg class="icon ml-1 text-small-2">
+            <use xlink:href="img/icons.svg#triangle-right" />
+          </svg>
+        </button>
+        <div class="admin-select-list card py-1" data-toggle-content>
+          <div class="admin-select__item fade-60 py-1 px-4 text-body-2 text--demibold">Спартакиада по тэг-регби среди
+            учащихся 5-6 классов общ...</div>
+          <a href="javascript:;" class="admin-select__item py-1 px-4 text-body-2 text--demibold">Не Спартакиада по
+            тэг-регби среди учащихся 5-6 классов общ...</a>
+        </div>
+      </div>
+      <div class="admin-select ml-10" data-toggle-cover>
+        <div class="text-body-2 text--demibold">Этап</div>
+        <button class="admin-select-btn btn btn--primary btn--link ml-2" data-toggle-link>
+          Муниципальный
+          <svg class="icon ml-1 text-small-2">
+            <use xlink:href="img/icons.svg#triangle-right" />
+          </svg>
+        </button>
+        <div class="admin-select-list card py-1" data-toggle-content>
+          <div class="admin-select__item fade-60 py-1 px-4 text-body-2 text--demibold">Муниципальный</div>
+          <a href="javascript:;" class="admin-select__item py-1 px-4 text-body-2 text--demibold">Не Муниципальный</a>
+        </div>
+      </div>
+
+      <button class=" ml-auto btn btn--primary btn--link" data-fancybox-modal data-src="dialog-match.html"
+        data-type="ajax">
+        <svg class="icon mr-2">
+          <use xlink:href="img/icons.svg#plus" />
+        </svg>
+        <div class="text-body-2 text--demibold">Добавить матч</div>
+      </button>
+    </div>
+
+
+    <table class="admin-table w-100">
+      <tr class="admin-table-head">
+        <td class="admin-table-td"> </td>
+        <td class="admin-table-td">
+          <div class="text-small text--demibold">Соперники</div>
+        </td>
+        <td class="admin-table-td">
+          <button class="btn btn--link btn--primary text-small text--demibold flex flex-align-center admin-select-btn">
+            Счет
+            <svg class="icon ml-2 text-small-2 fade-60">
+              <use xlink:href="img/icons.svg#triangle-right"></use>
+            </svg>
+          </button>
+        </td>
+        <td class="admin-table-td">
+          <button class="btn btn--link btn--primary color-text text-small text--demibold flex flex-align-center admin-select-btn">
+            Дата / Время
+            <svg class="icon ml-2 text-small-2 fade-60">
+              <use xlink:href="img/icons.svg#triangle-right"></use>
+            </svg>
+          </button>
+        </td>
+        <td class="admin-table-td">
+          <div class="text-small text--demibold">Судья</div>
+        </td>
+        <td class="admin-table-td">
+          <div class="text-small text--demibold">Место проведения</div>
+        </td>
+        <td class="admin-table-td">
+          <div class="text-small text--demibold">Город</div>
+        </td>
+        <td class="admin-table-td">
+          <div class="text-small text--demibold">Этап</div>
+        </td>
+        <td class="admin-table-td">
+          <div class="text-small text--demibold">Группа</div>
+        </td>
+        <td class="admin-table-td">
+          <div class="text-small text--demibold">Протокол</div>
+        </td>
+        <td class="admin-table-td">
+          <div class="text-small text--demibold">Статус</div>
+        </td>
+        <td class="admin-table-td">
+        </td>
+
+      </tr>
+      <tr>
+        <td class="admin-table-td">
+          <div class="text-body-2 fade-80 px-3">1</div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2">
+          <div class="text-body-2 fade-80">Броненосцы / Титаны</div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2">
+          <div class="text-body-2 fade-80">21:3</div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2">
+          <div class="text-body-2 fade-80">
+            25.01.22 <br>
+            14:00
+          </div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2">
+          <div class="text-body-2 fade-80">Константинов И.</div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2">
+          <div class="text-body-2 fade-80">Дворец спорта Олимп</div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2">
+          <div class="text-body-2 fade-80">Ростов</div>
+        </td>
+
+        <td class="admin-table-td pl-2 pr-2">
+          <div class="text-body-2 fade-80">Муниципальный</div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2">
+          <div class="text-body-2 fade-80 text--center">А</div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2">
+          <div class="flex">
+            <button class="btn btn--text btn--link">Скачать</button>
+            <div class="ml-auto">
+              <button class="lk-team__edit btn btn--primary btn--light btn-icon">
+                <svg class="icon">
+                  <use xlink:href="img/icons.svg#edit"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="ml-2">
+              <button class="lk-team__edit  btn btn--primary btn--light btn-icon">
+                <svg class="icon">
+                  <use xlink:href="img/icons.svg#delete"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2">
+          <div class="text-body-2 fade-80">Загружен</div>
+        </td>
+        <td class="admin-table-td p-2">
+          <button class="lk-team__edit btn btn--primary btn--light btn-icon">
+            <svg class="icon">
+              <use xlink:href="img/icons.svg#setting"></use>
+            </svg>
+          </button>
+        </td>
+
+      </tr>
+      <tr>
+        <td class="admin-table-td">
+          <div class="text-body-2 fade-80 px-3">1</div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2">
+          <div class="text-body-2 fade-80">Броненосцы / Титаны</div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2">
+          <div class="text-body-2 fade-80">21:3</div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2">
+          <div class="text-body-2 fade-80">
+            25.01.22 <br>
+            14:00
+          </div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2">
+          <div class="text-body-2 fade-80">Константинов И.</div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2">
+          <div class="text-body-2 fade-80">Дворец спорта Олимп</div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2">
+          <div class="text-body-2 fade-80">Ростов</div>
+        </td>
+
+        <td class="admin-table-td pl-2 pr-2">
+          <div class="text-body-2 fade-80">Муниципальный</div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2">
+          <div class="text-body-2 fade-80 text--center">А</div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2">
+          <button class="btn btn--primary btn--link">Добавить</button>
+        </td>
+        <td class="admin-table-td pl-2 pr-2">
+          <div class="text-body-2 fade-80">Загружен</div>
+        </td>
+        <td class="admin-table-td p-2">
+          <button class="lk-team__edit btn btn--primary btn--light btn-icon">
+            <svg class="icon">
+              <use xlink:href="img/icons.svg#setting"></use>
+            </svg>
+          </button>
+        </td>
+
+      </tr>
+
+
+    </table>
+  </section>
+
+
+
+  <!-- fancybox modals -->
+
+</body>
+
+</html>

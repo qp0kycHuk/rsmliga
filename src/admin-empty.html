@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Личный кабинет</title>
+
+
+
+</head>
+
+<body>
+
+
+  <header class="admin-header">
+    <div class="admin-header-user flex flex-align-center">
+      <div class="admin-header-user__img image image--round image--box image--cover mr-2" style="width: 34px;">
+        <img src="https://d.radikal.ru/d30/2102/dc/ab0fd85247a7.jpg" alt="">
+      </div>
+      <div class="text-body-2 text--demibold">Евгения Лиссова</div>
+
+      <button class="admin-header-user__exit ml-auto btn btn--primary btn--light btn-icon">
+        <svg class="icon">
+          <use xlink:href="img/icons.svg#exit" />
+        </svg>
+      </button>
+    </div>
+
+    <button class="btn btn--primary btn--fill admin-header-btn">На сайт</button>
+  </header>
+
+  <div class="admin-menu " data-toggle-cover data-toggle-static>
+    <button class="admin-menu__item btn btn--primary mb-1" data-toggle-link>
+      <svg class="icon text-h6">
+        <use xlink:href="img/icons.svg#menu" />
+      </svg>
+      <div class="text-body-1 color-text ml-2 active-enabled">Свернуть меню</div>
+    </button>
+    <button class="admin-menu__item btn btn--primary btn--light">
+      <svg class="icon text-subtitle-2">
+        <use xlink:href="img/icons.svg#doc" />
+      </svg>
+      <div class="text-body-1 text--demibold color-text ml-3 active-enabled">Заявки</div>
+    </button>
+  </div>
+
+  <section class="admin-content">
+    <img src="img/sempl/travolta.png" alt="" class="d-block mx-auto mt-10">
+    <div class="mt-10 text--demibold text--center">
+      На данный момент заявок нет, но представители и их команды <br>
+      уже спешат добавить себя в список участников
+    </div>
+
+  </section>
+
+
+
+  <!-- fancybox modals -->
+
+</body>
+
+</html>

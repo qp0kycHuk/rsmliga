@@ -1,4 +1,4 @@
-<div class="lk-form-dialog fancybox-content card p-6">
+<div class="lk-form-dialog fancybox-content card p-6 dialog-contest">
 	<div class="form-dialog-header mb-6">
 		<div class="form-dialog-title title text-subtitle-2 text-md-h6">Добавить соревнование</div>
 	</div>
@@ -6,6 +6,7 @@
 		<div class="form-dialog-fields">
 			<label class="contest-image flex flex-align-center">
 				<input accept="image/*" type="file" placeholder="Добавить обложку">
+				<input type="hidden" name="del_file" value="N">
 				<svg class="icon color-primary mr-3">
 					<use xlink:href="img/icons.svg#image" />
 				</svg>
@@ -171,13 +172,6 @@
 			close.type = 'button'
 			close.className = 'btn btn--red btn--fill btn-fab btn-small ml-2 mb-3 flex-self-end -step-remove-';
 			close.innerHTML = '<svg class="icon text-small-2"><use xlink:href="img/icons.svg#cross" /></svg>';
-			close.addEventListener('click', (event) => {
-				setTimeout(() => {
-					clone.parentElement.removeChild(clone)
-					socCounter--
-					if (socCounter < maxSoc) addBtn.disabled = false
-				}, 100)
-			})
 
 			clone.appendChild(close);
 
@@ -191,10 +185,28 @@
 		})
 
 
+		document.querySelector('.dialog-contest').addEventListener('click', (event) => {
+			if (event.target.closest('.-step-remove-')) {
+				const field = event.target.closest('.-step-field-')
+				addBtn = document.querySelector('.-add-step-')
+				setTimeout(() => {
+					field.parentElement.removeChild(field)
+					socCounter--
+					number--
+					if (socCounter < maxSoc) addBtn.disabled = false
+				}, 100)
+			}
+		})
+
 		document.querySelector('.contest-image input').addEventListener('change', (event) => {
 			const input = event.target
 			const cover = input.closest('.contest-image')
 			const name = cover.querySelector('.contest-image__name')
+
+			if (cover.classList.contains('added')) {
+				event.preventDefault()
+				return
+			}
 
 			if (input.files.length > 0) {
 				cover.classList.add('added')
@@ -205,11 +217,22 @@
 			}
 
 		})
+
+		document.querySelector('.contest-image').addEventListener('click', (event) => {
+			const cover = event.target.closest('.contest-image')
+			if (cover.classList.contains('added')) {
+				event.preventDefault()
+				return
+			}
+		})
+
 		document.querySelector('.contest-image__delete').addEventListener('click', (event) => {
 			const cover = event.target.closest('.contest-image')
 			const name = cover.querySelector('.contest-image__name')
 			const input = cover.querySelector('input')
+			const delInput = cover.querySelector('input[name="del_file"]')
 
+			delInput.value = 'Y';
 			input.value = null
 			cover.classList.remove('added')
 		})

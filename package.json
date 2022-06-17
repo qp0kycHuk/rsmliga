@@ -42,6 +42,11 @@
     }
   },
   "dependencies": {
-    "air-datepicker": "^3.2.0"
+    "@fancyapps/ui": "^4.0.27",
+    "air-datepicker": "^3.2.0",
+    "npm-kit-ripple": "^1.0.2",
+    "npm-kit-tab": "^1.0.0",
+    "npm-kit-toggle": "^1.0.5",
+    "swiper": "^8.2.4"
   }
 }

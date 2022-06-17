@@ -10,6 +10,9 @@ const htmlWebpackPluginDefaults = {
   inject: 'head'
 }
 
+const pages = ['404.html', 'admin.html', 'admin-auth.html', 'admin-contest.html', 'admin-empty.html', 'admin-match.html', 'admin-pleyof.html', 'admin-team.html', 'admin-team-detail.html', 'admin-tournir.html', 'aim.html', 'contact.html', 'contest.html', 'contest-detail.html', 'docs.html', 'dude-inner.html', 'index.html', 'lk.html', 'lk-games.html', 'magazin.html', 'new-part.html', 'news.html', 'news-inner.html', 'partners.html', 'photos.html', 'photos-inner.html', 'refereeing.html', 'smi.html', 'tipycal.html', 'ui.html', 'video.html',];
+const dialogs = ['dialog-add--admin.html', 'dialog-add--admin1.html', 'dialog-contest.html', 'dialog-form.html', 'dialog-lk-add.html', 'dialog-lk-contest.html', 'dialog-lk-dude.html', 'dialog-lk-edit.html', 'dialog-lk-games.html', 'dialog-match.html', 'dialog-protocol.html', 'dialog-remove--admin.html', 'dialog-remove--lk.html', 'dialog-success.html', 'dialog-success--lk.html', 'dialog-team.html'];
+
 module.exports = {
   entry: './src/index.js',
   resolve: {
@@ -54,7 +57,12 @@ module.exports = {
     ],
   },
   plugins: [
-    new MiniCssExtractPlugin({ filename: "style.css", }),
+    new MiniCssExtractPlugin({ filename: "css/style.css", }),
+    ...pages.map((name) => new HtmlWebpackPlugin({
+      ...htmlWebpackPluginDefaults,
+      template: `./src/${name}`,
+      filename: name
+    })),
     // new HtmlWebpackPlugin({
     //   ...htmlWebpackPluginDefaults,
     //   template: './src/index.html',
@@ -65,14 +73,15 @@ module.exports = {
     //   template: './src/ui.html',
     //   filename: 'ui.html'
     // }),
-    // new CopyPlugin({
-    //   patterns: [
-    //     { from: "./src/img/", to: "./img/" },
-    //     { from: "./src/dialog-small.html", to: "./dialog-small.html" },
-    //     { from: "./src/dialog-middle.html", to: "./dialog-middle.html" },
-    //     { from: "./src/dialog-large.html", to: "./dialog-large.html" },
-    //   ],
-    // }),
+    new CopyPlugin({
+      patterns: [
+        { from: "./src/img/", to: "./img/" },
+        ...dialogs.map((name) => ({ from: `./src/${name}`, to: `./${name}` }))
+        // { from: "./src/dialog-small.html", to: "./dialog-small.html" },
+        // { from: "./src/dialog-middle.html", to: "./dialog-middle.html" },
+        // { from: "./src/dialog-large.html", to: "./dialog-large.html" },
+      ],
+    }),
   ],
   devServer: {
     contentBase: PUBLIC_PATH,

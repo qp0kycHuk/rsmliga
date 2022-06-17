@@ -1,0 +1,175 @@
+// out: false
+
+@mixin Text {
+
+	&-h1 {
+		font-size  : 36px;
+		font-weight: 700;
+		line-height: 1.1;
+	}
+
+	&-h2 {
+		font-size  : 32px;
+		font-weight: 700;
+		line-height: 1.1;
+	}
+
+	&-h3 {
+		font-weight: 700;
+		font-size  : 30px;
+		line-height: 1.1;
+	}
+
+	&-h4 {
+		font-weight: 600;
+		font-size  : 28px;
+		line-height: 1.1;
+	}
+
+	&-h5 {
+		font-weight: 600;
+		font-size  : 26px;
+		line-height: 1.1;
+	}
+
+	&-h6 {
+		font-weight: 600;
+		font-size  : 24px;
+	}
+
+	&-subtitle-1 {
+		font-weight: 600;
+		font-size  : 22px;
+	}
+
+	&-subtitle-2 {
+		font-weight: 600;
+		font-size  : 20px;
+	}
+
+
+	&-body-0 {
+		font-weight: 400;
+		font-size  : 18px;
+	}
+
+	&-body-1 {
+		font-weight: 400;
+		font-size  : 16px;
+	}
+
+	&-body-2 {
+		font-weight: 400;
+		font-size  : 14px;
+	}
+
+	&-small {
+		font-weight: 400;
+		font-size  : 12px;
+	}
+
+	&-small-1 {
+		font-weight: 400;
+		font-size  : 11px;
+	}
+
+	&-small-2 {
+		font-weight: 400;
+		font-size  : 10px;
+	}
+}
+
+@mixin TextMod {
+	&--uppercase {
+		text-transform: uppercase;
+	}
+
+	&--underline {
+		text-decoration: underline;
+	}
+
+	&--regular {
+		font-weight: normal;
+	}
+
+	&--medium {
+		font-weight: 500;
+	}
+
+	&--demibold {
+		font-weight: 600;
+	}
+
+	&--bold {
+		font-weight: bold;
+	}
+
+
+	&--left {
+		text-align: left;
+	}
+
+	&--center {
+		text-align: center;
+	}
+
+	&--right {
+		text-align: right;
+	}
+}
+
+.text {
+	@include AddMedia {
+		@include Text;
+	}
+	@include AddMedia {
+		@include TextMod;
+	}
+
+	&-ul {
+		&-item {
+			display    : flex;
+			align-items: flex-start;
+
+			&+& {
+				margin-top: calc(var(--spacing) * 2);
+
+			}
+
+			&:before {
+				content: '';
+
+				min-width    : 6px;
+				width        : 6px;
+				height       : 6px;
+				border-radius: 50%;
+				margin-right : calc(var(--spacing) * 3);
+				background   : var(--color-primary);
+
+				margin-top: 0.5em;
+			}
+		}
+	}
+}
+
+.lh {
+	&-1 {
+		line-height: 1;
+	}
+
+	&-1-5 {
+		line-height: 1.5;
+	}
+
+	&-2 {
+		line-height: 2;
+	}
+}
+
+.font-base {
+	font-family: var(--font-base);
+}
+
+.font-alt {
+	font-family: var(--font-alt);
+}

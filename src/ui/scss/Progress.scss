@@ -1,0 +1,127 @@
+// out:false
+
+.progress-circle {
+	animation      : progress-rotate 1.4s linear infinite;
+	display        : inline-flex;
+	align-items    : center;
+	justify-content: center;
+
+	font-size : 32px;
+	min-width : 1em;
+	width     : 1em;
+	height    : 1em;
+	mask      : url("data:image/svg+xml;charset=UTF-8,%3c?xml version='1.0'?%3e%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' xml:space='preserve' width='100%25' height='100%25' viewBox='22 22 44 44'%3e%3ccircle class='CircularProgress-circle' cx='44' cy='44' r='20.2' fill='none' stroke='%23000' stroke-width='3.6' style='animation: CircularProgress 1.4s ease-in-out infinite;'%3e%3c/circle%3e%3cstyle%3e %40keyframes CircularProgress %7b 0%25 %7b stroke-dasharray : 1px, 200px; stroke-dashoffset: 0px;%7d 50%25 %7b stroke-dasharray : 100px, 200px; stroke-dashoffset: -15px;%7d 100%25 %7b stroke-dasharray : 100px, 200px; stroke-dashoffset: -125px;%7d %7d %3c/style%3e%3c/svg%3e") no-repeat center / contain;
+	background: currentColor;
+
+	.icon {
+		fill  : none;
+		stroke: currentColor;
+
+	}
+
+
+}
+
+.progress-line {
+	position        : relative;
+	overflow        : hidden;
+	display         : block;
+	height          : 4px;
+
+
+
+	&:before,
+	&:after {
+		content         : '';
+		position        : absolute;
+		left            : 0px;
+		bottom          : 0px;
+		top             : 0px;
+		transition      : transform 0.2s linear 0s;
+		transform-origin: left center;
+		background-color: currentColor;
+		width           : auto;
+	}
+
+	&:before {
+		animation: 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) 0s infinite normal none running progress-line-1;
+	}
+
+	&:after {
+		animation: 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) 1.15s infinite normal none running progress-line-2;
+	}
+}
+
+.progress-container {
+	position: relative;
+}
+
+.progress-container * {
+	position: relative;
+}
+
+.progress-container .progress {
+	position : absolute;
+	width    : 32px;
+	height   : 32px;
+	left     : calc(50% - 16px);
+	top      : calc(50% - 16px);
+	mask-size: 1em;
+}
+
+.image .progress {
+	position : absolute;
+	width    : 32px;
+	height   : 32px;
+	left     : calc(50% - 16px);
+	top      : calc(50% - 16px);
+	mask-size: 1em;
+}
+
+
+@keyframes progress-rotate {
+
+	0% {
+		transform-origin: 50% 50%;
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+
+@keyframes progress-line-1 {
+	0% {
+		left : -35%;
+		right: 100%;
+	}
+
+	60% {
+		left : 100%;
+		right: -90%;
+	}
+
+	100% {
+		left : 100%;
+		right: -90%;
+	}
+}
+
+
+@keyframes progress-line-2 {
+	0% {
+		left : -200%;
+		right: 100%;
+	}
+
+	60% {
+		left : 107%;
+		right: -8%;
+	}
+
+	100% {
+		left : 107%;
+		right: -8%;
+	}
+}

@@ -1,0 +1,80 @@
+// out: false
+
+
+@mixin Padding($direction:false) {
+	@for $i from 0 through 10 {
+		&-#{$i} {
+			@if $direction==x {
+				padding-left : calc(var(--spacing) * #{$i});
+				padding-right: calc(var(--spacing) * #{$i});
+
+			}
+
+			@else if $direction==y {
+				padding-top   : calc(var(--spacing) * #{$i});
+				padding-bottom: calc(var(--spacing) * #{$i});
+
+			}
+
+			@else if $direction {
+				padding-#{$direction} : calc(var(--spacing) * #{$i});
+
+			}
+
+			@else if $direction==false {
+				padding : calc(var(--spacing) * #{$i});
+
+			}
+		}
+	}
+}
+
+.p {
+	@include AddMedia {
+		@include Padding;
+
+	}
+
+
+	&x {
+		@include AddMedia {
+			@include Padding(x);
+
+		}
+	}
+
+	&y {
+		@include AddMedia {
+			@include Padding(y);
+
+		}
+	}
+
+	&b {
+		@include AddMedia {
+			@include Padding(bottom);
+
+		}
+	}
+
+	&t {
+		@include AddMedia {
+			@include Padding(top);
+
+		}
+	}
+
+	&l {
+		@include AddMedia {
+			@include Padding(left);
+
+		}
+	}
+
+	&r {
+		@include AddMedia {
+			@include Padding(right);
+
+		}
+	}
+}

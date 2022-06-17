@@ -1,0 +1,177 @@
+// out: false
+
+
+@mixin GridCol {
+	&-1 {
+		min-width: calc(1 * 100% / 12);
+		width    : calc(1 * 100% / 12)
+	}
+
+	&-1-5 {
+		min-width: calc(1.5 * 100% / 12);
+		width    : calc(1.5 * 100% / 12)
+	}
+
+	&-2 {
+		min-width: calc(2 * 100% / 12);
+		width    : calc(2 * 100% / 12)
+	}
+
+	&-3 {
+		min-width: calc(3 * 100% / 12);
+		width    : calc(3 * 100% / 12)
+	}
+
+	&-4 {
+		min-width: calc(4 * 100% / 12);
+		width    : calc(4 * 100% / 12)
+	}
+
+	&-5 {
+		min-width: calc(5 * 100% / 12);
+		width    : calc(5 * 100% / 12)
+	}
+
+	&-6 {
+		min-width: calc(6 * 100% / 12);
+		width    : calc(6 * 100% / 12)
+	}
+
+	&-7 {
+		min-width: calc(7 * 100% / 12);
+		width    : calc(7 * 100% / 12)
+	}
+
+	&-8 {
+		min-width: calc(8 * 100% / 12);
+		width    : calc(8 * 100% / 12)
+	}
+
+	&-9 {
+		min-width: calc(9 * 100% / 12);
+		width    : calc(9 * 100% / 12)
+	}
+
+	&-10 {
+		min-width: calc(10 * 100% / 12);
+		width    : calc(10 * 100% / 12);
+	}
+
+	&-11 {
+		min-width: calc(11 * 100% / 12);
+		width    : calc(11 * 100% / 12);
+	}
+
+	&-12 {
+		min-width: calc(12 * 100% / 12);
+		width    : calc(12 * 100% / 12);
+	}
+}
+
+@mixin GridSpasing {
+	&-0 {
+		--gap: 0px;
+	}
+
+	&-1 {
+		--gap: calc(var(--spacing) * 1);
+	}
+
+	&-2 {
+		--gap: calc(var(--spacing) * 2);
+	}
+
+	&-3 {
+		--gap: calc(var(--spacing) * 3);
+	}
+
+	&-4 {
+		--gap: calc(var(--spacing) * 4);
+	}
+
+	&-5 {
+		--gap: calc(var(--spacing) * 5);
+	}
+
+	&-6 {
+		--gap: calc(var(--spacing) * 6);
+	}
+
+	&-7 {
+		--gap: calc(var(--spacing) * 7);
+	}
+
+	&-8 {
+		--gap: calc(var(--spacing) * 8);
+	}
+
+	&-9 {
+		--gap: calc(var(--spacing) * 9);
+	}
+
+	&-10 {
+		--gap: calc(var(--spacing) * 10);
+	}
+}
+
+
+.grid {
+	--gap       : calc(var(--spacing) * 3);
+	display     : flex;
+	flex-wrap   : wrap;
+	margin-left : calc(-1 * var(--gap) / 2);
+	margin-right: calc(-1 * var(--gap) / 2);
+	margin-top  : calc(-1 * var(--gap));
+
+	min-width: calc(100% + var(--gap));
+	width    : calc(100% + var(--gap));
+
+	&-wrap {
+		margin-left : calc(-1 * var(--gap) / 2);
+		margin-right: calc(-1 * var(--gap) / 2);
+		margin-top  : calc(-1 * var(--gap));
+
+		min-width: calc(100% + var(--gap));
+		width    : calc(100% + var(--gap));
+	}
+
+	&-wrapper {
+		overflow: hidden;
+	}
+
+	&>* {
+		width: 100%;
+	}
+
+
+
+	&-col {
+		width: 100%;
+
+		@include AddMedia {
+			@include GridCol;
+
+		}
+
+	}
+
+
+	&-spacing {
+		@include AddMedia {
+			@include GridSpasing;
+
+		}
+
+	}
+
+
+
+}
+
+[class*="grid-col"] {
+	padding-left : calc(var(--gap) / 2);
+	padding-right: calc(var(--gap) / 2);
+	margin-top   : var(--gap);
+	box-sizing   : border-box;
+
+}

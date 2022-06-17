@@ -1,0 +1,9 @@
+// out:false
+.ripple {
+  background: radial-gradient(var(--color-text-10) 0,
+      var(--color-text-20) 40%,
+      var(--color-text-20) calc(60% - 10px),
+      var(--color-text-20) 60%,
+      rgba(0, 0, 0, 0) calc(60% + 10px));
+
+}

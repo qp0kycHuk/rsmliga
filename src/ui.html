@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Document</title>
+</head>
+
+<body>
+  <style>
+    .example-cover {
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .example-btns {
+      min-width: 300px;
+      width: 300px;
+      padding: 16px;
+      position: sticky;
+      top: 0;
+    }
+
+    .example-content {
+      width: 100%;
+    }
+
+    .code {
+      padding: 10px;
+      background: #333;
+      color: #fff;
+    }
+  </style>
+  <section class="text">
+    <h1 class="text-h1 mb-10">Типография</h1>
+
+    <!-- <div class="mb-3 -copy-child-"><div class="</div> -->
+    <div class="mb-3 -copy-child-">
+      <div class="text-h1">.text-h1 DemiBold 36px</div>
+    </div>
+    <div class="mb-3 -copy-child-">
+      <div class="text-h2">.text-h2 DemiBold 32px</div>
+    </div>
+    <div class="mb-3 -copy-child-">
+      <div class="text-h3">.text-h3 DemiBold 30px</div>
+    </div>
+    <div class="mb-3 -copy-child-">
+      <div class="text-h4">.text-h4 DemiBold 28px</div>
+    </div>
+    <div class="mb-3 -copy-child-">
+      <div class="text-h5">.text-h5 DemiBold 26px</div>
+    </div>
+    <div class="mb-3 -copy-child-">
+      <div class="text-h6">.text-h6 DemiBold 24px</div>
+    </div>
+    <div class="mb-3 -copy-child-">
+      <div class="text-subtitle-1">.text-subtitle-1 DemiBold 22px</div>
+    </div>
+    <div class="mb-3 -copy-child-">
+      <div class="text-subtitle-2">.text-subtitle-2 DemiBold 20px</div>
+    </div>
+    <div class="mb-3 -copy-child-">
+      <div class="text-body-0">.text-body-0 Regular 18px</div>
+    </div>
+    <div class="mb-3 -copy-child-">
+      <div class="text-body-1">.text-body-1 Regular 16px</div>
+    </div>
+    <div class="mb-3 -copy-child-">
+      <div class="text-body-2">.text-body-2 Regular 14px</div>
+    </div>
+    <div class="mb-3 -copy-child-">
+      <div class="text-small">.text-small Regular 12px</div>
+    </div>
+    <div class="mb-3 -copy-child-">
+      <div class="text-small-1">.text-small-1 Regular 11px</div>
+    </div>
+    <div class="mb-3 -copy-child-">
+      <div class="text-small-2">.text-small-2 Regular 10px</div>
+    </div>
+
+    <div class="mb-3 -copy-child-">
+      <div class="text-body-1 text--demibold">.text--demibold DemiBold </div>
+    </div>
+    <div class="mb-3 -copy-child-">
+      <div class="text-body-1 text--bold">.text--bold bold </div>
+    </div>
+    <div class="mb-3 -copy-child-">
+      <div class="text-body-1 text--uppercase">.text--uppercase uppercase </div>
+    </div>
+    <div class="mb-3 -copy-child-">
+      <div class="text-body-1 text--underline">.text--underline underline </div>
+    </div>
+    <div class="mb-3 -copy-child-">
+      <div class="text-body-1 text--fade">.text--fade fade </div>
+    </div>
+    <div class="mb-3 -copy-child-">
+      <div class="text-body-1 text--center">.text--center center </div>
+    </div>
+    <div class="mb-3 -copy-child-">
+      <div class="text-body-1 text--right">.text--right right </div>
+    </div>
+
+  </section>
+  <section class="form">
+    <h1 class="text-h1 mb-10">Form</h1>
+
+    <h1 class="text-h4 mb-8">Input</h1>
+    <div class="grid grid-align-center mb-10">
+      <div class="grid-col-lg-3 -copy-child-">
+        <label class="form-field ">
+          <div class="form-label">Обычное поле</div>
+          <div class="form-input-cover">
+            <input type="text" class="form-input" placeholder="Заполните поле">
+          </div>
+        </label>
+      </div>
+
+      <div class="grid-col-lg-3 -copy-child-">
+        <label class="form-field ">
+          <div class="form-label">Обычное поле</div>
+          <div class="form-input-cover">
+            <input type="text" class="form-input active" placeholder="Заполните поле">
+          </div>
+        </label>
+      </div>
+      <div class="grid-col-lg-3 -copy-child-">
+        <label class="form-field ">
+          <div class="form-label">Обычное поле</div>
+          <div class="form-input-cover">
+            <input type="text" class="form-input error" placeholder="Заполните поле">
+          </div>
+        </label>
+      </div>
+      <div class="grid-col-lg-3 -copy-child-">
+        <label class="form-field">
+          <div class="form-label">Обычное поле</div>
+          <div class="form-input-cover">
+            <input type="text" class="form-input" disabled placeholder="Заполните поле">
+          </div>
+        </label>
+      </div>
+    </div>
+    <div class="grid grid-align-center mb-10">
+      <div class="grid-col-lg-3 -copy-child-">
+        <label class="form-field ">
+          <div class="form-label">Обычное поле</div>
+
+          <div class="form-input-cover">
+            <input type="text" class="form-input" placeholder="От">
+            <input type="text" class="form-input" placeholder="До">
+          </div>
+
+        </label>
+      </div>
+      <div class="grid-col-lg-3 -copy-child-">
+        <label class="form-field ">
+          <div class="form-label">Обычное поле</div>
+
+          <div class="form-input-cover">
+            <input type="text" class="form-input error" placeholder="От">
+            <input type="text" class="form-input " placeholder="До">
+          </div>
+
+        </label>
+      </div>
+
+      <div class="grid-col-lg-3 -copy-child-">
+
+        <div class="form-field">
+          <div class="form-label">Обычное поле</div>
+
+          <div class="form-input-cover">
+            <label class="form-input-cover  ">
+              <input type="radio" class="form-input-checkbox" name="test-1">
+              <div class="form-input form-input-target"> Квартира </div>
+            </label>
+
+            <label class="form-input-cover">
+              <input type="radio" class="form-input-checkbox" name="test-1">
+              <div class="form-input form-input-target"> Квартира </div>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-col-lg-3 -copy-child-">
+        <div class="form-field">
+          <div class="form-label">Обычное поле</div>
+          <div class="form-input-cover">
+            <label class="form-input-cover">
+              <input type="checkbox" class="form-input-checkbox" id="321">
+              <div class="form-input-target"> Квартира </div>
+            </label>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="grid-col-lg-3 -copy-child-">
+
+        <div class="form-field">
+          <div class="form-label">Обычное поле</div>
+
+          <div class="form-input-cover">
+            <label class="form-input-cover  ">
+              <input type="radio" class="form-input-checkbox" name="test-2">
+              <div class="form-input form-input-target">
+                Студия
+
+              </div>
+            </label>
+            <label class="form-input-cover  ">
+              <input type="radio" class="form-input-checkbox" name="test-2">
+              <div class="form-input form-input-target">
+                1
+
+              </div>
+            </label>
+            <label class="form-input-cover  ">
+              <input type="radio" class="form-input-checkbox" name="test-2">
+              <div class="form-input form-input-target">
+                2
+
+              </div>
+            </label>
+            <label class="form-input-cover  ">
+              <input type="radio" class="form-input-checkbox" name="test-2">
+              <div class="form-input form-input-target">
+                3
+
+              </div>
+            </label>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <h1 class="text-h4 mb-8">Select</h1>
+    <div class="grid grid-align-center mb-10">
+      <div class="grid-col-lg-4 -copy-child-">
+        <label class="form-field form-select">
+          <div class="form-label">Обычное поле</div>
+          <div class="form-input-cover">
+            <select class="form-input">
+              <option value="" disabled hidden selected>Выберите вариант</option>
+              <option value="1">Вариант 1</option>
+              <option value="2">Вариант 2</option>
+            </select>
+            <div class="form-select-icon">
+              <svg class="icon">
+                <use xlink:href="img/icons.svg#to-right" />
+              </svg>
+            </div>
+          </div>
+        </label>
+      </div>
+      <div class="grid-col-lg-4 -copy-child-">
+        <label class="form-field form-select">
+          <div class="form-label">Обычное поле</div>
+          <div class="form-input-cover">
+            <select class="form-input">
+              <option value="" disabled hidden selected>Выберите вариант</option>
+              <option value="1">Вариант 1</option>
+              <option value="2">Вариант 2</option>
+            </select>
+            <div class="form-select-icon">
+              <svg class="icon">
+                <use xlink:href="img/icons.svg#to-right" />
+              </svg>
+            </div>
+          </div>
+        </label>
+      </div>
+
+    </div>
+
+
+    <h1 class="text-h4 mb-8">Range</h1>
+    <div class="grid grid-align-center mb-10">
+      <div class="grid-col-lg-6 -copy-child-">
+        <label class="form-field form-range form-range-double">
+          <div class="form-label">Обычное поле</div>
+          <div class="form-input-cover">
+            <div class="form-input">
+              <span class="form-range-from"></span> мм - <span class="form-range-to"></span> мм
+              <input type="text" class="form-range-from-input" hidden>
+              <input type="text" class="form-range-to-input" hidden>
+              <input type="text" class="-range-slider-" data-type="double" data-min="200" data-max="1000"
+                data-from="300" data-to="750">
+            </div>
+          </div>
+        </label>
+      </div>
+      <div class="grid-col-lg-6 -copy-child-">
+        <label class="form-field form-range form-range-single">
+          <div class="form-label">Обычное поле</div>
+          <div class="form-input-cover">
+            <div class="form-input d-flex">
+              <span class="form-range-from"></span>
+              <span class="text-body-2 text--fade ml-auto ">₽</span>
+              <input type="text" class="form-range-from-input" hidden>
+              <input type="text" class="form-range-to-input" hidden>
+              <input type="text" class="-range-slider-" data-type="single" data-min="0" data-max="10000000"
+                data-from="3900000">
+            </div>
+          </div>
+        </label>
+      </div>
+    </div>
+
+    <h1 class="text-h4 mb-8">Check, Radio, Toggle</h1>
+    <div class="grid grid-align-center mb-5">
+      <div class="grid-col-lg-3 -copy-child-">
+        <label class="form-field form-checkbox">
+
+          <input type="checkbox" class="form-input-checkbox">
+          <div class="form-checkbox-target">
+            <svg class="icon">
+              <use xlink:href="img/icons.svg#gal-ochka" />
+            </svg>
+          </div>
+          <div class="form-label"> Выберите вариант </div>
+
+        </label>
+      </div>
+      <div class="grid-col-lg-3 -copy-child-">
+        <label class="form-field form-checkbox">
+
+          <input type="checkbox" class="form-input-checkbox">
+          <div class="form-radio-target"> </div>
+          <div class="form-label"> Выберите вариант </div>
+
+        </label>
+      </div>
+      <div class="grid-col-4 -copy-child-">
+        <label class="form-field form-checkbox">
+          <input type="checkbox" class="form-input-checkbox">
+          <div class="form-toggle-target"> </div>
+          <div class="form-label"> Выберите вариант </div>
+        </label>
+      </div>
+
+    </div>
+
+    <div class="grid grid-align-center mb-5">
+      <div class="grid-col-lg-3 -copy-child-">
+        <label class="form-field form-field--lg form-checkbox">
+
+          <input type="checkbox" class="form-input-checkbox " disabled>
+          <div class="form-checkbox-target">
+            <svg class="icon">
+              <use xlink:href="img/icons.svg#gal-ochka" />
+            </svg>
+          </div>
+          <div class="form-label"> Выберите вариант </div>
+
+        </label>
+      </div>
+      <div class="grid-col-lg-3 -copy-child-">
+        <label class="form-field form-field--lg form-checkbox ">
+
+          <input type="checkbox" class="form-input-checkbox" disabled>
+          <div class="form-radio-target"> </div>
+          <div class="form-label"> Выберите вариант </div>
+
+        </label>
+      </div>
+      <div class="grid-col-4 -copy-child-">
+        <label class="form-field form-field--lg form-checkbox">
+
+          <input type="checkbox" class="form-input-checkbox" disabled>
+          <div class="form-toggle-target"> </div>
+          <div class="form-label"> Выберите вариант </div>
+
+        </label>
+      </div>
+    </div>
+
+
+  </section>
+  <section class="buttons">
+    <h1 class="text-h1 mb-10">Buttons</h1>
+    <div class="text-body-0 mb-10 mt-10 code">
+      &lt;<span class="color-primary">button</span>
+      class=<span class="color-red">"btn btn--<b class="color-green">{color}</b> btn--<b
+          class="color-green">{variant}</b> ?btn-icon ?btn-fab"</span>&gt;
+      button
+      &lt;<span class="color-primary">/button</span>&gt;
+
+
+
+    </div>
+    <h5 class="text-h6 mb-3">btn--primary</h5>
+    <div class="grid mb-10">
+      <div class="grid-col-lg-12 -copy-child- d-lg-flex flex-align-center">
+        <button class="btn btn--primary btn--fill flex-grow">btn--fill</button>
+        <button class="btn btn--primary btn--contur flex-grow ml-2">btn--contur</button>
+        <button class="btn btn--primary btn--light flex-grow ml-2">btn--light</button>
+        <button class="btn btn--primary btn--white-bg flex-grow ml-2">btn--white-bg</button>
+        <button class="btn btn--primary flex-grow ml-2">btn</button>
+
+      </div>
+      <div class="grid-col-lg-3 -copy-child- flex flex-align-center">
+        <button class="btn btn--primary btn--fill btn-icon">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#chat" />
+          </svg>
+        </button>
+        <button class="btn btn--primary btn--contur btn-icon ml-1">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#chat" />
+          </svg>
+        </button>
+        <button class="btn btn--primary btn--light btn-icon ml-1">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#chat" />
+          </svg>
+        </button>
+        <button class="btn btn--primary btn--white-bg btn-icon ml-1">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#chat" />
+          </svg>
+        </button>
+        <button class="btn btn--primary btn-icon ml-1">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#chat" />
+          </svg>
+        </button>
+      </div>
+      <div class="grid-col-lg-3 -copy-child- flex flex-align-center">
+        <button class="btn btn--primary btn--fill btn-fab">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#chat" />
+          </svg>
+        </button>
+        <button class="btn btn--primary btn--contur btn-fab ml-1">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#chat" />
+          </svg>
+        </button>
+        <button class="btn btn--primary btn--light btn-fab ml-1">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#chat" />
+          </svg>
+        </button>
+        <button class="btn btn--primary btn--white-bg btn-fab ml-1">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#chat" />
+          </svg>
+        </button>
+        <button class="btn btn--primary btn-fab ml-1">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#chat" />
+          </svg>
+        </button>
+      </div>
+      <div class="grid-col-2 -copy-child- flex flex-align-center">
+        <button class="btn btn--primary btn--link">btn--link</button>
+      </div>
+
+    </div>
+    <h5 class="text-h6 mb-3">btn--red</h5>
+    <div class="grid mb-10">
+      <div class="grid-col-lg-12 -copy-child- d-lg-flex flex-align-center">
+        <button class="btn btn--red btn--fill flex-grow">btn--fill</button>
+        <button class="btn btn--red btn--contur flex-grow ml-2">btn--contur</button>
+        <button class="btn btn--red btn--light flex-grow ml-2">btn--light</button>
+        <button class="btn btn--red btn--white-bg flex-grow ml-2">btn--white-bg</button>
+        <button class="btn btn--red flex-grow ml-2">btn</button>
+
+      </div>
+      <div class="grid-col-lg-3 -copy-child- flex flex-align-center">
+        <button class="btn btn--red btn--fill btn-icon">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#chat" />
+          </svg>
+        </button>
+        <button class="btn btn--red btn--contur btn-icon ml-1">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#chat" />
+          </svg>
+        </button>
+        <button class="btn btn--red btn--light btn-icon ml-1">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#chat" />
+          </svg>
+        </button>
+        <button class="btn btn--red btn--white-bg btn-icon ml-1">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#chat" />
+          </svg>
+        </button>
+        <button class="btn btn--red btn-icon ml-1">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#chat" />
+          </svg>
+        </button>
+      </div>
+      <div class="grid-col-lg-3 -copy-child- flex flex-align-center">
+        <button class="btn btn--red btn--fill btn-fab">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#chat" />
+          </svg>
+        </button>
+        <button class="btn btn--red btn--contur btn-fab ml-1">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#chat" />
+          </svg>
+        </button>
+        <button class="btn btn--red btn--light btn-fab ml-1">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#chat" />
+          </svg>
+        </button>
+        <button class="btn btn--red btn--white-bg btn-fab ml-1">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#chat" />
+          </svg>
+        </button>
+        <button class="btn btn--red btn-fab ml-1">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#chat" />
+          </svg>
+        </button>
+      </div>
+      <div class="grid-col-2 -copy-child- flex flex-align-center">
+        <button class="btn btn--red btn--link">btn--link</button>
+      </div>
+
+    </div>
+    <h5 class="text-h6 mb-3">btn--green</h5>
+    <div class="grid mb-10">
+      <div class="grid-col-lg-12 -copy-child- d-lg-flex flex-align-center">
+        <button class="btn btn--green btn--fill flex-grow">btn--fill</button>
+        <button class="btn btn--green btn--contur flex-grow ml-2">btn--contur</button>
+        <button class="btn btn--green btn--light flex-grow ml-2">btn--light</button>
+        <button class="btn btn--green btn--white-bg flex-grow ml-2">btn--white-bg</button>
+        <button class="btn btn--green flex-grow ml-2">btn</button>
+
+      </div>
+      <div class="grid-col-lg-3 -copy-child- flex flex-align-center">
+        <button class="btn btn--green btn--fill btn-icon">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#chat" />
+          </svg>
+        </button>
+        <button class="btn btn--green btn--contur btn-icon ml-1">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#chat" />
+          </svg>
+        </button>
+        <button class="btn btn--green btn--light btn-icon ml-1">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#chat" />
+          </svg>
+        </button>
+        <button class="btn btn--green btn--white-bg btn-icon ml-1">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#chat" />
+          </svg>
+        </button>
+        <button class="btn btn--green btn-icon ml-1">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#chat" />
+          </svg>
+        </button>
+      </div>
+      <div class="grid-col-lg-3 -copy-child- flex flex-align-center">
+        <button class="btn btn--green btn--fill btn-fab">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#chat" />
+          </svg>
+        </button>
+        <button class="btn btn--green btn--contur btn-fab ml-1">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#chat" />
+          </svg>
+        </button>
+        <button class="btn btn--green btn--light btn-fab ml-1">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#chat" />
+          </svg>
+        </button>
+        <button class="btn btn--green btn--white-bg btn-fab ml-1">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#chat" />
+          </svg>
+        </button>
+        <button class="btn btn--green btn-fab ml-1">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#chat" />
+          </svg>
+        </button>
+      </div>
+      <div class="grid-col-2 -copy-child- flex flex-align-center">
+        <button class="btn btn--green btn--link">btn--link</button>
+      </div>
+
+    </div>
+    <h5 class="text-h6 mb-3">btn--color-icon</h5>
+    <div class="grid mb-10">
+      <div class="grid-col-lg-12 -copy-child- d-lg-flex flex-align-center">
+        <button class="btn btn--color-icon btn--fill flex-grow">btn--fill</button>
+        <button class="btn btn--color-icon btn--contur flex-grow ml-2">btn--contur</button>
+        <button class="btn btn--color-icon btn--light flex-grow ml-2">btn--light</button>
+        <button class="btn btn--color-icon btn--white-bg flex-grow ml-2">btn--white-bg</button>
+        <button class="btn btn--color-icon flex-grow ml-2">btn</button>
+
+      </div>
+      <div class="grid-col-lg-3 -copy-child- flex flex-align-center">
+        <button class="btn btn--color-icon btn--fill btn-icon">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#chat" />
+          </svg>
+        </button>
+        <button class="btn btn--color-icon btn--contur btn-icon ml-1">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#chat" />
+          </svg>
+        </button>
+        <button class="btn btn--color-icon btn--light btn-icon ml-1">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#chat" />
+          </svg>
+        </button>
+        <button class="btn btn--color-icon btn--white-bg btn-icon ml-1">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#chat" />
+          </svg>
+        </button>
+        <button class="btn btn--color-icon btn-icon ml-1">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#chat" />
+          </svg>
+        </button>
+      </div>
+      <div class="grid-col-lg-3 -copy-child- flex flex-align-center">
+        <button class="btn btn--color-icon btn--fill btn-fab">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#chat" />
+          </svg>
+        </button>
+        <button class="btn btn--color-icon btn--contur btn-fab ml-1">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#chat" />
+          </svg>
+        </button>
+        <button class="btn btn--color-icon btn--light btn-fab ml-1">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#chat" />
+          </svg>
+        </button>
+        <button class="btn btn--color-icon btn--white-bg btn-fab ml-1">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#chat" />
+          </svg>
+        </button>
+        <button class="btn btn--color-icon btn-fab ml-1">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#chat" />
+          </svg>
+        </button>
+      </div>
+      <div class="grid-col-2 -copy-child- flex flex-align-center">
+        <button class="btn btn--color-icon btn--link">btn--link</button>
+      </div>
+
+    </div>
+
+    <h5 class="text-h6 mb-3">button disabled</h5>
+    <div class="grid ">
+      <div class="grid-col-lg-12 -copy-child- d-lg-flex flex-align-center">
+        <button disabled class="btn btn--primary btn--fill flex-grow">btn--fill</button>
+        <button disabled class="btn btn--primary btn--contur flex-grow ml-2">btn--contur</button>
+        <button disabled class="btn btn--primary btn--light flex-grow ml-2">btn--light</button>
+        <button disabled class="btn btn--primary btn--white-bg flex-grow ml-2">btn--white-bg</button>
+        <button disabled class="btn btn--primary flex-grow ml-2">btn</button>
+
+      </div>
+      <div class="grid-col-lg-3 -copy-child- flex flex-align-center">
+        <button disabled class="btn btn--primary btn--fill btn-icon">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#chat" />
+          </svg>
+        </button>
+        <button disabled class="btn btn--primary btn--contur btn-icon ml-1">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#chat" />
+          </svg>
+        </button>
+        <button disabled class="btn btn--primary btn--light btn-icon ml-1">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#chat" />
+          </svg>
+        </button>
+        <button disabled class="btn btn--primary btn--white-bg btn-icon ml-1">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#chat" />
+          </svg>
+        </button>
+        <button disabled class="btn btn--primary btn-icon ml-1">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#chat" />
+          </svg>
+        </button>
+      </div>
+      <div class="grid-col-lg-3 -copy-child- flex flex-align-center">
+        <button disabled class="btn btn--primary btn--fill btn-fab">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#chat" />
+          </svg>
+        </button>
+        <button disabled class="btn btn--primary btn--contur btn-fab ml-1">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#chat" />
+          </svg>
+        </button>
+        <button disabled class="btn btn--primary btn--light btn-fab ml-1">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#chat" />
+          </svg>
+        </button>
+        <button disabled class="btn btn--primary btn--white-bg btn-fab ml-1">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#chat" />
+          </svg>
+        </button>
+        <button disabled class="btn btn--primary btn-fab ml-1">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#chat" />
+          </svg>
+        </button>
+      </div>
+      <div class="grid-col-2 -copy-child- flex flex-align-center">
+        <button disabled class="btn btn--primary btn--link">btn--link</button>
+      </div>
+
+    </div>
+
+  </section>
+</body>
+
+</html>

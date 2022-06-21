@@ -466,10 +466,20 @@ body {
 }
 
 .live {
+	&-slider .swiper {
+		padding-bottom: 5px;
+	} 
 	&-item {
 		background   : #FFFFFF;
 		border-radius: 12px;
 		padding      : 10px 8px 16px;
+		cursor: pointer;
+
+		@media(hover) {
+			&:hover {
+				box-shadow: 0 0 0 2px var(--color-primary);
+			}
+		}
 
 		background:
 			linear-gradient(180deg, rgba(0, 0, 0, 0) 46px, #fff 46px),
@@ -501,6 +511,7 @@ body {
 			display        : flex;
 			align-items    : center;
 			justify-content: center;
+			margin: 0 5px;
 		}
 	}
 
@@ -2680,5 +2691,36 @@ body {
 
 	&.added &__btn {
 		display: none;
+	}
+}
+
+.plug {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 100px 20px;
+	&__pic {
+		width: 148px;
+		height: 148px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: var(--color-primary-10);
+		border-radius: 40px;
+		font-size: 72px;
+	}
+
+	@media(max-width: $sm) {
+		& {
+			padding: 50px 20px;
+		}
+		&__pic {
+			font-size: 46px;
+			width: 120px;
+			height: 120px;
+			margin-bottom: 15px;
+		}
 	}
 }

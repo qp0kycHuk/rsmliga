@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Соревнования</title>
+	<title>Личный кабинет</title>
 
 
 
@@ -30,7 +30,8 @@
 			</svg>
 			<div class="text-body-2">Личный кабинет</div>
 		</a>
-		<button class="header-top-btn px-3 btn btn--primary btn--fill ml-8">Заявить команду</button>
+		<button class="header-top-btn px-3 btn btn--primary btn--fill ml-8" data-fancybox-modal
+			data-src="dialog-form.html">Заявить команду</button>
 	</header>
 	<header class="header-nav d-flex flex-align-center">
 		<a href="/" class="header-nav-logo d-flex flex-align-center">
@@ -78,7 +79,7 @@
 				</div>
 			</div>
 			<div class="header-nav-item" data-toggle-cover>
-				<button class="header-nav-link py-2 px-3  " data-toggle-link>
+				<button class="header-nav-link py-2 px-3 " data-toggle-link>
 					Новости
 					<svg class="icon fade-40 ml-1 text-small">
 						<use xlink:href="img/icons.svg#dropdown" />
@@ -94,7 +95,7 @@
 				</div>
 			</div>
 			<div class="header-nav-item" data-toggle-cover>
-				<button class="header-nav-link py-2 px-3 active" data-toggle-link>
+				<button class="header-nav-link py-2 px-3 " data-toggle-link>
 					Медиа
 					<svg class="icon fade-40 ml-1 text-small">
 						<use xlink:href="img/icons.svg#dropdown" />
@@ -221,90 +222,56 @@
 		</div>
 	</div>
 
-	<section class="page-top">
-		<div class="page-top-inner">
-			<div class="page-top-breadcrumps">
-				<div class="text-small fade-60"><a href="">Главная</a> - Соревнования</div>
-			</div>
-			<div class="text-h6 text-md-h4">Соревнования</div>
-		</div>
-	</section>
 
+	<section>
 
-	<section class="content">
-		<div class="flex mb-6">
-			<div class="admin-select" data-toggle-cover="">
-				<div class="text-body-2 text--demibold">Сезон</div>
-				<button class="admin-select-btn btn btn--primary btn--link ml-2" data-toggle-link="">
-					2020 -2021
-					<svg class="icon ml-1 text-small-2">
-						<use xlink:href="img/icons.svg#triangle-right"></use>
-					</svg>
-				</button>
-				<div class="admin-select-list card py-1" data-toggle-content="">
-					<div class="admin-select__item fade-60 py-1 px-4 text-body-2 text--demibold">2020 -2021</div>
-					<a href="javascript:;" class="admin-select__item py-1 px-4 text-body-2 text--demibold">2020 -2022</a>
-					<a href="javascript:;" class="admin-select__item py-1 px-4 text-body-2 text--demibold">2020 -2023</a>
-				</div>
-			</div>
+		<div class="lk-tabs tab-links">
+			<button class="lk-tabs__item tab-link ">Инфо о команде</button>
+			<button class="lk-tabs__item tab-link active">Игры команды</button>
 
 		</div>
-		<div class="card p-6 mb-2">
-			<div class="text-subtitle-1 text-md-h6 mb-8">
-				Соревнования по тэг-регби среди команд 2011-2012 г.р. общеобразовательных учреждений
-				Ростовской области
+
+		<div class="lk-games">
+			<table class="lk-games-table">
+				<tr class="lk-games-head">
+					<td class="lk-games-table__name">
+						<div class="text-body-2 text--demibold">Команды</div>
+					</td>
+					<td class="lk-games-table__score">
+						<div class="text-body-2 text--demibold">Результат</div>
+					</td>
+					<td class="lk-games-table__date">
+						<div class="text-body-2 text--demibold">Дата</div>
+					</td>
+					<td class="lk-games-table__location">
+						<div class="text-body-2 text--demibold">Место проведения</div>
+					</td>
+					<td class="lk-games-table__step">
+						<div class="text-body-2 text--demibold">Этап</div>
+					</td>
+					<td class="lk-games-table__tour">
+						<div class="text-body-2 text--demibold">Турнир</div>
+					</td>
+					<td class="lk-games-table__edit"></td>
+				</tr>
+			</table>
+		</div>
+
+		<div class="plug card">
+			<div class="plug__pic mb-7 color-primary">
+			  <svg class="plug__icon icon">
+				<use xlink:href="img/icons.svg#ball-1" />
+			  </svg>
 			</div>
-			<div class="content-list">
-				<div class="content-list-item mb-5" data-fancybox-modal data-src="dialog-contest-empty.html" >
-					<div class="content-list-item__before">
-						<div class="text-body-2 text--bold">1</div>
-					</div>
-					<div class="content-list-item__content">
-						<div class="text-body-2 text--demibold">1 этап</div>
-						<div class="text-body-2">Внутришкольный (январь-февраль)</div>
-						<button class="btn btn--link btn--primary mt-2">Смотреть таблицу</button>
-					</div>
-				</div>
-				<div class="content-list-item mb-5">
-					<div class="content-list-item__before">
-						<div class="text-body-2 text--bold">2</div>
-					</div>
-					<div class="content-list-item__content">
-						<div class="text-body-2 text--demibold">1 этап</div>
-						<div class="text-body-2">Внутришкольный (январь-февраль)</div>
-						<button class="btn btn--link btn--primary mt-2">Смотреть таблицу</button>
-					</div>
-				</div>
-				<div class="content-list-item mb-5">
-					<div class="content-list-item__before">
-						<div class="text-body-2 text--bold">3</div>
-					</div>
-					<div class="content-list-item__content">
-						<div class="text-body-2 text--demibold">1 этап</div>
-						<div class="text-body-2">Внутришкольный (январь-февраль)</div>
-						<button class="btn btn--link btn--primary mt-2">Смотреть таблицу</button>
-					</div>
-				</div>
-				<div class="content-list-item mb-5">
-					<div class="content-list-item__before">
-						<div class="text-small text--bold">
-							<svg class="icon">
-								<use xlink:href="img/icons.svg#flag" />
-							</svg>
-						</div>
-					</div>
-					<div class="content-list-item__content">
-						<div class="text-body-2 text--demibold">ФИНАЛ <span class="text--regular">(май)</span></div>
-						<button class="btn btn--link btn--primary mt-2">Смотреть таблицу</button>
-					</div>
-				</div>
-			</div>
+			<div class="plug__title text-h6 mb-2">Скоро здесь будут матчи вашей команды</div>
 		</div>
 
 
 
 	</section>
 
+
+	<div class="mt-auto"></div>
 	<footer class="footer">
 		<div class="footer-inner">
 			<div class="footer-info">

@@ -10,8 +10,8 @@ const htmlWebpackPluginDefaults = {
   inject: 'head'
 }
 
-const pages = ['404.html', 'admin.html', 'admin-auth.html', 'admin-contest.html', 'admin-empty.html', 'admin-match.html', 'admin-pleyof.html', 'admin-team.html', 'admin-team-detail.html', 'admin-tournir.html', 'aim.html', 'contact.html', 'contest.html', 'contest-detail.html', 'docs.html', 'dude-inner.html', 'index.html', 'lk.html', 'lk-games.html', 'magazin.html', 'new-part.html', 'news.html', 'news-inner.html', 'partners.html', 'photos.html', 'photos-inner.html', 'refereeing.html', 'smi.html', 'tipycal.html', 'ui.html', 'video.html',];
-const dialogs = ['dialog-add--admin.html', 'dialog-add--admin1.html', 'dialog-contest.html', 'dialog-form.html', 'dialog-lk-add.html', 'dialog-lk-contest.html', 'dialog-lk-dude.html', 'dialog-lk-edit.html', 'dialog-lk-games.html', 'dialog-match.html', 'dialog-protocol.html', 'dialog-remove--admin.html', 'dialog-remove--lk.html', 'dialog-success.html', 'dialog-success--lk.html', 'dialog-team.html'];
+const pages = ['404.html', 'admin.html', 'admin-auth.html', 'admin-contest.html', 'admin-empty.html', 'admin-match.html', 'admin-pleyof.html', 'admin-team.html', 'admin-team-detail.html', 'admin-tournir.html', 'aim.html', 'contact.html', 'contest.html', 'contest-detail.html', 'docs.html', 'dude-inner.html', 'index.html', 'lk.html', 'lk-games.html', 'magazin.html', 'new-part.html', 'news.html', 'news-inner.html', 'partners.html', 'photos.html', 'photos-inner.html', 'refereeing.html', 'smi.html', 'tipycal.html', 'ui.html', 'video.html', 'lk-games-empty.html'];
+const dialogs = ['dialog-add--admin.html', 'dialog-add--admin1.html', 'dialog-contest.html', 'dialog-contest-empty.html', 'dialog-form.html', 'dialog-lk-add.html', 'dialog-lk-contest.html', 'dialog-lk-dude.html', 'dialog-lk-edit.html', 'dialog-lk-games.html', 'dialog-match.html', 'dialog-protocol.html', 'dialog-remove--admin.html', 'dialog-remove--lk.html', 'dialog-success.html', 'dialog-success--lk.html', 'dialog-team.html'];
 
 module.exports = {
   entry: './src/index.js',

@@ -1889,6 +1889,12 @@ body {
 	&-td {
 		background: #fff;
 		border    : 1px solid #DDDDDD;
+
+		@media(max-width: $md) {
+			&--disabled {
+				display: none;
+			}
+		}
 	}
 
 	&-head &-td {
@@ -1897,6 +1903,10 @@ body {
 		padding-right: 8px;
 
 
+	}
+	&-doc {
+		font-size: 20px;
+		margin: 0 auto;
 	}
 }
 
@@ -2151,7 +2161,7 @@ body {
 			padding-right : 8px;
 			background    : #fff;
 			position      : relative;
-			padding-right : 40px;
+			// padding-right : 40px;
 
 			@media (max-width:$lg) {
 				flex-wrap: wrap;
@@ -2256,7 +2266,15 @@ body {
 				position: absolute;
 				right   : 8px;
 				top     : 8px;
+				margin-right: 0;
+			}
+		}
 
+		&__doc {
+			@media (max-width:$lg) {
+				position: absolute;
+				right   : 8px;
+				top     : 38px;
 			}
 		}
 	}
@@ -2573,6 +2591,9 @@ body {
 
 .admin-table-td--title {
 	width: 300px;
+	&-2 {
+		width: 460px;
+	}
 }
 
 .dialog-contest {

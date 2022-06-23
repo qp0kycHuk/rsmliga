@@ -679,9 +679,18 @@
 
 
 		<div class="text-subtitle-1 mt-10 mb-7">Протокол заполнен верно</div>
-		<div class="flex">
-			<button class="form-btn btn btn--primary btn--fill  mr-4">Отправить</button>
-			<button class="form-btn btn btn--primary btn--light  " data-fancybox-close type="button">Отмена</button>
+		
+		<div class="flex flex-justify-between">
+			<div class="flex">
+				<button class="form-btn btn btn--primary btn--fill  mr-4">Отправить</button>
+				<button class="form-btn btn btn--primary btn--light  " data-fancybox-close type="button">Отмена</button>
+			</div>
+			<button class="btn btn--primary btn--contur color-primary print-d-none px-10" onclick="window.print()">
+				<svg class="mr-1 icon">
+					<use xlink:href="img/icons.svg#print" />
+				</svg>
+				<span>Печать</span>
+			</button>
 		</div>
 
 

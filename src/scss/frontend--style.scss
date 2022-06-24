@@ -327,11 +327,11 @@ body {
 	padding-bottom: 0;
 
 	&-slider {
-		width    : calc(100% - 264px - 16px);
-		flex-grow: 1;
-		position : relative;
+		width        : calc(100% - 264px - 16px);
+		flex-grow    : 1;
+		position     : relative;
 		border-radius: 12px;
-		overflow: hidden;
+		overflow     : hidden;
 
 
 		@media(max-width:$lg) {
@@ -468,12 +468,13 @@ body {
 .live {
 	&-slider .swiper {
 		padding-bottom: 5px;
-	} 
+	}
+
 	&-item {
 		background   : #FFFFFF;
 		border-radius: 12px;
 		padding      : 10px 8px 16px;
-		cursor: pointer;
+		cursor       : pointer;
 
 		@media(hover) {
 			&:hover {
@@ -481,11 +482,10 @@ body {
 			}
 		}
 
-		background:
-			linear-gradient(180deg, rgba(0, 0, 0, 0) 46px, #fff 46px),
-			url("../img/sempl/live-item-clouds.png") no-repeat center 24px / auto,
-			linear-gradient(239.95deg, rgba(105, 0, 27, 0.4) 6px, rgba(210, 28, 75, 0) 32px),
-			var(--color-primary);
+		background: linear-gradient(180deg, rgba(0, 0, 0, 0) 46px, #fff 46px),
+		url("../img/sempl/live-item-clouds.png") no-repeat center 24px / auto,
+		linear-gradient(239.95deg, rgba(105, 0, 27, 0.4) 6px, rgba(210, 28, 75, 0) 32px),
+		var(--color-primary);
 
 		&-header {
 			display              : grid;
@@ -511,7 +511,7 @@ body {
 			display        : flex;
 			align-items    : center;
 			justify-content: center;
-			margin: 0 5px;
+			margin         : 0 5px;
 		}
 	}
 
@@ -1761,7 +1761,7 @@ body {
 		border-radius: 6px;
 		width        : 28px;
 		height       : 28px;
-		margin  : auto;
+		margin       : auto;
 	}
 
 	&__add {
@@ -1904,9 +1904,10 @@ body {
 
 
 	}
+
 	&-doc {
 		font-size: 20px;
-		margin: 0 auto;
+		margin   : 0 auto;
 	}
 }
 
@@ -2152,15 +2153,15 @@ body {
 			padding-bottom: 10px;
 			margin-bottom : 10px;
 
-			display       : flex;
-			width         : 100%;
-			border-radius : 12px;
-			padding-left  : 24px;
-			padding-top   : 10px;
-			padding-bottom: 10px;
-			padding-right : 8px;
-			background    : #fff;
-			position      : relative;
+			display          : flex;
+			width            : 100%;
+			border-radius    : 12px;
+			padding-left     : 24px;
+			padding-top      : 10px;
+			padding-bottom   : 10px;
+			padding-right    : 8px;
+			background       : #fff;
+			position         : relative;
 			// padding-right : 40px;
 
 			@media (max-width:$lg) {
@@ -2263,9 +2264,9 @@ body {
 
 		&__edit {
 			@media (max-width:$lg) {
-				position: absolute;
-				right   : 8px;
-				top     : 8px;
+				position    : absolute;
+				right       : 8px;
+				top         : 8px;
 				margin-right: 0;
 			}
 		}
@@ -2591,6 +2592,7 @@ body {
 
 .admin-table-td--title {
 	width: 300px;
+
 	&-2 {
 		width: 460px;
 	}
@@ -2663,32 +2665,7 @@ body {
 	}
 }
 
-@media print {
-	body {
-		background: none;
 
-	}
-
-	section,
-	footer,
-	header,
-	.container {
-		width        : 100%;
-		padding-left : 0;
-		padding-right: 0;
-
-	}
-
-	.print-d-none,
-	.admin-menu,
-	.admin-header {
-		display: none;
-	}
-
-	.admin-table tr {
-		page-break-inside: avoid;
-	}
-}
 
 .air-datepicker-global-container {
 	z-index: 1152;
@@ -2716,32 +2693,100 @@ body {
 }
 
 .plug {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	display        : flex;
+	flex-direction : column;
+	align-items    : center;
 	justify-content: center;
-	text-align: center;
-	padding: 100px 20px;
+	text-align     : center;
+	padding        : 100px 20px;
+
 	&__pic {
-		width: 148px;
-		height: 148px;
-		display: flex;
-		align-items: center;
-		justify-content: center;
+		width           : 148px;
+		height          : 148px;
+		display         : flex;
+		align-items     : center;
+		justify-content : center;
 		background-color: var(--color-primary-10);
-		border-radius: 40px;
-		font-size: 72px;
+		border-radius   : 40px;
+		font-size       : 72px;
 	}
 
 	@media(max-width: $sm) {
 		& {
 			padding: 50px 20px;
 		}
+
 		&__pic {
-			font-size: 46px;
-			width: 120px;
-			height: 120px;
+			font-size    : 46px;
+			width        : 120px;
+			height       : 120px;
 			margin-bottom: 15px;
 		}
+	}
+}
+
+@media print {
+	body {
+		background: none;
+
+	}
+
+	section,
+	footer,
+	header,
+	.container {
+		width        : 100%;
+		padding-left : 0;
+		padding-right: 0;
+
+	}
+
+	.print-d-none,
+	.admin-menu,
+	.admin-header {
+		display: none;
+	}
+
+	.admin-table tr {
+		page-break-inside: avoid;
+	}
+
+	body.body-print-modal>* {
+		display: none !important;
+	}
+
+	body.body-print-modal .fancybox-print-modal {
+		display: block !important;
+	}
+
+	.fancybox-print-modal {
+		position: relative;
+		padding : 0;
+
+		.fancybox__backdrop,
+		.fancybox__caption,
+		.fancybox__nav,
+		.carousel__dots,
+		.carousel__button.is-close {
+			display: none;
+		}
+
+		.fancybox__track,
+		.fancybox__viewport,
+		.fancybox__carousel{
+			height: auto;
+		}
+		.fancybox__slide{
+			padding: 0;
+			overflow: visible;
+		}
+	}
+
+	.print-p-0 {
+		padding: 0;
+	}
+
+	.print-bg-none {
+		background: none;
 	}
 }

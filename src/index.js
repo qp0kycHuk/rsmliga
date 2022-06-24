@@ -53,3 +53,15 @@ function loadHandler() {
     ripple.attach('.slider-btn')
     ripple.deAttach('.btn--link')
 }
+
+
+document.addEventListener('click', (event) => {
+    if (!event.target.closest('.-print-from-modal-')) return;
+
+    const dialog = event.target.closest('.fancybox__container')
+    dialog.classList.add('fancybox-print-modal')
+    document.body.classList.add('body-print-modal')
+    window.print()
+    dialog.classList.remove('fancybox-print-modal')
+    document.body.classList.remove('body-print-modal')
+})

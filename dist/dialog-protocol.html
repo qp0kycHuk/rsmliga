@@ -1,4 +1,4 @@
-<div class="large-dialog fancybox-content card p-6">
+<div class="large-dialog fancybox-content card p-6 print-p-0 print-bg-none">
 	<div class="form-dialog-header mb-6">
 		<div class="form-dialog-title title text-subtitle-2 text-md-h6 text--center">Протокол</div>
 	</div>
@@ -595,7 +595,7 @@
 			</tr>
 
 		</table>
-		<button class="ml-auto btn btn--primary btn--link -add-warning-" type="button">
+		<button class="ml-auto btn btn--primary btn--link -add-warning- print-d-none" type="button">
 			<svg class="icon mr-2">
 				<use xlink:href="img/icons.svg#plus" />
 			</svg>
@@ -653,7 +653,7 @@
 			</tr>
 
 		</table>
-		<button class="ml-auto btn btn--primary btn--link -add-error-" type="button">
+		<button class="ml-auto btn btn--primary btn--link -add-error- print-d-none" type="button">
 			<svg class="icon mr-2">
 				<use xlink:href="img/icons.svg#plus" />
 			</svg>
@@ -678,14 +678,14 @@
 		</label>
 
 
-		<div class="text-subtitle-1 mt-10 mb-7">Протокол заполнен верно</div>
+		<div class="text-subtitle-1 mt-10 mb-7 ">Протокол заполнен верно</div>
 		
-		<div class="flex flex-justify-between">
+		<div class="flex flex-justify-between print-d-none">
 			<div class="flex">
 				<button class="form-btn btn btn--primary btn--fill  mr-4">Отправить</button>
 				<button class="form-btn btn btn--primary btn--light  " data-fancybox-close type="button">Отмена</button>
 			</div>
-			<button class="btn btn--primary btn--contur color-primary print-d-none px-10" onclick="window.print()">
+			<button class="btn btn--primary btn--contur color-primary px-10 -print-from-modal-" >
 				<svg class="mr-1 icon">
 					<use xlink:href="img/icons.svg#print" />
 				</svg>

@@ -104,6 +104,9 @@
 		font-weight: bold;
 	}
 
+	&--italic {
+		font-style: italic;
+	}
 
 	&--left {
 		text-align: left;
@@ -122,6 +125,7 @@
 	@include AddMedia {
 		@include Text;
 	}
+
 	@include AddMedia {
 		@include TextMod;
 	}

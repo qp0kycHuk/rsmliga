@@ -1,5 +1,5 @@
 .card {
-  background    : #FFFFFF;
+  background    : var(--bg3);
   border-radius : 12px;
   position      : relative;
   display       : flex;
@@ -12,7 +12,7 @@
 
   &-lg {
     @media(min-width:$lg) {
-      background    : #FFFFFF;
+      background    : var(--bg3);
       border        : 1px solid #E2E8F0;
       box-sizing    : border-box;
       border-radius : 16px;
@@ -24,7 +24,7 @@
 
   &-md {
     @media(min-width:$md) {
-      background    : #FFFFFF;
+      background    : var(--bg3);
       border        : 1px solid #E2E8F0;
       box-sizing    : border-box;
       border-radius : 16px;

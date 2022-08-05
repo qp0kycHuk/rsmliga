@@ -6,6 +6,8 @@ import ripple from 'npm-kit-ripple';
 import fancybox from "./js/fancybox";
 import colorSelect from './js/color-select'
 import showPass from "./js/show-pass";
+import rangeSlider from './js/range-slider';
+import theme from './js/theme';
 
 import 'swiper/css';
 import 'npm-kit-ripple/index.css';
@@ -32,11 +34,18 @@ function menuOpenHandler(event) {
     if (event.detail.target.id == 'mobile-menu') {
         document.body.classList.add('menu-opened')
     }
+    if (event.detail.target.classList.contains('filter')) {
+		document.body.classList.add('filter-open')
+	}
 }
+
 function menuCloseHandler(event) {
     if (event.detail.target.id == 'mobile-menu') {
         document.body.classList.remove('menu-opened')
     }
+    if (event.detail.target.classList.contains('filter')) {
+		document.body.classList.remove('filter-open')
+	}
 }
 
 function loadHandler() {
@@ -46,6 +55,8 @@ function loadHandler() {
     ripple.init();
     colorSelect.init();
     showPass.init();
+	rangeSlider.init()
+	theme.init();
 
     ripple.attach('.btn')
     ripple.attach('.waved')

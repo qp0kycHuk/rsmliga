@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Онлайн-магазин</title>
+
+
+</head>
+
+<body>
+	<%= _.template(require('./includes/header.html').default)() %>
+
+	<section class="product-detail">
+		<div class="product-detail-top">
+			<div class="product-detail-img card">
+				<div class="product-detail-img__inner image image--box progress-container">
+					<div class="progress progress-circle"></div>
+					<img src="img/sempl/product-detail.png" alt="">
+				</div>
+
+			</div>
+			<div class="product-detail-content card">
+				<div class="text-subtitle-2 text-md-h6 mb-1">Мяч регбийный Ростсельмаш лига, размер 5 OFFLOAD</div>
+				<div class="text-body-2 mb-4"><span class="fade-60">Категория:</span> мячи</div>
+				<div class="text-md-h4 text-h6 mt-4 mb-4 mb-md-7 color-primary">999 ₽</div>
+
+				<div class="flex mt-auto">
+					<button class="btn btn--primary btn--fill px-10">
+						<svg class="icon mr-2">
+							<use xlink:href="img/icons.svg#cart" />
+						</svg>
+						В корзину
+					</button>
+				</div>
+
+				<div class="flex-align-center flex mt-7">
+					<svg class="icon fade-60 mr-2">
+						<use xlink:href="img/icons.svg#marker-contur" />
+					</svg>
+					<div class="text-body-2">
+						<span class="text--demibold">Самовывоз: </span>
+						<span class="fade-80">через 15 минут, бесплатно</span>
+					</div>
+				</div>
+				<div class="flex-align-center flex mt-3">
+					<svg class="icon fade-60 mr-2">
+						<use xlink:href="img/icons.svg#truck-contur" />
+					</svg>
+					<div class="text-body-2">
+						<span class="text--demibold">Доставка: </span>
+						<span class="fade-80">послезавтра</span>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div data-tab-cover>
+
+			<div class="lk-tabs tab-links">
+				<button class="lk-tabs__item tab-link" data-tab-link="awdawd1">Описание</button>
+				<button class="lk-tabs__item tab-link" data-tab-link="awdawd2">Оплата</button>
+				<button class="lk-tabs__item tab-link" data-tab-link="awdawd3">Доставка</button>
+				<button class="lk-tabs__item tab-link" data-tab-link="awdawd4">Гарантии и возврат</button>
+				<div class="tab-plate" data-tab-plate></div>
+
+			</div>
+
+			<div class="tab-content-cover">
+				<div class="tab-content" data-tab-link="awdawd1">
+					<div class="text-body-2 text-md-body-1 fade-80 lh-1-5">
+						Мяч для регби-это удлиненный эллипсоидальный мяч, используемый в регби-футболе. Его размеры и вес
+						определяются Всемирной федерацией регби и Международной федерацией регби-лиги, руководящими органами обоих
+						кодексов, регбийным союзом и регбийной лигой соответственно.
+						<div class="mb-4"></div>
+						Первое упоминание о «неправильной» форме мяча можно найти в романе Томаса Хьюза «Школьные дни Тома Брауна»,
+						в котором описывается жизнь в школе, расположенной в местечке Рагби (Rugby School). События, описываемые в
+						книге, в том числе и игра в мяч, относятся к 1835 г., что позволило исследователям сделать вывод: к 1835
+						году «дыня» уже использовалась для игры в регби.
+						<div class="mb-4"></div>
+						Однако еще в начале XIX в. для игры в «народный футбол», который считается предшественником регби,
+						использовался тряпичный мяч (rag ball). И это обстоятельство может поставить под сомнение версию о том, что
+						в регби играть начали именно в Rugby School в 1823 году.
+					</div>
+				</div>
+				<div class="tab-content" data-tab-link="awdawd2">
+					<div class="text-body-2 text-md-body-1 fade-80 lh-1-5">
+						Первое упоминание о «неправильной» форме мяча можно найти в романе Томаса Хьюза «Школьные дни Тома Брауна»,
+						в котором описывается жизнь в школе, расположенной в местечке Рагби (Rugby School). События, описываемые в
+						книге, в том числе и игра в мяч, относятся к 1835 г., что позволило исследователям сделать вывод: к 1835
+						году «дыня» уже использовалась для игры в регби.
+						<div class="mb-4"></div>
+						Однако еще в начале XIX в. для игры в «народный футбол», который считается предшественником регби,
+						использовался тряпичный мяч (rag ball). И это обстоятельство может поставить под сомнение версию о том, что
+						в регби играть начали именно в Rugby School в 1823 году.
+					</div>
+				</div>
+				<div class="tab-content" data-tab-link="awdawd3">
+					<div class="flex-align-center flex mt-3">
+						<svg class="icon fade-60 mr-2">
+							<use xlink:href="img/icons.svg#truck-contur" />
+						</svg>
+						<div class="text-body-2">
+							<span class="text--demibold">Доставка: </span>
+							<span class="fade-80">послезавтра</span>
+						</div>
+					</div>
+				</div>
+				<div class="tab-content" data-tab-link="awdawd4">
+					<div class="text-body-2 text-md-body-1 fade-80 lh-1-5">
+						Мяч для регби-это удлиненный эллипсоидальный мяч, используемый в регби-футболе.
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<div class="text-subtitle-2 text-md-h6 mb-md-8 mb-5">Похожие товары</div>
+		<div class="grid grid-spacing-lg-7">
+			<% for(let i=0; i < 4; i++){ %>
+			<div class="grid-col-6 grid-col-md-4 grid-col-lg-3">
+				<div class="product-card card">
+					<div class="product-card__img image image--rectangle progress-container">
+						<div class="progress progress-circle fade-60 text-body-2"></div>
+						<img src="img/sempl/product.png" alt="">
+					</div>
+					<div class="product-card__content card-content">
+						<div class="text-body-2 text-md-body-1 mb-3">
+							Мяч регбийный Ростсельмаш
+							лига, размер 5 OFFLOAD
+						</div>
+						<div class="text-h6 mb-3 mb-md-5">999 ₽</div>
+						<button class="btn btn--primary btn--fill w-100 px-1 mt-auto">
+							<svg class="icon mr-2">
+								<use xlink:href="img/icons.svg#cart" />
+							</svg>
+							В корзину
+						</button>
+					</div>
+				</div>
+			</div>
+			<% } %>
+		</div>
+	</section>
+
+
+
+
+	<%= _.template(require('./includes/footer.html').default)() %>
+</body>
+
+</html>

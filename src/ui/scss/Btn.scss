@@ -79,6 +79,11 @@
 		font-size: 16px;
 	}
 
+	&-small-1 {
+		--size   : 36px;
+		font-size: 14px;
+	}
+
 	&-small {
 		--size   : 28px;
 		font-size: 12px;
@@ -238,7 +243,8 @@
 		}
 	}
 
-	&:disabled, &.disabled {
+	&:disabled,
+	&.disabled {
 		opacity       : 0.4;
 		pointer-events: none;
 	}

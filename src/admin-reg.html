@@ -47,18 +47,42 @@
     <button class="admin-auth-header-btn btn btn--primary btn--fill">На главную</button>
   </header>
   <section class="admin-auth-content">
-    <div class="admin-auth-form">
+    <form class="admin-auth-form">
 
-      <div class="admin-auth-form-title title text-md-h3 text-subtitle-1 text-md-h6">Вход в личный кабинет</div>
+      <div class="admin-auth-form-title title text-md-h3 text-subtitle-1 text-md-h6">Регистрация</div>
 
       <div class="form-dialog-fields">
         <label class="form-field w-100">
+          <div class="text-body-1 text--demibold mb-2">Фамилия</div>
+          <div class="form-input-cover">
+            <input type="text" class="form-input" name="name" required>
+          </div>
+        </label>
+        <label class="form-field w-100 mt-4">
+          <div class="text-body-1 text--demibold mb-2">Имя</div>
+          <div class="form-input-cover">
+            <input type="text" class="form-input" name="name" required>
+          </div>
+        </label>
+        <label class="form-field w-100 mt-4">
+          <div class="text-body-1 text--demibold mb-2">Отчество</div>
+          <div class="form-input-cover">
+            <input type="text" class="form-input" name="name" required>
+          </div>
+        </label>
+        <label class="form-field w-100 mt-4">
+          <div class="text-body-1 text--demibold mb-2">Телефон</div>
+          <div class="form-input-cover">
+            <input type="tel" class="form-input" name="name" required>
+          </div>
+        </label>
+        <label class="form-field w-100 mt-4">
           <div class="text-body-1 text--demibold mb-2">Ваш e-mail</div>
           <div class="form-input-cover">
             <input type="email" class="form-input" name="name" required>
           </div>
         </label>
-        <label class="form-field w-100 mt-4">
+        <!-- <label class="form-field w-100 mt-4">
           <div class="text-body-1 text--demibold mb-2">Пароль</div>
           <div class="form-input-cover">
             <input type="password" class="form-input" name="password" required id="password">
@@ -71,27 +95,31 @@
             </div>
           </div>
 
-        </label>
+        </label> -->
 
       </div>
       <div class="flex flex-align-center mt-5">
-        <button class="form-btn btn btn--primary btn--fill px-md-10 px-7">Отправить</button>
-        <button class="btn btn--primary ml-auto btn--link">Забыли пароль?</button>
+        <button class="form-btn btn btn--primary btn--fill px-md-10 px-7">Зарегистрироваться</button>
       </div>
       <div class="form-agree text-small fade-60 mt-5">
         Отправляя форму Вы даете согласие на обработку Ваших персональных
         данных
       </div>
       <div class="flex flex-justify-center bd-top pt-4 mt-4">
-        Нет аккаунта? 
-        <a href="" class="btn btn--primary btn--link ml-1">Зарегистрироваться</a>
-        
+        Есть аккаунт?
+        <a href="" class="btn btn--primary btn--link ml-1">Войти</a>
+
       </div>
-    </div>
+    </form>
   </section>
 
 
+  <!-- <script>
+    setTimeout(() => {
+      Fancybox.modal.open('dialog-success--lk.html')
 
+    }, 500)
+  </script> -->
 </body>
 
 </html>

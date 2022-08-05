@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Онлайн-магазин</title>
+
+
+</head>
+
+<body>
+	<%= _.template(require('./includes/header.html').default)() %>
+	<%= _.template(require('./includes/page-top.html').default)({ page: 'Онлайн-магазин' }) %>
+
+	<section class="catalog">
+		<div class="catalog-sidebar">
+			<div class="catalog-filter filter" id="filter">
+				<div class="filter-shadow" data-toggle-link="filter"></div>
+				<div class="filter-inner">
+					<div class="filter-mobile-header d-md-none">
+						<div class="text-h6 font-alt text--center">Фильтр</div>
+						<button class="filter-close btn btn-fab btn-small btn--icon" data-toggle-link="filter">
+							<svg class="icon text-subtitle-1">
+								<use xlink:href="img/icons.svg#cross-1" />
+							</svg>
+						</button>
+					</div>
+
+					<div class="filter-block card mb-2" >
+						<div class="filter-block-content">
+							<div class="filter-block-fields">
+								<label class="form-field form-checkbox filter-block-field">
+									<input type="checkbox" class="form-input-checkbox">
+									<div class="form-checkbox-target">
+										<svg class="icon">
+											<use xlink:href="./img/icons.svg#gal-ochka" />
+										</svg>
+									</div>
+									<div class="text-body-1 ml-2"> Мяч </div>
+								</label>
+								<label class="form-field form-checkbox filter-block-field">
+									<input type="checkbox" class="form-input-checkbox">
+									<div class="form-checkbox-target">
+										<svg class="icon">
+											<use xlink:href="./img/icons.svg#gal-ochka" />
+										</svg>
+									</div>
+									<div class="text-body-1 ml-2"> Джерси </div>
+								</label>
+								<label class="form-field form-checkbox filter-block-field">
+									<input type="checkbox" class="form-input-checkbox">
+									<div class="form-checkbox-target">
+										<svg class="icon">
+											<use xlink:href="./img/icons.svg#gal-ochka" />
+										</svg>
+									</div>
+									<div class="text-body-1 ml-2"> Шлем </div>
+								</label>
+								<label class="form-field form-checkbox filter-block-field">
+									<input type="checkbox" class="form-input-checkbox">
+									<div class="form-checkbox-target">
+										<svg class="icon">
+											<use xlink:href="./img/icons.svg#gal-ochka" />
+										</svg>
+									</div>
+									<div class="text-body-1 ml-2"> Шорты </div>
+								</label>
+								<label class="form-field form-checkbox filter-block-field">
+									<input type="checkbox" class="form-input-checkbox">
+									<div class="form-checkbox-target">
+										<svg class="icon">
+											<use xlink:href="./img/icons.svg#gal-ochka" />
+										</svg>
+									</div>
+									<div class="text-body-1 ml-2"> Бутсы </div>
+								</label>
+								<label class="form-field form-checkbox filter-block-field">
+									<input type="checkbox" class="form-input-checkbox">
+									<div class="form-checkbox-target">
+										<svg class="icon">
+											<use xlink:href="./img/icons.svg#gal-ochka" />
+										</svg>
+									</div>
+									<div class="text-body-1 ml-2"> Манишка </div>
+								</label>
+								<label class="form-field form-checkbox filter-block-field">
+									<input type="checkbox" class="form-input-checkbox">
+									<div class="form-checkbox-target">
+										<svg class="icon">
+											<use xlink:href="./img/icons.svg#gal-ochka" />
+										</svg>
+									</div>
+									<div class="text-body-1 ml-2"> Метка для мяча </div>
+								</label>
+					
+
+								
+
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+							</div>
+						</div>
+					</div>
+
+					
+					<div class="text-h6 font-alt mb-2 mt-7">Цена</div>
+					<div class="filter-block card mb-2 p-5">
+						<div class="form-field form-range" data-type="double" data-max="800" data-min="0" data-from="0"
+							data-to="800" data-floor="0">
+
+							<div class="grid">
+								<div class="grid-col-6">
+									<div class="text-body-2 fade-80 mb-1">От</div>
+									<div class="form-input-cover">
+										<input type="text" class="form-input range-input-from">
+									</div>
+								</div>
+								<div class="grid-col-6">
+									<div class="text-body-2 fade-80 mb-1">До</div>
+									<div class="form-input-cover">
+										<input type="text" class="form-input range-input-to">
+									</div>
+								</div>
+							</div>
+
+							<!-- <span class="form-range-from"> </span> мм - <span class="form-range-to"> </span> мм -->
+							<div class="range mt-2">
+								<div class="range-inner"> </div>
+							</div>
+						</div>
+					</div>
+					<div class="filter-btns">
+						<button class="btn btn--primary btn--fill w-100 mt-4">Показать</button>
+						<button class="btn btn--primary btn--light w-100 mt-2 mx-auto mx-md-0">Сбросить</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<%= _.template(require('./includes/footer.html').default)() %>
+</body>
+
+</html>

@@ -58,12 +58,14 @@ function Range(selector, params) {
 
     const nextBtn = document.createElement('button')
     nextBtn.classList.add('range-btn')
+    nextBtn.type = 'button'
     options.inner.appendChild(nextBtn)
     options.nextBtn = nextBtn
 
     if (options.type == 'double') {
       const prevBtn = document.createElement('button')
       prevBtn.classList.add('range-btn')
+      prevBtn.type = 'button'
       options.inner.appendChild(prevBtn)
       options.prevBtn = prevBtn
     }

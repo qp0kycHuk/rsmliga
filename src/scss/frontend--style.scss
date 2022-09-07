@@ -215,7 +215,7 @@ body[data-theme="dark"] {
 		position: relative;
 
 		&+& {
-			margin-left: 12px;
+			margin-left: 2px;
 		}
 	}
 
@@ -278,6 +278,7 @@ body[data-theme="dark"] {
 	&-link {
 		display    : flex;
 		align-items: center;
+		font-size  : 14px;
 
 		&.active {
 			background   : var(--color-primary-20);
@@ -324,7 +325,7 @@ body[data-theme="dark"] {
 		align-items: center;
 		width      : 100%;
 
-		.icon {
+		.icon:last-child {
 			margin-left: auto;
 		}
 	}
@@ -339,6 +340,10 @@ body[data-theme="dark"] {
 	display       : flex;
 	padding-top   : 0;
 	padding-bottom: 0;
+	
+	@media(max-width:$md){
+		display: block;
+	}
 
 	&-slider {
 		width        : calc(100% - 264px - 16px);
@@ -355,6 +360,7 @@ body[data-theme="dark"] {
 		@media(max-width:$md) {
 			width      : calc(100% + 30px);
 			margin-left: -15px;
+			border-radius: 0;
 		}
 
 		&-next,
@@ -3369,7 +3375,7 @@ option {
 
 			@media(max-width:$md) {
 				flex-direction: column;
-				align-items: flex-start;
+				align-items   : flex-start;
 			}
 		}
 	}

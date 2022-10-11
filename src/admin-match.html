@@ -12,50 +12,9 @@
 </head>
 
 <body>
+  <%= _.template(require('./includes/admin-header.html').default)() %>
+  <%= _.template(require('./includes/admin-menu.html').default)() %>
 
-
-  <header class="admin-header">
-    <div class="admin-header-user flex flex-align-center">
-      <div class="admin-header-user__img image image--round image--box image--cover mr-2" style="width: 34px;">
-        <img src="https://d.radikal.ru/d30/2102/dc/ab0fd85247a7.jpg" alt="">
-      </div>
-      <div class="text-body-2 text--demibold">Евгения Лиссова</div>
-
-      <button class="admin-header-user__exit ml-auto btn btn--primary btn--light btn-icon">
-        <svg class="icon">
-          <use xlink:href="img/icons.svg#exit" />
-        </svg>
-      </button>
-    </div>
-
-    <button class="btn btn--primary btn--fill admin-header-btn">На сайт</button>
-  </header>
-
-  <div class="admin-menu " data-toggle-cover data-toggle-static>
-    <button class="admin-menu__item btn btn--primary mb-1" data-toggle-link>
-      <svg class="icon text-h6">
-        <use xlink:href="img/icons.svg#menu" />
-      </svg>
-      <div class="text-body-1 color-text ml-2 active-enabled">Свернуть меню</div>
-    </button>
-    <button class="admin-menu__item btn btn--primary mb-1">
-      <svg class="icon text-subtitle-2">
-        <use xlink:href="img/icons.svg#doc" />
-      </svg>
-      <div class="text-body-1 text--demibold color-text ml-3 active-enabled">Заявки</div>
-    </button>
-    <button class="admin-menu__item btn btn--primary btn--light">
-      <svg class="icon text-subtitle-2">
-        <use xlink:href="img/icons.svg#ball" />
-      </svg>
-      <div class="text-body-1 text--demibold color-text ml-3 active-enabled">Матчи</div>
-      <div class="btn btn-fab btn--primary btn--white-bg active-enabled ml-auto admin-menu__add">
-        <svg class="icon">
-          <use xlink:href="img/icons.svg#plus" />
-        </svg>
-      </div>
-    </button>
-  </div>
 
   <section class="admin-content">
 
@@ -156,7 +115,7 @@
           <div class="text-small text--demibold">Протокол</div>
         </td>
         <td class="admin-table-td">
-          <div class="text-small text--demibold">Статус</div>
+          <div class="text-small text--demibold">Видео</div>
         </td>
         <td class="admin-table-td">
         </td>
@@ -194,10 +153,18 @@
         <td class="admin-table-td pl-2 pr-2">
           <div class="text-body-2 fade-80 text--center">А</div>
         </td>
-        <td class="admin-table-td pl-2 pr-2">
+        <td class="admin-table-td pl-2 pr-2 py-2">
+          <div class="mb-1 text-small">Протокол загружен</div>
           <div class="flex">
-            <button class="btn btn--text btn--link">Скачать</button>
-            <div class="ml-auto">
+            <div class="">
+              <button class="lk-team__edit btn btn--primary btn--light btn-icon">
+                <svg class="icon">
+                  <use xlink:href="img/icons.svg#download-1"></use>
+                </svg>
+              </button>
+            </div>
+            
+            <div class="ml-2">
               <button class="lk-team__edit btn btn--primary btn--light btn-icon">
                 <svg class="icon">
                   <use xlink:href="img/icons.svg#edit"></use>
@@ -213,9 +180,27 @@
             </div>
           </div>
         </td>
-        <td class="admin-table-td pl-2 pr-2">
-          <div class="text-body-2 fade-80">Загружен</div>
+   
+        <td class="admin-table-td pl-2 pr-2 py-2">
+          <div class="mb-1 text-small">Видео загружено</div>
+          <div class="flex">
+            <div class="">
+              <button class="lk-team__edit btn btn--primary btn--light btn-icon">
+                <svg class="icon">
+                  <use xlink:href="img/icons.svg#link"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="ml-2">
+              <button class="lk-team__edit  btn btn--primary btn--light btn-icon">
+                <svg class="icon">
+                  <use xlink:href="img/icons.svg#delete"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
         </td>
+   
         <td class="admin-table-td p-2">
           <button class="lk-team__edit btn btn--primary btn--light btn-icon">
             <svg class="icon">
@@ -257,12 +242,32 @@
         <td class="admin-table-td pl-2 pr-2">
           <div class="text-body-2 fade-80 text--center">А</div>
         </td>
-        <td class="admin-table-td pl-2 pr-2">
-          <button class="btn btn--primary btn--link">Добавить</button>
+        <td class="admin-table-td pl-2 pr-2 py-2">
+          <div class="mb-1 text-small fade-60">Протокол отсутствует</div>
+          <div class="flex">
+            <div class="">
+              <button class="lk-team__edit btn btn--primary btn--fill btn-icon ">
+                <svg class="icon text-small-1">
+                  <use xlink:href="img/icons.svg#plus-1"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
         </td>
-        <td class="admin-table-td pl-2 pr-2">
-          <div class="text-body-2 fade-80">Загружен</div>
+   
+        <td class="admin-table-td pl-2 pr-2 py-2">
+          <div class="mb-1 text-small fade-60">Видео отсутствует</div>
+          <div class="flex">
+            <div class="">
+              <button class="lk-team__edit btn btn--primary btn--fill btn-icon " data-fancybox-modal data-src="dialog-video-link.html">
+                <svg class="icon text-small-1">
+                  <use xlink:href="img/icons.svg#plus-1"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
         </td>
+   
         <td class="admin-table-td p-2">
           <button class="lk-team__edit btn btn--primary btn--light btn-icon">
             <svg class="icon">
@@ -272,6 +277,7 @@
         </td>
 
       </tr>
+
 
 
     </table>

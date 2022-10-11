@@ -18,13 +18,20 @@
 
 
 	<section class="video">
+		<div class="lk-tabs tab-links ">
+			<button class="lk-tabs__item tab-link active" >Видеообзоры матчей</button>
+			<button class="lk-tabs__item tab-link " >Новости</button>
+		</div>
+		<div class="mb-10"></div>
+
 		<div class="text-h6 mb-5 mb-md-8">Апрель 2021</div>
 		<div class="grid grid-spacing-md-5 grid-spacing-2">
+			<% for(let i = 1; i <= 4; i++){ %>
 			<div class="grid-col-6 grid-col-md-4 grid-col-lg-3">
 				<a href="https://www.youtube.com/watch?v=dWSqqckKjVM" data-fancybox="april2021"
 					class="video-card card h-100 hover-link-wrap">
 					<div class="video-card-img">
-						<img src="https://picsum.photos/600/400?random=11" alt="">
+						<img src="img/test-<%= i %>.jpg" alt="">
 
 						<div class="video-card-btn">
 							<img src="img/sempl/youtube-btn.svg" alt="">
@@ -47,289 +54,10 @@
 					</div>
 				</a>
 			</div>
-			<div class="grid-col-6 grid-col-md-4 grid-col-lg-3">
-				<a href="https://www.youtube.com/watch?v=dWSqqckKjVM" data-fancybox="april2021"
-					class="video-card card h-100 hover-link-wrap">
-					<div class="video-card-img">
-						<img src="https://picsum.photos/600/400?random=12" alt="">
+			<% } %>
 
-						<div class="video-card-btn">
-							<img src="img/sempl/youtube-btn.svg" alt="">
-						</div>
-					</div>
-					<div class="video-card-content">
-						<div class="video-card-date flex flex-align-center mb-3">
-							<svg class="icon text-body-2 fade-60 mr-2">
-								<use xlink:href="img/icons.svg#calendar" />
-							</svg>
-							<span class="text-small">
-								<span class="fade-80">07 авг 2021 </span>
-							</span>
-						</div>
-						<div class="video-card-title text-body-2 text-md-body-1 text--demibold hover-link">
-							Тарасовская школы №1 -
-							финалист турнира
-							«Ростсельмаш-лига»
-						</div>
-					</div>
-				</a>
-			</div>
-			<div class="grid-col-6 grid-col-md-4 grid-col-lg-3">
-				<a href="https://www.youtube.com/watch?v=dWSqqckKjVM" data-fancybox="april2021"
-					class="video-card card h-100 hover-link-wrap">
-					<div class="video-card-img">
-						<img src="https://picsum.photos/600/400?random=13" alt="">
-
-						<div class="video-card-btn">
-							<img src="img/sempl/youtube-btn.svg" alt="">
-						</div>
-					</div>
-					<div class="video-card-content">
-						<div class="video-card-date flex flex-align-center mb-3">
-							<svg class="icon text-body-2 fade-60 mr-2">
-								<use xlink:href="img/icons.svg#calendar" />
-							</svg>
-							<span class="text-small">
-								<span class="fade-80">07 авг 2021 </span>
-							</span>
-						</div>
-						<div class="video-card-title text-body-2 text-md-body-1 text--demibold hover-link">
-							Тарасовская школы №1 -
-							финалист турнира
-							«Ростсельмаш-лига»
-						</div>
-					</div>
-				</a>
-			</div>
-			<div class="grid-col-6 grid-col-md-4 grid-col-lg-3">
-				<a href="https://www.youtube.com/watch?v=dWSqqckKjVM" data-fancybox="april2021"
-					class="video-card card h-100 hover-link-wrap">
-					<div class="video-card-img">
-						<img src="https://picsum.photos/600/400?random=14" alt="">
-
-						<div class="video-card-btn">
-							<img src="img/sempl/youtube-btn.svg" alt="">
-						</div>
-					</div>
-					<div class="video-card-content">
-						<div class="video-card-date flex flex-align-center mb-3">
-							<svg class="icon text-body-2 fade-60 mr-2">
-								<use xlink:href="img/icons.svg#calendar" />
-							</svg>
-							<span class="text-small">
-								<span class="fade-80">07 авг 2021 </span>
-							</span>
-						</div>
-						<div class="video-card-title text-body-2 text-md-body-1 text--demibold hover-link">
-							Тарасовская школы №1 -
-							финалист турнира
-							«Ростсельмаш-лига»
-						</div>
-					</div>
-				</a>
-			</div>
 		</div>
 
-
-		<div class="mt-10"></div>
-		<div class="text-h6 mb-5 mb-md-8">Март 2021</div>
-		<div class="grid grid-spacing-md-5 grid-spacing-2">
-			<div class="grid-col-6 grid-col-md-4 grid-col-lg-3">
-				<a href="https://www.youtube.com/watch?v=dWSqqckKjVM" data-fancybox="march2021"
-					class="video-card card h-100 hover-link-wrap">
-					<div class="video-card-img">
-						<img src="https://picsum.photos/600/400?random=21" alt="">
-
-						<div class="video-card-btn">
-							<img src="img/sempl/youtube-btn.svg" alt="">
-						</div>
-					</div>
-					<div class="video-card-content">
-						<div class="video-card-date flex flex-align-center mb-3">
-							<svg class="icon text-body-2 fade-60 mr-2">
-								<use xlink:href="img/icons.svg#calendar" />
-							</svg>
-							<span class="text-small">
-								<span class="fade-80">07 авг 2021 </span>
-							</span>
-						</div>
-						<div class="video-card-title text-body-2 text-md-body-1 text--demibold hover-link">
-							Тарасовская школы №1 -
-							финалист турнира
-							«Ростсельмаш-лига»
-						</div>
-					</div>
-				</a>
-			</div>
-			<div class="grid-col-6 grid-col-md-4 grid-col-lg-3">
-				<a href="https://www.youtube.com/watch?v=dWSqqckKjVM" data-fancybox="march2021"
-					class="video-card card h-100 hover-link-wrap">
-					<div class="video-card-img">
-						<img src="https://picsum.photos/600/400?random=22" alt="">
-
-						<div class="video-card-btn">
-							<img src="img/sempl/youtube-btn.svg" alt="">
-						</div>
-					</div>
-					<div class="video-card-content">
-						<div class="video-card-date flex flex-align-center mb-3">
-							<svg class="icon text-body-2 fade-60 mr-2">
-								<use xlink:href="img/icons.svg#calendar" />
-							</svg>
-							<span class="text-small">
-								<span class="fade-80">07 авг 2021 </span>
-							</span>
-						</div>
-						<div class="video-card-title text-body-2 text-md-body-1 text--demibold hover-link">
-							Тарасовская школы №1 -
-							финалист турнира
-							«Ростсельмаш-лига»
-						</div>
-					</div>
-				</a>
-			</div>
-			<div class="grid-col-6 grid-col-md-4 grid-col-lg-3">
-				<a href="https://www.youtube.com/watch?v=dWSqqckKjVM" data-fancybox="march2021"
-					class="video-card card h-100 hover-link-wrap">
-					<div class="video-card-img">
-						<img src="https://picsum.photos/600/400?random=23" alt="">
-
-						<div class="video-card-btn">
-							<img src="img/sempl/youtube-btn.svg" alt="">
-						</div>
-					</div>
-					<div class="video-card-content">
-						<div class="video-card-date flex flex-align-center mb-3">
-							<svg class="icon text-body-2 fade-60 mr-2">
-								<use xlink:href="img/icons.svg#calendar" />
-							</svg>
-							<span class="text-small">
-								<span class="fade-80">07 авг 2021 </span>
-							</span>
-						</div>
-						<div class="video-card-title text-body-2 text-md-body-1 text--demibold hover-link">
-							Тарасовская школы №1 -
-							финалист турнира
-							«Ростсельмаш-лига»
-						</div>
-					</div>
-				</a>
-			</div>
-			<div class="grid-col-6 grid-col-md-4 grid-col-lg-3">
-				<a href="https://www.youtube.com/watch?v=dWSqqckKjVM" data-fancybox="march2021"
-					class="video-card card h-100 hover-link-wrap">
-					<div class="video-card-img">
-						<img src="https://picsum.photos/600/400?random=24" alt="">
-
-						<div class="video-card-btn">
-							<img src="img/sempl/youtube-btn.svg" alt="">
-						</div>
-					</div>
-					<div class="video-card-content">
-						<div class="video-card-date flex flex-align-center mb-3">
-							<svg class="icon text-body-2 fade-60 mr-2">
-								<use xlink:href="img/icons.svg#calendar" />
-							</svg>
-							<span class="text-small">
-								<span class="fade-80">07 авг 2021 </span>
-							</span>
-						</div>
-						<div class="video-card-title text-body-2 text-md-body-1 text--demibold hover-link">
-							Тарасовская школы №1 -
-							финалист турнира
-							«Ростсельмаш-лига»
-						</div>
-					</div>
-				</a>
-			</div>
-		</div>
-
-		
-		<div class="mt-10"></div>
-		<div class="text-h6 mb-5 mb-md-8">Февраль 2021</div>
-		<div class="grid grid-spacing-md-5 grid-spacing-2">
-			<div class="grid-col-6 grid-col-md-4 grid-col-lg-3">
-				<a href="https://www.youtube.com/watch?v=dWSqqckKjVM" data-fancybox="feb2021"
-					class="video-card card h-100 hover-link-wrap">
-					<div class="video-card-img">
-						<img src="https://picsum.photos/600/400?random=31" alt="">
-
-						<div class="video-card-btn">
-							<img src="img/sempl/youtube-btn.svg" alt="">
-						</div>
-					</div>
-					<div class="video-card-content">
-						<div class="video-card-date flex flex-align-center mb-3">
-							<svg class="icon text-body-2 fade-60 mr-2">
-								<use xlink:href="img/icons.svg#calendar" />
-							</svg>
-							<span class="text-small">
-								<span class="fade-80">07 авг 2021 </span>
-							</span>
-						</div>
-						<div class="video-card-title text-body-2 text-md-body-1 text--demibold hover-link">
-							Тарасовская школы №1 -
-							финалист турнира
-							«Ростсельмаш-лига»
-						</div>
-					</div>
-				</a>
-			</div>
-			<div class="grid-col-6 grid-col-md-4 grid-col-lg-3">
-				<a href="https://www.youtube.com/watch?v=dWSqqckKjVM" data-fancybox="feb2021"
-					class="video-card card h-100 hover-link-wrap">
-					<div class="video-card-img">
-						<img src="https://picsum.photos/600/400?random=32" alt="">
-
-						<div class="video-card-btn">
-							<img src="img/sempl/youtube-btn.svg" alt="">
-						</div>
-					</div>
-					<div class="video-card-content">
-						<div class="video-card-date flex flex-align-center mb-3">
-							<svg class="icon text-body-2 fade-60 mr-2">
-								<use xlink:href="img/icons.svg#calendar" />
-							</svg>
-							<span class="text-small">
-								<span class="fade-80">07 авг 2021 </span>
-							</span>
-						</div>
-						<div class="video-card-title text-body-2 text-md-body-1 text--demibold hover-link">
-							Тарасовская школы №1 -
-							финалист турнира
-							«Ростсельмаш-лига»
-						</div>
-					</div>
-				</a>
-			</div>
-			<div class="grid-col-6 grid-col-md-4 grid-col-lg-3">
-				<a href="https://www.youtube.com/watch?v=dWSqqckKjVM" data-fancybox="feb2021"
-					class="video-card card h-100 hover-link-wrap">
-					<div class="video-card-img">
-						<img src="https://picsum.photos/600/400?random=33" alt="">
-
-						<div class="video-card-btn">
-							<img src="img/sempl/youtube-btn.svg" alt="">
-						</div>
-					</div>
-					<div class="video-card-content">
-						<div class="video-card-date flex flex-align-center mb-3">
-							<svg class="icon text-body-2 fade-60 mr-2">
-								<use xlink:href="img/icons.svg#calendar" />
-							</svg>
-							<span class="text-small">
-								<span class="fade-80">07 авг 2021 </span>
-							</span>
-						</div>
-						<div class="video-card-title text-body-2 text-md-body-1 text--demibold hover-link">
-							Тарасовская школы №1 -
-							финалист турнира
-							«Ростсельмаш-лига»
-						</div>
-					</div>
-				</a>
-			</div>
-		</div>
 	</section>
 
 

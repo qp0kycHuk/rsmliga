@@ -340,8 +340,8 @@ body[data-theme="dark"] {
 	display       : flex;
 	padding-top   : 0;
 	padding-bottom: 0;
-	
-	@media(max-width:$md){
+
+	@media(max-width:$md) {
 		display: block;
 	}
 
@@ -358,8 +358,8 @@ body[data-theme="dark"] {
 		}
 
 		@media(max-width:$md) {
-			width      : calc(100% + 30px);
-			margin-left: -15px;
+			width        : calc(100% + 30px);
+			margin-left  : -15px;
 			border-radius: 0;
 		}
 
@@ -1783,7 +1783,10 @@ body[data-theme="dark"] {
 	}
 
 	&__edit {
-		background   : var(--bg1) !important;
+		&.btn--light {
+			background: var(--bg1) !important;
+		}
+
 		border-radius: 6px;
 		width        : 28px;
 		height       : 28px;

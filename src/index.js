@@ -35,8 +35,8 @@ function menuOpenHandler(event) {
         document.body.classList.add('menu-opened')
     }
     if (event.detail.target.classList.contains('filter')) {
-		document.body.classList.add('filter-open')
-	}
+        document.body.classList.add('filter-open')
+    }
 }
 
 function menuCloseHandler(event) {
@@ -44,8 +44,8 @@ function menuCloseHandler(event) {
         document.body.classList.remove('menu-opened')
     }
     if (event.detail.target.classList.contains('filter')) {
-		document.body.classList.remove('filter-open')
-	}
+        document.body.classList.remove('filter-open')
+    }
 }
 
 function loadHandler() {
@@ -55,8 +55,8 @@ function loadHandler() {
     ripple.init();
     colorSelect.init();
     showPass.init();
-	rangeSlider.init()
-	theme.init();
+    rangeSlider.init()
+    theme.init();
 
     ripple.attach('.btn')
     ripple.attach('.waved')
@@ -75,4 +75,38 @@ document.addEventListener('click', (event) => {
     window.print()
     dialog.classList.remove('fancybox-print-modal')
     document.body.classList.remove('body-print-modal')
+})
+
+document.addEventListener('click', (event) => {
+    if (!event.target.closest('.admin-select')) return;
+    if (!event.target.closest('[data-value]')) return;
+
+    const cover = event.target.closest('.admin-select')
+    const input = cover.querySelector('.admin-select-input')
+    const textNode = cover.querySelector('.admin-select-value')
+    const value = event.target.closest('[data-value]').getAttribute('data-value')
+    const text = event.target.closest('[data-text]')?.getAttribute('data-text') || value
+
+    if (!input) return
+    textNode.textContent = text
+    input.value = value
+
+})
+
+document.addEventListener('input', (event) => {
+    if (!event.target.closest('.admin-select')) return;
+
+    const cover = event.target.closest('.admin-select')
+    const input = cover.querySelector('.admin-select__select')
+    const textNode = cover.querySelector('.admin-select-value')
+
+    const option = input.options[input.options.selectedIndex]
+
+    const value = input.value
+    const text = option.text || value
+
+    if (!input) return
+    textNode.textContent = text
+    input.value = value
+
 })

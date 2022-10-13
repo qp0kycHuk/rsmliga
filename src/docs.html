@@ -16,112 +16,460 @@
 	<%= _.template(require('./includes/page-top.html').default)({ page: 'Документы' }) %>
 
 
+	<section class="catalog">
+		<div class="catalog-sidebar">
+			<div class="catalog-filter filter " id="filter">
+				<div class="filter-shadow" data-toggle-link="filter"></div>
+				<div class="filter-inner">
 
-	<section class="docs">
-		<div class="text-subtitle-1 text-md-h6 mb-5 mb-md-8">Апрель 2021</div>
-		<div class="docs-block">
-			<a href="https://picsum.photos/1920/1080?random=0" data-thumb="https://picsum.photos/600/400?random=0"
-				data-fancybox="gallery-unique-id-1" class="btn btn--link btn--primary flex-justify-start mb-6">
-				<svg class="icon mr-4 text-body-1">
-					<use xlink:href="img/icons.svg#image" />
+					<button class="filter-close btn btn--link btn-small btn--primary color-text p-4 d-md-none"
+						data-toggle-link="filter">
+						<svg class="icon text-body-2">
+							<use xlink:href="img/icons.svg#cross" />
+						</svg>
+					</button>
+
+					<div class="text-subtitle-2 font-alt mb-3">Фильтр</div>
+					<div class="filter-block card mb-2 filter-block--whith-scroll">
+						<div class="filter-block-content">
+							<div class="filter-block-fields">
+								<label class="form-field form-checkbox filter-block-field">
+									<input type="checkbox" class="form-input-checkbox">
+									<div class="form-checkbox-target flex-self-start ">
+										<svg class="icon">
+											<use xlink:href="./img/icons.svg#gal-ochka" />
+										</svg>
+									</div>
+									<div class="text-body-1 ml-2"> 
+										Методические 
+										рекомендации 
+										и инструкции	
+									</div>
+								</label>
+								<label class="form-field form-checkbox filter-block-field">
+									<input type="checkbox" class="form-input-checkbox">
+									<div class="form-checkbox-target flex-self-start">
+										<svg class="icon">
+											<use xlink:href="./img/icons.svg#gal-ochka" />
+										</svg>
+									</div>
+									<div class="text-body-1 ml-2"> Джерси </div>
+								</label>
+								<label class="form-field form-checkbox filter-block-field">
+									<input type="checkbox" class="form-input-checkbox">
+									<div class="form-checkbox-target flex-self-start">
+										<svg class="icon">
+											<use xlink:href="./img/icons.svg#gal-ochka" />
+										</svg>
+									</div>
+									<div class="text-body-1 ml-2"> Шлем </div>
+								</label>
+								<label class="form-field form-checkbox filter-block-field">
+									<input type="checkbox" class="form-input-checkbox">
+									<div class="form-checkbox-target flex-self-start ">
+										<svg class="icon">
+											<use xlink:href="./img/icons.svg#gal-ochka" />
+										</svg>
+									</div>
+									<div class="text-body-1 ml-2"> 
+										Методические 
+										рекомендации 
+										и инструкции	
+									</div>
+								</label>
+								<label class="form-field form-checkbox filter-block-field">
+									<input type="checkbox" class="form-input-checkbox">
+									<div class="form-checkbox-target flex-self-start">
+										<svg class="icon">
+											<use xlink:href="./img/icons.svg#gal-ochka" />
+										</svg>
+									</div>
+									<div class="text-body-1 ml-2"> Джерси </div>
+								</label>
+								<label class="form-field form-checkbox filter-block-field">
+									<input type="checkbox" class="form-input-checkbox">
+									<div class="form-checkbox-target flex-self-start">
+										<svg class="icon">
+											<use xlink:href="./img/icons.svg#gal-ochka" />
+										</svg>
+									</div>
+									<div class="text-body-1 ml-2"> Шлем </div>
+								</label>
+								<label class="form-field form-checkbox filter-block-field">
+									<input type="checkbox" class="form-input-checkbox">
+									<div class="form-checkbox-target flex-self-start ">
+										<svg class="icon">
+											<use xlink:href="./img/icons.svg#gal-ochka" />
+										</svg>
+									</div>
+									<div class="text-body-1 ml-2"> 
+										Методические 
+										рекомендации 
+										и инструкции	
+									</div>
+								</label>
+								<label class="form-field form-checkbox filter-block-field">
+									<input type="checkbox" class="form-input-checkbox">
+									<div class="form-checkbox-target flex-self-start">
+										<svg class="icon">
+											<use xlink:href="./img/icons.svg#gal-ochka" />
+										</svg>
+									</div>
+									<div class="text-body-1 ml-2"> Джерси </div>
+								</label>
+								<label class="form-field form-checkbox filter-block-field">
+									<input type="checkbox" class="form-input-checkbox">
+									<div class="form-checkbox-target flex-self-start">
+										<svg class="icon">
+											<use xlink:href="./img/icons.svg#gal-ochka" />
+										</svg>
+									</div>
+									<div class="text-body-1 ml-2"> Шлем </div>
+								</label>
+							</div>
+						</div>
+					</div>
+
+					<div class="text-subtitle-2 font-alt mb-3 mt-6">Тэги</div>
+					<div class="filter-block card mb-2">
+						<div class="filter-block-content">
+							<div class="filter-block-fields">
+								<label class="form-field form-checkbox filter-block-field">
+									<input type="checkbox" class="form-input-checkbox">
+									<div class="form-checkbox-target flex-self-start">
+										<svg class="icon">
+											<use xlink:href="./img/icons.svg#gal-ochka" />
+										</svg>
+									</div>
+									<div class="text-body-1 ml-2"> Мяч </div>
+								</label>
+								<label class="form-field form-checkbox filter-block-field">
+									<input type="checkbox" class="form-input-checkbox">
+									<div class="form-checkbox-target flex-self-start">
+										<svg class="icon">
+											<use xlink:href="./img/icons.svg#gal-ochka" />
+										</svg>
+									</div>
+									<div class="text-body-1 ml-2"> Джерси </div>
+								</label>
+								<label class="form-field form-checkbox filter-block-field">
+									<input type="checkbox" class="form-input-checkbox">
+									<div class="form-checkbox-target flex-self-start">
+										<svg class="icon">
+											<use xlink:href="./img/icons.svg#gal-ochka" />
+										</svg>
+									</div>
+									<div class="text-body-1 ml-2"> Шлем </div>
+								</label>
+
+							</div>
+						</div>
+					</div>
+
+					<div class="text-subtitle-2 font-alt mb-3 mt-6">Период</div>
+					<div class="filter-block card mb-2">
+						<div class="filter-block-content">
+							<div class="filter-block-fields">
+								<div class="flex flex-align-center filter-block-field">
+									<div class="flex">
+										<label class="form-field form-checkbox">
+											<input type="checkbox" class="form-input-checkbox">
+											<div class="form-checkbox-target flex-self-start">
+												<svg class="icon">
+													<use xlink:href="./img/icons.svg#gal-ochka" />
+												</svg>
+											</div>
+										</label>
+									</div>
+									<div class="text-body-1 ml-2"> 
+										<div class="admin-select d-none d-md-flex" data-toggle-cover="">
+											<!-- <div class="text-body-2 text--demibold">Сортировать: </div> -->
+											<button class="admin-select-btn btn btn--text btn--link ml-2" data-toggle-link="">
+												<span class="text--regular text-body-1 admin-select-value">Сентябрь</span>
+												<svg class="icon ml-2 text-small-2 color-primary">
+													<use xlink:href="img/icons.svg#triangle-right"></use>
+												</svg>
+											</button>
+											<div class="admin-select-list card py-1" data-toggle-content="">
+												<a href="javascript:;" class="admin-select__item py-1 px-4 text-body-2" 
+													data-toggle-link data-value="9" data-text="Сентябрь">
+													Сентябрь
+												</a>
+												<a href="javascript:;" class="admin-select__item py-1 px-4 text-body-2" 
+													data-toggle-link data-value="10" data-text="Октябрь">
+													Октябрь
+												</a>
+												<a href="javascript:;" class="admin-select__item py-1 px-4 text-body-2" 
+													data-toggle-link data-value="11" data-text="Ноябрь">
+													Ноябрь
+												</a>
+												<a href="javascript:;" class="admin-select__item py-1 px-4 text-body-2" 
+													data-toggle-link data-value="12" data-text="Декабрь">
+													Декабрь
+												</a>
+												<a href="javascript:;" class="admin-select__item py-1 px-4 text-body-2" 
+													data-toggle-link data-value="1" data-text="Январь">
+													Январь
+												</a>
+												<a href="javascript:;" class="admin-select__item py-1 px-4 text-body-2" 
+													data-toggle-link data-value="2" data-text="Февраль">
+													Февраль
+												</a>
+												<a href="javascript:;" class="admin-select__item py-1 px-4 text-body-2" 
+													data-toggle-link data-value="3" data-text="Март">
+													Март
+												</a>
+												<a href="javascript:;" class="admin-select__item py-1 px-4 text-body-2" 
+													data-toggle-link data-value="4" data-text="Апрель">
+													Апрель
+												</a>
+												<a href="javascript:;" class="admin-select__item py-1 px-4 text-body-2" 
+													data-toggle-link data-value="5" data-text="Май">
+													Май
+												</a>
+												<a href="javascript:;" class="admin-select__item py-1 px-4 text-body-2" 
+													data-toggle-link data-value="6" data-text="Июнь">
+													Июнь
+												</a>
+												<a href="javascript:;" class="admin-select__item py-1 px-4 text-body-2" 
+													data-toggle-link data-value="7" data-text="Июль">
+													Июль
+												</a>
+												<a href="javascript:;" class="admin-select__item py-1 px-4 text-body-2" 
+													data-toggle-link data-value="8" data-text="Август">
+													Август
+												</a>
+											</div>
+
+											<input type="text" class="admin-select-input d-none">
+										</div>	
+										<label class="admin-select d-md-none">
+											<div class="admin-select-btn btn btn--text btn--link ml-2" >
+												<span class="text--regular text-body-1 admin-select-value">Сентябрь</span>
+												<svg class="icon ml-2 text-small-2 color-primary">
+													<use xlink:href="img/icons.svg#triangle-right"></use>
+												</svg>
+											</div>
+
+											<select name="" id="" class="admin-select__select">
+												<option value="9">Сентябрь</option>
+												<option value="10">Октябрь</option>
+												<option value="11">Ноябрь</option>
+												<option value="12">Декабрь</option>
+												<option value="1">Январь</option>
+												<option value="2">Февраль</option>
+												<option value="3">Март</option>
+												<option value="4">Апрель</option>
+												<option value="5">Май</option>
+												<option value="6">Июнь</option>
+												<option value="7">Июль</option>
+												<option value="8">Август</option>
+											</select>
+										</label>	
+									</div>
+								</div>
+								<div class="flex flex-align-center filter-block-field">
+									<div class="flex">
+										<label class="form-field form-checkbox">
+											<input type="checkbox" class="form-input-checkbox">
+											<div class="form-checkbox-target flex-self-start">
+												<svg class="icon">
+													<use xlink:href="./img/icons.svg#gal-ochka" />
+												</svg>
+											</div>
+										</label>
+									</div>
+									<div class="text-body-1 ml-2"> 
+										<div class="admin-select d-none d-md-flex" data-toggle-cover="">
+											<!-- <div class="text-body-2 text--demibold">Сортировать: </div> -->
+											<button class="admin-select-btn btn btn--text btn--link ml-2" data-toggle-link="">
+												<span class="text--regular text-body-1 admin-select-value">2022 г.</span>
+												<svg class="icon ml-2 text-small-2 color-primary">
+													<use xlink:href="img/icons.svg#triangle-right"></use>
+												</svg>
+											</button>
+											<div class="admin-select-list card py-1" data-toggle-content="">
+												<a href="javascript:;" class="admin-select__item py-1 px-4 text-body-2" data-toggle-link data-value="2022" data-text="2022 г.">
+													2022 г.
+												</a>
+												<a href="javascript:;" class="admin-select__item py-1 px-4 text-body-2" data-toggle-link data-value="2021" data-text="2021 г.">
+													2021 г.
+												</a>
+												<a href="javascript:;" class="admin-select__item py-1 px-4 text-body-2" data-toggle-link data-value="2020" data-text="2020 г.">
+													2020 г.
+												</a>
+											</div>
+
+											<input type="text" class="admin-select-input d-none">
+										</div>	
+										<label class="admin-select d-md-none">
+											<div class="admin-select-btn btn btn--text btn--link ml-2" >
+												<span class="text--regular text-body-1 admin-select-value">2022 г.</span>
+												<svg class="icon ml-2 text-small-2 color-primary">
+													<use xlink:href="img/icons.svg#triangle-right"></use>
+												</svg>
+											</div>
+
+											<select name="" id="" class="admin-select__select">
+												<option value="2022">2022 г.</option>
+												<option value="2021">2021 г.</option>
+												<option value="2020">2020 г.</option>
+											</select>
+										</label>	
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="filter-btns">
+						<button class="btn btn--primary btn--fill w-100 mt-4">Показать</button>
+						<button class="btn btn--primary btn--light w-100 mt-2 mx-auto mx-md-0">Сбросить</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="catalog-content">
+			<button class="btn btn--primary btn--light w-100 mb-4 d-md-none" data-toggle-link="filter">
+				<svg class="icon mr-2">
+					<use xlink:href="img/icons.svg#settings-1"></use>
 				</svg>
-				<div class="text-body-2 color-text text--underline">Фотоотчет с прошедших соревнований</div>
-			</a>
-			<div class="d-none">
-				<a href="https://picsum.photos/1920/1080?random=1" data-thumb="https://picsum.photos/600/400?random=1"
-					data-fancybox="gallery-unique-id-1"></a>
-				<a href="https://picsum.photos/1920/1080?random=2" data-thumb="https://picsum.photos/600/400?random=2"
-					data-fancybox="gallery-unique-id-1"></a>
-				<a href="https://picsum.photos/1920/1080?random=3" data-thumb="https://picsum.photos/600/400?random=3"
-					data-fancybox="gallery-unique-id-1"></a>
-				<a href="https://picsum.photos/1920/1080?random=4" data-thumb="https://picsum.photos/600/400?random=4"
-					data-fancybox="gallery-unique-id-1"></a>
-				<a href="https://picsum.photos/1920/1080?random=5" data-thumb="https://picsum.photos/600/400?random=5"
-					data-fancybox="gallery-unique-id-1"></a>
-				<a href="https://picsum.photos/1920/1080?random=6" data-thumb="https://picsum.photos/600/400?random=6"
-					data-fancybox="gallery-unique-id-1"></a>
-				<a href="https://picsum.photos/1920/1080?random=7" data-thumb="https://picsum.photos/600/400?random=7"
-					data-fancybox="gallery-unique-id-1"></a>
-				<a href="https://picsum.photos/1920/1080?random=8" data-thumb="https://picsum.photos/600/400?random=8"
-					data-fancybox="gallery-unique-id-1"></a>
-				<a href="https://picsum.photos/1920/1080?random=9" data-thumb="https://picsum.photos/600/400?random=9"
-					data-fancybox="gallery-unique-id-1"></a>
-				<a href="https://picsum.photos/1920/1080?random=10" data-thumb="https://picsum.photos/600/400?random=10"
-					data-fancybox="gallery-unique-id-1"></a>
+				Открыть фильтр
+			</button>
+
+			<div class="text-subtitle-1 text-md-h6 mb-5 mb-md-8">Апрель 2021</div>
+			<div class="docs-block">
+				<a href="https://picsum.photos/1920/1080?random=0" data-thumb="https://picsum.photos/600/400?random=0"
+					data-fancybox="gallery-unique-id-1" class="btn btn--link btn--primary flex-justify-start mb-6">
+					<svg class="icon mr-4 text-body-1">
+						<use xlink:href="img/icons.svg#image" />
+					</svg>
+					<div class="text-body-2 color-text text--underline">Фотоотчет с прошедших соревнований</div>
+				</a>
+				<div class="d-none">
+					<a href="https://picsum.photos/1920/1080?random=1" data-thumb="https://picsum.photos/600/400?random=1"
+						data-fancybox="gallery-unique-id-1"></a>
+					<a href="https://picsum.photos/1920/1080?random=2" data-thumb="https://picsum.photos/600/400?random=2"
+						data-fancybox="gallery-unique-id-1"></a>
+					<a href="https://picsum.photos/1920/1080?random=3" data-thumb="https://picsum.photos/600/400?random=3"
+						data-fancybox="gallery-unique-id-1"></a>
+					<a href="https://picsum.photos/1920/1080?random=4" data-thumb="https://picsum.photos/600/400?random=4"
+						data-fancybox="gallery-unique-id-1"></a>
+					<a href="https://picsum.photos/1920/1080?random=5" data-thumb="https://picsum.photos/600/400?random=5"
+						data-fancybox="gallery-unique-id-1"></a>
+					<a href="https://picsum.photos/1920/1080?random=6" data-thumb="https://picsum.photos/600/400?random=6"
+						data-fancybox="gallery-unique-id-1"></a>
+					<a href="https://picsum.photos/1920/1080?random=7" data-thumb="https://picsum.photos/600/400?random=7"
+						data-fancybox="gallery-unique-id-1"></a>
+					<a href="https://picsum.photos/1920/1080?random=8" data-thumb="https://picsum.photos/600/400?random=8"
+						data-fancybox="gallery-unique-id-1"></a>
+					<a href="https://picsum.photos/1920/1080?random=9" data-thumb="https://picsum.photos/600/400?random=9"
+						data-fancybox="gallery-unique-id-1"></a>
+					<a href="https://picsum.photos/1920/1080?random=10" data-thumb="https://picsum.photos/600/400?random=10"
+						data-fancybox="gallery-unique-id-1"></a>
+				</div>
+
+
+
+				<a href="https://youtu.be/YAmkIt70RtU" data-fancybox
+					class="btn btn--link btn--primary flex-justify-start mb-6">
+					<svg class="icon mr-4 text-body-1">
+						<use xlink:href="img/icons.svg#play-1" />
+					</svg>
+					<div class="text-body-2 color-text text--underline">Видео награждения команды, занявшей первое место</div>
+				</a>
+				<a href="" class="btn btn--link btn--primary flex-justify-start mb-6">
+					<svg class="icon mr-4 text-body-1">
+						<use xlink:href="img/icons.svg#download" />
+					</svg>
+					<div class="text-body-2 color-text text--underline">Положение о проведении Кубка Ростсельмаш по тэг-регби
+						среди
+						общеобразовательных учреждений</div>
+				</a>
+				<a href="" class="btn btn--link btn--primary flex-justify-start mb-6">
+					<svg class="icon mr-4 text-body-1">
+						<use xlink:href="img/icons.svg#download" />
+					</svg>
+					<div class="text-body-2 color-text text--underline">Положение о проведении Кубка Ростсельмаш по тэг-регби
+						среди
+						общеобразовательных учреждений</div>
+				</a>
+				<a href="" class="btn btn--link btn--primary flex-justify-start mb-6">
+					<svg class="icon mr-4 text-body-1">
+						<use xlink:href="img/icons.svg#download" />
+					</svg>
+					<div class="text-body-2 color-text text--underline">Положение о проведении Кубка Ростсельмаш по тэг-регби
+						среди
+						общеобразовательных учреждений</div>
+				</a>
+				<a href="" class="btn btn--link btn--primary flex-justify-start">
+					<svg class="icon mr-4 text-body-1">
+						<use xlink:href="img/icons.svg#download" />
+					</svg>
+					<div class="text-body-2 color-text text--underline">Положение о проведении Кубка Ростсельмаш по тэг-регби
+						среди
+						общеобразовательных учреждений</div>
+				</a>
+			</div>
+
+			<div class="mt-10"></div>
+			<div class="text-subtitle-1 text-md-h6 mb-5 mb-md-8">Март 2021</div>
+			<div class="docs-block">
+				<a href="" class="btn btn--link btn--primary flex-justify-start mb-6">
+					<svg class="icon mr-4 text-body-1">
+						<use xlink:href="img/icons.svg#download" />
+					</svg>
+					<div class="text-body-2 color-text text--underline">Положение о проведении Кубка Ростсельмаш по тэг-регби
+						среди
+						общеобразовательных учреждений</div>
+				</a>
+				<a href="" class="btn btn--link btn--primary flex-justify-start mb-6">
+					<svg class="icon mr-4 text-body-1">
+						<use xlink:href="img/icons.svg#download" />
+					</svg>
+					<div class="text-body-2 color-text text--underline">Положение о проведении Кубка Ростсельмаш по тэг-регби
+						среди
+						общеобразовательных учреждений</div>
+				</a>
+				<a href="" class="btn btn--link btn--primary flex-justify-start mb-6">
+					<svg class="icon mr-4 text-body-1">
+						<use xlink:href="img/icons.svg#download" />
+					</svg>
+					<div class="text-body-2 color-text text--underline">Положение о проведении Кубка Ростсельмаш по тэг-регби
+						среди
+						общеобразовательных учреждений</div>
+				</a>
+				<a href="" class="btn btn--link btn--primary flex-justify-start">
+					<svg class="icon mr-4 text-body-1">
+						<use xlink:href="img/icons.svg#download" />
+					</svg>
+					<div class="text-body-2 color-text text--underline">Положение о проведении Кубка Ростсельмаш по тэг-регби
+						среди
+						общеобразовательных учреждений</div>
+				</a>
 			</div>
 
 
 
-			<a href="https://youtu.be/YAmkIt70RtU" data-fancybox class="btn btn--link btn--primary flex-justify-start mb-6">
-				<svg class="icon mr-4 text-body-1">
-					<use xlink:href="img/icons.svg#play-1" />
-				</svg>
-				<div class="text-body-2 color-text text--underline">Видео награждения команды, занявшей первое место</div>
-			</a>
-			<a href="" class="btn btn--link btn--primary flex-justify-start mb-6">
-				<svg class="icon mr-4 text-body-1">
-					<use xlink:href="img/icons.svg#download" />
-				</svg>
-				<div class="text-body-2 color-text text--underline">Положение о проведении Кубка Ростсельмаш по тэг-регби среди
-					общеобразовательных учреждений</div>
-			</a>
-			<a href="" class="btn btn--link btn--primary flex-justify-start mb-6">
-				<svg class="icon mr-4 text-body-1">
-					<use xlink:href="img/icons.svg#download" />
-				</svg>
-				<div class="text-body-2 color-text text--underline">Положение о проведении Кубка Ростсельмаш по тэг-регби среди
-					общеобразовательных учреждений</div>
-			</a>
-			<a href="" class="btn btn--link btn--primary flex-justify-start mb-6">
-				<svg class="icon mr-4 text-body-1">
-					<use xlink:href="img/icons.svg#download" />
-				</svg>
-				<div class="text-body-2 color-text text--underline">Положение о проведении Кубка Ростсельмаш по тэг-регби среди
-					общеобразовательных учреждений</div>
-			</a>
-			<a href="" class="btn btn--link btn--primary flex-justify-start">
-				<svg class="icon mr-4 text-body-1">
-					<use xlink:href="img/icons.svg#download" />
-				</svg>
-				<div class="text-body-2 color-text text--underline">Положение о проведении Кубка Ростсельмаш по тэг-регби среди
-					общеобразовательных учреждений</div>
-			</a>
-		</div>
 
-		<div class="mt-10"></div>
-		<div class="text-subtitle-1 text-md-h6 mb-5 mb-md-8">Март 2021</div>
-		<div class="docs-block">
-			<a href="" class="btn btn--link btn--primary flex-justify-start mb-6">
-				<svg class="icon mr-4 text-body-1">
-					<use xlink:href="img/icons.svg#download" />
-				</svg>
-				<div class="text-body-2 color-text text--underline">Положение о проведении Кубка Ростсельмаш по тэг-регби среди
-					общеобразовательных учреждений</div>
-			</a>
-			<a href="" class="btn btn--link btn--primary flex-justify-start mb-6">
-				<svg class="icon mr-4 text-body-1">
-					<use xlink:href="img/icons.svg#download" />
-				</svg>
-				<div class="text-body-2 color-text text--underline">Положение о проведении Кубка Ростсельмаш по тэг-регби среди
-					общеобразовательных учреждений</div>
-			</a>
-			<a href="" class="btn btn--link btn--primary flex-justify-start mb-6">
-				<svg class="icon mr-4 text-body-1">
-					<use xlink:href="img/icons.svg#download" />
-				</svg>
-				<div class="text-body-2 color-text text--underline">Положение о проведении Кубка Ростсельмаш по тэг-регби среди
-					общеобразовательных учреждений</div>
-			</a>
-			<a href="" class="btn btn--link btn--primary flex-justify-start">
-				<svg class="icon mr-4 text-body-1">
-					<use xlink:href="img/icons.svg#download" />
-				</svg>
-				<div class="text-body-2 color-text text--underline">Положение о проведении Кубка Ростсельмаш по тэг-регби среди
-					общеобразовательных учреждений</div>
-			</a>
 		</div>
-
 	</section>
+
 
 
 	<%= _.template(require('./includes/footer.html').default)() %>

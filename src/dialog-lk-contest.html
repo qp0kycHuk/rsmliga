@@ -43,6 +43,22 @@
 				</div>
 			</label>
 			<label class="form-field w-100 mt-4">
+				<div class="text-body-2 text--demibold mb-2">Статус</div>
+				<div class="form-input-cover">
+					<select name="" class="form-input pr-8">
+						<option value="">Проводится</option>
+						<option value="">Планируется</option>
+						<option value="">Прием заявок</option>
+						<option value="">Завершено</option>
+					</select>
+					<div class="form-select-icon">
+						<svg class="icon" style="transform: rotateZ(90deg);">
+							<use xlink:href="img/icons.svg#triangle-right" />
+						</svg>
+					</div>
+				</div>
+			</label>
+			<label class="form-field w-100 mt-4">
 				<div class="text-body-2 text--demibold mb-2">Максимальное количество участников</div>
 				<div class="form-input-cover">
 					<input type="number" class="form-input" name="count" required>
@@ -53,6 +69,18 @@
 				<div class="form-input-cover">
 					<textarea class="form-input" name="name" required></textarea>
 				</div>
+			</label>
+
+			<label class="form-field form-checkbox mt-4">
+
+				<input type="checkbox" class="form-input-checkbox">
+				<div class="form-checkbox-target">
+				  <svg class="icon">
+					<use xlink:href="img/icons.svg#gal-ochka" />
+				  </svg>
+				</div>
+				<div class="text-body-1 ml-3"> Запретить прием заявок </div>
+	  
 			</label>
 
 

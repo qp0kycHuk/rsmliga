@@ -314,10 +314,12 @@
 	}
 
 	&-input-checkbox:checked~&-checkbox-target {
-		animation: check .3s forwards;
+		animation   : check .3s forwards;
+		background  : var(--color-primary);
+		border-color: var(--color-primary);
 
 		.icon {
-			color    : var(--color-primary);
+			color    : #fff;
 			transform: scale(1);
 		}
 	}

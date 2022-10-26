@@ -588,7 +588,47 @@ body[data-theme="dark"] {
 		}
 	}
 
+	&-tags {
+		display      : flex;
+		margin-bottom: 8px;
+		overflow     : hidden;
 
+	}
+
+	&-tag {
+		padding      : 0 8px;
+		background   : var(--color-primary-20);
+		font-size    : 12px;
+		border-radius: 4px;
+		white-space  : nowrap;
+		height       : 24px;
+		display      : flex;
+		align-items  : center;
+		flex-grow    : 1;
+
+		&:last-of-type {
+			overflow: hidden;
+
+			@media(max-width:$sm) {
+				display: none;
+			}
+		}
+
+		span {
+			width        : 100%;
+			overflow     : hidden;
+			text-overflow: ellipsis;
+
+		}
+
+		@media(max-width:$sm) {
+			overflow: hidden;
+		}
+
+		&+& {
+			margin-left: 4px;
+		}
+	}
 
 	&--popular {
 		position: relative;

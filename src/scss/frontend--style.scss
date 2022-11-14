@@ -3583,3 +3583,152 @@ option {
 		}
 	}
 }
+
+.map-page {
+	&__map {
+		height         : 1100px;
+		display        : flex;
+		align-items    : center;
+		justify-content: center;
+		position       : relative;
+
+		&-svg {
+			max-width: 100%;
+		}
+	}
+
+	&__back {
+		position      : absolute;
+		left          : 30px;
+		top           : 30px;
+		opacity       : 0;
+		pointer-events: none;
+	}
+
+	&__map-svg.conference-active~&__back {
+		opacity       : 1;
+		pointer-events: all;
+	}
+
+	&__items {
+		margin-top: 20px;
+	}
+
+	&-item {
+		background   : #FFFFFF;
+		border       : 1px solid rgba(220, 220, 220, 0.6);
+		border-radius: 12px;
+
+		&__button {
+			display    : flex;
+			align-items: center;
+			padding    : 28px 30px;
+		}
+
+		&__inner {
+			border-top: 1px solid rgba(36, 36, 36, 0.2);
+			padding   : 20px 24px;
+
+		}
+
+		&__area {
+			background   : rgba(221, 221, 221, 0.4);
+			border-radius: 7px;
+			padding      : 2px 14px;
+			display      : flex;
+			align-items  : center;
+			margin-bottom: 10px;
+			line-height  : 1.1;
+			height       : 50px;
+		}
+
+	}
+}
+
+.conference {
+	&-root {}
+
+	&-group {
+		transition: opacity .25s, fill .25s;
+	}
+
+	&-path {
+		fill        : #E9EBEF;
+		stroke      : #333333;
+		stroke-width: 2;
+		cursor      : pointer;
+		transition  : opacity .25s, fill .25s;
+
+		@media(hover) {
+			&:hover {
+				fill: #DFE0E1
+			}
+		}
+	}
+
+	&-area {
+		fill          : #E9EBEF;
+		stroke        : #333333;
+		stroke-width  : 2;
+		transition    : opacity .25s, fill .25s;
+		opacity       : 0;
+		pointer-events: none;
+		cursor        : pointer;
+
+		@media(hover) {
+			&:hover {
+				fill: #DFE0E1
+			}
+		}
+	}
+
+	&-titles {
+		pointer-events: none;
+		transition    : opacity .25s;
+	}
+
+	&-area-titles {
+		pointer-events: none;
+		transition    : opacity .25s;
+		opacity       : 0;
+	}
+
+	&-root.conference-active &-group:not(.conference-group-active) {
+		opacity       : 0;
+		pointer-events: none;
+	}
+
+	&-group-active &-area {
+		pointer-events: all;
+		opacity       : 1;
+	}
+
+	&-group-active &-area-titles {
+		opacity: 1;
+
+	}
+
+	&-root.conference-active &-titles {
+		opacity: 0;
+	}
+
+
+	&-tooltip {
+		background   : #F1F3F5;
+		border-radius: 8px;
+		padding      : 12px;
+	}
+}
+
+.tippy-box[data-theme~=light] {
+	box-shadow: 0px 4px 20px rgba(26, 26, 26, 0.2);
+
+}
+
+.tippy-box {
+	border-radius: 8px;
+}
+
+.tippy-content {
+	padding: 8px;
+}

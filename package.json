@@ -43,11 +43,13 @@
   },
   "dependencies": {
     "@fancyapps/ui": "^4.0.27",
+    "@svgdotjs/svg.js": "^3.1.2",
     "air-datepicker": "^3.2.0",
     "npm-kit-ripple": "^1.5.6",
     "npm-kit-tab": "^1.0.0",
     "npm-kit-toggle": "^1.1.0",
     "raw-loader": "^4.0.2",
-    "swiper": "^8.2.4"
+    "swiper": "^8.2.4",
+    "tippy.js": "^6.3.7"
   }
 }

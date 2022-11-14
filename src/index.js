@@ -8,7 +8,11 @@ import colorSelect from './js/color-select'
 import showPass from "./js/show-pass";
 import rangeSlider from './js/range-slider';
 import theme from './js/theme';
+import conferenceMap from './js/conference-map';
 
+import 'tippy.js/dist/tippy.css';
+import 'tippy.js/themes/light.css';
+import 'tippy.js/animations/perspective.css';
 import 'swiper/css';
 import 'npm-kit-ripple/index.css';
 import 'air-datepicker/air-datepicker.css';
@@ -57,6 +61,7 @@ function loadHandler() {
     showPass.init();
     rangeSlider.init()
     theme.init();
+    conferenceMap.init();
 
     ripple.attach('.btn')
     ripple.attach('.waved')

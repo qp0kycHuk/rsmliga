@@ -126,6 +126,10 @@
 		white-space: nowrap;
 		text-overflow: ellipsis;
 	}
+
+	&--nowrap{
+		white-space: nowrap
+	}
 }
 
 .text {

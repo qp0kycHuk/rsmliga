@@ -80,6 +80,17 @@ body[data-theme="dark"] {
 	background: var(--bg1);
 }
 
+.bg-l1{
+	background: var(--bg1);
+}
+
+.bg-l2{
+	background: var(--bg2);
+}
+
+.bg-l3{
+	background: var(--bg3);
+}
 
 .bd-top {
 	border-top: 1px solid #E2E8F0;
@@ -1566,7 +1577,7 @@ body[data-theme="dark"] {
 	}
 
 	&-gallery {
-		display    : flex;
+		display       : flex;
 		// align-items: flex-end;
 
 		@media(max-width:$md) {
@@ -1605,7 +1616,7 @@ body[data-theme="dark"] {
 			display     : flex;
 			margin-left : -8px;
 			margin-right: -8px;
-			flex-wrap: wrap;
+			flex-wrap   : wrap;
 
 		}
 
@@ -3453,9 +3464,9 @@ option {
 		align-items: center;
 	}
 
-	&-link{
+	&-link {
 		position: absolute;
-		inset: 0;
+		inset   : 0;
 	}
 }
 
@@ -3595,6 +3606,19 @@ option {
 		align-items    : center;
 		justify-content: center;
 		position       : relative;
+		padding        : 15px;
+
+		@media(max-width:$lg) {
+			height: 600px;
+		}
+
+		@media(max-width:$md) {
+			height: 100vw;
+		}
+
+		@media(max-width:$sm) {
+			padding-top: 60px;
+		}
 
 		&-svg {
 			max-width: 100%;
@@ -3607,6 +3631,12 @@ option {
 		top           : 30px;
 		opacity       : 0;
 		pointer-events: none;
+		
+		@media(max-width:$sm){
+			left: 15px;
+			top: 15px;
+			width: calc(100% - 30px);
+		}
 	}
 
 	&__map-svg.conference-active~&__back {
@@ -3627,12 +3657,21 @@ option {
 			display    : flex;
 			align-items: center;
 			padding    : 28px 30px;
+			cursor     : pointer;
+
+			@media(max-width:$lg) {
+				padding: 20px 15px;
+			}
 		}
 
 		&__inner {
 			border-top: 1px solid rgba(36, 36, 36, 0.2);
 			padding   : 20px 24px;
 
+			@media(max-width:$lg) {
+				padding-left : 15px;
+				padding-right: 15px;
+			}
 		}
 
 		&__area {
@@ -3644,6 +3683,11 @@ option {
 			margin-bottom: 10px;
 			line-height  : 1.1;
 			height       : 50px;
+
+			&.active {
+				background: var(--color-primary) !important;
+				color     : #fff;
+			}
 		}
 
 	}
@@ -3684,6 +3728,10 @@ option {
 				fill: #DFE0E1
 			}
 		}
+
+		&.active {
+			fill: var(--color-primary-50);
+		}
 	}
 
 	&-titles {
@@ -3697,6 +3745,7 @@ option {
 		opacity       : 0;
 	}
 
+	&-root.conference-active &-dot:not(.conference-group-active),
 	&-root.conference-active &-group:not(.conference-group-active) {
 		opacity       : 0;
 		pointer-events: none;
@@ -3716,6 +3765,9 @@ option {
 		opacity: 0;
 	}
 
+	&-dot{
+		cursor: pointer;
+	}
 
 	&-tooltip {
 		background   : #F1F3F5;

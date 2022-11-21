@@ -8,7 +8,7 @@ import colorSelect from './color-select'
 import showPass from "./show-pass";
 import rangeSlider from './range-slider';
 import theme from './theme';
-import conferenceMap from './conference-map';
+// import conferenceMap from './conference-map';
 
 import 'tippy.js/dist/tippy.css';
 import 'tippy.js/themes/light.css';
@@ -61,13 +61,18 @@ function loadHandler() {
     showPass.init();
     rangeSlider.init()
     theme.init();
-    conferenceMap.init();
 
     ripple.attach('.btn')
     ripple.attach('.waved')
     ripple.attach('.news-card')
     ripple.attach('.slider-btn')
     ripple.deAttach('.btn--link')
+
+    if (document.getElementById('conference-map')) {
+        import('./conference-map').then((conferenceMap) => {
+            conferenceMap.default.init()
+        })
+    }
 }
 
 

@@ -3,12 +3,12 @@ import Swiper, { Navigation, Pagination, Scrollbar, Autoplay, Grid, Thumbs, Effe
 import tab from 'npm-kit-tab';
 import toggle from 'npm-kit-toggle';
 import ripple from 'npm-kit-ripple';
-import fancybox from "./js/fancybox";
-import colorSelect from './js/color-select'
-import showPass from "./js/show-pass";
-import rangeSlider from './js/range-slider';
-import theme from './js/theme';
-import conferenceMap from './js/conference-map';
+import fancybox from "./fancybox";
+import colorSelect from './color-select'
+import showPass from "./show-pass";
+import rangeSlider from './range-slider';
+import theme from './theme';
+import conferenceMap from './conference-map';
 
 import 'tippy.js/dist/tippy.css';
 import 'tippy.js/themes/light.css';
@@ -16,10 +16,10 @@ import 'tippy.js/animations/perspective.css';
 import 'swiper/css';
 import 'npm-kit-ripple/index.css';
 import 'air-datepicker/air-datepicker.css';
-import './ui/ui-reset.scss';
-import './ui/ui-core.scss';
-import './scss/frontend--fonts.scss';
-import './scss/frontend--style.scss';
+import '../ui/ui-reset.scss';
+import '../ui/ui-core.scss';
+import '../scss/frontend--fonts.scss';
+import '../scss/frontend--style.scss';
 
 window.AirDatepicker = AirDatepicker;
 window.Swiper = Swiper;

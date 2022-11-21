@@ -2,6 +2,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 const CopyPlugin = require("copy-webpack-plugin");
 const path = require('path');
+const { VueLoaderPlugin } = require('vue-loader')
 const fs = require('fs');
 
 const PUBLIC_PATH = path.resolve(__dirname, 'dist')
@@ -44,7 +45,7 @@ function generateCopyDialogsPlugins(templateDir) {
 }
 
 module.exports = {
-  entry: './src/index.js',
+  entry: './src/js/index.js',
   resolve: {
     alias: {
       '@src': path.resolve(__dirname, 'src/')
@@ -53,7 +54,7 @@ module.exports = {
   },
   output: {
     path: PUBLIC_PATH,
-    filename: 'index.js',
+    filename: 'js/index.js',
   },
   devtool: "source-map",
   module: {
@@ -85,6 +86,10 @@ module.exports = {
         }
       },
       {
+        test: /\.vue$/,
+        loader: 'vue-loader',
+      },
+      {
         test: /\.html$/,
         include: path.resolve(__dirname, 'src/includes'),
         use: ['raw-loader']
@@ -100,6 +105,8 @@ module.exports = {
         ...generateCopyDialogsPlugins('./src')
       ],
     }),
+    new VueLoaderPlugin(),
+    
   ],
   devServer: {
     compress: false,

@@ -3404,6 +3404,7 @@ option {
 }
 
 .order-item {
+	position: relative;
 	overflow: hidden;
 	border  : 1px solid #DADAE1;
 
@@ -3450,6 +3451,11 @@ option {
 	&-control {
 		display    : flex;
 		align-items: center;
+	}
+
+	&-link{
+		position: absolute;
+		inset: 0;
 	}
 }
 

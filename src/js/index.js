@@ -68,11 +68,6 @@ function loadHandler() {
     ripple.attach('.slider-btn')
     ripple.deAttach('.btn--link')
 
-    if (document.getElementById('conference-map')) {
-        import('./conference-map').then((conferenceMap) => {
-            conferenceMap.default.init()
-        })
-    }
 }
 
 

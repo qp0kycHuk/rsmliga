@@ -234,7 +234,7 @@ function createTooltipOpts({ rating, place, offset }) {
         <div class="map-page__back">
             <button class="btn btn--primary btn--light w-100" @click="closeConference">
                 <svg class="icon text-subtitle-2 mr-2">
-                    <use :xlink:href="`img/icons.svg#arrow-left`" />
+                    <use :xlink:href="`${ASSETS_PART}/img/icons.svg#arrow-left`" />
                 </svg>
                 Вернуться на карту конференций
             </button>

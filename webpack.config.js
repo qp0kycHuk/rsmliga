@@ -45,7 +45,10 @@ function generateCopyDialogsPlugins(templateDir) {
 }
 
 module.exports = {
-  entry: './src/js/index.js',
+  entry: {
+    index: './src/js/index.js',
+    ['conference-map']: './src/js/conference-map/index.js'
+  },
   resolve: {
     alias: {
       '@src': path.resolve(__dirname, 'src/')
@@ -54,7 +57,7 @@ module.exports = {
   },
   output: {
     path: PUBLIC_PATH,
-    filename: 'js/index.js',
+    filename: 'js/[name].js',
   },
   devtool: "source-map",
   module: {
@@ -106,7 +109,7 @@ module.exports = {
       ],
     }),
     new VueLoaderPlugin(),
-    
+
   ],
   devServer: {
     compress: false,

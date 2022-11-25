@@ -80,15 +80,15 @@ body[data-theme="dark"] {
 	background: var(--bg1);
 }
 
-.bg-l1{
+.bg-l1 {
 	background: var(--bg1);
 }
 
-.bg-l2{
+.bg-l2 {
 	background: var(--bg2);
 }
 
-.bg-l3{
+.bg-l3 {
 	background: var(--bg3);
 }
 
@@ -933,6 +933,31 @@ body[data-theme="dark"] {
 	&-slider .swiper-slide {
 		@media(max-width:$md) {
 			min-width: 280px;
+		}
+	}
+
+	&-plug {
+		display       : flex;
+		align-items   : center;
+		flex-direction: row;
+		padding       : 42px 48px;
+
+		@media(max-width:$sm) {
+			padding-left : 15px;
+			padding-right: 15px;
+			width        : calc(100% + 30px);
+			margin-left  : -15px;
+			border-radius: 0;
+		}
+
+		&__img {
+			margin-left  : auto;
+			margin-top   : -100px;
+			margin-bottom: -62px;
+
+			@media(max-width:$sm) {
+				margin-top: -62px;
+			}
 		}
 	}
 }
@@ -3631,10 +3656,10 @@ option {
 		top           : 30px;
 		opacity       : 0;
 		pointer-events: none;
-		
-		@media(max-width:$sm){
-			left: 15px;
-			top: 15px;
+
+		@media(max-width:$sm) {
+			left : 15px;
+			top  : 15px;
 			width: calc(100% - 30px);
 		}
 	}
@@ -3765,7 +3790,7 @@ option {
 		opacity: 0;
 	}
 
-	&-dot{
+	&-dot {
 		cursor: pointer;
 	}
 

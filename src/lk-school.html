@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Личный кабинет</title>
+
+
+
+</head>
+
+<body>
+	<%= _.template(require('./includes/header.html').default)() %>
+
+
+		<section>
+
+			<div class="lk-tabs tab-links">
+				<button class="lk-tabs__item tab-link active">Инфо о школе</button>
+				<button class="lk-tabs__item tab-link ">Инфо о команде</button>
+				<button class="lk-tabs__item tab-link ">Игры команды</button>
+
+			</div>
+
+
+
+			<div class="lk-top mb-8">
+				<div class="lk-top-info mb-8">
+					<div class="lk-top-info__img image image--round"> a </div>
+					<div class="lk-top-info__desc">
+						<div class="text-md-h6 text-body-0 text--demibold mb-2">Аксайские броненосцы (Броненосцы)</div>
+						<div class="text-body-2 fade-80 mb-3">Орловская СОШ №3</div>
+						<div class="lk-top-info__links">
+							<a href="" class="btn btn--primary btn--link mr-3 text-small">Орловский р-н</a>
+							<div class="lk-top-info__link">
+								<div class="text-body-2 fade-80">https://осош3.рф</div>
+							</div>
+							<div class="lk-top-info__link">
+								<img src="img/sempl/vk.png" alt="" class="icon">
+							</div>
+							<div class="lk-top-info__link">
+								<img src="img/sempl/inst.png" alt="" class="icon">
+							</div>
+							<div class="lk-top-info__link lk-top-info__link--primary">
+								<svg class="icon color-primary mr-2">
+									<use xlink:href="img/icons.svg#ball-1" />
+								</svg>
+								<div class="text-body-2 fade-80">Спортивная</div>
+							</div>
+							<div class="lk-top-info__link lk-top-info__link--primary">
+								<svg class="icon color-primary mr-2">
+									<use xlink:href="img/icons.svg#book" />
+								</svg>
+								<div class="text-body-2 fade-80">Общеобразовательная</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="lk-top-gallery mb-5">
+					<div class="lk-top-gallery__left">
+						<div class="text-body-0 text--demibold mb-4">Общее фото</div>
+						<a href="https://picsum.photos/id/1020/1920/1080" data-fancybox="gallery"
+							class="lk-top-gallery__img">
+							<img src="https://picsum.photos/id/1020/600/400" alt="">
+						</a>
+					</div>
+					<div class="lk-top-gallery__content">
+						<div class="text-body-2 text--demibold">Дополнительные фото</div>
+						<div class="bd-bottom mt-3 mb-3"></div>
+						<div class="lk-top-gallery__thumbs">
+							<a href="https://picsum.photos/id/1020/1920/1080" data-fancybox="gallery"
+								class="lk-top-gallery__thumb">
+								<img src="https://picsum.photos/id/1020/600/400" alt="">
+							</a>
+							<a href="https://picsum.photos/id/1020/1920/1080" data-fancybox="gallery"
+								class="lk-top-gallery__thumb">
+								<img src="https://picsum.photos/id/1020/600/400" alt="">
+								<div class="lk-top-gallery__thumb-close">
+									<svg class="icon">
+										<use xlink:href="img/icons.svg#cross" />
+									</svg>
+								</div>
+							</a>
+							<a href="https://picsum.photos/id/1020/1920/1080" data-fancybox="gallery"
+								class="lk-top-gallery__thumb">
+								<img src="https://picsum.photos/id/1020/600/400" alt="">
+							</a>
+							<label class="lk-top-gallery__thumb lk-top-gallery__thumb-add">
+								<input type="file">
+								<img src="img/icons/camera.png" alt="" class="icon text-h4 mb-1">
+								<span class="text-body-2">Добавить фото</span>
+							</label>
+							<label class="lk-top-gallery__thumb lk-top-gallery__thumb-add">
+								<input type="file">
+								<button class="btn btn--primary btn--fill btn-fab btn-small mb-1">
+									<svg class="icon text-small">
+										<use xlink:href="img/icons.svg#play" />
+									</svg>
+								</button>
+								<span class="text-body-2">Добавить видео</span>
+							</label>
+						</div>
+					</div>
+				</div>
+
+				<button class="lk-top__edit btn btn--primary btn--link" data-fancybox-modal
+					data-src="dialog-lk-edit.html" data-type="ajax">
+					<svg class="icon mr-md-2">
+						<use xlink:href="img/icons.svg#setting" />
+					</svg>
+					<div class="text-body-2 text--demibold color-text d-none d-md-block">Редактировать</div>
+				</button>
+			</div>
+
+			<div class="text-h6 mb-4">Представитель школы</div>
+			<div class="lk-dude mb-4">
+				<div class="lk-dude__img">
+					<img src="https://picsum.photos/id/237/600/400" alt="">
+				</div>
+				<div class="lk-dude__info">
+					<div class="text-md-h4 text-body-0 text--demibold mb-1">Владимир Карагодин</div>
+					<div class="text-body-2 fade-80 mb-3">Тренер</div>
+					<div class="lk-top-info__link">
+						<div class="text-body-2 fade-80">Дата рождения: 15.02.1980</div>
+					</div>
+
+					<div class="lk-dude__contacts mt-4">
+						<a class="lk-dude__contact btn btn--link btn--primary mr-md-6 mb-2 mb-md-0">
+							<svg class="icon mr-2">
+								<use xlink:href="img/icons.svg#phone" />
+							</svg>
+							<div class="text-body-2 text--demibold color-text">8 918 000 00 00</div>
+						</a>
+						<a class="lk-dude__contact btn btn--link btn--primary">
+							<svg class="icon mr-2">
+								<use xlink:href="img/icons.svg#phone" />
+							</svg>
+							<div class="text-body-2 text--demibold color-text">vladimirrugby@mail.ru</div>
+						</a>
+					</div>
+				</div>
+				<button class="lk-dude__edit btn btn--primary btn--link" data-fancybox-modal
+					data-src="dialog-lk-dude.html" data-type="ajax">
+					<svg class="icon mr-md-2">
+						<use xlink:href="img/icons.svg#setting" />
+					</svg>
+					<div class="text-body-2 text--demibold color-text d-none d-md-block">Редактировать</div>
+				</button>
+			</div>
+
+			<!-- Tабы команды -->
+			<div class="lk-teams mb-5">
+				<button class="btn btn--primary btn--light lk-teams__item">Команда 1</button>
+				<button class="btn btn--primary btn--fill lk-teams__item">Команда 2</button>
+				<button class="btn btn--color-icon btn--light lk-teams__item pl-2 pr-4">
+					<svg class="icon mr-2 color-primary">
+						<use xlink:href="img/icons.svg#plus" />
+					</svg>
+					<div class="text-body-2">Добавить команду</div>
+				</button>
+			</div>
+
+			<div class="lk-top mb-8">
+				<div class="lk-top-info mb-8">
+					<div class="lk-top-info__img image image--round"> a </div>
+					<div class="lk-top-info__desc">
+						<div class="text-md-h6 text-body-0 text--demibold mb-2">Аксайские броненосцы (Броненосцы)</div>
+						<div class="text-body-2 fade-80 mb-3">Орловская СОШ №3</div>
+						<div class="lk-top-info__links">
+							<a href="" class="btn btn--primary btn--link mr-3 text-small">Орловский р-н</a>
+							<div class="lk-top-info__link">
+								<div class="text-body-2 fade-80">https://осош3.рф</div>
+							</div>
+							<div class="lk-top-info__link">
+								<img src="img/sempl/vk.png" alt="" class="icon">
+							</div>
+							<div class="lk-top-info__link">
+								<img src="img/sempl/inst.png" alt="" class="icon">
+							</div>
+							<div class="lk-top-info__link lk-top-info__link--primary">
+								<svg class="icon color-primary mr-2">
+									<use xlink:href="img/icons.svg#ball-1" />
+								</svg>
+								<div class="text-body-2 fade-80">Спортивная</div>
+							</div>
+							<div class="lk-top-info__link lk-top-info__link--primary">
+								<svg class="icon color-primary mr-2">
+									<use xlink:href="img/icons.svg#book" />
+								</svg>
+								<div class="text-body-2 fade-80">Общеобразовательная</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="lk-top-gallery mb-5">
+					<div class="lk-top-gallery__left">
+						<div class="text-body-0 text--demibold mb-4">Общее фото</div>
+						<a href="https://picsum.photos/id/1020/1920/1080" data-fancybox="gallery"
+							class="lk-top-gallery__img">
+							<img src="https://picsum.photos/id/1020/600/400" alt="">
+						</a>
+					</div>
+					<div class="lk-top-gallery__content">
+						<div class="text-body-2 text--demibold">Дополнительные фото</div>
+						<div class="bd-bottom mt-3 mb-3"></div>
+						<div class="lk-top-gallery__thumbs">
+							<a href="https://picsum.photos/id/1020/1920/1080" data-fancybox="gallery"
+								class="lk-top-gallery__thumb">
+								<img src="https://picsum.photos/id/1020/600/400" alt="">
+							</a>
+							<a href="https://picsum.photos/id/1020/1920/1080" data-fancybox="gallery"
+								class="lk-top-gallery__thumb">
+								<img src="https://picsum.photos/id/1020/600/400" alt="">
+								<div class="lk-top-gallery__thumb-close">
+									<svg class="icon">
+										<use xlink:href="img/icons.svg#cross" />
+									</svg>
+								</div>
+							</a>
+							<a href="https://picsum.photos/id/1020/1920/1080" data-fancybox="gallery"
+								class="lk-top-gallery__thumb">
+								<img src="https://picsum.photos/id/1020/600/400" alt="">
+							</a>
+							<label class="lk-top-gallery__thumb lk-top-gallery__thumb-add">
+								<input type="file">
+								<img src="img/icons/camera.png" alt="" class="icon text-h4 mb-1">
+								<span class="text-body-2">Добавить фото</span>
+							</label>
+							<label class="lk-top-gallery__thumb lk-top-gallery__thumb-add">
+								<input type="file">
+								<button class="btn btn--primary btn--fill btn-fab btn-small mb-1">
+									<svg class="icon text-small">
+										<use xlink:href="img/icons.svg#play" />
+									</svg>
+								</button>
+								<span class="text-body-2">Добавить видео</span>
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="lk-top-docs">
+					<div class="text-body-0 text--demibold mb-6">Документы</div>
+					<div class="lk-top-docs__item mb-4">
+						<img src="img/icons/file-add.png" alt="">
+						<div class="text-body-2 text--underline">Добавить скан-копию подписанной заявки*</div>
+					</div>
+					<div class="lk-top-docs__item mb-4">
+						<img src="img/icons/file-add.png" alt="">
+						<div class="text-body-2 text--underline">Название документа</div>
+						<button class="btn btn--primary btn--link ml-2" data-fancybox-modal
+							data-src="dialog-remove--lk.html" data-type="ajax">Удалить</button>
+					</div>
+					<div class="lk-top-docs__item">
+						<img src="img/icons/file-add.png" alt="">
+						<div class="text-body-2 text--underline">Добавить документ</div>
+					</div>
+				</div>
+
+				<button class="lk-top__edit btn btn--primary btn--link" data-fancybox-modal
+					data-src="dialog-lk-edit.html" data-type="ajax">
+					<svg class="icon mr-md-2">
+						<use xlink:href="img/icons.svg#setting" />
+					</svg>
+					<div class="text-body-2 text--demibold color-text d-none d-md-block">Редактировать</div>
+				</button>
+			</div>
+
+			<!-- Представители -->
+			<div class="text-h6 mb-4">Представители команды 1</div>
+			<div class="lk-dude mb-3">
+				<div class="lk-dude__img">
+					<img src="https://picsum.photos/id/237/600/400" alt="">
+				</div>
+				<div class="lk-dude__info">
+					<div class="text-md-h4 text-body-0 text--demibold mb-1">Владимир Карагодин</div>
+					<div class="text-body-2 fade-80 mb-3">Тренер</div>
+					<div class="lk-top-info__link">
+						<div class="text-body-2 fade-80">Дата рождения: 15.02.1980</div>
+					</div>
+
+					<div class="lk-dude__contacts mt-4">
+						<a class="lk-dude__contact btn btn--link btn--primary mr-md-6 mb-2 mb-md-0">
+							<svg class="icon mr-2">
+								<use xlink:href="img/icons.svg#phone" />
+							</svg>
+							<div class="text-body-2 text--demibold color-text">8 918 000 00 00</div>
+						</a>
+						<a class="lk-dude__contact btn btn--link btn--primary">
+							<svg class="icon mr-2">
+								<use xlink:href="img/icons.svg#phone" />
+							</svg>
+							<div class="text-body-2 text--demibold color-text">vladimirrugby@mail.ru</div>
+						</a>
+					</div>
+				</div>
+				<button class="lk-dude__edit btn btn--primary btn--link" data-fancybox-modal
+					data-src="dialog-lk-dude.html" data-type="ajax">
+					<svg class="icon mr-md-2">
+						<use xlink:href="img/icons.svg#setting" />
+					</svg>
+					<div class="text-body-2 text--demibold color-text d-none d-md-block">Редактировать</div>
+				</button>
+			</div>
+			<div class="lk-dude">
+				<div class="lk-dude__img">
+					<img src="https://picsum.photos/id/237/600/400" alt="">
+				</div>
+				<div class="lk-dude__info">
+					<div class="text-md-h4 text-body-0 text--demibold mb-1">Владимир Карагодин</div>
+					<div class="text-body-2 fade-80 mb-3">Тренер</div>
+					<div class="lk-top-info__link">
+						<div class="text-body-2 fade-80">Дата рождения: 15.02.1980</div>
+					</div>
+
+					<div class="lk-dude__contacts mt-4">
+						<a class="lk-dude__contact btn btn--link btn--primary mr-md-6 mb-2 mb-md-0">
+							<svg class="icon mr-2">
+								<use xlink:href="img/icons.svg#phone" />
+							</svg>
+							<div class="text-body-2 text--demibold color-text">8 918 000 00 00</div>
+						</a>
+						<a class="lk-dude__contact btn btn--link btn--primary">
+							<svg class="icon mr-2">
+								<use xlink:href="img/icons.svg#phone" />
+							</svg>
+							<div class="text-body-2 text--demibold color-text">vladimirrugby@mail.ru</div>
+						</a>
+					</div>
+				</div>
+				<button class="lk-dude__edit btn btn--primary btn--link" data-fancybox-modal
+					data-src="dialog-lk-dude.html" data-type="ajax">
+					<svg class="icon mr-md-2">
+						<use xlink:href="img/icons.svg#setting" />
+					</svg>
+					<div class="text-body-2 text--demibold color-text d-none d-md-block">Редактировать</div>
+				</button>
+			</div>
+			<button class="mt-3 ml-auto btn btn--primary btn--link" data-fancybox-modal
+				data-src="dialog-success--lk.html" data-type="ajax">
+				<svg class="icon mr-2">
+					<use xlink:href="img/icons.svg#plus" />
+				</svg>
+				<div class="text-body-2 text--demibold">Добавить представителя</div>
+			</button>
+			<!-- /Представители -->
+
+			<script>
+				window.contests = [
+					{
+						id: 1,
+						title: 'Соревнование 1',
+						max: 5,
+						message: 'Сообщение для соревования 1'
+					},
+					{
+						id: 2,
+						title: 'Соревнование 2',
+						max: 12,
+						message: 'Сообщение для соревования 2'
+					},
+					{
+						id: 3,
+						title: 'Соревнование 3',
+						max: 17,
+						message: 'Сообщение для соревования 3'
+					},
+					{
+						id: 3,
+						title: 'Соревнование 3',
+						max: 20,
+						message: 'Сообщение для соревования 3'
+					},
+				]
+			</script>
+			<div data-team-cover id="team-root">
+				<div class="text-h6 mb-4 mt-5">
+					Команда <span class="text--regular fade-80">(от 5 до 10 человек)</span>
+				</div>
+				<div class="lk-team mb-5">
+					<div class="lk-team-header">
+						<div class="lk-team-table__img">
+							<div class="text-body-md-2 text-small text--demibold">Фото</div>
+						</div>
+						<div class="lk-team-table__name">
+							<div class="text-body-md-2 text-small text--demibold">ФИО</div>
+						</div>
+						<div class="lk-team-table__date">
+							<div class="text-body-md-2 text-small text--demibold">Дата рождения</div>
+						</div>
+						<div class="lk-team-table__access">
+							<div class="text-body-md-2 text-small text--demibold">Состав</div>
+						</div>
+						<div class="lk-team-table__edit"></div>
+					</div>
+					<div class="lk-team-table" ref="table">
+						<% for(let i=0; i < 10; i++){ %>
+							<div class="lk-team-row">
+								<div class="lk-team-table__img">
+									<div class="lk-team__avatar">
+										<img src="img/test-3.jpg" alt="">
+									</div>
+								</div>
+								<div class="lk-team-table__name">
+									<div class="text-body-2">Щербаков Иван Иванович</div>
+								</div>
+								<div class="lk-team-table__date">
+									<div class="text-body-2">14.10.2003</div>
+								</div>
+								<div class="lk-team-table__access">
+									<label class="form-field form-checkbox">
+										<input type="checkbox" class="form-input-checkbox" data-team-access
+											@change="changeHandler">
+										<div class="form-checkbox-target">
+											<svg class="icon">
+												<use xlink:href="img/icons.svg#gal-ochka"></use>
+											</svg>
+										</div>
+										<div class="form-label">Участвует</div>
+									</label>
+								</div>
+								<div class="lk-team-table__edit">
+									<button class="lk-team__edit btn btn--primary btn--light btn-icon">
+										<svg class="icon">
+											<use xlink:href="img/icons.svg#setting" />
+										</svg>
+									</button>
+								</div>
+							</div>
+							<% } %>
+
+								<button class="lk-team__add btn btn--primary btn--light mt-6">
+									Добавить участника
+								</button>
+					</div>
+				</div>
+
+				<div class="grid grid-spacing-5">
+					<div class="grid-col-lg-4">
+						<label class="form-field w-100">
+							<div class="text--demibold mb-2">Выберите соревнование</div>
+							<div class="form-input-cover">
+								<select name="" class="form-input pr-8" @change="contestChangeHandler" :value="currentContest.id">
+									<option v-for="item in contests" :key="item.id" :value="item.id" >
+										{{ item.title }}
+									</option>
+								</select>
+								<div class="form-select-icon">
+									<svg class="icon" style="transform: rotateZ(90deg);">
+										<use xlink:href="img/icons.svg#triangle-right" />
+									</svg>
+								</div>
+							</div>
+						</label>
+					</div>
+					<div class="grid-col-lg-3">
+						<label class="form-field w-100">
+							<div class="text--demibold mb-2">Макс. кол-во участников</div>
+							<div class="form-input-cover">
+								<input type="text" class="form-input" :value="currentContest.max" readonly>
+							</div>
+						</label>
+					</div>
+					<div class="grid-col-lg-5">
+						<label class="form-field w-100">
+							<div class="text--demibold mb-2">Сообщение от главного судьи</div>
+							<div class="form-input-cover">
+								<textarea class="form-input" :value="currentContest.message" readonly></textarea>
+							</div>
+						</label>
+					</div>
+				</div>
+
+				<button data-team-submit :disabled="!isAccessAdd"
+					class="lk-team__add btn btn--primary btn--fill mt-10 px-10">
+					Заявить команду
+				</button>
+
+			</div>
+
+
+			<!-- Комментарии главного судьи -->
+			<div class="text-h6 text--bold mb-5 mt-10">Комментарии главного судьи</div>
+			<div class="flex flex-items-start">
+				<div class="text-small fade-40 text--italic">
+					Команда (1) (2) заявлена на соревнование 25.13.28г. заявлена на соревнование РСМ лига юношеское 877ое соревнование среди 9-11 классов
+				</div>
+				<button class="btn btn--red btn--link ml-3">
+					<svg class="icon text-small fade-40"><use xlink:href="img/icons.svg#cross" /></svg>
+				</button>
+			</div>
+			<div class="form-field mt-5">
+				<div class="form-input-cover">
+					<textarea class="form-input" placeholder="Напишите свой комментарий...."></textarea>
+				</div>
+			</div>
+			<button class="btn btn--primary btn--light mt-4">Отправить сообщение</button>
+
+		</section>
+
+		<%= _.template(require('./includes/footer.html').default)() %>
+</body>
+
+</html>

@@ -8,6 +8,7 @@ import colorSelect from './color-select'
 import showPass from "./show-pass";
 import rangeSlider from './range-slider';
 import theme from './theme';
+import teamLkTable from './team-lk-table';
 // import conferenceMap from './conference-map';
 
 import 'tippy.js/dist/tippy.css';
@@ -61,6 +62,7 @@ function loadHandler() {
     showPass.init();
     rangeSlider.init()
     theme.init();
+    teamLkTable.init();
 
     ripple.attach('.btn')
     ripple.attach('.waved')

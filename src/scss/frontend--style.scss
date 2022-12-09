@@ -59,6 +59,10 @@ body {
 	color         : var(--color-text);
 	background    : var(--bg1) url("../img/sempl/header-clouds.png") no-repeat center top / auto;
 
+	&.new-year-theme {
+		background: var(--bg1) url("../img/header-clouds--newyear.svg") repeat-x center top / auto;
+	}
+
 	@media(max-width:$md) {
 		background-image: none;
 	}
@@ -1119,6 +1123,18 @@ body[data-theme="dark"] {
 			margin-top: 30px;
 		}
 	}
+}
+
+body.new-year-theme .footer {
+	background:
+		url("../img/footer-clouds--newyear.svg") no-repeat center calc(100% + 52px) / auto,
+		url("../img/footer-top--newyear.svg") repeat-x center top / auto,
+		url("../img/footer-left--ny.svg") no-repeat calc(50% - 760px) calc(50% - 20px) / auto,
+		url("../img/footer-right--ny.svg") no-repeat calc(50% + 760px) calc(50% - 20px) / auto,
+		linear-gradient(81.82deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 23.87%),
+		linear-gradient(253.45deg, rgba(105, 0, 27, 0.7) 0%, rgba(210, 28, 75, 0) 100%),
+		var(--color-primary);
+	padding-top: 48px;
 }
 
 .slider .swiper {

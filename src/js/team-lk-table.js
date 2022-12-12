@@ -10,7 +10,7 @@ function init() {
             return {
                 selected: [],
                 contests: window.contests || [],
-                currentContest: window.contests[0],
+                currentContest: window.contests?.[0],
                 isAccessCheck: false,
                 isAccessAdd: false
             }

@@ -347,32 +347,32 @@
 			<!-- /Представители -->
 
 			<script>
-				window.contests = [
-					{
-						id: 1,
-						title: 'Соревнование 1',
-						max: 5,
-						message: 'Сообщение для соревования 1'
-					},
-					{
-						id: 2,
-						title: 'Соревнование 2',
-						max: 12,
-						message: 'Сообщение для соревования 2'
-					},
-					{
-						id: 3,
-						title: 'Соревнование 3',
-						max: 17,
-						message: 'Сообщение для соревования 3'
-					},
-					{
-						id: 3,
-						title: 'Соревнование 3',
-						max: 20,
-						message: 'Сообщение для соревования 3'
-					},
-				]
+				// window.contests = [
+				// 	{
+				// 		id: 1,
+				// 		title: 'Соревнование 1',
+				// 		max: 5,
+				// 		message: 'Сообщение для соревования 1'
+				// 	},
+				// 	{
+				// 		id: 2,
+				// 		title: 'Соревнование 2',
+				// 		max: 12,
+				// 		message: 'Сообщение для соревования 2'
+				// 	},
+				// 	{
+				// 		id: 3,
+				// 		title: 'Соревнование 3',
+				// 		max: 17,
+				// 		message: 'Сообщение для соревования 3'
+				// 	},
+				// 	{
+				// 		id: 3,
+				// 		title: 'Соревнование 3',
+				// 		max: 20,
+				// 		message: 'Сообщение для соревования 3'
+				// 	},
+				// ]
 			</script>
 			<div data-team-cover id="team-root">
 				<div class="text-h6 mb-4 mt-5">
@@ -389,7 +389,7 @@
 						<div class="lk-team-table__date">
 							<div class="text-body-md-2 text-small text--demibold">Дата рождения</div>
 						</div>
-						<div class="lk-team-table__access">
+						<div class="lk-team-table__access" v-if="currentContest">
 							<div class="text-body-md-2 text-small text--demibold">Состав</div>
 						</div>
 						<div class="lk-team-table__edit"></div>
@@ -408,7 +408,7 @@
 								<div class="lk-team-table__date">
 									<div class="text-body-2">14.10.2003</div>
 								</div>
-								<div class="lk-team-table__access">
+								<div class="lk-team-table__access" v-if="currentContest">
 									<label class="form-field form-checkbox">
 										<input type="checkbox" class="form-input-checkbox" data-team-access
 											@change="changeHandler">
@@ -436,7 +436,7 @@
 					</div>
 				</div>
 
-				<div class="grid grid-spacing-5">
+				<div class="grid grid-spacing-5" v-if="currentContest">
 					<div class="grid-col-lg-4">
 						<label class="form-field w-100">
 							<div class="text--demibold mb-2">Выберите соревнование</div>
@@ -472,7 +472,7 @@
 					</div>
 				</div>
 
-				<button data-team-submit :disabled="!isAccessAdd"
+				<button data-team-submit :disabled="!isAccessAdd" v-if="currentContest"
 					class="lk-team__add btn btn--primary btn--fill mt-10 px-10">
 					Заявить команду
 				</button>

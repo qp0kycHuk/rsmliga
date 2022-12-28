@@ -351,24 +351,28 @@
 					{
 						id: 1,
 						title: 'Соревнование 1',
+						min: 1,
 						max: 5,
 						message: 'Сообщение для соревования 1'
 					},
 					{
 						id: 2,
 						title: 'Соревнование 2',
+						min: 1,
 						max: 12,
 						message: 'Сообщение для соревования 2'
 					},
 					{
 						id: 3,
 						title: 'Соревнование 3',
+						min: 1,
 						max: 17,
 						message: 'Сообщение для соревования 3'
 					},
 					{
 						id: 3,
 						title: 'Соревнование 3',
+						min: 1,
 						max: 20,
 						message: 'Сообщение для соревования 3'
 					},
@@ -395,10 +399,16 @@
 						</label>
 					</div>
 					<div class="grid-col-lg-3">
-						<label class="form-field w-100">
+						<label class="form-field w-100 mb-4">
 							<div class="text--demibold mb-2">Макс. кол-во участников</div>
 							<div class="form-input-cover">
 								<input type="text" class="form-input" :value="currentContest.max" readonly>
+							</div>
+						</label>
+						<label class="form-field w-100">
+							<div class="text--demibold mb-2">Мин. кол-во участников</div>
+							<div class="form-input-cover">
+								<input type="text" class="form-input" :value="currentContest.min" readonly>
 							</div>
 						</label>
 					</div>

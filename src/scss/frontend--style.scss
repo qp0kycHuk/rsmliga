@@ -3859,3 +3859,31 @@ option {
 .tippy-content {
 	padding: 8px;
 }
+
+.catalog-plug {
+	width          : 100%;
+	height         : 285px;
+	display        : flex;
+	flex-direction : column;
+	justify-content: center;
+	background     : #fff url("../img/catalog-plug.png") no-repeat right / cover;
+	border-radius  : 12px;
+	padding        : 40px 64px;
+
+	@media(max-width:$lg) {
+		height     : auto;
+		padding-top: 340px;
+		background : #fff url("../img/catalog-plug.png") no-repeat top right / auto 300px;
+	}
+
+	@media(max-width:$md) {
+		padding      : 220px 15px 20px;
+		width        : calc(100% + 30px);
+		border-radius: 0;
+		margin-left  : -15px;
+
+
+		background         : #fff url("../img/catalog-plug.png") no-repeat top right / auto 200px;
+		background-position: calc(50% - 200px) top;
+	}
+}

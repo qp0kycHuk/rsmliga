@@ -1421,6 +1421,14 @@ body.new-year-theme .footer {
 .form-dialog {
 	width    : 400px;
 	max-width: 100%;
+
+	&-district {
+		color           : #000;
+		font-weight     : 500;
+		height          : 43px;
+		background-color: rgba(243, 243, 243, 0.8);
+		border-radius   : 6px;
+	}
 }
 
 .partners-page-main {

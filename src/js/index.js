@@ -100,20 +100,22 @@ document.addEventListener('click', (event) => {
 
 })
 
+
 document.addEventListener('input', (event) => {
-    if (!event.target.closest('.admin-select')) return;
+    if (event.target.closest('.admin-select')) {
 
-    const cover = event.target.closest('.admin-select')
-    const input = cover.querySelector('.admin-select__select')
-    const textNode = cover.querySelector('.admin-select-value')
+        const cover = event.target.closest('.admin-select')
+        const input = cover.querySelector('.admin-select__select')
+        const textNode = cover.querySelector('.admin-select-value')
 
-    const option = input.options[input.options.selectedIndex]
+        const option = input.options[input.options.selectedIndex]
 
-    const value = input.value
-    const text = option.text || value
+        const value = input.value
+        const text = option.text || value
 
-    if (!input) return
-    textNode.textContent = text
-    input.value = value
+        if (!input) return
+        textNode.textContent = text
+        input.value = value
+    }
 
 })

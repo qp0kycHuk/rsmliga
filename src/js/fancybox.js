@@ -1,4 +1,5 @@
 import { Fancybox } from "@fancyapps/ui";
+import datepicker from "./datepicker";
 import ru from "@fancyapps/ui/src/Fancybox/l10n/ru"
 import "@fancyapps/ui/dist/fancybox.css";
 
@@ -13,7 +14,11 @@ const init = () => {
     type: 'ajax',
     dragToClose: false,
     mainClass: 'fancybox-custom-modal',
-    
+    on: {
+      done: (fancybox, slide) => {
+        datepicker.init(slide.$el)
+      }
+    }
   })
 
 
@@ -26,10 +31,15 @@ const init = () => {
       type: 'ajax',
       dragToClose: false,
       mainClass: 'fancybox-custom-modal',
+      on: {
+        done: (fancybox, slide) => {
+          datepicker.init(slide.$el)
+        }
+      },
       ...options
     })
   }
-  
+
   window.Fancybox = Fancybox
 }
 

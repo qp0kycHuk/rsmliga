@@ -58,12 +58,24 @@
 					</div>
 				</div>
 			</label>
-			<label class="form-field w-100 mt-4">
-				<div class="text-body-2 text--demibold mb-2">Максимальное количество участников</div>
-				<div class="form-input-cover">
-					<input type="number" class="form-input" name="count" required>
+			<div class="grid">
+				<div class="grid-col-6">
+					<label class="form-field w-100 mt-4">
+						<div class="text-body-2 text--demibold mb-2">Минимальное количество участников</div>
+						<div class="form-input-cover">
+							<input type="number" class="form-input" name="count" required>
+						</div>
+					</label>
 				</div>
-			</label>
+				<div class="grid-col-6">
+					<label class="form-field w-100 mt-4">
+						<div class="text-body-2 text--demibold mb-2">Максимальное количество участников</div>
+						<div class="form-input-cover">
+							<input type="number" class="form-input" name="count" required>
+						</div>
+					</label>
+				</div>
+			</div>
 			<label class="form-field w-100 mt-4">
 				<div class="text-body-2 text--demibold mb-2">Сообщение</div>
 				<div class="form-input-cover">
@@ -75,12 +87,12 @@
 
 				<input type="checkbox" class="form-input-checkbox">
 				<div class="form-checkbox-target">
-				  <svg class="icon">
-					<use xlink:href="img/icons.svg#gal-ochka" />
-				  </svg>
+					<svg class="icon">
+						<use xlink:href="img/icons.svg#gal-ochka" />
+					</svg>
 				</div>
 				<div class="text-body-1 ml-3"> Запретить прием заявок </div>
-	  
+
 			</label>
 
 
@@ -107,7 +119,7 @@
 					<div class="text-body-2 text--demibold mb-2">Старт</div>
 					<div class="form-input-cover">
 						<div class="form-input-cover">
-							<input type="text" class="form-input -step-input-" data-datepicker required>
+							<input type="text" class="form-input -step-input-" data-contest-datepicker required>
 							<div class="form-input-end pr-4">
 								<svg class="icon fade-60">
 									<use xlink:href="img/icons.svg#calendar" />
@@ -120,7 +132,7 @@
 					<div class="text-body-2 text--demibold mb-2">Финиш</div>
 					<div class="form-input-cover">
 						<div class="form-input-cover">
-							<input type="text" class="form-input -step-input-" data-datepicker required>
+							<input type="text" class="form-input -step-input-" data-contest-datepicker required>
 							<div class="form-input-end pr-4">
 								<svg class="icon fade-60">
 									<use xlink:href="img/icons.svg#calendar" />
@@ -173,7 +185,7 @@
 			});
 		}
 
-		const pickers = Array.from(document.querySelectorAll('[data-datepicker]'))
+		const pickers = Array.from(document.querySelectorAll('[data-contest-datepicker]'))
 		initPickers(pickers)
 
 		let field = null;
@@ -203,7 +215,7 @@
 
 			clone.appendChild(close);
 
-			const pickers = Array.from(clone.querySelectorAll('[data-datepicker]'))
+			const pickers = Array.from(clone.querySelectorAll('[data-contest-datepicker]'))
 			initPickers(pickers)
 
 			addBtn.insertAdjacentElement('beforebegin', clone);

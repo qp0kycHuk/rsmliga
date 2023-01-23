@@ -39,9 +39,14 @@ function init() {
                 this.currentContest = contest
                 localStorage.setItem('currentContest', JSON.stringify(contest))
 
-                this.$refs.table.querySelectorAll('[data-team-access]:checked').forEach(element => {
-                    element.checked = false
-                });
+                const checkboxes = this.$refs.table.querySelectorAll('[data-team-access]:checked')
+
+                if ((checkboxes.length - contest.max) > 0) {
+                    for (let i = 0; i < (checkboxes.length - contest.max); i++) {
+                        const element = checkboxes[checkboxes.length - i - 1];
+                        element.checked = false
+                    }
+                }
 
                 this.isAccessCheck = this.getAccessCheck()
                 this.isAccessAdd = this.getAccessAdd()

@@ -3901,3 +3901,12 @@ option {
 		background-position: calc(50% - 200px) top;
 	}
 }
+
+.dialog-error {
+	background: var(--bg2);
+	border-radius: 12px;
+	padding: 12px 20px;
+	font-weight: 600;
+	font-size: 14px;
+	color: var(--color-primary);
+}

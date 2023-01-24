@@ -8,6 +8,7 @@ import colorSelect from './color-select'
 import showPass from "./show-pass";
 import rangeSlider from './range-slider';
 import theme from './theme';
+import phonemask from './phonemask';
 import teamLkTable from './team-lk-table';
 // import conferenceMap from './conference-map';
 
@@ -60,6 +61,7 @@ function loadHandler() {
     ripple.init();
     colorSelect.init();
     showPass.init();
+    phonemask.init();
     rangeSlider.init()
     theme.init();
     teamLkTable.init();

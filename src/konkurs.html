@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Конкурс</title>
+
+
+</head>
+
+<body>
+  <%= _.template(require('./includes/header.html').default)() %>
+
+  <section>
+    <div class="konkurs-item">
+      <div class="konkurs-item-top">
+        <div class="konkurs-item-video konkurs-item-cell">
+          <div class="image image--box image--round">
+            <img src="img/test-1.jpg" alt="">
+            <div class="video-card-btn">
+              <img src="img/sempl/youtube-btn.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="konkurs-item-cell">
+          <div class="text-body-0 text--bold">Семенов Игорь Валентинович</div>
+        </div>
+        <div class="konkurs-item-cell">
+          <div class="text-body-0">Орловская СОШ №3</div>
+        </div>
+        <div class="konkurs-item-cell">
+          <button class="btn btn--primary btn--fill mx-auto">
+            <svg class="icon mr-1 text-subtitle-2">
+              <use xlink:href="img/icons.svg#thumb-up" />
+            </svg>
+            Голосовать
+          </button>
+        </div>
+        <div class="konkurs-item-cell">
+          <button class="btn btn--primary btn--light mx-auto">
+            Развернуть
+            <svg class="icon ml-2 text-small-2">
+              <use xlink:href="img/icons.svg#triangle-right" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <%= _.template(require('./includes/footer.html').default)() %>
+</body>
+
+</html>

@@ -10,6 +10,8 @@ import rangeSlider from './range-slider';
 import theme from './theme';
 import phonemask from './phonemask';
 import teamLkTable from './team-lk-table';
+import * as Vue from 'vue/dist/vue.esm-bundler.js'
+window.Vue = Vue
 // import conferenceMap from './conference-map';
 
 import 'tippy.js/dist/tippy.css';

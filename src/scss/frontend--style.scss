@@ -4093,3 +4093,32 @@ option {
 		}
 	}
 }
+
+.konkurs-dialog-info {
+	width    : 500px;
+	max-width: 100%;
+	overflow : hidden;
+
+	&__content {
+		background     : #fff url('../img/sempl/konkurs-dialog-info-bg.png') no-repeat top;
+		background-size: 100%;
+	}
+
+	&__btns {
+		grid-gap: 16px;
+	}
+
+	&__btn {
+		width: 180px;
+	}
+
+	@media(max-width: $md) {
+		&__btns {
+			flex-direction: column;
+		}
+
+		&__btn {
+			width: 250px;
+		}
+	}
+}

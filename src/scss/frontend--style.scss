@@ -213,6 +213,8 @@ body[data-theme="dark"] {
 
 	&-logo {
 		&-img {
+			width: 54px;
+			
 			@media(max-width:400px) {
 				width: 40px;
 

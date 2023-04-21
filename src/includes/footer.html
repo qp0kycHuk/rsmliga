@@ -78,3 +78,26 @@
         <div class="footer-designer ml-auto">Разработка: Студия К.И.Т.</div>
     </div>
 </footer>
+
+<script>
+
+    if (!sessionStorage.getItem('konkurs') && sessionStorage.getItem('konkurs') !== 'active') {
+
+        setTimeout(() => {
+            
+            Fancybox.modal.open('dialog-konkurs-info.html')
+
+        }, 2000)
+
+    }
+
+    document.addEventListener('click', (event) => {
+
+        if (event.target.classList.contains('-konkurs-btn-info-')) {
+
+            sessionStorage.setItem('konkurs', 'active')
+
+        }
+
+    })
+</script>

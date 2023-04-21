@@ -55,9 +55,9 @@ function menuCloseHandler(event) {
         document.body.classList.remove('filter-open')
     }
 }
+fancybox.init();
 
 function loadHandler() {
-    fancybox.init();
     tab.init();
     toggle.init();
     ripple.init();

@@ -18,10 +18,12 @@ export function getMaskedValue(value) {
         return ''
     }
 
-    const maskedValue =
-        `+7 (${matchValue[2]}${matchValue[3] ? `) ${matchValue[3]}` : ''
-        }${matchValue[4] ? ` - ${matchValue[4]}` : ''
-        }${matchValue[5] ? ` - ${matchValue[5]}` : ''}`;
+    const a = matchValue[2];
+    const b = matchValue[3];
+    const c = matchValue[4];
+    const d = matchValue[5];
+    // +7 (aaa) bbb - cc - dd
+    const maskedValue = `+7${a ? ` (${a}` : ''}${b ? `) ${b}` : ''}${c ? ` - ${c}` : ''}${d ? ` - ${d}` : ''}`;
 
     return maskedValue
 }
@@ -34,9 +36,9 @@ export function isComplete(value) {
 }
 
 
-function init() {
+function init(selector) {
     document.addEventListener('input', (event) => {
-        if (event.target.type !== 'tel') return
+        if (!event.target.matches(selector)) return
         const maskedValue = getMaskedValue(event.target.value)
         event.target.value = maskedValue
 

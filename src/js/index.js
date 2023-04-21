@@ -63,7 +63,8 @@ function loadHandler() {
     ripple.init();
     colorSelect.init();
     showPass.init();
-    phonemask.init();
+    phonemask.init('[type="tel"]');
+    phonemask.init('#soa-property-3');
     rangeSlider.init()
     theme.init();
     teamLkTable.init();

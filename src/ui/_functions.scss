@@ -27,6 +27,12 @@
 @mixin AddMedia() {
   @content;
 
+  &-sm {
+    @media (min-width:$sm) {
+      @content;
+    }
+  }
+
   &-md {
     @media (min-width:$md) {
       @content;

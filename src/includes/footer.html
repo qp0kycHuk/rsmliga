@@ -81,23 +81,23 @@
 
 <script>
 
-    if (!sessionStorage.getItem('konkurs') && sessionStorage.getItem('konkurs') !== 'active') {
+    // if (!sessionStorage.getItem('konkurs') && sessionStorage.getItem('konkurs') !== 'active') {
 
-        setTimeout(() => {
+    //     setTimeout(() => {
             
-            Fancybox.modal.open('dialog-konkurs-info.html')
+    //         Fancybox.modal.open('dialog-konkurs-info.html')
 
-        }, 2000)
+    //     }, 2000)
 
-    }
+    // }
 
-    document.addEventListener('click', (event) => {
+    // document.addEventListener('click', (event) => {
 
-        if (event.target.classList.contains('-konkurs-btn-info-')) {
+    //     if (event.target.classList.contains('-konkurs-btn-info-')) {
 
-            sessionStorage.setItem('konkurs', 'active')
+    //         sessionStorage.setItem('konkurs', 'active')
 
-        }
+    //     }
 
-    })
+    // })
 </script>

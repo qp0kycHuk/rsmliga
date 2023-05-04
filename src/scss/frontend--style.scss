@@ -4213,3 +4213,44 @@ option {
 		border-radius: 20px;
 	}
 }
+
+.support-float {
+	position: fixed;
+	top: calc(50% - 37px);
+	left: calc(50% + var(--section-width) / 2 + 55px);
+	width: 100px;
+	height: 75px;
+	border-radius: 10px;
+	font-size: 40px;
+	border-end-end-radius: 0;
+
+	@media(max-width: $lg) {
+		top: auto;
+		right: 10px;
+		bottom: 10px;
+		left: auto;
+		width: 50px;
+		height: 50px;
+		padding: 0;
+		font-size: 24px;
+	}
+}
+
+.dialog-support {
+	width: var(--section-width);
+	max-width: 100%;
+	padding: 8px;
+
+	&-header {
+		padding: 24px;
+		background: var(--bg2);
+		border-radius: 12px;
+		font-size: 24px;
+		font-weight: 700;
+
+		@media(max-width: $md) {
+			padding: 10px;
+			font-size: 18px;
+		}
+	}
+}

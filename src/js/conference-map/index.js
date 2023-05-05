@@ -7,6 +7,8 @@ window.addEventListener('DOMContentLoaded', () => {
         components: { RootComponent },
         template: '<RootComponent></RootComponent>'
     })
-    app.mount('#conference-map')
+    if (document.getElementById('conference-map')) {
+        app.mount('#conference-map')
+    }
 
 })

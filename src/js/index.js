@@ -39,6 +39,7 @@ document.addEventListener('toggleclose', menuCloseHandler)
 
 // menu toggle handlers
 function menuOpenHandler(event) {
+    
     if (event.detail.target.id == 'mobile-menu') {
         document.body.classList.add('menu-opened')
     }
@@ -80,6 +81,7 @@ function loadHandler() {
 
 document.addEventListener('click', (event) => {
     if (!event.target.closest('.-print-from-modal-')) return;
+ 
 
     const dialog = event.target.closest('.fancybox__container')
     dialog.classList.add('fancybox-print-modal')

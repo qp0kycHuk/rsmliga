@@ -224,7 +224,38 @@
       <% } %>
 
     </div>
+    <button class="btn btn--primary btn--fill mt-8 -konkurs-end-">Завершить голосование</button>
   </section>
+
+  <script>
+      document.addEventListener('click', (event) => {
+
+        if (event.target.classList.contains('-konkurs-end-')) {
+        
+          window.Fancybox.show(
+        
+            [{
+            
+              src: 'dialog-konkurs-timer.html',
+              type: 'ajax'
+            
+            }],
+          
+            {
+            
+              dragToClose: false,
+              closeButton: false,
+              click: true,
+              mainClass: 'fancybox-custom-modal'
+            
+            }
+          
+          )
+          
+        }
+
+      })
+  </script>
 
 
 

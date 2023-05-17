@@ -4146,19 +4146,74 @@ option {
 }
 
 .konkurs-dialog-timer {
-	width    : 630px;
-	max-width: 100%;
-	overflow : hidden;
+	width     : 630px;
+	max-width : 100%;
+	overflow  : hidden;
 	background: #fff url('../img/sempl/balls.png') no-repeat center / cover;
 
 	&__content {
 		flex-direction: column;
-		padding: 50px;
+		padding       : 50px;
+
+		@media(max-width: $md) {
+			padding: 30px 16px;
+		}
 	}
 
 	&__number {
-		font-size: 110px;
+		font-size  : 110px;
 		font-weight: 800;
+		animation  : konkurs-scale 1s linear infinite both;
+	}
+}
+
+@keyframes konkurs-scale {
+
+	0%,
+	100% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.2);
+	}
+}
+
+.konkurs-dialog-victory {
+	width          : 630px;
+	max-width      : 100%;
+	overflow       : hidden;
+	background     : #fff url('../img/sempl/shine.png') no-repeat center;
+	background-size: 200% 100%;
+	animation      : glowing 20s linear infinite;
+
+	&__content {
+		flex-direction: column;
+		padding       : 40px;
+
+		@media(max-width: $md) {
+			padding: 30px 16px;
+		}
+	}
+
+	&__icon {
+		font-size: 180px;
+		animation: konkurs-scale 2.5s linear infinite both;
+	}
+
+	&__btns {
+		gap: 16px;
+	}
+}
+
+@keyframes glowing {
+
+	0% {
+		background-position: -100% 0;
+	}
+
+	100% {
+		background-position: 200% 0;
 	}
 }
 

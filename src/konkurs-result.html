@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Конкурс</title>
+
+
+</head>
+
+<body>
+  <%= _.template(require('./includes/header.html').default)() %>
+
+  <%= _.template(require('./includes/page-top.html').default)({ page: 'РЕЗУЛЬТАТЫ КОНКУРСА «РОСТСЕЛЬМАШ – ЛИГА» — ЭТО…' }) %>
+
+  <% var result = [
+    {
+      btn: 'konkurs-result--gold',
+      icon: 'gold',
+      text: '1 место'
+    },
+    {
+      btn: 'konkurs-result--silver',
+      icon: 'silver',
+      text: '2 место'
+    },
+    {
+      btn: 'konkurs-result--bronze',
+      icon: 'bronze',
+      text: '3 место'
+    },
+    {
+      btn: '',
+      icon: 'thumb-up',
+      text: '25'
+    }
+  ] %>
+
+  <section class="konkurs">
+
+    <div class="konkurs-head konkurs-items flex-align-center py-2 px-4 mb-3">
+      <div class="text-body-2 text--demibold pr-6">Видео</div>
+      <div class="text-body-2 text--demibold px-6">ФИО</div>
+      <div class="text-body-2 text--demibold px-6">Школа</div>
+      <div class="text-body-2 text--demibold px-6">Место</div>
+      <div class="text-body-2 text--demibold pl-6">Доп. информация</div>
+    </div>
+
+    <div class="konkurs-content flex">
+      <% for (var i = 0; i < result.length; i++) { %>
+        <div class="konkurs-event bg-l3 p-4" data-toggle-cover>
+          <div class="konkurs-items">
+            <div class="konkurs-cell flex flex-align-center h-100 pr-lg-6">
+              <a class="konkurs-image image image--box image--round" data-fancybox-modal href="https://www.youtube.com/watch?v=yoRySSq634o">
+                <img src="img/test-1.jpg" alt="">
+                <img class="konkurs-youtube m-auto h-auto" src="img/sempl/youtube-btn.svg" alt="">
+              </a>
+            </div>
+            <div class="konkurs-cell flex flex-align-center h-100 px-lg-6">
+              <div class="text-body-1 text-md-body-0 text--bold">Семенов Игорь Валентинович</div>
+            </div>
+            <div class="konkurs-cell flex flex-align-center w-100 w-md-auto h-100 px-lg-6">
+              <div class="text-body-1 text-md-body-0">Орловская СОШ №3</div>
+            </div>
+            <div class="konkurs-cell flex flex-align-center h-100 px-lg-6">
+              <span class="konkurs-result <%= result[i].btn %> konkurs-btn btn btn--primary btn--fill w-100">
+                <svg class="icon mr-1 text-subtitle-2">
+                  <use xlink:href="img/icons.svg#<%= result[i].icon %>" />
+                </svg>
+                <%= result[i].text %>
+              </span>
+            </div>
+            <div class="konkurs-cell flex flex-align-center h-100 px-lg-6">
+              <button class="konkurs-btn btn btn--primary btn--light w-100" data-toggle-link>
+                <span class="konkurs-open">Развернуть</span>
+                <span class="konkurs-close">Свернуть</span>
+                <svg class="konkurs-arrow icon ml-2 text-small-2">
+                  <use xlink:href="img/icons.svg#triangle-right" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div data-toggle-content data-toggle-height="true" data-toggle-static="true">
+            <div class="konkurs-detail mt-4 pt-4 pt-md-8">
+              <a class="konkurs-video w-100 h-100"  data-fancybox-modal href="https://www.youtube.com/watch?v=yoRySSq634o">
+                <img class="konkurs-video-image w-100 h-100" src="img/test-1.jpg" alt="">
+                <img class="konkurs-youtube konkurs-youtube--xl m-auto" src="img/sempl/youtube-btn.svg" alt="">
+              </a>
+              <div class="konkurs-info flex h-100">
+                <div class="konkurs-info-detail p-4">
+                  <div class="text-body-1 text-md-body-0 text--bold mb-4">Всего проголосовало за участника:</div>
+                  <div class="flex flex-align-center flex-justify-between mb-2">
+                    <span class="text-body-2 mr-5">23% (10 чел.)</span>
+                    <span class="text-body-2">100% (40 чел.)</span>
+                  </div>
+                  <div class="konkurs-range w-100">
+                    <div class="konkurs-progress bg-primary h-100" style="--progress-width: 23%;"></div>
+                  </div>
+                </div>
+                <div class="konkurs-info-detail p-4">
+                  <div class="text-body-1 text-md-body-0 text--bold">
+                    Населенный пункт: <span class="fade-60 text--regular">г. Орловск</span>
+                  </div>
+                </div>
+                <div class="konkurs-info-detail p-4">
+                  <div class="text-body-1 text-md-body-0 text--bold">
+                    Наименование муниципального образования: <span class="fade-60 text--regular">МБОУ Лицей экономический №71 им. Героя Советского Союза Иноземцева Г.А.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <% } %>
+    </div>
+  </section>
+
+
+
+  <%= _.template(require('./includes/footer.html').default)() %>
+</body>
+
+</html>

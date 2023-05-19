@@ -224,7 +224,101 @@
       <% } %>
 
     </div>
+    <button class="btn btn--primary btn--fill mt-8 -konkurs-end-">Завершить голосование</button>
   </section>
+
+  <script>
+    	const setOutNumber = () => {
+
+        const item = document.querySelector('*[data-number]')
+        const btn = document.querySelector('.-konkurs-timer-close-')
+
+        if (!item) return
+
+        const number = Number(item.dataset.number)
+        const step = item.dataset.numberStep ? Number(item.dataset.numberStep) : 0.5
+        const time = item.dataset.numberTime ? Number(item.dataset.numberTime) * 1000 : 1000
+        const fixed = item.dataset.numberFixed ? Number(item.dataset.numberFixed) : 0
+        const timer = Math.round(time / (number / step))
+
+        let sum = number
+
+        const interval = setInterval(() => {
+        
+          sum -= step
+        
+          if (sum == 0 || sum < 0) {
+          
+            item.innerHTML = 0
+          
+            clearInterval(interval)
+
+            window.Fancybox.close()
+
+            window.Fancybox.show(
+        
+              [{
+              
+                src: 'dialog-konkurs-victory.html',
+                type: 'ajax'
+              
+              }],
+            
+              {
+              
+                dragToClose: false,
+                closeButton: false,
+                click: true,
+                mainClass: 'fancybox-custom-modal'
+              
+              }
+            
+            )
+          
+          } else {
+          
+            item.innerHTML = String(sum.toFixed(fixed))
+          
+          }
+        
+        }, timer)
+
+        btn.addEventListener('click', () => {
+
+          clearInterval(interval)
+
+        })
+
+      }
+
+      document.addEventListener('click', (event) => {
+
+        if (event.target.classList.contains('-konkurs-end-')) {
+        
+          window.Fancybox.show(
+        
+            [{
+            
+              src: 'dialog-konkurs-timer.html',
+              type: 'ajax'
+            
+            }],
+          
+            {
+            
+              dragToClose: false,
+              closeButton: false,
+              click: true,
+              mainClass: 'fancybox-custom-modal'
+            
+            }
+          
+          )
+          
+        }
+
+      })
+  </script>
 
 
 

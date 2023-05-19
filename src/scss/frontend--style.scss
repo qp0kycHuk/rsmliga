@@ -1883,8 +1883,8 @@ body.new-year-theme .footer {
 		}
 
 		&__name {
-			width: 312px;
-			min-width: 312px;
+			width: 240px;
+			min-width: 240px;
 
 			@media(max-width:$lg) {
 				width: 200px;
@@ -1901,14 +1901,24 @@ body.new-year-theme .footer {
 			flex-grow: 1;
 		}
 
+		&__status {
+			width: 200px;
+			min-width: 200px;
+		}
+
+		&__gayting {
+			width: 136px;
+			min-width: 136px;
+		}
+
 		&__edit {
 			width: 32px;
 			min-width: 32px;
 		}
 
 		&__access {
-			width: 300px;
-			min-width: 300px;
+			width: 232px;
+			min-width: 232px;
 
 			@media(max-width:$lg) {
 				width: 200px;

@@ -525,6 +525,116 @@
 
 
 			</div>
+			<!-- С номером -->
+			<div data-team-cover id="team-root" class="mt-10">
+				<div class="text-h6 mb-4 mt-5">
+					Команда 
+					<!-- <span class="text--regular fade-80">(от 5 до 10 человек)</span> -->
+				</div>
+				<div class="lk-team mb-5">
+					<div class="lk-team-header">
+						<div class="lk-team-table__img lk-team-table__img--min">
+							<div class="text-md-body-2 text-small text--demibold">Фото</div>
+						</div>
+						<div class="lk-team-table__number">
+							<div class="text-md-body-2 text-small text--demibold text--center">№</div>
+						</div>
+						<div class="lk-team-table__name">
+							<div class="text-md-body-2 text-small text--demibold">ФИО</div>
+						</div>
+						<div class="lk-team-table__date">
+							<div class="text-md-body-2 text-small text--demibold">Дата рождения</div>
+						</div>
+						<div class="lk-team-table__status">
+							<div class="text-md-body-2 text-small text--demibold">Статус</div>
+						</div>
+						<div class="lk-team-table__gayting">
+							<div class="text-md-body-2 text-small text--demibold">Рейтинг</div>
+						</div>
+						<div class="lk-team-table__access" v-if="currentContest">
+							<div class="text-md-body-2 text-small text--demibold">Состав</div>
+						</div>
+						<div class="lk-team-table__edit"></div>
+					</div>
+					<div class="lk-team-table" ref="table">
+						<% for(let i=0; i < 10; i++){ %>
+							<div class="lk-team-row">
+								<div class="lk-team-table__img lk-team-table__img--min">
+									<div class="lk-team__avatar">
+										<img src="img/test-3.jpg" alt="">
+									</div>
+								</div>
+								<div class="lk-team-table__number">
+									<div class="text-md-body-2 text-small text--demibold text--center"><%= i %></div>
+								</div>
+								<div class="lk-team-table__name">
+									<div class="text-body-2">Щербаков Иван Иванович</div>
+								</div>
+								<div class="lk-team-table__date">
+									<div class="text-body-2">14.10.2003</div>
+								</div>
+								<div class="lk-team-table__status">
+									<div class="flex">
+										<div class="lk-top-info__link">
+											<!-- Активирован -->
+											<img src="img/status/сheck-round-fill.png" alt="" class="icon mr-1 text-body-0">
+											<!-- or Дисквалифицирован -->
+											<img src="img/status/close-round-fill.png" alt="" class="icon mr-1 text-body-0">
+											<!-- or Деактивирован -->
+											<img src="img/status/remove-fill.png" alt="" class="icon mr-1 text-body-0">
+											<!-- or На рассмотрении -->
+											<img src="img/status/eye-fill.png" alt="" class="icon mr-1 text-body-0">
+
+											<div class="text-body-2 fade-80">Активирован</div>
+										</div>
+									</div>
+								</div>
+								<div class="lk-team-table__gayting">
+									<div class="text-md-body-2 text-small text--demibold flex flex-align-center">
+										<svg class="icon color-yellow mr-2">
+											<use xlink:href="img/icons.svg#star" />
+										</svg>
+										1 212
+									</div>
+								</div>
+								<div class="lk-team-table__access" v-if="currentContest">
+									<label class="form-field form-checkbox">
+										<input type="checkbox" class="form-input-checkbox" data-team-access
+											@change="changeHandler">
+										<div class="form-checkbox-target">
+											<svg class="icon">
+												<use xlink:href="img/icons.svg#gal-ochka"></use>
+											</svg>
+										</div>
+										<div class="form-label">Участвует</div>
+									</label>
+								</div>
+								<div class="lk-team-table__edit">
+									<button class="lk-team__edit btn btn--primary btn--light btn-icon">
+										<svg class="icon">
+											<use xlink:href="img/icons.svg#setting" />
+										</svg>
+									</button>
+								</div>
+							</div>
+							<% } %>
+								<div class="flex mt-6">
+									<button class="lk-team__add btn btn--primary btn--light">
+										Добавить участника
+									</button>
+
+									<button data-team-submit :disabled="!isAccessAdd" v-if="currentContest"
+										class="lk-team__add btn btn--primary btn--fill px-10 ml-5">
+										Заявить команду
+									</button>
+								</div>
+					</div>
+				</div>
+
+
+
+
+			</div>
 
 
 			<!-- Комментарии главного судьи -->

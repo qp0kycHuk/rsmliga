@@ -27,9 +27,14 @@ function init() {
         },
         mounted() {
             this.isAccessCheck = this.getAccessCheck()
+            window.addEventListener('member-number-change', this.memberNumberChange)
 
         },
         methods: {
+            memberNumberChange(event) {
+                console.log(event.detail);
+                this.members[event.detail.memberId][event.detail.contestId] = event.detail.number
+            },
             changeHandler(event) {
                 this.isAccessCheck = this.getAccessCheck()
                 this.isAccessAdd = this.getAccessAdd()

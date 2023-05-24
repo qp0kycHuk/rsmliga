@@ -13,7 +13,9 @@ function init() {
                 contests: window.contests || [],
                 currentContest: localContest || window.currentContest || window.contests[0],
                 isAccessCheck: false,
-                isAccessAdd: false
+                isAccessAdd: false,
+                members: window.members || {}
+
             }
         },
         watch: {

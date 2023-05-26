@@ -81,23 +81,30 @@
 
 <script>
 
-    // if (!sessionStorage.getItem('konkurs') && sessionStorage.getItem('konkurs') !== 'active') {
+    const date = new Date(2023, 4, 28, 13, 0, 0).getTime()
+    const distance = date - new Date().getTime()
 
-    //     setTimeout(() => {
-            
-    //         Fancybox.modal.open('dialog-konkurs-info.html')
+    if (distance > 0) {
+        
+        if (!sessionStorage.getItem('konkurs') && sessionStorage.getItem('konkurs') !== 'active') {
+    
+            setTimeout(() => {
+                
+                Fancybox.modal.open('dialog-konkurs-info.html')
+    
+            }, 2000)
+    
+        }
+    
+        document.addEventListener('click', (event) => {
+    
+            if (event.target.classList.contains('-konkurs-btn-info-')) {
+    
+                sessionStorage.setItem('konkurs', 'active')
+    
+            }
+    
+        })
 
-    //     }, 2000)
-
-    // }
-
-    // document.addEventListener('click', (event) => {
-
-    //     if (event.target.classList.contains('-konkurs-btn-info-')) {
-
-    //         sessionStorage.setItem('konkurs', 'active')
-
-    //     }
-
-    // })
+    }
 </script>

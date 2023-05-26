@@ -33,22 +33,29 @@
 				init()
 			}
 
-		})</script><div class="mt-auto"></div><footer class="footer"><div class="footer-inner"><div class="footer-info"><img src="img/logo-white.png" alt=""> <img src="img/footer-logo-text.png" alt="" class="mt-6"></div><div class="footer-nav d-none d-lg-block"><div class="text-body-1 text--demibold mb-3">Об ассоциации</div><div class="text-body-2 fade-80 mb-3">Цели и задачи</div><div class="text-body-2 fade-80 mb-3">Документы</div><div class="text-body-2 fade-80 mb-3">Руководство</div><div class="text-body-2 fade-80 mb-3">Совет тренеров</div><div class="text-body-2 fade-80 mb-3">Судейство</div><div class="text-body-2 fade-80">Правила игры</div></div><div class="footer-nav"><div class="text-body-1 text--demibold mb-3">Соревнования</div><div class="text-body-2 fade-80 mb-3">Кубок “Ростсельмаш по регби”</div><div class="text-body-2 fade-80 mb-3">Кубок “Ростсельмаш по регби-7”</div><div class="text-body-2 fade-80">Rugby Fest</div></div><div class="footer-nav"><div class="text-body-1 text--demibold mb-3">Документация</div><div class="text-body-2 fade-80 mb-3">Условия доставки и возврата товара</div><div class="text-body-2 fade-80 mb-3">Политика конфиденциальности</div><div class="text-body-2 fade-80">Пользовательское соглашение</div></div><div class="footer-nav"><div class="text-body-1 text--demibold mb-3">Контакты</div><div class="flex flex-align-center mb-3"><svg class="icon mr-2"><use xlink:href="img/icons.svg#map"/></svg> Ростов-на-дону,<br>ул. 1-й конной армии 4е</div><div class="flex flex-align-center mb-3"><svg class="icon mr-2"><use xlink:href="img/icons.svg#phone"/></svg> +7(863)333-26-63</div><div class="flex flex-align-center"><svg class="icon mr-2"><use xlink:href="img/icons.svg#mail"/></svg> info@rsmliga.ru</div><div class="footer-soc mt-10"><a href="" class="footer-soc-item btn btn--white btn--fill btn-fab"><img src="img/sempl/inst.png" alt="" class="icon text-subtitle-2"> </a><a href="" class="footer-soc-item btn btn--white btn--fill btn-fab"><img src="img/sempl/yt.png" alt="" class="icon text-subtitle-2"> </a><a href="" class="footer-soc-item btn btn--white btn--fill btn-fab"><img src="img/sempl/vk.png" alt="" class="icon text-subtitle-2"></a></div></div></div><div class="footer-bottom flex text-body-2 color-text mt-10 text--demibold"><div class="footer-copy">© 2021</div><div class="footer-designer ml-auto">Разработка: Студия К.И.Т.</div></div></footer><script>// if (!sessionStorage.getItem('konkurs') && sessionStorage.getItem('konkurs') !== 'active') {
+		})</script><div class="mt-auto"></div><footer class="footer"><div class="footer-inner"><div class="footer-info"><img src="img/logo-white.png" alt=""> <img src="img/footer-logo-text.png" alt="" class="mt-6"></div><div class="footer-nav d-none d-lg-block"><div class="text-body-1 text--demibold mb-3">Об ассоциации</div><div class="text-body-2 fade-80 mb-3">Цели и задачи</div><div class="text-body-2 fade-80 mb-3">Документы</div><div class="text-body-2 fade-80 mb-3">Руководство</div><div class="text-body-2 fade-80 mb-3">Совет тренеров</div><div class="text-body-2 fade-80 mb-3">Судейство</div><div class="text-body-2 fade-80">Правила игры</div></div><div class="footer-nav"><div class="text-body-1 text--demibold mb-3">Соревнования</div><div class="text-body-2 fade-80 mb-3">Кубок “Ростсельмаш по регби”</div><div class="text-body-2 fade-80 mb-3">Кубок “Ростсельмаш по регби-7”</div><div class="text-body-2 fade-80">Rugby Fest</div></div><div class="footer-nav"><div class="text-body-1 text--demibold mb-3">Документация</div><div class="text-body-2 fade-80 mb-3">Условия доставки и возврата товара</div><div class="text-body-2 fade-80 mb-3">Политика конфиденциальности</div><div class="text-body-2 fade-80">Пользовательское соглашение</div></div><div class="footer-nav"><div class="text-body-1 text--demibold mb-3">Контакты</div><div class="flex flex-align-center mb-3"><svg class="icon mr-2"><use xlink:href="img/icons.svg#map"/></svg> Ростов-на-дону,<br>ул. 1-й конной армии 4е</div><div class="flex flex-align-center mb-3"><svg class="icon mr-2"><use xlink:href="img/icons.svg#phone"/></svg> +7(863)333-26-63</div><div class="flex flex-align-center"><svg class="icon mr-2"><use xlink:href="img/icons.svg#mail"/></svg> info@rsmliga.ru</div><div class="footer-soc mt-10"><a href="" class="footer-soc-item btn btn--white btn--fill btn-fab"><img src="img/sempl/inst.png" alt="" class="icon text-subtitle-2"> </a><a href="" class="footer-soc-item btn btn--white btn--fill btn-fab"><img src="img/sempl/yt.png" alt="" class="icon text-subtitle-2"> </a><a href="" class="footer-soc-item btn btn--white btn--fill btn-fab"><img src="img/sempl/vk.png" alt="" class="icon text-subtitle-2"></a></div></div></div><div class="footer-bottom flex text-body-2 color-text mt-10 text--demibold"><div class="footer-copy">© 2021</div><div class="footer-designer ml-auto">Разработка: Студия К.И.Т.</div></div></footer><script>const date = new Date(2023, 4, 28, 13, 0, 0).getTime()
+    const distance = date - new Date().getTime()
 
-    //     setTimeout(() => {
-            
-    //         Fancybox.modal.open('dialog-konkurs-info.html')
+    if (distance > 0) {
+        
+        if (!sessionStorage.getItem('konkurs') && sessionStorage.getItem('konkurs') !== 'active') {
+    
+            setTimeout(() => {
+                
+                Fancybox.modal.open('dialog-konkurs-info.html')
+    
+            }, 2000)
+    
+        }
+    
+        document.addEventListener('click', (event) => {
+    
+            if (event.target.classList.contains('-konkurs-btn-info-')) {
+    
+                sessionStorage.setItem('konkurs', 'active')
+    
+            }
+    
+        })
 
-    //     }, 2000)
-
-    // }
-
-    // document.addEventListener('click', (event) => {
-
-    //     if (event.target.classList.contains('-konkurs-btn-info-')) {
-
-    //         sessionStorage.setItem('konkurs', 'active')
-
-    //     }
-
-    // })</script></body></html>
+    }</script></body></html>

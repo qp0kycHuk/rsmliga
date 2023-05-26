@@ -521,6 +521,9 @@ body[data-theme="dark"] {
 			var(--color-primary);
 		border-radius: 12px;
 		cursor: pointer;
+		display: flex;
+		flex-direction: column;
+
 
 
 		&-header {
@@ -567,6 +570,13 @@ body[data-theme="dark"] {
 			--size: 38px;
 			position: relative;
 			z-index: 3;
+			margin-top: auto;
+		}
+		
+		&-content{
+			flex-grow: 1;
+			display: flex;
+			flex-direction: column;
 		}
 	}
 

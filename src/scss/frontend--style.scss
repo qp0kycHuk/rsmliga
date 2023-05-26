@@ -512,9 +512,9 @@ body[data-theme="dark"] {
 	}
 
 	&-item {
-		padding: 10px 8px 16px;
+		padding: 10px 8px 8px;
 		background: var(--bg3);
-
+		position: relative;
 		background: linear-gradient(180deg, rgba(0, 0, 0, 0) 46px, var(--bg3) 46px),
 			url("../img/sempl/live-item-clouds.png") no-repeat center 24px / auto,
 			linear-gradient(239.95deg, rgba(105, 0, 27, 0.4) 6px, rgba(210, 28, 75, 0) 32px),
@@ -522,11 +522,6 @@ body[data-theme="dark"] {
 		border-radius: 12px;
 		cursor: pointer;
 
-		@media(hover) {
-			&:hover {
-				box-shadow: 0 0 0 2px var(--color-primary);
-			}
-		}
 
 		&-header {
 			display: grid;
@@ -553,6 +548,25 @@ body[data-theme="dark"] {
 			margin: 0 5px;
 			background: var(--bg1);
 			border-radius: 6px;
+		}
+
+		&-link {
+			position: absolute;
+			inset: 0;
+			z-index: 2;
+			border-radius: inherit;
+
+			@media(hover) {
+				&:hover {
+					box-shadow: 0 0 0 2px var(--color-primary);
+				}
+			}
+		}
+
+		&-btn {
+			--size: 38px;
+			position: relative;
+			z-index: 3;
 		}
 	}
 
@@ -2577,8 +2591,13 @@ body.new-year-theme .footer {
 .admin-select {
 	display: flex;
 	position: relative;
+	@media (max-width:$md){
+		flex-direction: column;
+		gap: 4px;
+	}
 
 	&-btn {
+		text-align: left;
 		.icon {
 			transform: rotateZ(90deg);
 		}

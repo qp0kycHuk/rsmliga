@@ -46,10 +46,10 @@
 	color: var(--btn-color);
 
 
-	&:focus:not(:active) {
-		background: var(--btn-color-light);
+	// &:focus:not(:active) {
+	// 	background: var(--btn-color-light);
 
-	}
+	// }
 
 	&:focus {
 		z-index: 2;
@@ -161,11 +161,11 @@
 
 
 
-		&:focus:not(:active) {
-			background: var(--btn-color);
-			box-shadow: 0 0 0 5px var(--btn-color-light);
+		// &:focus:not(:active) {
+		// 	background: var(--btn-color);
+		// 	box-shadow: 0 0 0 5px var(--btn-color-light);
 
-		}
+		// }
 
 	}
 
@@ -173,10 +173,10 @@
 		background: var(--btn-color-light);
 		color     : var(--btn-color);
 
-		&:focus:not(:active) {
-			box-shadow: 0 0 0 2px var(--btn-color);
-			background: var(--btn-color-light);
-		}
+		// &:focus:not(:active) {
+		// 	box-shadow: 0 0 0 2px var(--btn-color);
+		// 	background: var(--btn-color-light);
+		// }
 	}
 
 	&--contur {
@@ -190,10 +190,10 @@
 			}
 		}
 
-		&:focus:not(:active) {
-			background: var(--btn-color-light);
-			box-shadow: 0 0 0 1px var(--btn-color), 0 0 0 5px var(--btn-color-light);
-		}
+		// &:focus:not(:active) {
+		// 	background: var(--btn-color-light);
+		// 	box-shadow: 0 0 0 1px var(--btn-color), 0 0 0 5px var(--btn-color-light);
+		// }
 	}
 
 	&--link {
@@ -208,10 +208,10 @@
 		border-radius: 0;
 
 
-		&:focus:not(:active) {
-			background: var(--btn-color-light);
-			box-shadow: 0 0 0 5px var(--btn-color-light);
-		}
+		// &:focus:not(:active) {
+		// 	background: var(--btn-color-light);
+		// 	box-shadow: 0 0 0 5px var(--btn-color-light);
+		// }
 	}
 
 	&--white-bg {
@@ -225,22 +225,22 @@
 			}
 		}
 
-		&:focus:not(:active) {
-			background: var(--bg3);
-			box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12), 0 0 0 2px var(--btn-color);
+		// &:focus:not(:active) {
+		// 	background: var(--bg3);
+		// 	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12), 0 0 0 2px var(--btn-color);
 
-		}
+		// }
 	}
 
 	// mod
 	&--shadow {
 		box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
 
-		&:focus:not(:active) {
-			box-shadow:
-				0px 4px 10px rgba(0, 0, 0, 0.08),
-				0 0 0 5px var(--btn-color-light);
-		}
+		// &:focus:not(:active) {
+		// 	box-shadow:
+		// 		0px 4px 10px rgba(0, 0, 0, 0.08),
+		// 		0 0 0 5px var(--btn-color-light);
+		// }
 	}
 
 	&:disabled,
@@ -282,11 +282,11 @@
 		color     : var(--btn-text);
 		border    : transparent;
 
-		&:focus:not(:active) {
-			background: var(--btn-color);
-			box-shadow: 0 0 0 5px var(--btn-color-light);
+		// &:focus:not(:active) {
+		// 	background: var(--btn-color);
+		// 	box-shadow: 0 0 0 5px var(--btn-color-light);
 
-		}
+		// }
 
 	}
 
@@ -296,10 +296,10 @@
 		background: var(--btn-color-light);
 		color     : var(--btn-color);
 
-		&:focus:not(:active) {
-			box-shadow: 0 0 0 2px var(--btn-color);
+		// &:focus:not(:active) {
+		// 	box-shadow: 0 0 0 2px var(--btn-color);
 
-		}
+		// }
 	}
 
 	&-active--contur.active,
@@ -309,10 +309,10 @@
 		border    : 1px solid var(--btn-color);
 		color     : var(--btn-color);
 
-		&:focus:not(:active) {
-			background: var(--btn-color-light);
-			box-shadow: 0 0 0 5px var(--btn-color-light);
-		}
+		// &:focus:not(:active) {
+		// 	background: var(--btn-color-light);
+		// 	box-shadow: 0 0 0 5px var(--btn-color-light);
+		// }
 	}
 
 	&-active--link.active,
@@ -329,10 +329,10 @@
 		border-radius: 0;
 
 
-		&:focus:not(:active) {
-			background: var(--btn-color-light);
-			box-shadow: 0 0 0 5px var(--btn-color-light);
-		}
+		// &:focus:not(:active) {
+		// 	background: var(--btn-color-light);
+		// 	box-shadow: 0 0 0 5px var(--btn-color-light);
+		// }
 	}
 
 	&-active--white-bg.active,
@@ -341,10 +341,10 @@
 		background: #FFFFFF;
 		box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
 
-		&:focus:not(:active) {
-			background: #FFFFFF;
-			box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12), 0 0 0 2px var(--btn-color);
+		// &:focus:not(:active) {
+		// 	background: #FFFFFF;
+		// 	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12), 0 0 0 2px var(--btn-color);
 
-		}
+		// }
 	}
 }

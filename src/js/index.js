@@ -10,6 +10,7 @@ import rangeSlider from './range-slider';
 import theme from './theme';
 import phonemask from './phonemask';
 import teamLkTable from './team-lk-table';
+import copy from 'copy-to-clipboard'
 import * as Vue from 'vue/dist/vue.esm-bundler.js'
 window.Vue = Vue
 // import conferenceMap from './conference-map';
@@ -39,7 +40,7 @@ document.addEventListener('toggleclose', menuCloseHandler)
 
 // menu toggle handlers
 function menuOpenHandler(event) {
-    
+
     if (event.detail.target.id == 'mobile-menu') {
         document.body.classList.add('menu-opened')
     }
@@ -76,12 +77,13 @@ function loadHandler() {
     ripple.attach('.slider-btn')
     ripple.deAttach('.btn--link')
 
+    document.querySelectorAll('[data-copy]').forEach((item) => item.addEventListener('click', copyСlickHandler))
 }
 
 
 document.addEventListener('click', (event) => {
     if (!event.target.closest('.-print-from-modal-')) return;
- 
+
 
     const dialog = event.target.closest('.fancybox__container')
     dialog.classList.add('fancybox-print-modal')
@@ -126,3 +128,27 @@ document.addEventListener('input', (event) => {
     }
 
 })
+
+
+function copyСlickHandler(event) {
+    event.stopPropagation() 
+    const target = event.target
+
+    const item = target?.closest('[data-copy]')
+
+    if (item) {
+        const text = item.getAttribute('data-copy')
+        const textContent = item.getAttribute('data-text') || item.innerHTML
+
+        if (text) {
+            copy(text)
+            item.innerHTML = 'Скопировано!'
+            item.classList.add('color-green')
+
+            setTimeout(() => {
+                item.classList.remove('color-green')
+                item.innerHTML = textContent
+            }, 2000)
+        }
+    }
+}

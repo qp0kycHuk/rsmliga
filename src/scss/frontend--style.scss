@@ -4498,3 +4498,62 @@ option {
 		}
 	}
 }
+
+.store-payment-status {
+	display: flex;
+	align-items: center;
+	border-radius: 12px;
+	border: 1px solid #DADAE1;
+	background: #FEFEFE;
+	padding: 10px;
+	padding-right: 24px;
+	gap: 24px;
+
+	@media(max-width: $md) {
+		display: grid;
+		grid-template-columns: auto 1fr;
+		align-items: flex-start;
+		padding: 10px;
+		gap: 12px;
+	}
+	@media(max-width: $sm) {
+		width: calc(100% + 30px);
+		margin-left: -15px;
+		padding-left: 15px;
+		padding-right: 15px;
+		border-radius: 0;
+	}
+
+	&-image {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: var(--color-primary-10);
+		width: 78px;
+		border-radius: 8px;
+		height: 78px;
+		padding: 10px;
+
+		@media(max-width: $sm) {
+			width: 64px;
+			height: 64px;
+		}
+	}
+
+	&-title {
+		@media(max-width: $md) {
+			align-self: center;
+		}
+
+	}
+
+	&-btn {
+		@media(max-width: $md) {
+			grid-column: span 2;
+		}
+
+		@media(max-width: $sm) {
+			width: 100%;
+		}
+	}
+}

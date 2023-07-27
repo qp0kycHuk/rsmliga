@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Условия доставки и возврата товара </title>
+
+
+
+</head>
+
+<body>
+  <%= _.template(require('./includes/header.html').default)() %>
+  <%= _.template(require('./includes/page-top.html').default)({ page: 'Ошибка оплаты' }) %>
+
+  <section class="content">
+    <div class="store-payment-status">
+      <div class="store-payment-status-image">
+        <img src="img/check-circle.png" alt="">
+      </div>
+      <div class="text--medium store-payment-status-title">Чтобы посмотреть статус заказа, нажмите кнопку или войдите в свой
+        <a href="" class=" btn btn--primary btn--link text--underline d-inline">
+          личный кабинет
+        </a>
+      </div>
+      <button class="btn btn--primary btn--fill ml-auto store-payment-status-btn">Перейти в мои заказы</button>
+    </div>
+  </section>
+  <section class="content">
+    <div class="store-payment-status">
+      <div class="store-payment-status-image">
+        <img src="img/x-circle.png" alt="">
+      </div>
+      <div class="text--medium store-payment-status-title">Оплата не прошла, что-то пошло не так... </div>
+      <button class="btn btn--primary btn--fill ml-auto store-payment-status-btn">Перейти в мои заказы</button>
+    </div>
+  </section>
+
+  <%= _.template(require('./includes/footer.html').default)() %>
+</body>
+
+</html>

@@ -2617,10 +2617,11 @@ body.new-year-theme .footer {
 	display: flex;
 	align-items: center;
 	position: relative;
+	gap: 4px;
 
 	@media (max-width:$md) {
 		flex-direction: column;
-		gap: 4px;
+		align-items: flex-start;
 	}
 
 	&-btn {

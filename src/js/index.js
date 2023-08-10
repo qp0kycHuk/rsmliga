@@ -14,10 +14,12 @@ import copy from 'copy-to-clipboard'
 import * as Vue from 'vue/dist/vue.esm-bundler.js'
 window.Vue = Vue
 // import conferenceMap from './conference-map';
-
+import tippy, { animateFill } from 'tippy.js';
 import 'tippy.js/dist/tippy.css';
 import 'tippy.js/themes/light.css';
 import 'tippy.js/animations/perspective.css';
+import 'tippy.js/dist/backdrop.css';
+import 'tippy.js/animations/shift-away.css';
 import 'swiper/css';
 import 'npm-kit-ripple/index.css';
 import 'air-datepicker/air-datepicker.css';
@@ -78,6 +80,12 @@ function loadHandler() {
     ripple.deAttach('.btn--link')
 
     document.querySelectorAll('[data-copy]').forEach((item) => item.addEventListener('click', copyСlickHandler))
+
+    tippy('[data-tippy-content]', {
+        placement: 'bottom-end',
+        animateFill: true,
+        plugins: [animateFill],
+    });
 }
 
 
@@ -131,7 +139,7 @@ document.addEventListener('input', (event) => {
 
 
 function copyСlickHandler(event) {
-    event.stopPropagation() 
+    event.stopPropagation()
     const target = event.target
 
     const item = target?.closest('[data-copy]')

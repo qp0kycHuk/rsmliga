@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Личный кабинет</title>
+
+
+
+</head>
+
+<body>
+  <%= _.template(require('./includes/header.html').default)() %>
+
+
+  <section>
+
+    <div class="lk-tabs tab-links">
+      <button class="lk-tabs__item tab-link ">Инфо о команде</button>
+      <button class="lk-tabs__item tab-link active">Игры команды</button>
+    </div>
+
+    <div class="lk-teams mb-5">
+      <button class="btn btn--primary btn--light lk-teams__item">Команда 1</button>
+      <button class="btn btn--primary btn--fill lk-teams__item">Команда 2</button>
+      <button class="btn btn--color-icon btn--light lk-teams__item pl-2 pr-4">
+        <svg class="icon mr-2 color-primary">
+          <use xlink:href="img/icons.svg#plus" />
+        </svg>
+        <div class="text-body-2">Добавить команду</div>
+      </button>
+    </div>
+
+		<div class="plug ">
+			<div class="plug__pic mb-7 color-primary">
+			  <svg class="plug__icon icon">
+				<use xlink:href="img/icons.svg#ball" />
+			  </svg>
+			</div>
+			<div class="plug__title text-h6 mb-2">На данный момент соревнований нет</div>
+		</div>
+
+    <div class="flex">
+
+      <div class="admin-select" data-toggle-cover="">
+        <div class="text-body-2 text--demibold">Статус соревнований</div>
+        <button class="admin-select-btn btn btn--primary btn--link ml-2" data-toggle-link="">
+          Прием заявок
+          <svg class="icon ml-1 text-small-2">
+            <use xlink:href="img/icons.svg#triangle-right"></use>
+          </svg>
+        </button>
+        <div class="admin-select-list card py-1" data-toggle-content="">
+          <div class="admin-select__item fade-60 py-1 px-4 text-body-2 text--demibold">Прием заявок</div>
+          <a href="javascript:;" class="admin-select__item py-1 px-4 text-body-2 text--demibold">Другое</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="zayavki-table mt-6">
+      <div class="zayavki-row zayavki-header">
+        <div class="text-body-2 text--demibold zayavki-title">Наименование соревнования</div>
+        <div class="text-body-2 text--demibold zayavki-date">Возрастная категория</div>
+        <div class="text-body-2 text--demibold zayavki-status">Статус соревнования</div>
+        <div class="text-body-2 text--demibold zayavki-select">Заявленная команда</div>
+      </div>
+      <% for(let i = 0; i < 10; i++) { %>
+      <div class="zayavki-row">
+        <div class="flex pr-10">
+          <div class="zayavki-title text-body-2">
+            Соревнования по тэг-регби среди команд 2011-2099 uwu
+          </div>
+          <button class="btn btn-fab btn--contur btn--primary zayavki-title-btn" data-tippy-content="Соревнования по тэг-регби среди команд 2011-2099 uwu">?</button>
+        </div>
+        <div class="zayavki-date text-body-2">2012-2013 г.р.</div>
+        <div class="zayavki-status flex flex-align-center">
+          <div class="icon text-small brs-full bg-green mr-2"></div>
+          <div class="icon text-small brs-full bg-yellow mr-2"></div>
+          <div class="icon text-small brs-full bg-blue mr-2"></div>
+          <div class="icon text-small brs-full bg-red mr-2"></div>
+          <div class="text-body-2">Проводится</div>
+        </div>
+        <div class="zayavki-select">
+          <label class="form-field w-100">
+            <div class="form-input-cover">
+              <select name="" class="form-input pr-8">
+                <option selected disabled hidden>Не выбрано</option>
+                <option value="">МБОУ АСОШ №1 2011 г.</option>
+                <option value="">МБОУ АСОШ №2 2012 г.</option>
+                <option value="">МБОУ АСОШ №3 2013 г.</option>
+              </select>
+              <div class="form-select-icon">
+                <svg class="icon" style="transform: rotateZ(90deg);">
+                  <use xlink:href="img/icons.svg#triangle-right" />
+                </svg>
+              </div>
+            </div>
+          </label>
+        </div>
+      </div>
+      <% } %>
+    </div>
+
+		
+    <div class="flex mt-10">
+      <button class="btn btn-icon btn--primary btn--white-bg mx-1">
+        <svg class="icon text-small-1">
+          <use xlink:href="img/icons.svg#to-left" />
+        </svg>
+      </button>
+      <button class="btn btn-icon btn--primary btn--fill mx-1"> 1 </button>
+      <button class="btn btn-icon btn--primary btn--white-bg mx-1"> 2 </button>
+      <div class="mt-auto mx-3 fade-60"> ... </div>
+      <button class="btn btn-icon btn--primary btn--white-bg mx-1"> 3 </button>
+      <button class="btn btn-icon btn--primary btn--white-bg mx-1"> 4 </button>
+      <button class="btn btn-icon btn--primary btn--white-bg mx-1">
+        <svg class="icon text-small-1">
+          <use xlink:href="img/icons.svg#to-right" />
+        </svg>
+      </button>
+    </div>
+  </section>
+
+  <script>
+    document.addEventListener('change', (event) => {
+      if (event.target.closest('.zayavki-select')) {
+        Fancybox.modal.open('lk-zayavki-dialog.html?id=' + event.target.value)
+      }
+    })
+  </script>
+
+  <%= _.template(require('./includes/footer.html').default)() %>
+</body>
+
+</html>

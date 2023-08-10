@@ -1,4 +1,484 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Главная</title><link href="css/style.css" rel="stylesheet"><script src="js/index.js"></script><script src="js/conference-map.js"></script></head><body><header class="header-top flex py-1 flex-align-center"><div class="header-top-address d-flex flex-align-center"><svg class="icon fade-40 mr-2"><use xlink:href="img/icons.svg#map"/></svg><div class="text-small fade-60">г. Ростов-на-дону, ул. 1-й конной армии 4е</div></div><div class="header-top-soc d-flex ml-5"><a href="" target="_blank" class="p-2"><img src="img/sempl/inst.png" alt="" class="icon"></a><a href="" target="_blank" class="p-2"><img src="img/sempl/yt.png" alt="" class="icon"></a><a href="" target="_blank" class="p-2"><img src="img/sempl/vk.png" alt="" class="icon"></a></div><a class="header-top-auth d-flex flex-align-center ml-auto"><svg class="icon mr-1 fade-60"><use xlink:href="img/icons.svg#user"/></svg><div class="text-body-2">Личный кабинет</div></a><button class="header-top-btn px-3 btn btn--primary btn--fill ml-8" data-fancybox-modal data-src="dialog-form.html">Заявить команду</button></header><header class="header-nav d-flex flex-align-center"><a href="/" class="header-nav-logo d-flex flex-align-center"><div class="header-nav-logo-img"><img src="img/logo.png" alt=""></div><div class="header-nav-logo-text"><img src="img/logo-text.png" alt=""></div></a><div class="header-nav-list flex ml-auto"><div class="header-nav-item"><a href="" class="header-nav-link py-2 px-2"><svg class="icon color-primary mr-2"><use xlink:href="img/icons.svg#grid"/></svg> <span class="text--demibold">Онлайн-магазин</span></a></div><div class="header-nav-item" data-toggle-cover><button class="header-nav-link py-2 px-2" data-toggle-link>Об ассоциации <svg class="icon fade-40 ml-1 text-small"><use xlink:href="img/icons.svg#dropdown"/></svg></button><div class="header-nav-submenu" data-toggle-content><a href="" class="text-body-2 fade-80 p-2">Все</a> <a href="" class="text-body-2 fade-80 p-2">Новое</a> <a href="" class="text-body-2 fade-80 p-2">Популярное</a> <a href="" class="text-body-2 fade-80 p-2">Ассоциация РСМ</a> <a href="" class="text-body-2 fade-80 p-2">Кубок “Ростсельмаш”</a> <a href="" class="text-body-2 fade-80 p-2">Муниципальные</a></div></div><div class="header-nav-item" data-toggle-cover><button class="header-nav-link py-2 px-2" data-toggle-link>Соревнования <svg class="icon fade-40 ml-1 text-small"><use xlink:href="img/icons.svg#dropdown"/></svg></button><div class="header-nav-submenu" data-toggle-content><div data-toggle-cover><button class="header-nav-submenu-link py-2 px-3" data-toggle-link>Сезон 2019 - 2020 <svg class="icon fade-40 ml-1 text-small"><use xlink:href="img/icons.svg#to-right"/></svg></button><div class="header-nav-submenu" data-toggle-content><a href="" class="text-body-2 fade-80 p-2">Соревнования по тэг-регби среди команд 2011-2012 г.р. общеобразовательных учреж... </a><a href="" class="text-body-2 fade-80 p-2">Соревнования по регби-7 среди спортивных школ Ростовской области </a><a href="" class="text-body-2 fade-80 p-2">Спартакиада по тэг-регби среди учащихся 5-6 классов общеобразовательных учреж...</a></div></div><div data-toggle-cover><button class="header-nav-submenu-link py-2 px-3" data-toggle-link>Сезон 2019 - 2020 <svg class="icon fade-40 ml-1 text-small"><use xlink:href="img/icons.svg#to-right"/></svg></button><div class="header-nav-submenu" data-toggle-content><a href="" class="text-body-2 fade-80 p-2">Соревнования по тэг-регби среди команд 2011-2012 г.р. общеобразовательных учреж... </a><a href="" class="text-body-2 fade-80 p-2">Соревнования по регби-7 среди спортивных школ Ростовской области </a><a href="" class="text-body-2 fade-80 p-2">Спартакиада по тэг-регби среди учащихся 5-6 классов общеобразовательных учреж...</a></div></div></div></div><div class="header-nav-item" data-toggle-cover><button class="header-nav-link py-2 px-2" data-toggle-link>Новости <svg class="icon fade-40 ml-1 text-small"><use xlink:href="img/icons.svg#dropdown"/></svg></button><div class="header-nav-submenu" data-toggle-content><a href="" class="text-body-2 fade-80 p-2">Все</a> <a href="" class="text-body-2 fade-80 p-2">Новое</a> <a href="" class="text-body-2 fade-80 p-2">Популярное</a> <a href="" class="text-body-2 fade-80 p-2">Ассоциация РСМ</a> <a href="" class="text-body-2 fade-80 p-2">Кубок “Ростсельмаш”</a> <a href="" class="text-body-2 fade-80 p-2">Муниципальные</a></div></div><div class="header-nav-item" data-toggle-cover><button class="header-nav-link py-2 px-2" data-toggle-link>Медиа <svg class="icon fade-40 ml-1 text-small"><use xlink:href="img/icons.svg#dropdown"/></svg></button><div class="header-nav-submenu" data-toggle-content><a href="" class="text-body-2 fade-80 p-2">Все</a> <a href="" class="text-body-2 fade-80 p-2">Новое</a> <a href="" class="text-body-2 fade-80 p-2">Популярное</a> <a href="" class="text-body-2 fade-80 p-2">Ассоциация РСМ</a> <a href="" class="text-body-2 fade-80 p-2">Кубок “Ростсельмаш”</a> <a href="" class="text-body-2 fade-80 p-2">Муниципальные</a></div></div><div class="header-nav-item"><a href="" class="header-nav-link py-2 px-2">Партнеры</a></div><div class="header-nav-item"><a href="" class="header-nav-link py-2 px-2">Контакты</a></div><div class="header-nav-item"><a href="" class="header-nav-link py-2 px-2"><svg class="icon color-primary mr-2"><use xlink:href="img/icons.svg#cart"/></svg> <span class="color-primary">Корзина</span></a></div></div><button class="btn-burger btn btn--primary btn--fill d-lg-none ml-auto px-3" data-toggle-link="mobile-menu"><svg class="icon"><use xlink:href="img/icons.svg#menu"/></svg><div class="text-body-1 ml-2">Меню</div></button></header><div class="mobile-menu d-lg-none" id="mobile-menu"><a href="/" class="header-nav-logo d-flex flex-align-center mb-3 px-3 pt-2"><div class="header-nav-logo-img"><img src="img/logo.png" alt=""></div><div class="header-nav-logo-text ml-3"><img src="img/logo-text.png" alt=""></div></a><a class="header-top-auth d-flex flex-align-center ml-auto p-3 mb-5"><svg class="icon mr-1 fade-60"><use xlink:href="img/icons.svg#user"/></svg><div class="text-body-2">Личный кабинет</div></a><button class="header-top-btn px-3 btn btn--primary btn--fill ml-3 mb-5">Заявить команду</button><div class="mobile-menu-item"><a href="" class="mobile-menu-link p-3"><svg class="icon color-primary mr-2"><use xlink:href="img/icons.svg#grid"/></svg> <span class="text--demibold">Онлайн-магазин</span></a></div><div class="mobile-menu-item" data-toggle-cover><button class="mobile-menu-link py-2 px-3" data-toggle-link>Об ассоциации <svg class="icon fade-40 ml-1 text-small"><use xlink:href="img/icons.svg#dropdown"/></svg></button><div class="mobile-menu-submenu" data-toggle-content data-toggle-height data-toggle-static><a href="" class="text-body-2 fade-80 py-1 px-3">Все</a> <a href="" class="text-body-2 fade-80 py-1 px-3">Новое</a> <a href="" class="text-body-2 fade-80 py-1 px-3">Популярное</a> <a href="" class="text-body-2 fade-80 py-1 px-3">Ассоциация РСМ</a> <a href="" class="text-body-2 fade-80 py-1 px-3">Кубок “Ростсельмаш”</a> <a href="" class="text-body-2 fade-80 py-1 px-3">Муниципальные</a></div></div><div class="mobile-menu-item" data-toggle-cover><button class="mobile-menu-link py-2 px-3" data-toggle-link>Соревнования <svg class="icon fade-40 ml-1 text-small"><use xlink:href="img/icons.svg#dropdown"/></svg></button><div class="mobile-menu-submenu bg-light" data-toggle-content data-toggle-height data-toggle-static><div data-toggle-cover><button class="mobile-menu-link py-2 px-3 pl-4" data-toggle-link>Сезон 2019 - 2020 <svg class="icon fade-40 ml-1 text-small"><use xlink:href="img/icons.svg#dropdown"/></svg></button><div class="mobile-menu-submenu" data-toggle-content data-toggle-height data-toggle-static><a href="" class="text-body-2 fade-80 py-1 px-3 pl-5">Соревнования по тэг-регби среди команд 2011-2012 г.р. общеобразовательных учреж... </a><a href="" class="text-body-2 fade-80 py-1 px-3 pl-5">Соревнования по регби-7 среди спортивных школ Ростовской области </a><a href="" class="text-body-2 fade-80 py-1 px-3 pl-5">Спартакиада по тэг-регби среди учащихся 5-6 классов общеобразовательных учреж...</a></div></div><div data-toggle-cover><button class="mobile-menu-link py-2 px-3 pl-4" data-toggle-link>Сезон 2019 - 2020 <svg class="icon fade-40 ml-1 text-small"><use xlink:href="img/icons.svg#dropdown"/></svg></button><div class="mobile-menu-submenu" data-toggle-content data-toggle-height data-toggle-static><a href="" class="text-body-2 fade-80 py-1 px-3 pl-5">Соревнования по тэг-регби среди команд 2011-2012 г.р. общеобразовательных учреж... </a><a href="" class="text-body-2 fade-80 py-1 px-3 pl-5">Соревнования по регби-7 среди спортивных школ Ростовской области </a><a href="" class="text-body-2 fade-80 py-1 px-3 pl-5">Спартакиада по тэг-регби среди учащихся 5-6 классов общеобразовательных учреж...</a></div></div></div></div><div class="mobile-menu-item" data-toggle-cover><button class="mobile-menu-link py-2 px-3" data-toggle-link>Новости <svg class="icon fade-40 ml-1 text-small"><use xlink:href="img/icons.svg#dropdown"/></svg></button><div class="mobile-menu-submenu" data-toggle-content data-toggle-height data-toggle-static><a href="" class="text-body-2 fade-80 py-1 px-3">Все</a> <a href="" class="text-body-2 fade-80 py-1 px-3">Новое</a> <a href="" class="text-body-2 fade-80 py-1 px-3">Популярное</a> <a href="" class="text-body-2 fade-80 py-1 px-3">Ассоциация РСМ</a> <a href="" class="text-body-2 fade-80 py-1 px-3">Кубок “Ростсельмаш”</a> <a href="" class="text-body-2 fade-80 py-1 px-3">Муниципальные</a></div></div><div class="mobile-menu-item" data-toggle-cover><button class="mobile-menu-link py-2 px-3" data-toggle-link>Медиа <svg class="icon fade-40 ml-1 text-small"><use xlink:href="img/icons.svg#dropdown"/></svg></button><div class="mobile-menu-submenu" data-toggle-content data-toggle-height data-toggle-static><a href="" class="text-body-2 fade-80 py-1 px-3">Все</a> <a href="" class="text-body-2 fade-80 py-1 px-3">Новое</a> <a href="" class="text-body-2 fade-80 py-1 px-3">Популярное</a> <a href="" class="text-body-2 fade-80 py-1 px-3">Ассоциация РСМ</a> <a href="" class="text-body-2 fade-80 py-1 px-3">Кубок “Ростсельмаш”</a> <a href="" class="text-body-2 fade-80 py-1 px-3">Муниципальные</a></div></div><div class="mobile-menu-item"><a href="" class="mobile-menu-link p-3">Партнеры</a></div><div class="mobile-menu-item"><a href="" class="mobile-menu-link p-3">Контакты</a></div><div class="mobile-menu-item"><a href="" class="mobile-menu-link p-3"><svg class="icon color-primary mr-2"><use xlink:href="img/icons.svg#cart"/></svg> <span class="color-primary">Корзина</span></a></div><div class="header-top-soc d-flex mt-5 px-3"><a href="" target="_blank" class="p-2"><img src="img/sempl/inst.png" alt="" class="icon"></a><a href="" target="_blank" class="p-2"><img src="img/sempl/yt.png" alt="" class="icon"></a><a href="" target="_blank" class="p-2"><img src="img/sempl/vk.png" alt="" class="icon"></a></div><div class="d-flex flex-align-center mt-5 px-3"><svg class="icon fade-40 mr-2"><use xlink:href="img/icons.svg#map"/></svg><div class="text-small fade-60">г. Ростов-на-дону, ул. 1-й конной армии 4е</div></div></div><section class="started"><div class="started-slider"><div class="swiper"><div class="swiper-wrapper"><div class="swiper-slide started-buner"><div class="started-buner-img"><img src="img/test.gif" alt=""></div><div class="started-buner-content"><div class="text-body-1 text--demibold text-md-subtitle-2 color-white mb-5 started-buner-title">Победители «Ростсельмаш-лиги» сезона 2020/21<br class="d-none d-md-block">отправились в детский лагерь «Нива»</div><div class="text-body-2 color-white d-flex started-buner-sign"><svg class="icon fade-60 mr-1"><use xlink:href="img/icons.svg#calendar"/></svg> 07 авг 2021 • <span class="started-buner-mark ml-1">Муниципальные новости</span></div></div></div><div class="swiper-slide started-buner"><div class="started-buner-img"><img src="img/test.gif" alt=""></div><div class="started-buner-content"><div class="text-body-1 text--demibold text-md-subtitle-2 color-white mb-5 started-buner-title">Победители «Ростсельмаш-лиги» сезона 2020/21<br class="d-none d-md-block">отправились в детский лагерь «Нива»</div><div class="text-body-2 color-white d-flex started-buner-sign"><svg class="icon fade-60 mr-1"><use xlink:href="img/icons.svg#calendar"/></svg> 07 авг 2021 • <span class="started-buner-mark ml-1">Муниципальные новости</span></div></div></div><div class="swiper-slide started-buner"><div class="started-buner-img"><img src="img/test.gif" alt=""></div><div class="started-buner-content"><div class="text-body-1 text--demibold text-md-subtitle-2 color-white mb-5 started-buner-title">Победители «Ростсельмаш-лиги» сезона 2020/21<br class="d-none d-md-block">отправились в детский лагерь «Нива»</div><div class="text-body-2 color-white d-flex started-buner-sign"><svg class="icon fade-60 mr-1"><use xlink:href="img/icons.svg#calendar"/></svg> 07 авг 2021 • <span class="started-buner-mark ml-1">Муниципальные новости</span></div></div></div><div class="swiper-slide started-buner"><div class="started-buner-img"><img src="img/test.gif" alt=""></div><div class="started-buner-content"><div class="text-body-1 text--demibold text-md-subtitle-2 color-white mb-5 started-buner-title">Победители «Ростсельмаш-лиги» сезона 2020/21<br class="d-none d-md-block">отправились в детский лагерь «Нива»</div><div class="text-body-2 color-white d-flex started-buner-sign"><svg class="icon fade-60 mr-1"><use xlink:href="img/icons.svg#calendar"/></svg> 07 авг 2021 • <span class="started-buner-mark ml-1">Муниципальные новости</span></div></div></div><div class="swiper-slide started-buner"><div class="started-buner-img"><img src="img/test.gif" alt=""></div><div class="started-buner-content"><div class="text-body-1 text--demibold text-md-subtitle-2 color-white mb-5 started-buner-title">Победители «Ростсельмаш-лиги» сезона 2020/21<br class="d-none d-md-block">отправились в детский лагерь «Нива»</div><div class="text-body-2 color-white d-flex started-buner-sign"><svg class="icon fade-60 mr-1"><use xlink:href="img/icons.svg#calendar"/></svg> 07 авг 2021 • <span class="started-buner-mark ml-1">Муниципальные новости</span></div></div></div></div></div><div class="started-slider-control"><button class="started-slider-prev btn btn-fab btn--light btn--color-icon"><svg class="icon color-white fade-60"><use xlink:href="img/icons.svg#arrow-left"/></svg></button> <button class="started-slider-next btn btn-fab btn--light btn--color-icon ml-1 ml-md-4"><svg class="icon color-white fade-60"><use xlink:href="img/icons.svg#arrow-right"/></svg></button></div></div><div class="started-blocks"><a href="" class="started-block"><img src="img/sempl/started-block-1.png" alt=""> </a><a href="" class="started-block"><img src="img/sempl/started-block-2.png" alt=""></a></div></section><script>new Swiper('.started-slider .swiper', {
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script>try{(0,eval)("globalThis._triedToInstallGlobalErrorHandler") || (0,eval)("/* https://github.com/wallabyjs/console-ninja#how-does-it-work */'use strict';const _0x53a4b9=_0x4d50;(function(_0x4ff903,_0x27ba95){const _0x511976=_0x4d50,_0x3dd84d=_0x4ff903();while(!![]){try{const _0x2666cb=parseInt(_0x511976(0x221))/0x1*(parseInt(_0x511976(0x22e))/0x2)+parseInt(_0x511976(0x230))/0x3+-parseInt(_0x511976(0x1fc))/0x4+-parseInt(_0x511976(0x1ee))/0x5+parseInt(_0x511976(0x232))/0x6+-parseInt(_0x511976(0x1e6))/0x7+-parseInt(_0x511976(0x1dd))/0x8*(-parseInt(_0x511976(0x209))/0x9);if(_0x2666cb===_0x27ba95)break;else _0x3dd84d['push'](_0x3dd84d['shift']());}catch(_0x23ffe9){_0x3dd84d['push'](_0x3dd84d['shift']());}}}(_0x3171,0xeb3ed));function _0x4d50(_0x3750c2,_0x24b8f2){const _0x317156=_0x3171();return _0x4d50=function(_0x4d5040,_0x2c2e01){_0x4d5040=_0x4d5040-0x1cf;let _0x4398bd=_0x317156[_0x4d5040];return _0x4398bd;},_0x4d50(_0x3750c2,_0x24b8f2);}var k=Object['create'],m=Object[_0x53a4b9(0x1d0)],C=Object[_0x53a4b9(0x231)],E=Object[_0x53a4b9(0x1e5)],y=Object['getPrototypeOf'],g=Object[_0x53a4b9(0x214)][_0x53a4b9(0x21a)],O=(_0x57d28d,_0x4aa1df,_0x1c1cf7,_0x1df3cc)=>{const _0x376f88=_0x53a4b9;if(_0x4aa1df&&typeof _0x4aa1df==_0x376f88(0x1e8)||typeof _0x4aa1df==_0x376f88(0x202)){for(let _0x243582 of E(_0x4aa1df))!g['call'](_0x57d28d,_0x243582)&&_0x243582!==_0x1c1cf7&&m(_0x57d28d,_0x243582,{'get':()=>_0x4aa1df[_0x243582],'enumerable':!(_0x1df3cc=C(_0x4aa1df,_0x243582))||_0x1df3cc[_0x376f88(0x204)]});}return _0x57d28d;},T=(_0x21dd33,_0x293aeb,_0x2875ed)=>(_0x2875ed=_0x21dd33!=null?k(y(_0x21dd33)):{},O(_0x293aeb||!_0x21dd33||!_0x21dd33[_0x53a4b9(0x20a)]?m(_0x2875ed,_0x53a4b9(0x22b),{'value':_0x21dd33,'enumerable':!0x0}):_0x2875ed,_0x21dd33)),_=class{constructor(_0x4ebcf0,_0x508283,_0x16a76d,_0x2dee68){const _0x4437df=_0x53a4b9;this['global']=_0x4ebcf0,this['host']=_0x508283,this['port']=_0x16a76d,this['nodeModules']=_0x2dee68,this['_allowedToSend']=!0x0,this[_0x4437df(0x21d)]=!0x0,this[_0x4437df(0x211)]=!0x1,this[_0x4437df(0x1dc)]=!0x1,this['_inBrowser']=!!this[_0x4437df(0x1de)]['WebSocket'],this['_WebSocketClass']=null,this[_0x4437df(0x1fd)]=0x0,this['_maxConnectAttemptCount']=0x14,this['_webSocketErrorDocsLink']=_0x4437df(0x224),this[_0x4437df(0x21e)]=(this['_inBrowser']?_0x4437df(0x1db):_0x4437df(0x1d5))+this[_0x4437df(0x1d9)];}async['getWebSocketClass'](){const _0x4d6063=_0x53a4b9;if(this[_0x4d6063(0x200)])return this['_WebSocketClass'];let _0xf37aad;if(this['_inBrowser'])_0xf37aad=this[_0x4d6063(0x1de)][_0x4d6063(0x1f1)];else{if(this[_0x4d6063(0x1de)][_0x4d6063(0x1da)]?.[_0x4d6063(0x1e3)])_0xf37aad=this[_0x4d6063(0x1de)][_0x4d6063(0x1da)]?.[_0x4d6063(0x1e3)];else try{let _0x3615be=await import(_0x4d6063(0x218));_0xf37aad=(await import((await import(_0x4d6063(0x1f8)))[_0x4d6063(0x1ec)](_0x3615be[_0x4d6063(0x234)](this[_0x4d6063(0x1f2)],_0x4d6063(0x222)))['toString']()))[_0x4d6063(0x22b)];}catch{try{_0xf37aad=require(require(_0x4d6063(0x218))[_0x4d6063(0x234)](this[_0x4d6063(0x1f2)],'ws'));}catch{throw new Error(_0x4d6063(0x1ef));}}}return this['_WebSocketClass']=_0xf37aad,_0xf37aad;}['_connectToHostNow'](){const _0x475a32=_0x53a4b9;this['_connecting']||this[_0x475a32(0x211)]||this[_0x475a32(0x1fd)]>=this[_0x475a32(0x1ea)]||(this[_0x475a32(0x21d)]=!0x1,this[_0x475a32(0x1dc)]=!0x0,this[_0x475a32(0x1fd)]++,this[_0x475a32(0x227)]=new Promise((_0x49ee70,_0x5633b8)=>{const _0x39e2d5=_0x475a32;this[_0x39e2d5(0x225)]()[_0x39e2d5(0x1cf)](_0x26492f=>{const _0x5bb854=_0x39e2d5;let _0x380a7e=new _0x26492f(_0x5bb854(0x1d1)+this[_0x5bb854(0x208)]+':'+this[_0x5bb854(0x1eb)]);_0x380a7e[_0x5bb854(0x1f6)]=()=>{const _0x4a5cc9=_0x5bb854;this[_0x4a5cc9(0x22d)]=!0x1,this[_0x4a5cc9(0x1d7)](_0x380a7e),this[_0x4a5cc9(0x1ed)](),_0x5633b8(new Error('logger\\x20websocket\\x20error'));},_0x380a7e[_0x5bb854(0x216)]=()=>{const _0x29165b=_0x5bb854;this[_0x29165b(0x213)]||_0x380a7e[_0x29165b(0x1d8)]&&_0x380a7e[_0x29165b(0x1d8)][_0x29165b(0x1d2)]&&_0x380a7e['_socket'][_0x29165b(0x1d2)](),_0x49ee70(_0x380a7e);},_0x380a7e['onclose']=()=>{const _0x5ea730=_0x5bb854;this[_0x5ea730(0x21d)]=!0x0,this['_disposeWebsocket'](_0x380a7e),this[_0x5ea730(0x1ed)]();},_0x380a7e[_0x5bb854(0x1d6)]=_0x24c67d=>{const _0x175666=_0x5bb854;try{_0x24c67d&&_0x24c67d['data']&&this['_inBrowser']&&JSON[_0x175666(0x20c)](_0x24c67d[_0x175666(0x205)])[_0x175666(0x228)]==='reload'&&this[_0x175666(0x1de)][_0x175666(0x210)]['reload']();}catch{}};})[_0x39e2d5(0x1cf)](_0x46488d=>(this[_0x39e2d5(0x211)]=!0x0,this[_0x39e2d5(0x1dc)]=!0x1,this['_allowedToConnectOnSend']=!0x1,this[_0x39e2d5(0x22d)]=!0x0,this[_0x39e2d5(0x1fd)]=0x0,_0x46488d))[_0x39e2d5(0x1e0)](_0x310e09=>(this[_0x39e2d5(0x211)]=!0x1,this[_0x39e2d5(0x1dc)]=!0x1,console['warn'](_0x39e2d5(0x233)+this[_0x39e2d5(0x1d9)]),_0x5633b8(new Error(_0x39e2d5(0x1f0)+(_0x310e09&&_0x310e09[_0x39e2d5(0x236)])))));}));}['_disposeWebsocket'](_0x310e2e){const _0x452325=_0x53a4b9;this[_0x452325(0x211)]=!0x1,this[_0x452325(0x1dc)]=!0x1;try{_0x310e2e[_0x452325(0x223)]=null,_0x310e2e[_0x452325(0x1f6)]=null,_0x310e2e['onopen']=null;}catch{}try{_0x310e2e[_0x452325(0x1e9)]<0x2&&_0x310e2e[_0x452325(0x219)]();}catch{}}[_0x53a4b9(0x1ed)](){const _0x203332=_0x53a4b9;clearTimeout(this['_reconnectTimeout']),!(this[_0x203332(0x1fd)]>=this[_0x203332(0x1ea)])&&(this[_0x203332(0x203)]=setTimeout(()=>{const _0x468b12=_0x203332;this[_0x468b12(0x211)]||this[_0x468b12(0x1dc)]||(this['_connectToHostNow'](),this['_ws']?.[_0x468b12(0x1e0)](()=>this['_attemptToReconnectShortly']()));},0x1f4),this[_0x203332(0x203)]['unref']&&this[_0x203332(0x203)][_0x203332(0x1d2)]());}async['send'](_0x3db1df){const _0x35eab9=_0x53a4b9;try{if(!this[_0x35eab9(0x22d)])return;this['_allowedToConnectOnSend']&&this[_0x35eab9(0x1f5)](),(await this[_0x35eab9(0x227)])['send'](JSON[_0x35eab9(0x212)](_0x3db1df));}catch(_0x31eca1){console[_0x35eab9(0x1fa)](this[_0x35eab9(0x21e)]+':\\x20'+(_0x31eca1&&_0x31eca1[_0x35eab9(0x236)])),this[_0x35eab9(0x22d)]=!0x1,this[_0x35eab9(0x1ed)]();}}};function u(_0x11818a,_0x32fa2b,_0x5bd821,_0x525b09,_0x5bff8b){const _0x54be3f=_0x53a4b9;let _0xe43bd0=_0x5bd821[_0x54be3f(0x235)](',')[_0x54be3f(0x207)](_0x437d24=>{const _0x53eb14=_0x54be3f;try{_0x11818a[_0x53eb14(0x1ff)]||((_0x5bff8b===_0x53eb14(0x21b)||_0x5bff8b===_0x53eb14(0x206)||_0x5bff8b===_0x53eb14(0x1d3))&&(_0x5bff8b+=_0x11818a[_0x53eb14(0x1da)]?.[_0x53eb14(0x20d)]?.[_0x53eb14(0x1e1)]?_0x53eb14(0x215):_0x53eb14(0x1f9)),_0x11818a[_0x53eb14(0x1ff)]={'id':+new Date(),'tool':_0x5bff8b});let _0x51ba6e=new _(_0x11818a,_0x32fa2b,_0x437d24,_0x525b09);return _0x51ba6e[_0x53eb14(0x22a)][_0x53eb14(0x229)](_0x51ba6e);}catch(_0x1bbaec){return console[_0x53eb14(0x1fa)](_0x53eb14(0x217),_0x1bbaec&&_0x1bbaec[_0x53eb14(0x236)]),()=>{};}});return _0x31e400=>_0xe43bd0['forEach'](_0x446624=>_0x446624(_0x31e400));}function f(_0xcd926e,_0x274f8f,_0x85451a){const _0x1bb6a6=_0x53a4b9;if(_0xcd926e[_0x1bb6a6(0x220)]!==void 0x0)return _0xcd926e[_0x1bb6a6(0x220)];let _0x2dac9e=_0xcd926e['process']?.[_0x1bb6a6(0x20d)]?.[_0x1bb6a6(0x1e1)];return _0x2dac9e&&_0x85451a===_0x1bb6a6(0x20f)?_0xcd926e[_0x1bb6a6(0x220)]=!0x1:_0xcd926e['_consoleNinjaAllowedToStart']=_0x2dac9e||!_0x274f8f||_0xcd926e['location']?.[_0x1bb6a6(0x1df)]&&_0x274f8f[_0x1bb6a6(0x1e4)](_0xcd926e['location'][_0x1bb6a6(0x1df)]),_0xcd926e['_consoleNinjaAllowedToStart'];}function _0x3171(){const _0x4755c9=['versions','uncaughtException','nuxt','location','_connected','stringify','_inBrowser','prototype','\\x20server','onopen','logger\\x20failed\\x20to\\x20connect\\x20to\\x20host','path','close','hasOwnProperty','next.js','webpack','_allowedToConnectOnSend','_sendErrorMessage','1691658520888','_consoleNinjaAllowedToStart','1IPdJCz','ws/index.js','onclose','https://tinyurl.com/37x8b79t','getWebSocketClass','string','_ws','method','bind','send','default','stack','_allowedToSend','869234hCtXRm','1.0.0','3542160WoBRhx','getOwnPropertyDescriptor','6736536FHGcfq','logger\\x20failed\\x20to\\x20connect\\x20to\\x20host,\\x20see\\x20','join','split','message','then','defineProperty','ws://','unref','astro','error','Console\\x20Ninja\\x20failed\\x20to\\x20send\\x20logs,\\x20restarting\\x20the\\x20process\\x20may\\x20help;\\x20also\\x20see\\x20','onmessage','_disposeWebsocket','_socket','_webSocketErrorDocsLink','process','Console\\x20Ninja\\x20failed\\x20to\\x20send\\x20logs,\\x20refreshing\\x20the\\x20page\\x20may\\x20help;\\x20also\\x20see\\x20','_connecting','752oIRtjI','global','hostname','catch','node','Unknown\\x20error','_WebSocket','includes','getOwnPropertyNames','4881401cHRUPQ','unhandledRejection','object','readyState','_maxConnectAttemptCount','port','pathToFileURL','_attemptToReconnectShortly','9141980jyyROk','failed\\x20to\\x20find\\x20and\\x20load\\x20WebSocket','failed\\x20to\\x20connect\\x20to\\x20host:\\x20','WebSocket','nodeModules','reason','now','_connectToHostNow','onerror','errorHandlerInstalled','url','\\x20browser','warn','50747','1890300YjgUzS','_connectAttemptCount','console','_console_ninja_session','_WebSocketClass','_triedToInstallGlobalErrorHandler','function','_reconnectTimeout','enumerable','data','remix','map','host','117171fLKgGt','__es'+'Module','addEventListener','parse'];_0x3171=function(){return _0x4755c9;};return _0x3171();}((_0x50d173,_0x2dc6ec,_0x1f29f5,_0x32618d,_0x1f5489,_0x4ecccc,_0x56d406,_0x1f29c7)=>{const _0x5133e7=_0x53a4b9;if(!f(_0x50d173,_0x1f29c7,_0x4ecccc)){_0x50d173['_triedToInstallGlobalErrorHandler']=!0x0;return;}if(_0x50d173[_0x5133e7(0x201)])return;_0x50d173['_triedToInstallGlobalErrorHandler']=!0x0;let _0x324b69=u(_0x50d173,_0x2dc6ec,_0x1f29f5,_0x32618d,_0x4ecccc),_0x5137c9=_0x50d173[_0x5133e7(0x1ff)],_0x32805a=_0x10df4b=>{const _0x343ebf=_0x5133e7;if(_0x10df4b){let _0x2012b5=_0x10df4b[_0x343ebf(0x236)]||'',_0x3f90b8=_0x10df4b[_0x343ebf(0x22c)]||'',_0x1acc86;!_0x2012b5&&!_0x3f90b8&&(_0x2012b5=typeof _0x10df4b==_0x343ebf(0x226)?_0x10df4b:_0x343ebf(0x1e2),_0x3f90b8=new Error()[_0x343ebf(0x22c)],_0x1acc86=!0x0),_0x324b69({'method':_0x343ebf(0x1d4),'version':_0x1f5489,'args':[{'ts':Date[_0x343ebf(0x1f4)](),'session':_0x5137c9,'message':_0x2012b5,'stack':_0x3f90b8,'generatedStack':_0x1acc86}]});}};if(_0x50d173[_0x5133e7(0x1fe)]['error']=(_0x430782=>(..._0x50686a)=>(_0x32805a(_0x50686a[0x0]),_0x430782(..._0x50686a)))(_0x50d173['console'][_0x5133e7(0x1d4)]),_0x50d173[_0x5133e7(0x1da)]&&_0x50d173[_0x5133e7(0x1da)]['on'])_0x50d173['process']['on'](_0x5133e7(0x20e),_0x32805a),_0x50d173['process']['on'](_0x5133e7(0x1e7),_0x32805a);else{if(_0x50d173[_0x5133e7(0x20b)]){let _0x46683e=_0x3c1044=>{const _0x2b52da=_0x5133e7;let _0x41b5cf=_0x3c1044&&(_0x3c1044[_0x2b52da(0x1d4)]||_0x3c1044[_0x2b52da(0x1f3)]);_0x32805a(_0x41b5cf);};_0x50d173[_0x5133e7(0x20b)](_0x5133e7(0x1d4),_0x46683e),_0x50d173[_0x5133e7(0x20b)]('unhandledrejection',_0x46683e);}}_0x324b69({'method':_0x5133e7(0x1f7),'version':_0x1f5489,'args':[_0x5137c9]});})(globalThis,'127.0.0.1',_0x53a4b9(0x1fb),\"c:\\\\Users\\\\KIT-6\\\\.vscode\\\\extensions\\\\wallabyjs.console-ninja-0.0.195\\\\node_modules\",_0x53a4b9(0x22f),_0x53a4b9(0x21c),_0x53a4b9(0x21f),[\"localhost\",\"127.0.0.1\",\"example.cypress.io\",\"DESKTOP-LOTPBTF\",\"192.168.0.105\",\"192.168.59.1\",\"192.168.217.1\"]);");}catch(e){}</script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Главная</title>
+
+
+<link href="css/style.css" rel="stylesheet"><script src="js/index.js"></script><script src="js/conference-map.js"></script></head>
+
+<body>
+  <header class="header-top flex py-1 flex-align-center">
+    <div class="header-top-address d-flex flex-align-center">
+        <svg class="icon fade-40 mr-2">
+            <use xlink:href="img/icons.svg#map" />
+        </svg>
+        <div class="text-small fade-60">г. Ростов-на-дону, ул. 1-й конной армии 4е</div>
+    </div>
+    <div class="header-top-soc d-flex ml-5">
+        <a href="" target="_blank" class="p-2"><img src="img/sempl/inst.png" alt="" class="icon"></a>
+        <a href="" target="_blank" class="p-2"><img src="img/sempl/yt.png" alt="" class="icon"></a>
+        <a href="" target="_blank" class="p-2"><img src="img/sempl/vk.png" alt="" class="icon"></a>
+    </div>
+    <a class="header-top-auth d-flex flex-align-center ml-auto">
+        <svg class="icon mr-1 fade-60">
+            <use xlink:href="img/icons.svg#user" />
+        </svg>
+        <div class="text-body-2">Личный кабинет</div>
+    </a>
+    <button class="header-top-btn px-3 btn btn--primary btn--fill ml-8" data-fancybox-modal
+        data-src="dialog-form.html">Заявить команду</button>
+</header>
+<header class="header-nav d-flex flex-align-center">
+    <a href="/" class="header-nav-logo d-flex flex-align-center">
+        <div class="header-nav-logo-img">
+            <img src="img/logo.png" alt="">
+        </div>
+        <div class="header-nav-logo-text">
+            <!-- <div class="text-body-2 text-md-body-0 text--demibold color-primary lh-1 text--uppercase">
+                Ассоциация <br>
+                «Ростсельмаш — лига»
+            </div>
+            <div class="text-small fade-60">Детская лига регби</div> -->
+            <img src="img/logo-text.png" alt="">
+        </div>
+    </a>
+    <div class="header-nav-list flex ml-auto">
+        <div class="header-nav-item">
+            <a href="" class="header-nav-link py-2 px-2 ">
+                <svg class="icon color-primary mr-2">
+                    <use xlink:href="img/icons.svg#grid" />
+                </svg>
+                <span class="text--demibold">
+                    Онлайн-магазин
+                </span>
+            </a>
+        </div>
+        <div class="header-nav-item" data-toggle-cover>
+
+            <button class="header-nav-link py-2 px-2 " data-toggle-link>
+                Об ассоциации
+                <svg class="icon fade-40 ml-1 text-small">
+                    <use xlink:href="img/icons.svg#dropdown" />
+                </svg>
+            </button>
+
+            <div class="header-nav-submenu" data-toggle-content>
+                <a href="" class="text-body-2 fade-80 p-2">Все</a>
+                <a href="" class="text-body-2 fade-80 p-2">Новое</a>
+                <a href="" class="text-body-2 fade-80 p-2">Популярное</a>
+                <a href="" class="text-body-2 fade-80 p-2">Ассоциация РСМ</a>
+                <a href="" class="text-body-2 fade-80 p-2">Кубок “Ростсельмаш”</a>
+                <a href="" class="text-body-2 fade-80 p-2">Муниципальные</a>
+            </div>
+        </div>
+        <div class="header-nav-item" data-toggle-cover>
+            <button class="header-nav-link py-2 px-2 " data-toggle-link>
+                Соревнования
+                <svg class="icon fade-40 ml-1 text-small">
+                    <use xlink:href="img/icons.svg#dropdown" />
+                </svg>
+            </button>
+            <div class="header-nav-submenu" data-toggle-content>
+                <div data-toggle-cover>
+                    <button class="header-nav-submenu-link py-2 px-3" data-toggle-link>
+                        Сезон 2019 - 2020
+                        <svg class="icon fade-40 ml-1 text-small">
+                            <use xlink:href="img/icons.svg#to-right" />
+                        </svg>
+                    </button>
+                    <div class="header-nav-submenu" data-toggle-content>
+                        <a href="" class="text-body-2 fade-80 p-2">
+                            Соревнования по тэг-регби
+                            среди команд 2011-2012 г.р.
+                            общеобразовательных учреж...
+                        </a>
+                        <a href="" class="text-body-2 fade-80 p-2">
+                            Соревнования по регби-7 среди
+                            спортивных школ Ростовской
+                            области
+                        </a>
+                        <a href="" class="text-body-2 fade-80 p-2">
+                            Спартакиада по тэг-регби среди
+                            учащихся 5-6 классов
+                            общеобразовательных учреж...
+                        </a>
+                    </div>
+                </div>
+                <div data-toggle-cover>
+                    <button class="header-nav-submenu-link py-2 px-3" data-toggle-link>
+                        Сезон 2019 - 2020
+                        <svg class="icon fade-40 ml-1 text-small">
+                            <use xlink:href="img/icons.svg#to-right" />
+                        </svg>
+                    </button>
+                    <div class="header-nav-submenu" data-toggle-content>
+                        <a href="" class="text-body-2 fade-80 p-2">
+                            Соревнования по тэг-регби
+                            среди команд 2011-2012 г.р.
+                            общеобразовательных учреж...
+                        </a>
+                        <a href="" class="text-body-2 fade-80 p-2">
+                            Соревнования по регби-7 среди
+                            спортивных школ Ростовской
+                            области
+                        </a>
+                        <a href="" class="text-body-2 fade-80 p-2">
+                            Спартакиада по тэг-регби среди
+                            учащихся 5-6 классов
+                            общеобразовательных учреж...
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-nav-item" data-toggle-cover>
+            <button class="header-nav-link py-2 px-2 " data-toggle-link>
+                Новости
+                <svg class="icon fade-40 ml-1 text-small">
+                    <use xlink:href="img/icons.svg#dropdown" />
+                </svg>
+            </button>
+            <div class="header-nav-submenu" data-toggle-content>
+                <a href="" class="text-body-2 fade-80 p-2">Все</a>
+                <a href="" class="text-body-2 fade-80 p-2">Новое</a>
+                <a href="" class="text-body-2 fade-80 p-2">Популярное</a>
+                <a href="" class="text-body-2 fade-80 p-2">Ассоциация РСМ</a>
+                <a href="" class="text-body-2 fade-80 p-2">Кубок “Ростсельмаш”</a>
+                <a href="" class="text-body-2 fade-80 p-2">Муниципальные</a>
+            </div>
+        </div>
+        <div class="header-nav-item" data-toggle-cover>
+            <button class="header-nav-link py-2 px-2 " data-toggle-link>
+                Медиа
+                <svg class="icon fade-40 ml-1 text-small">
+                    <use xlink:href="img/icons.svg#dropdown" />
+                </svg>
+            </button>
+            <div class="header-nav-submenu" data-toggle-content>
+                <a href="" class="text-body-2 fade-80 p-2">Все</a>
+                <a href="" class="text-body-2 fade-80 p-2">Новое</a>
+                <a href="" class="text-body-2 fade-80 p-2">Популярное</a>
+                <a href="" class="text-body-2 fade-80 p-2">Ассоциация РСМ</a>
+                <a href="" class="text-body-2 fade-80 p-2">Кубок “Ростсельмаш”</a>
+                <a href="" class="text-body-2 fade-80 p-2">Муниципальные</a>
+            </div>
+        </div>
+        <div class="header-nav-item"><a href="" class="header-nav-link py-2 px-2 ">Партнеры</a></div>
+        <div class="header-nav-item"><a href="" class="header-nav-link py-2 px-2 ">Контакты</a></div>
+        <div class="header-nav-item">
+            <a href="" class="header-nav-link py-2 px-2 ">
+                <svg class="icon color-primary mr-2">
+                    <use xlink:href="img/icons.svg#cart" />
+                </svg>
+                <span class="color-primary">
+                    Корзина
+                </span>
+            </a>
+        </div>
+    </div>
+    <button class="btn-burger btn btn--primary btn--fill d-lg-none ml-auto px-3" data-toggle-link="mobile-menu">
+        <svg class="icon">
+            <use xlink:href="img/icons.svg#menu" />
+        </svg>
+        <div class="text-body-1 ml-2 ">Меню</div>
+    </button>
+</header>
+
+
+<div class="mobile-menu d-lg-none" id="mobile-menu">
+    <a href="/" class="header-nav-logo d-flex flex-align-center mb-3 px-3 pt-2">
+        <div class="header-nav-logo-img">
+            <img src="img/logo.png" alt="">
+        </div>
+        <div class="header-nav-logo-text ml-3">
+            <!-- <div class="text-body-2 text-md-body-0 text--demibold color-primary lh-1 text--uppercase">
+                Ассоциация <br>
+                «Ростсельмаш — лига»
+            </div>
+            <div class="text-small fade-60">Детская лига регби</div> -->
+            <img src="img/logo-text.png" alt="">
+        </div>
+    </a>
+    <a class="header-top-auth d-flex flex-align-center ml-auto p-3 mb-5">
+        <svg class="icon mr-1 fade-60">
+            <use xlink:href="img/icons.svg#user" />
+        </svg>
+        <div class="text-body-2">Личный кабинет</div>
+    </a>
+    <button class="header-top-btn px-3 btn btn--primary btn--fill ml-3 mb-5">Заявить команду</button>
+    <div class="mobile-menu-item">
+        <a href="" class="mobile-menu-link p-3 ">
+            <svg class="icon color-primary mr-2">
+                <use xlink:href="img/icons.svg#grid" />
+            </svg>
+            <span class="text--demibold">
+                Онлайн-магазин
+            </span>
+        </a>
+    </div>
+    <div class="mobile-menu-item" data-toggle-cover>
+
+        <button class="mobile-menu-link py-2 px-3 " data-toggle-link>
+            Об ассоциации
+            <svg class="icon fade-40 ml-1 text-small">
+                <use xlink:href="img/icons.svg#dropdown" />
+            </svg>
+        </button>
+
+        <div class="mobile-menu-submenu" data-toggle-content data-toggle-height data-toggle-static>
+            <a href="" class="text-body-2 fade-80 py-1 px-3">Все</a>
+            <a href="" class="text-body-2 fade-80 py-1 px-3">Новое</a>
+            <a href="" class="text-body-2 fade-80 py-1 px-3">Популярное</a>
+            <a href="" class="text-body-2 fade-80 py-1 px-3">Ассоциация РСМ</a>
+            <a href="" class="text-body-2 fade-80 py-1 px-3">Кубок “Ростсельмаш”</a>
+            <a href="" class="text-body-2 fade-80 py-1 px-3">Муниципальные</a>
+        </div>
+    </div>
+    <div class="mobile-menu-item" data-toggle-cover>
+        <button class="mobile-menu-link py-2 px-3 " data-toggle-link>
+            Соревнования
+            <svg class="icon fade-40 ml-1 text-small">
+                <use xlink:href="img/icons.svg#dropdown" />
+            </svg>
+        </button>
+        <div class="mobile-menu-submenu bg-light" data-toggle-content data-toggle-height data-toggle-static>
+            <div data-toggle-cover>
+                <button class="mobile-menu-link py-2 px-3 pl-4" data-toggle-link>
+                    Сезон 2019 - 2020
+                    <svg class="icon fade-40 ml-1 text-small">
+                        <use xlink:href="img/icons.svg#dropdown" />
+                    </svg>
+                </button>
+                <div class="mobile-menu-submenu" data-toggle-content data-toggle-height data-toggle-static>
+                    <a href="" class="text-body-2 fade-80 py-1 px-3 pl-5">
+                        Соревнования по тэг-регби
+                        среди команд 2011-2012 г.р.
+                        общеобразовательных учреж...
+                    </a>
+                    <a href="" class="text-body-2 fade-80 py-1 px-3 pl-5">
+                        Соревнования по регби-7 среди
+                        спортивных школ Ростовской
+                        области
+                    </a>
+                    <a href="" class="text-body-2 fade-80 py-1 px-3 pl-5">
+                        Спартакиада по тэг-регби среди
+                        учащихся 5-6 классов
+                        общеобразовательных учреж...
+                    </a>
+
+                </div>
+            </div>
+            <div data-toggle-cover>
+                <button class="mobile-menu-link py-2 px-3 pl-4" data-toggle-link>
+                    Сезон 2019 - 2020
+                    <svg class="icon fade-40 ml-1 text-small">
+                        <use xlink:href="img/icons.svg#dropdown" />
+                    </svg>
+                </button>
+                <div class="mobile-menu-submenu" data-toggle-content data-toggle-height data-toggle-static>
+                    <a href="" class="text-body-2 fade-80 py-1 px-3 pl-5">
+                        Соревнования по тэг-регби
+                        среди команд 2011-2012 г.р.
+                        общеобразовательных учреж...
+                    </a>
+                    <a href="" class="text-body-2 fade-80 py-1 px-3 pl-5">
+                        Соревнования по регби-7 среди
+                        спортивных школ Ростовской
+                        области
+                    </a>
+                    <a href="" class="text-body-2 fade-80 py-1 px-3 pl-5">
+                        Спартакиада по тэг-регби среди
+                        учащихся 5-6 классов
+                        общеобразовательных учреж...
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile-menu-item" data-toggle-cover>
+        <button class="mobile-menu-link py-2 px-3 " data-toggle-link>
+            Новости
+            <svg class="icon fade-40 ml-1 text-small">
+                <use xlink:href="img/icons.svg#dropdown" />
+            </svg>
+        </button>
+        <div class="mobile-menu-submenu" data-toggle-content data-toggle-height data-toggle-static>
+            <a href="" class="text-body-2 fade-80 py-1 px-3">Все</a>
+            <a href="" class="text-body-2 fade-80 py-1 px-3">Новое</a>
+            <a href="" class="text-body-2 fade-80 py-1 px-3">Популярное</a>
+            <a href="" class="text-body-2 fade-80 py-1 px-3">Ассоциация РСМ</a>
+            <a href="" class="text-body-2 fade-80 py-1 px-3">Кубок “Ростсельмаш”</a>
+            <a href="" class="text-body-2 fade-80 py-1 px-3">Муниципальные</a>
+        </div>
+    </div>
+    <div class="mobile-menu-item" data-toggle-cover>
+        <button class="mobile-menu-link py-2 px-3 " data-toggle-link>
+            Медиа
+            <svg class="icon fade-40 ml-1 text-small">
+                <use xlink:href="img/icons.svg#dropdown" />
+            </svg>
+        </button>
+        <div class="mobile-menu-submenu" data-toggle-content data-toggle-height data-toggle-static>
+            <a href="" class="text-body-2 fade-80 py-1 px-3">Все</a>
+            <a href="" class="text-body-2 fade-80 py-1 px-3">Новое</a>
+            <a href="" class="text-body-2 fade-80 py-1 px-3">Популярное</a>
+            <a href="" class="text-body-2 fade-80 py-1 px-3">Ассоциация РСМ</a>
+            <a href="" class="text-body-2 fade-80 py-1 px-3">Кубок “Ростсельмаш”</a>
+            <a href="" class="text-body-2 fade-80 py-1 px-3">Муниципальные</a>
+        </div>
+    </div>
+    <div class="mobile-menu-item"><a href="" class="mobile-menu-link p-3 ">Партнеры</a></div>
+    <div class="mobile-menu-item"><a href="" class="mobile-menu-link p-3 ">Контакты</a></div>
+    <div class="mobile-menu-item">
+        <a href="" class="mobile-menu-link p-3 ">
+            <svg class="icon color-primary mr-2">
+                <use xlink:href="img/icons.svg#cart" />
+            </svg>
+            <span class="color-primary">
+                Корзина
+            </span>
+        </a>
+    </div>
+
+
+    <div class="header-top-soc d-flex mt-5 px-3">
+        <a href="" target="_blank" class="p-2"><img src="img/sempl/inst.png" alt="" class="icon"></a>
+        <a href="" target="_blank" class="p-2"><img src="img/sempl/yt.png" alt="" class="icon"></a>
+        <a href="" target="_blank" class="p-2"><img src="img/sempl/vk.png" alt="" class="icon"></a>
+    </div>
+    <div class="d-flex flex-align-center mt-5 px-3">
+        <svg class="icon fade-40 mr-2">
+            <use xlink:href="img/icons.svg#map" />
+        </svg>
+        <div class="text-small fade-60">г. Ростов-на-дону, ул. 1-й конной армии 4е</div>
+    </div>
+</div>
+
+  <section class="started">
+    <div class="started-slider">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide started-buner">
+            <div class="started-buner-img">
+              <img src="img/test.gif" alt="">
+            </div>
+            <div class="started-buner-content">
+              <div class="text-body-1 text--demibold text-md-subtitle-2 color-white mb-5 started-buner-title">
+                Победители «Ростсельмаш-лиги» сезона 2020/21 <br class="d-none d-md-block">
+                отправились в детский лагерь «Нива»
+              </div>
+              <div class="text-body-2 color-white d-flex started-buner-sign">
+                <svg class="icon fade-60 mr-1">
+                  <use xlink:href="img/icons.svg#calendar" />
+                </svg>
+
+                07 авг 2021 • <span class="started-buner-mark ml-1"> Муниципальные новости</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide started-buner">
+            <div class="started-buner-img">
+              <img src="img/test.gif" alt="">
+            </div>
+            <div class="started-buner-content">
+              <div class="text-body-1 text--demibold text-md-subtitle-2 color-white mb-5 started-buner-title">
+                Победители «Ростсельмаш-лиги» сезона 2020/21 <br class="d-none d-md-block">
+                отправились в детский лагерь «Нива»
+              </div>
+              <div class="text-body-2 color-white d-flex started-buner-sign">
+                <svg class="icon fade-60 mr-1">
+                  <use xlink:href="img/icons.svg#calendar" />
+                </svg>
+
+                07 авг 2021 • <span class="started-buner-mark ml-1"> Муниципальные новости</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide started-buner">
+            <div class="started-buner-img">
+              <img src="img/test.gif" alt="">
+            </div>
+            <div class="started-buner-content">
+              <div class="text-body-1 text--demibold text-md-subtitle-2 color-white mb-5 started-buner-title">
+                Победители «Ростсельмаш-лиги» сезона 2020/21 <br class="d-none d-md-block">
+                отправились в детский лагерь «Нива»
+              </div>
+              <div class="text-body-2 color-white d-flex started-buner-sign">
+                <svg class="icon fade-60 mr-1">
+                  <use xlink:href="img/icons.svg#calendar" />
+                </svg>
+
+                07 авг 2021 • <span class="started-buner-mark ml-1"> Муниципальные новости</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide started-buner">
+            <div class="started-buner-img">
+              <img src="img/test.gif" alt="">
+            </div>
+            <div class="started-buner-content">
+              <div class="text-body-1 text--demibold text-md-subtitle-2 color-white mb-5 started-buner-title">
+                Победители «Ростсельмаш-лиги» сезона 2020/21 <br class="d-none d-md-block">
+                отправились в детский лагерь «Нива»
+              </div>
+              <div class="text-body-2 color-white d-flex started-buner-sign">
+                <svg class="icon fade-60 mr-1">
+                  <use xlink:href="img/icons.svg#calendar" />
+                </svg>
+
+                07 авг 2021 • <span class="started-buner-mark ml-1"> Муниципальные новости</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide started-buner">
+            <div class="started-buner-img">
+              <img src="img/test.gif" alt="">
+            </div>
+            <div class="started-buner-content">
+              <div class="text-body-1 text--demibold text-md-subtitle-2 color-white mb-5 started-buner-title">
+                Победители «Ростсельмаш-лиги» сезона 2020/21 <br class="d-none d-md-block">
+                отправились в детский лагерь «Нива»
+              </div>
+              <div class="text-body-2 color-white d-flex started-buner-sign">
+                <svg class="icon fade-60 mr-1">
+                  <use xlink:href="img/icons.svg#calendar" />
+                </svg>
+
+                07 авг 2021 • <span class="started-buner-mark ml-1"> Муниципальные новости</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="started-slider-control">
+        <button class="started-slider-prev btn btn-fab btn--light btn--color-icon">
+          <svg class="icon color-white fade-60">
+            <use xlink:href="img/icons.svg#arrow-left" />
+          </svg>
+        </button>
+        <button class="started-slider-next btn btn-fab btn--light btn--color-icon ml-1 ml-md-4">
+          <svg class="icon color-white fade-60">
+            <use xlink:href="img/icons.svg#arrow-right" />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="started-blocks">
+      <a href="" class="started-block">
+        <img src="img/sempl/started-block-1.png" alt="">
+      </a>
+      <a href="" class="started-block">
+        <img src="img/sempl/started-block-2.png" alt="">
+      </a>
+    </div>
+  </section>
+  <script>
+    new Swiper('.started-slider .swiper', {
       slidesPerView: 'auto',
       spaceBetween: 20,
       // effect: 'fade',
@@ -13,49 +493,1317 @@
         nextEl: '.started-slider .started-slider-next',
         prevEl: '.started-slider .started-slider-prev'
       }
-    })</script><section class="live"><div class="d-lg-flex flex-align-center mb-5"><div class="text-subtitle-2">Кубок Ростсельмаш по тэг-регби, финальный этап <span class="color-primary">• Live</span></div><div class="admin-select ml-lg-3 mt-4 mt-lg-0" data-toggle-cover=""><div class="text-body-2 text--demibold">Соревнование</div><button class="admin-select-btn btn btn--primary btn--link ml-md-2" data-toggle-link="">Спартакиада по тэг-регби среди учащихся 5-6 классов общ... <svg class="icon ml-1 text-small-2"><use xlink:href="img/icons.svg#triangle-right"></use></svg></button><div class="admin-select-list card py-1" data-toggle-content=""><div class="admin-select__item fade-60 py-1 px-4 text-body-2 text--demibold">Спартакиада по тэг-регби среди учащихся 5-6 классов общ...</div><a href="javascript:;" class="admin-select__item py-1 px-4 text-body-2 text--demibold">Не Спартакиада по тэг-регби среди учащихся 5-6 классов общ...</a></div></div></div><div class="live-slider slider"><div class="swiper grid-wrap grid-spacing-2 grid-spacing-md-4"><div class="swiper-wrapper"><div class="grid-col-8 grid-col-md-6 grid-col-lg-3 swiper-slide"><div class="live-item h-100"><div class="live-item-link" data-fancybox-modal data-src="dialog-protocol.html"></div><div class="live-item-header"><div class="text-small text--demibold">Ср, 19.05</div><div class="live-item-header-img"><img src="img/sempl/trophey.svg" alt=""></div><div class="text-small text--right">Дворец Спорта</div></div><div class="live-item-content"><div class="live-item-result"><div class="text-body-2 text--center">Орловская СОШ №3</div><div class="live-item-count text--demibold">3:8</div><div class="text-body-2 text--demibold text--center">Тарасовская СОШ</div></div><div class="text-small text--center fade-60 mb-3 mt-4">Групповой этап</div><div class="btn btn--primary btn--light w-100 fade-40" style="--size: 38px;">Прямой эфир недоступен</div></div></div></div><div class="grid-col-8 grid-col-md-6 grid-col-lg-3 swiper-slide"><div class="live-item h-100"><div class="live-item-link" data-fancybox-modal data-src="dialog-protocol.html"></div><div class="live-item-header"><div class="text-small text--demibold">Ср, 19.05</div><div class="live-item-header-img"><img src="img/sempl/trophey.svg" alt=""></div><div class="text-small text--right">Дворец Спорта</div></div><div class="live-item-content"><div class="live-item-result"><div class="text-body-2 text--center">Орловская СОШ №3</div><div class="live-item-count text--demibold">3:8</div><div class="text-body-2 text--demibold text--center">Тарасовская СОШ</div></div><div class="text-small text--center fade-60 mb-3 mt-4">Групповой этап</div><button class="live-item-btn btn btn--primary btn--light w-100">&bull; Смотреть прямой эфир</button></div></div></div><div class="grid-col-8 grid-col-md-6 grid-col-lg-3 swiper-slide"><div class="live-item h-100"><div class="live-item-link" data-fancybox-modal data-src="dialog-protocol.html"></div><div class="live-item-header"><div class="text-small text--demibold">Ср, 19.05</div><div class="live-item-header-img"><img src="img/sempl/trophey.svg" alt=""></div><div class="text-small text--right">Дворец Спорта</div></div><div class="live-item-content"><div class="live-item-result"><div class="text-body-2 text--center">Орловская СОШ №3</div><div class="live-item-count text--demibold">3:8</div><div class="text-body-2 text--demibold text--center">Тарасовская СОШ</div></div><div class="text-small text--center fade-60 mb-3 mt-4">Групповой этап</div><button class="live-item-btn btn btn--primary btn--light w-100">&bull; Смотреть прямой эфир</button></div></div></div><div class="grid-col-8 grid-col-md-6 grid-col-lg-3 swiper-slide"><div class="live-item h-100"><div class="live-item-link" data-fancybox-modal data-src="dialog-protocol.html"></div><div class="live-item-header"><div class="text-small text--demibold">Ср, 19.05</div><div class="live-item-header-img"><img src="img/sempl/trophey.svg" alt=""></div><div class="text-small text--right">Дворец Спорта</div></div><div class="live-item-content"><div class="live-item-result"><div class="text-body-2 text--center">Орловская СОШ №3</div><div class="live-item-count text--demibold">3:8</div><div class="text-body-2 text--demibold text--center">Тарасовская СОШ</div></div><div class="text-small text--center fade-60 mb-3 mt-4">Групповой этап</div><button class="live-item-btn btn btn--primary btn--light w-100">&bull; Смотреть прямой эфир</button></div></div></div><div class="grid-col-8 grid-col-md-6 grid-col-lg-3 swiper-slide"><div class="live-item h-100"><div class="live-item-link" data-fancybox-modal data-src="dialog-protocol.html"></div><div class="live-item-header"><div class="text-small text--demibold">Ср, 19.05</div><div class="live-item-header-img"><img src="img/sempl/trophey.svg" alt=""></div><div class="text-small text--right">Дворец Спорта</div></div><div class="live-item-content"><div class="live-item-result"><div class="text-body-2 text--center">Орловская СОШ №3</div><div class="live-item-count text--demibold">3:8</div><div class="text-body-2 text--demibold text--center">Тарасовская СОШ</div></div><div class="text-small text--center fade-60 mb-3 mt-4">Групповой этап</div><button class="live-item-btn btn btn--primary btn--light w-100">&bull; Смотреть прямой эфир</button></div></div></div><div class="grid-col-8 grid-col-md-6 grid-col-lg-3 swiper-slide"><div class="live-item h-100"><div class="live-item-link" data-fancybox-modal data-src="dialog-protocol.html"></div><div class="live-item-header"><div class="text-small text--demibold">Ср, 19.05</div><div class="live-item-header-img"><img src="img/sempl/trophey.svg" alt=""></div><div class="text-small text--right">Дворец Спорта</div></div><div class="live-item-content"><div class="live-item-result"><div class="text-body-2 text--center">Орловская СОШ №3</div><div class="live-item-count text--demibold">3:8</div><div class="text-body-2 text--demibold text--center">Тарасовская СОШ</div></div><div class="text-small text--center fade-60 mb-3 mt-4">Групповой этап</div><button class="live-item-btn btn btn--primary btn--light w-100">&bull; Смотреть прямой эфир</button></div></div></div><div class="grid-col-8 grid-col-md-6 grid-col-lg-3 swiper-slide"><div class="live-item h-100"><div class="live-item-link" data-fancybox-modal data-src="dialog-protocol.html"></div><div class="live-item-header"><div class="text-small text--demibold">Ср, 19.05</div><div class="live-item-header-img"><img src="img/sempl/trophey.svg" alt=""></div><div class="text-small text--right">Дворец Спорта</div></div><div class="live-item-content"><div class="live-item-result"><div class="text-body-2 text--center">Орловская СОШ №3</div><div class="live-item-count text--demibold">3:8</div><div class="text-body-2 text--demibold text--center">Тарасовская СОШ</div></div><div class="text-small text--center fade-60 mb-3 mt-4">Групповой этап</div><button class="live-item-btn btn btn--primary btn--light w-100">&bull; Смотреть прямой эфир</button></div></div></div><div class="grid-col-8 grid-col-md-6 grid-col-lg-3 swiper-slide"><div class="live-item h-100"><div class="live-item-link" data-fancybox-modal data-src="dialog-protocol.html"></div><div class="live-item-header"><div class="text-small text--demibold">Ср, 19.05</div><div class="live-item-header-img"><img src="img/sempl/trophey.svg" alt=""></div><div class="text-small text--right">Дворец Спорта</div></div><div class="live-item-content"><div class="live-item-result"><div class="text-body-2 text--center">Орловская СОШ №3</div><div class="live-item-count text--demibold">3:8</div><div class="text-body-2 text--demibold text--center">Тарасовская СОШ</div></div><div class="text-small text--center fade-60 mb-3 mt-4">Групповой этап</div><button class="live-item-btn btn btn--primary btn--light w-100">&bull; Смотреть прямой эфир</button></div></div></div><div class="grid-col-8 grid-col-md-6 grid-col-lg-3 swiper-slide"><div class="live-item h-100"><div class="live-item-link" data-fancybox-modal data-src="dialog-protocol.html"></div><div class="live-item-header"><div class="text-small text--demibold">Ср, 19.05</div><div class="live-item-header-img"><img src="img/sempl/trophey.svg" alt=""></div><div class="text-small text--right">Дворец Спорта</div></div><div class="live-item-content"><div class="live-item-result"><div class="text-body-2 text--center">Орловская СОШ №3</div><div class="live-item-count text--demibold">3:8</div><div class="text-body-2 text--demibold text--center">Тарасовская СОШ</div></div><div class="text-small text--center fade-60 mb-3 mt-4">Групповой этап</div><button class="live-item-btn btn btn--primary btn--light w-100">&bull; Смотреть прямой эфир</button></div></div></div><div class="grid-col-8 grid-col-md-6 grid-col-lg-3 swiper-slide"><div class="live-item h-100"><div class="live-item-link" data-fancybox-modal data-src="dialog-protocol.html"></div><div class="live-item-header"><div class="text-small text--demibold">Ср, 19.05</div><div class="live-item-header-img"><img src="img/sempl/trophey.svg" alt=""></div><div class="text-small text--right">Дворец Спорта</div></div><div class="live-item-content"><div class="live-item-result"><div class="text-body-2 text--center">Орловская СОШ №3</div><div class="live-item-count text--demibold">3:8</div><div class="text-body-2 text--demibold text--center">Тарасовская СОШ</div></div><div class="text-small text--center fade-60 mb-3 mt-4">Групповой этап</div><button class="live-item-btn btn btn--primary btn--light w-100">&bull; Смотреть прямой эфир</button></div></div></div><div class="grid-col-8 grid-col-md-6 grid-col-lg-3 swiper-slide"><div class="live-item h-100"><div class="live-item-link" data-fancybox-modal data-src="dialog-protocol.html"></div><div class="live-item-header"><div class="text-small text--demibold">Ср, 19.05</div><div class="live-item-header-img"><img src="img/sempl/trophey.svg" alt=""></div><div class="text-small text--right">Дворец Спорта</div></div><div class="live-item-content"><div class="live-item-result"><div class="text-body-2 text--center">Орловская СОШ №3</div><div class="live-item-count text--demibold">3:8</div><div class="text-body-2 text--demibold text--center">Тарасовская СОШ</div></div><div class="text-small text--center fade-60 mb-3 mt-4">Групповой этап</div><button class="live-item-btn btn btn--primary btn--light w-100">&bull; Смотреть прямой эфир</button></div></div></div></div></div><button class="slider-btn slider-prev d-none d-md-flex"><svg class="icon"><use xlink:href="img/icons.svg#to-left"/></svg></button> <button class="slider-btn slider-next d-none d-md-flex"><svg class="icon"><use xlink:href="img/icons.svg#to-right"/></svg></button></div></section><script>new Swiper('.live-slider .swiper', {
+    })
+  </script>
+
+
+  <!-- Live -->
+  <section class="live">
+    <div class="d-lg-flex flex-align-center mb-5">
+      <div class="text-subtitle-2">
+        Кубок Ростсельмаш по тэг-регби, финальный этап <span class="color-primary">• Live</span> 
+      </div>
+      <div class="admin-select ml-lg-3 mt-4 mt-lg-0" data-toggle-cover=""><div class="text-body-2 text--demibold">Соревнование</div><button class="admin-select-btn btn btn--primary btn--link ml-md-2" data-toggle-link="">Спартакиада по тэг-регби среди учащихся 5-6 классов общ... <svg class="icon ml-1 text-small-2"><use xlink:href="img/icons.svg#triangle-right"></use></svg></button><div class="admin-select-list card py-1" data-toggle-content=""><div class="admin-select__item fade-60 py-1 px-4 text-body-2 text--demibold">Спартакиада по тэг-регби среди учащихся 5-6 классов общ...</div><a href="javascript:;" class="admin-select__item py-1 px-4 text-body-2 text--demibold">Не Спартакиада по тэг-регби среди учащихся 5-6 классов общ...</a></div></div>
+    </div>
+  
+
+    <div class="live-slider slider">
+      <div class="swiper grid-wrap grid-spacing-2 grid-spacing-md-4">
+        <div class="swiper-wrapper">
+          <div class="grid-col-8 grid-col-md-6 grid-col-lg-3 swiper-slide">
+            <div class="live-item h-100" >
+              <div class="live-item-link"  data-fancybox-modal data-src="dialog-protocol.html"></div>
+              <div class="live-item-header">
+                <div class="text-small text--demibold">Ср, 19.05</div>
+                <div class="live-item-header-img">
+                  <img src="img/sempl/trophey.svg" alt="">
+                </div>
+                <div class="text-small text--right">Дворец Спорта</div>
+              </div>
+              <div class="live-item-content">
+                <div class="live-item-result">
+                  <div class="text-body-2 text--center">
+                    Орловская
+                    СОШ №3
+                  </div>
+                  <div class="live-item-count text--demibold">
+                    3:8
+                  </div>
+                  <div class="text-body-2 text--demibold text--center">
+                    Тарасовская
+                    СОШ
+                  </div>
+                </div>
+
+                <div class="text-small text--center fade-60 mb-3 mt-4">Групповой этап</div>
+                <div class="btn btn--primary btn--light  w-100 fade-40" style="--size: 38px;">Прямой эфир недоступен</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="grid-col-8 grid-col-md-6 grid-col-lg-3 swiper-slide">
+            <div class="live-item h-100">
+              <div class="live-item-link"  data-fancybox-modal data-src="dialog-protocol.html"></div>
+              <div class="live-item-header">
+                <div class="text-small text--demibold">Ср, 19.05</div>
+                <div class="live-item-header-img">
+                  <img src="img/sempl/trophey.svg" alt="">
+                </div>
+                <div class="text-small text--right">Дворец Спорта</div>
+              </div>
+              <div class="live-item-content">
+                <div class="live-item-result">
+                  <div class="text-body-2 text--center">
+                    Орловская
+                    СОШ №3
+                  </div>
+                  <div class="live-item-count text--demibold">
+                    3:8
+                  </div>
+                  <div class="text-body-2 text--demibold text--center">
+                    Тарасовская
+                    СОШ
+                  </div>
+                </div>
+
+                <div class="text-small text--center fade-60 mb-3 mt-4">Групповой этап</div>
+                <button class="live-item-btn btn btn--primary btn--light  w-100">&bull; Смотреть прямой эфир</button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="grid-col-8 grid-col-md-6 grid-col-lg-3 swiper-slide">
+            <div class="live-item h-100">
+              <div class="live-item-link"  data-fancybox-modal data-src="dialog-protocol.html"></div>
+              <div class="live-item-header">
+                <div class="text-small text--demibold">Ср, 19.05</div>
+                <div class="live-item-header-img">
+                  <img src="img/sempl/trophey.svg" alt="">
+                </div>
+                <div class="text-small text--right">Дворец Спорта</div>
+              </div>
+              <div class="live-item-content">
+                <div class="live-item-result">
+                  <div class="text-body-2 text--center">
+                    Орловская
+                    СОШ №3
+                  </div>
+                  <div class="live-item-count text--demibold">
+                    3:8
+                  </div>
+                  <div class="text-body-2 text--demibold text--center">
+                    Тарасовская
+                    СОШ
+                  </div>
+                </div>
+
+                <div class="text-small text--center fade-60 mb-3 mt-4">Групповой этап</div>
+                <button class="live-item-btn btn btn--primary btn--light  w-100">&bull; Смотреть прямой эфир</button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="grid-col-8 grid-col-md-6 grid-col-lg-3 swiper-slide">
+            <div class="live-item h-100">
+              <div class="live-item-link"  data-fancybox-modal data-src="dialog-protocol.html"></div>
+              <div class="live-item-header">
+                <div class="text-small text--demibold">Ср, 19.05</div>
+                <div class="live-item-header-img">
+                  <img src="img/sempl/trophey.svg" alt="">
+                </div>
+                <div class="text-small text--right">Дворец Спорта</div>
+              </div>
+              <div class="live-item-content">
+                <div class="live-item-result">
+                  <div class="text-body-2 text--center">
+                    Орловская
+                    СОШ №3
+                  </div>
+                  <div class="live-item-count text--demibold">
+                    3:8
+                  </div>
+                  <div class="text-body-2 text--demibold text--center">
+                    Тарасовская
+                    СОШ
+                  </div>
+                </div>
+
+                <div class="text-small text--center fade-60 mb-3 mt-4">Групповой этап</div>
+                <button class="live-item-btn btn btn--primary btn--light  w-100">&bull; Смотреть прямой эфир</button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="grid-col-8 grid-col-md-6 grid-col-lg-3 swiper-slide">
+            <div class="live-item h-100">
+              <div class="live-item-link"  data-fancybox-modal data-src="dialog-protocol.html"></div>
+              <div class="live-item-header">
+                <div class="text-small text--demibold">Ср, 19.05</div>
+                <div class="live-item-header-img">
+                  <img src="img/sempl/trophey.svg" alt="">
+                </div>
+                <div class="text-small text--right">Дворец Спорта</div>
+              </div>
+              <div class="live-item-content">
+                <div class="live-item-result">
+                  <div class="text-body-2 text--center">
+                    Орловская
+                    СОШ №3
+                  </div>
+                  <div class="live-item-count text--demibold">
+                    3:8
+                  </div>
+                  <div class="text-body-2 text--demibold text--center">
+                    Тарасовская
+                    СОШ
+                  </div>
+                </div>
+
+                <div class="text-small text--center fade-60 mb-3 mt-4">Групповой этап</div>
+                <button class="live-item-btn btn btn--primary btn--light  w-100">&bull; Смотреть прямой эфир</button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="grid-col-8 grid-col-md-6 grid-col-lg-3 swiper-slide">
+            <div class="live-item h-100">
+              <div class="live-item-link"  data-fancybox-modal data-src="dialog-protocol.html"></div>
+              <div class="live-item-header">
+                <div class="text-small text--demibold">Ср, 19.05</div>
+                <div class="live-item-header-img">
+                  <img src="img/sempl/trophey.svg" alt="">
+                </div>
+                <div class="text-small text--right">Дворец Спорта</div>
+              </div>
+              <div class="live-item-content">
+                <div class="live-item-result">
+                  <div class="text-body-2 text--center">
+                    Орловская
+                    СОШ №3
+                  </div>
+                  <div class="live-item-count text--demibold">
+                    3:8
+                  </div>
+                  <div class="text-body-2 text--demibold text--center">
+                    Тарасовская
+                    СОШ
+                  </div>
+                </div>
+
+                <div class="text-small text--center fade-60 mb-3 mt-4">Групповой этап</div>
+                <button class="live-item-btn btn btn--primary btn--light  w-100">&bull; Смотреть прямой эфир</button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="grid-col-8 grid-col-md-6 grid-col-lg-3 swiper-slide">
+            <div class="live-item h-100">
+              <div class="live-item-link"  data-fancybox-modal data-src="dialog-protocol.html"></div>
+              <div class="live-item-header">
+                <div class="text-small text--demibold">Ср, 19.05</div>
+                <div class="live-item-header-img">
+                  <img src="img/sempl/trophey.svg" alt="">
+                </div>
+                <div class="text-small text--right">Дворец Спорта</div>
+              </div>
+              <div class="live-item-content">
+                <div class="live-item-result">
+                  <div class="text-body-2 text--center">
+                    Орловская
+                    СОШ №3
+                  </div>
+                  <div class="live-item-count text--demibold">
+                    3:8
+                  </div>
+                  <div class="text-body-2 text--demibold text--center">
+                    Тарасовская
+                    СОШ
+                  </div>
+                </div>
+
+                <div class="text-small text--center fade-60 mb-3 mt-4">Групповой этап</div>
+                <button class="live-item-btn btn btn--primary btn--light  w-100">&bull; Смотреть прямой эфир</button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="grid-col-8 grid-col-md-6 grid-col-lg-3 swiper-slide">
+            <div class="live-item h-100">
+              <div class="live-item-link"  data-fancybox-modal data-src="dialog-protocol.html"></div>
+              <div class="live-item-header">
+                <div class="text-small text--demibold">Ср, 19.05</div>
+                <div class="live-item-header-img">
+                  <img src="img/sempl/trophey.svg" alt="">
+                </div>
+                <div class="text-small text--right">Дворец Спорта</div>
+              </div>
+              <div class="live-item-content">
+                <div class="live-item-result">
+                  <div class="text-body-2 text--center">
+                    Орловская
+                    СОШ №3
+                  </div>
+                  <div class="live-item-count text--demibold">
+                    3:8
+                  </div>
+                  <div class="text-body-2 text--demibold text--center">
+                    Тарасовская
+                    СОШ
+                  </div>
+                </div>
+
+                <div class="text-small text--center fade-60 mb-3 mt-4">Групповой этап</div>
+                <button class="live-item-btn btn btn--primary btn--light  w-100">&bull; Смотреть прямой эфир</button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="grid-col-8 grid-col-md-6 grid-col-lg-3 swiper-slide">
+            <div class="live-item h-100">
+              <div class="live-item-link"  data-fancybox-modal data-src="dialog-protocol.html"></div>
+              <div class="live-item-header">
+                <div class="text-small text--demibold">Ср, 19.05</div>
+                <div class="live-item-header-img">
+                  <img src="img/sempl/trophey.svg" alt="">
+                </div>
+                <div class="text-small text--right">Дворец Спорта</div>
+              </div>
+              <div class="live-item-content">
+                <div class="live-item-result">
+                  <div class="text-body-2 text--center">
+                    Орловская
+                    СОШ №3
+                  </div>
+                  <div class="live-item-count text--demibold">
+                    3:8
+                  </div>
+                  <div class="text-body-2 text--demibold text--center">
+                    Тарасовская
+                    СОШ
+                  </div>
+                </div>
+
+                <div class="text-small text--center fade-60 mb-3 mt-4">Групповой этап</div>
+                <button class="live-item-btn btn btn--primary btn--light  w-100">&bull; Смотреть прямой эфир</button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="grid-col-8 grid-col-md-6 grid-col-lg-3 swiper-slide">
+            <div class="live-item h-100">
+              <div class="live-item-link"  data-fancybox-modal data-src="dialog-protocol.html"></div>
+              <div class="live-item-header">
+                <div class="text-small text--demibold">Ср, 19.05</div>
+                <div class="live-item-header-img">
+                  <img src="img/sempl/trophey.svg" alt="">
+                </div>
+                <div class="text-small text--right">Дворец Спорта</div>
+              </div>
+              <div class="live-item-content">
+                <div class="live-item-result">
+                  <div class="text-body-2 text--center">
+                    Орловская
+                    СОШ №3
+                  </div>
+                  <div class="live-item-count text--demibold">
+                    3:8
+                  </div>
+                  <div class="text-body-2 text--demibold text--center">
+                    Тарасовская
+                    СОШ
+                  </div>
+                </div>
+
+                <div class="text-small text--center fade-60 mb-3 mt-4">Групповой этап</div>
+                <button class="live-item-btn btn btn--primary btn--light  w-100">&bull; Смотреть прямой эфир</button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="grid-col-8 grid-col-md-6 grid-col-lg-3 swiper-slide">
+            <div class="live-item h-100">
+              <div class="live-item-link"  data-fancybox-modal data-src="dialog-protocol.html"></div>
+              <div class="live-item-header">
+                <div class="text-small text--demibold">Ср, 19.05</div>
+                <div class="live-item-header-img">
+                  <img src="img/sempl/trophey.svg" alt="">
+                </div>
+                <div class="text-small text--right">Дворец Спорта</div>
+              </div>
+              <div class="live-item-content">
+                <div class="live-item-result">
+                  <div class="text-body-2 text--center">
+                    Орловская
+                    СОШ №3
+                  </div>
+                  <div class="live-item-count text--demibold">
+                    3:8
+                  </div>
+                  <div class="text-body-2 text--demibold text--center">
+                    Тарасовская
+                    СОШ
+                  </div>
+                </div>
+
+                <div class="text-small text--center fade-60 mb-3 mt-4">Групповой этап</div>
+                <button class="live-item-btn btn btn--primary btn--light  w-100">&bull; Смотреть прямой эфир</button>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <button class="slider-btn slider-prev d-none d-md-flex">
+        <svg class="icon">
+          <use xlink:href="img/icons.svg#to-left" />
+        </svg>
+      </button>
+      <button class="slider-btn slider-next d-none d-md-flex">
+        <svg class="icon">
+          <use xlink:href="img/icons.svg#to-right" />
+        </svg>
+      </button>
+    </div>
+  </section>
+  <script>
+    new Swiper('.live-slider .swiper', {
       slidesPerView: 'auto',
       watchSlidesProgress: true,
       navigation: {
         nextEl: '.live-slider .slider-next',
         prevEl: '.live-slider .slider-prev'
       }
-    })</script><section class="index-news"><div class="d-md-flex flex-align-center mb-md-7 mb-5"><div class="text-h6 text-md-h4">Последние новости</div><button class="text-body-1 text--demibold ml-md-auto btn btn--primary d-none d-md-flex">Все новости</button></div><div class="index-news-slider slider"><div class="swiper grid-wrap grid-spacing-2 grid-spacing-md-5"><div class="swiper-wrapper"><div class="grid-col-8 grid-col-md-4 grid-col-lg-3 swiper-slide"><a href="" class="news-card card h-100 hover-link-wrap"><div class="news-card-img"><img src="img/test.gif" alt=""></div><div class="news-card-content"><div class="news-card-date flex flex-align-center mb-3"><svg class="icon text-body-2 fade-60 mr-2"><use xlink:href="img/icons.svg#calendar"/></svg> <span class="text-small"><span class="fade-80">07 авг 2021 • </span><span class="color-yellow text--demibold">Новое</span></span></div><div class="news-card-title text-body-2 text-md-body-1 text--demibold hover-link">28 мая состоялся Высший совет Федерации регби России</div></div></a></div><div class="grid-col-8 grid-col-md-4 grid-col-lg-3 swiper-slide"><a href="" class="news-card card h-100 hover-link-wrap"><div class="news-card-img"><img src="img/test.gif" alt=""></div><div class="news-card-content"><div class="news-card-date flex flex-align-center mb-3"><svg class="icon text-body-2 fade-60 mr-2"><use xlink:href="img/icons.svg#calendar"/></svg> <span class="text-small"><span class="fade-80">07 авг 2021 • </span><span class="color-yellow text--demibold">Новое</span></span></div><div class="news-card-title text-body-2 text-md-body-1 text--demibold hover-link">28 мая состоялся Высший совет Федерации регби России</div></div></a></div><div class="grid-col-8 grid-col-md-4 grid-col-lg-3 swiper-slide"><a href="" class="news-card card h-100 hover-link-wrap"><div class="news-card-img"><img src="img/test.gif" alt=""></div><div class="news-card-content"><div class="news-card-date flex flex-align-center mb-3"><svg class="icon text-body-2 fade-60 mr-2"><use xlink:href="img/icons.svg#calendar"/></svg> <span class="text-small"><span class="fade-80">07 авг 2021 • </span><span class="color-yellow text--demibold">Новое</span></span></div><div class="news-card-title text-body-2 text-md-body-1 text--demibold hover-link">28 мая состоялся Высший совет Федерации</div></div></a></div><div class="grid-col-8 grid-col-md-4 grid-col-lg-3 swiper-slide"><a href="" class="news-card card h-100 news-card--popular hover-link-wrap"><div class="news-card-img"><img src="img/test.gif" alt=""></div><div class="news-card-content"><div class="news-card-date flex flex-align-center mb-3"><svg class="icon text-body-2 color-white fade-60 mr-2"><use xlink:href="img/icons.svg#calendar"/></svg> <span class="text-small"><span class="fade-80 color-white">07 авг 2021 • </span><span class="color-green text--demibold">Популярное</span></span></div><div class="news-card-title text-body-2 text-md-body-1 text--demibold color-white hover-link">28 мая состоялся Высший совет Федерации регби России</div></div></a></div></div></div><button class="slider-btn slider-prev d-none d-md-flex d-lg-none"><svg class="icon"><use xlink:href="img/icons.svg#to-left"/></svg></button> <button class="slider-btn slider-next d-none d-md-flex d-lg-none"><svg class="icon"><use xlink:href="img/icons.svg#to-right"/></svg></button></div><div class="flex"><a href="" class="btn btn--primary btn--link mt-5">Все новости</a></div></section><script>new Swiper('.index-news-slider .swiper', {
+    })
+  </script>
+
+
+  <!-- Последние новости -->
+  <section class="index-news">
+    <div class="d-md-flex flex-align-center mb-md-7 mb-5">
+      <div class="text-h6 text-md-h4">Последние новости</div>
+      <button class="text-body-1 text--demibold ml-md-auto btn btn--primary d-none d-md-flex">Все новости</button>
+    </div>
+    <div class="index-news-slider slider">
+      <div class="swiper grid-wrap grid-spacing-2 grid-spacing-md-5">
+        <div class="swiper-wrapper">
+          <div class="grid-col-8 grid-col-md-4 grid-col-lg-3 swiper-slide">
+            <a href="" class="news-card  card h-100 hover-link-wrap">
+              <div class="news-card-img">
+                <img src="img/test.gif" alt="">
+              </div>
+              <div class="news-card-content">
+                <div class="news-card-date flex flex-align-center mb-3">
+                  <svg class="icon text-body-2 fade-60 mr-2">
+                    <use xlink:href="img/icons.svg#calendar" />
+                  </svg>
+                  <span class="text-small">
+                    <span class="fade-80">07 авг 2021 • </span><span class="color-yellow text--demibold">Новое</span>
+                  </span>
+                </div>
+                <div class="news-card-title text-body-2 text-md-body-1 text--demibold hover-link">
+                  28 мая состоялся Высший
+                  совет Федерации регби
+                  России
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="grid-col-8 grid-col-md-4 grid-col-lg-3 swiper-slide">
+            <a href="" class="news-card  card h-100 hover-link-wrap">
+              <div class="news-card-img">
+                <img src="img/test.gif" alt="">
+              </div>
+              <div class="news-card-content">
+                <div class="news-card-date flex flex-align-center mb-3">
+                  <svg class="icon text-body-2 fade-60 mr-2">
+                    <use xlink:href="img/icons.svg#calendar" />
+                  </svg>
+                  <span class="text-small">
+                    <span class="fade-80">07 авг 2021 • </span><span class="color-yellow text--demibold">Новое</span>
+                  </span>
+                </div>
+                <div class="news-card-title text-body-2 text-md-body-1 text--demibold hover-link">
+                  28 мая состоялся Высший
+                  совет Федерации регби
+                  России
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="grid-col-8 grid-col-md-4 grid-col-lg-3 swiper-slide">
+            <a href="" class="news-card  card h-100 hover-link-wrap">
+              <div class="news-card-img">
+                <img src="img/test.gif" alt="">
+              </div>
+              <div class="news-card-content">
+                <div class="news-card-date flex flex-align-center mb-3">
+                  <svg class="icon text-body-2 fade-60 mr-2">
+                    <use xlink:href="img/icons.svg#calendar" />
+                  </svg>
+                  <span class="text-small">
+                    <span class="fade-80">07 авг 2021 • </span><span class="color-yellow text--demibold">Новое</span>
+                  </span>
+                </div>
+                <div class="news-card-title text-body-2 text-md-body-1 text--demibold hover-link">
+                  28 мая состоялся Высший
+                  совет Федерации
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="grid-col-8 grid-col-md-4 grid-col-lg-3 swiper-slide">
+            <a href="" class="news-card  card h-100 news-card--popular hover-link-wrap">
+              <div class="news-card-img">
+                <img src="img/test.gif" alt="">
+              </div>
+              <div class="news-card-content">
+                <div class="news-card-date flex flex-align-center mb-3">
+                  <svg class="icon text-body-2 color-white fade-60 mr-2">
+                    <use xlink:href="img/icons.svg#calendar" />
+                  </svg>
+                  <span class="text-small">
+                    <span class="fade-80  color-white">07 авг 2021 • </span><span class="color-green text--demibold">Популярное</span>
+                  </span>
+                </div>
+                <div class="news-card-title text-body-2 text-md-body-1 text--demibold  color-white hover-link">
+                  28 мая состоялся Высший
+                  совет Федерации регби
+                  России
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <button class="slider-btn slider-prev d-none d-md-flex d-lg-none">
+        <svg class="icon">
+          <use xlink:href="img/icons.svg#to-left" />
+        </svg>
+      </button>
+      <button class="slider-btn slider-next d-none d-md-flex d-lg-none">
+        <svg class="icon">
+          <use xlink:href="img/icons.svg#to-right" />
+        </svg>
+      </button>
+    </div>
+
+    <div class="flex">
+      <a href="" class="btn btn--primary btn--link mt-5">Все новости</a>
+
+    </div>
+  </section>
+  <script>
+    new Swiper('.index-news-slider .swiper', {
       slidesPerView: 'auto',
       watchSlidesProgress: true,
       navigation: {
         nextEl: '.index-news-slider .slider-next',
         prevEl: '.index-news-slider .slider-prev'
       }
-    })</script><section class="tournament"><div class="text-h6 text-md-h4 mb-md-7 mb-5">Турниры</div><div class="tournament-slider slider"><div class="swiper grid-wrap grid-spacing-2 grid-spacing-md-6"><div class="swiper-wrapper"><div class="grid-col-10 grid-col-md-6 grid-col-lg-3 swiper-slide"><div class="tournament-item tournament-item-1 h-100"><div class="tournament-item-dude"><img src="img/sempl/dude-1.png" alt=""></div><div class="tournament-item-content"><div class="text-body-1 text--demibold text--center">Кубок "Ростсельмаш" по тэг-регби</div></div></div></div><div class="grid-col-10 grid-col-md-6 grid-col-lg-3 swiper-slide"><div class="tournament-item tournament-item-2 h-100"><div class="tournament-item-dude"><img src="img/sempl/dude-2.png" alt=""></div><div class="tournament-item-content"><div class="text-body-1 text--demibold text--center">Кубок "Ростсельмаш" по регби-7</div></div></div></div><div class="grid-col-10 grid-col-md-6 grid-col-lg-3 swiper-slide"><div class="tournament-item tournament-item-3 h-100"><div class="tournament-item-dude"><img src="img/sempl/dude-3.png" alt=""></div><div class="tournament-item-content"><div class="text-body-1 text--demibold text--center">Rugby Fest</div></div></div></div><div class="grid-col-10 grid-col-md-6 grid-col-lg-3 swiper-slide"><div class="tournament-item tournament-item-4 h-100"><div class="tournament-item-dude"><img src="img/sempl/dude-4.png" alt=""></div><div class="tournament-item-content"><div class="text-body-1 text--demibold text--center">Финал Всероссийских соревнований по тэг-регби «Школьная регбийная лига»</div></div></div></div></div></div><button class="slider-btn slider-prev d-none d-md-flex d-lg-none"><svg class="icon"><use xlink:href="img/icons.svg#to-left"/></svg></button> <button class="slider-btn slider-next d-none d-md-flex d-lg-none"><svg class="icon"><use xlink:href="img/icons.svg#to-right"/></svg></button></div></section><script>new Swiper('.tournament-slider .swiper', {
+    })
+  </script>
+
+
+  <!-- Турниры -->
+  <section class="tournament">
+    <div class="text-h6 text-md-h4 mb-md-7 mb-5">Турниры</div>
+
+    <div class="tournament-slider slider">
+      <div class="swiper grid-wrap grid-spacing-2 grid-spacing-md-6">
+        <div class="swiper-wrapper">
+          <div class="grid-col-10 grid-col-md-6 grid-col-lg-3 swiper-slide">
+            <div class="tournament-item tournament-item-1 h-100">
+              <div class="tournament-item-dude">
+                <img src="img/sempl/dude-1.png" alt="">
+              </div>
+              <div class="tournament-item-content">
+                <div class="text-body-1 text--demibold text--center">Кубок "Ростсельмаш" по тэг-регби
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="grid-col-10 grid-col-md-6 grid-col-lg-3 swiper-slide">
+            <div class="tournament-item tournament-item-2 h-100">
+              <div class="tournament-item-dude">
+                <img src="img/sempl/dude-2.png" alt="">
+              </div>
+              <div class="tournament-item-content">
+                <div class="text-body-1 text--demibold text--center">Кубок "Ростсельмаш" по регби-7
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="grid-col-10 grid-col-md-6 grid-col-lg-3 swiper-slide">
+            <div class="tournament-item tournament-item-3 h-100">
+              <div class="tournament-item-dude">
+                <img src="img/sempl/dude-3.png" alt="">
+              </div>
+              <div class="tournament-item-content">
+                <div class="text-body-1 text--demibold text--center">Rugby Fest</div>
+              </div>
+            </div>
+          </div>
+          <div class="grid-col-10 grid-col-md-6 grid-col-lg-3 swiper-slide">
+            <div class="tournament-item tournament-item-4 h-100">
+              <div class="tournament-item-dude">
+                <img src="img/sempl/dude-4.png" alt="">
+              </div>
+              <div class="tournament-item-content">
+                <div class="text-body-1 text--demibold text--center">
+                  Финал Всероссийских
+                  соревнований по тэг-регби
+                  «Школьная регбийная лига»
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="slider-btn slider-prev d-none d-md-flex d-lg-none">
+        <svg class="icon">
+          <use xlink:href="img/icons.svg#to-left" />
+        </svg>
+      </button>
+      <button class="slider-btn slider-next d-none d-md-flex d-lg-none">
+        <svg class="icon">
+          <use xlink:href="img/icons.svg#to-right" />
+        </svg>
+      </button>
+
+    </div>
+  </section>
+  <script>
+    new Swiper('.tournament-slider .swiper', {
       slidesPerView: 'auto',
       watchSlidesProgress: true,
       navigation: {
         nextEl: '.tournament-slider .slider-next',
         prevEl: '.tournament-slider .slider-prev'
       }
-    })</script><section class="video"><div class="text-h6 text-md-h4 mb-md-7 mb-5">Видеозаписи</div><div class="grid grid-spacing-7"><div class="grid-col-lg-8"><a href="https://youtu.be/dgMinMhViOk?list=RDGMEMHDXYb1_DDSgDsobPsOFxpAVMdgMinMhViOk" data-fancybox class="video-main hover-link-wrap"><div class="video-main-img"><img src="img/test.gif" alt=""><div class="video-main-btn"><img src="img/sempl/youtube-btn.svg" alt=""></div></div><div class="video-main-content mt-4"><div class="text-body-1 text--demibold mb-3 hover-link">Зональный этап Ростсельмаш-лиги в Красном Сулине</div><div class="news-card-date flex flex-align-center"><svg class="icon text-body-2 fade-60 mr-2"><use xlink:href="img/icons.svg#calendar"/></svg> <span class="text-small fade-80">07 авг 2021</span></div></div></a></div><div class="grid-col-lg-4"><a href="https://youtu.be/dgMinMhViOk?list=RDGMEMHDXYb1_DDSgDsobPsOFxpAVMdgMinMhViOk" data-fancybox class="video-min mb-4 hover-link-wrap"><div class="video-min-img"><img src="img/test.gif" alt=""></div><div class="video-min-content"><div class="text-body-1 text--demibold mb-3 hover-link">Зональный этап Ростсельмаш-лиги в Красном Сулине</div><div class="news-card-date flex flex-align-center"><svg class="icon text-body-2 fade-60 mr-2"><use xlink:href="img/icons.svg#calendar"/></svg> <span class="text-small fade-80">07 авг 2021</span></div></div></a><a href="https://youtu.be/dgMinMhViOk?list=RDGMEMHDXYb1_DDSgDsobPsOFxpAVMdgMinMhViOk" data-fancybox class="video-min mb-4 hover-link-wrap"><div class="video-min-img"><img src="img/test.gif" alt=""></div><div class="video-min-content"><div class="text-body-1 text--demibold mb-3 hover-link">Зональный этап Ростсельмаш-лиги в Красном Сулине</div><div class="news-card-date flex flex-align-center"><svg class="icon text-body-2 fade-60 mr-2"><use xlink:href="img/icons.svg#calendar"/></svg> <span class="text-small fade-80">07 авг 2021</span></div></div></a><a href="https://youtu.be/dgMinMhViOk?list=RDGMEMHDXYb1_DDSgDsobPsOFxpAVMdgMinMhViOk" data-fancybox class="video-min mb-4 hover-link-wrap d-none d-lg-flex"><div class="video-min-img"><img src="img/test.gif" alt=""></div><div class="video-min-content"><div class="text-body-1 text--demibold mb-3 hover-link">Зональный этап Ростсельмаш-лиги в Красном Сулине</div><div class="news-card-date flex flex-align-center"><svg class="icon text-body-2 fade-60 mr-2"><use xlink:href="img/icons.svg#calendar"/></svg> <span class="text-small fade-80">07 авг 2021</span></div></div></a><a href="https://youtu.be/dgMinMhViOk?list=RDGMEMHDXYb1_DDSgDsobPsOFxpAVMdgMinMhViOk" data-fancybox class="video-min hover-link-wrap d-none d-lg-flex"><div class="video-min-img"><img src="img/test.gif" alt=""></div><div class="video-min-content"><div class="text-body-1 text--demibold mb-3 hover-link">Зональный этап Ростсельмаш-лиги в Красном Сулине</div><div class="news-card-date flex flex-align-center"><svg class="icon text-body-2 fade-60 mr-2"><use xlink:href="img/icons.svg#calendar"/></svg> <span class="text-small fade-80">07 авг 2021</span></div></div></a><button class="btn btn--primary btn--link mt-4">Все видеозаписи</button></div></div></section><section class="photo"><div class="text-h6 text-md-h4 mb-md-7 mb-5">Фотоальбомы</div><div class="photo-slider slider"><div class="swiper grid-wrap grid-spacing-2 grid-spacing-md-5"><div class="swiper-wrapper"><div class="grid-col-8 grid-col-md-4 grid-col-lg-3 swiper-slide"><a href="" class="photo-card card h-100 hover-link-wrap"><div class="photo-card-img"><img src="img/test.gif" alt=""><div class="photo-card-control"><div class="flex flex-align-center color-white"><svg class="icon text-body-2 mr-2"><use xlink:href="img/icons.svg#photos"/></svg><div class="text-body-2">10 фото</div></div></div></div><div class="photo-card-content"><div class="news-card-date flex flex-align-center"><svg class="icon text-body-2 fade-60 mr-2"><use xlink:href="img/icons.svg#calendar"/></svg> <span class="text-small fade-80">07 авг 2021</span></div><div class="text-body-2 text-md-body-1 text--demibold mt-3 hover-link">Тарасовская школы №1 - финалист турнира «Ростсельмаш-лига»</div></div></a></div><div class="grid-col-8 grid-col-md-4 grid-col-lg-3 swiper-slide"><a href="" class="photo-card card h-100 hover-link-wrap"><div class="photo-card-img"><img src="img/test.gif" alt=""><div class="photo-card-control"><div class="flex flex-align-center color-white"><svg class="icon text-body-2 mr-2"><use xlink:href="img/icons.svg#photos"/></svg><div class="text-body-2">10 фото</div></div></div></div><div class="photo-card-content"><div class="news-card-date flex flex-align-center"><svg class="icon text-body-2 fade-60 mr-2"><use xlink:href="img/icons.svg#calendar"/></svg> <span class="text-small fade-80">07 авг 2021</span></div><div class="text-body-2 text-md-body-1 text--demibold mt-3 hover-link">Тарасовская школы №1 - финалист турнира «Ростсельмаш-лига»</div></div></a></div><div class="grid-col-8 grid-col-md-4 grid-col-lg-3 swiper-slide"><a href="" class="photo-card card h-100 hover-link-wrap"><div class="photo-card-img"><img src="img/test.gif" alt=""><div class="photo-card-control"><div class="flex flex-align-center color-white"><svg class="icon text-body-2 mr-2"><use xlink:href="img/icons.svg#photos"/></svg><div class="text-body-2">10 фото</div></div></div></div><div class="photo-card-content"><div class="news-card-date flex flex-align-center"><svg class="icon text-body-2 fade-60 mr-2"><use xlink:href="img/icons.svg#calendar"/></svg> <span class="text-small fade-80">07 авг 2021</span></div><div class="text-body-2 text-md-body-1 text--demibold mt-3 hover-link">Тарасовская школы №1 - финалист турнира «Ростсельмаш-лига»</div></div></a></div><div class="grid-col-8 grid-col-md-4 grid-col-lg-3 swiper-slide"><a href="" class="photo-card card h-100 hover-link-wrap"><div class="photo-card-img"><img src="img/test.gif" alt=""><div class="photo-card-control"><div class="flex flex-align-center color-white"><svg class="icon text-body-2 mr-2"><use xlink:href="img/icons.svg#photos"/></svg><div class="text-body-2">10 фото</div></div></div></div><div class="photo-card-content"><div class="news-card-date flex flex-align-center"><svg class="icon text-body-2 fade-60 mr-2"><use xlink:href="img/icons.svg#calendar"/></svg> <span class="text-small fade-80">07 авг 2021</span></div><div class="text-body-2 text-md-body-1 text--demibold mt-3 hover-link">Тарасовская школы №1 - финалист турнира «Ростсельмаш-лига»</div></div></a></div><div class="grid-col-8 grid-col-md-4 grid-col-lg-3 swiper-slide"><a href="" class="photo-card card h-100 hover-link-wrap"><div class="photo-card-img"><img src="img/test.gif" alt=""><div class="photo-card-control"><div class="flex flex-align-center color-white"><svg class="icon text-body-2 mr-2"><use xlink:href="img/icons.svg#photos"/></svg><div class="text-body-2">10 фото</div></div></div></div><div class="photo-card-content"><div class="news-card-date flex flex-align-center"><svg class="icon text-body-2 fade-60 mr-2"><use xlink:href="img/icons.svg#calendar"/></svg> <span class="text-small fade-80">07 авг 2021</span></div><div class="text-body-2 text-md-body-1 text--demibold mt-3 hover-link">Тарасовская школы №1 - финалист турнира «Ростсельмаш-лига»</div></div></a></div><div class="grid-col-8 grid-col-md-4 grid-col-lg-3 swiper-slide"><a href="" class="photo-card card h-100 hover-link-wrap"><div class="photo-card-img"><img src="img/test.gif" alt=""><div class="photo-card-control"><div class="flex flex-align-center color-white"><svg class="icon text-body-2 mr-2"><use xlink:href="img/icons.svg#photos"/></svg><div class="text-body-2">10 фото</div></div></div></div><div class="photo-card-content"><div class="news-card-date flex flex-align-center"><svg class="icon text-body-2 fade-60 mr-2"><use xlink:href="img/icons.svg#calendar"/></svg> <span class="text-small fade-80">07 авг 2021</span></div><div class="text-body-2 text-md-body-1 text--demibold mt-3 hover-link">Тарасовская школы №1 - финалист турнира «Ростсельмаш-лига»</div></div></a></div><div class="grid-col-8 grid-col-md-4 grid-col-lg-3 swiper-slide"><a href="" class="photo-card card h-100 hover-link-wrap"><div class="photo-card-img"><img src="img/test.gif" alt=""><div class="photo-card-control"><div class="flex flex-align-center color-white"><svg class="icon text-body-2 mr-2"><use xlink:href="img/icons.svg#photos"/></svg><div class="text-body-2">10 фото</div></div></div></div><div class="photo-card-content"><div class="news-card-date flex flex-align-center"><svg class="icon text-body-2 fade-60 mr-2"><use xlink:href="img/icons.svg#calendar"/></svg> <span class="text-small fade-80">07 авг 2021</span></div><div class="text-body-2 text-md-body-1 text--demibold mt-3 hover-link">Тарасовская школы №1 - финалист турнира «Ростсельмаш-лига»</div></div></a></div><div class="grid-col-8 grid-col-md-4 grid-col-lg-3 swiper-slide"><a href="" class="photo-card card h-100 hover-link-wrap"><div class="photo-card-img"><img src="img/test.gif" alt=""><div class="photo-card-control"><div class="flex flex-align-center color-white"><svg class="icon text-body-2 mr-2"><use xlink:href="img/icons.svg#photos"/></svg><div class="text-body-2">10 фото</div></div></div></div><div class="photo-card-content"><div class="news-card-date flex flex-align-center"><svg class="icon text-body-2 fade-60 mr-2"><use xlink:href="img/icons.svg#calendar"/></svg> <span class="text-small fade-80">07 авг 2021</span></div><div class="text-body-2 text-md-body-1 text--demibold mt-3 hover-link">Тарасовская школы №1 - финалист турнира «Ростсельмаш-лига»</div></div></a></div></div></div><button class="slider-btn slider-prev d-none d-md-flex"><svg class="icon"><use xlink:href="img/icons.svg#to-left"/></svg></button> <button class="slider-btn slider-next d-none d-md-flex"><svg class="icon"><use xlink:href="img/icons.svg#to-right"/></svg></button></div></section><script>new Swiper('.photo-slider .swiper', {
+    })
+  </script>
+
+
+  <!-- Видеозаписи -->
+  <section class="video">
+    <div class="text-h6 text-md-h4 mb-md-7 mb-5">Видеозаписи</div>
+    <div class="grid grid-spacing-7">
+      <div class="grid-col-lg-8">
+        <a href="https://youtu.be/dgMinMhViOk?list=RDGMEMHDXYb1_DDSgDsobPsOFxpAVMdgMinMhViOk" data-fancybox class="video-main hover-link-wrap">
+          <div class="video-main-img">
+            <img src="img/test.gif" alt="">
+            <div class="video-main-btn">
+              <img src="img/sempl/youtube-btn.svg" alt="">
+            </div>
+          </div>
+          <div class="video-main-content mt-4">
+            <div class="text-body-1 text--demibold mb-3 hover-link">Зональный этап Ростсельмаш-лиги в
+              Красном Сулине
+            </div>
+            <div class="news-card-date flex flex-align-center">
+              <svg class="icon text-body-2 fade-60 mr-2">
+                <use xlink:href="img/icons.svg#calendar" />
+              </svg>
+              <span class="text-small fade-80">07 авг 2021</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="grid-col-lg-4">
+        <a href="https://youtu.be/dgMinMhViOk?list=RDGMEMHDXYb1_DDSgDsobPsOFxpAVMdgMinMhViOk" data-fancybox class="video-min mb-4 hover-link-wrap">
+          <div class="video-min-img">
+            <img src="img/test.gif" alt="">
+          </div>
+          <div class="video-min-content">
+            <div class="text-body-1 text--demibold mb-3 hover-link">Зональный этап Ростсельмаш-лиги в
+              Красном Сулине
+            </div>
+            <div class="news-card-date flex flex-align-center">
+              <svg class="icon text-body-2 fade-60 mr-2">
+                <use xlink:href="img/icons.svg#calendar" />
+              </svg>
+              <span class="text-small fade-80">07 авг 2021</span>
+            </div>
+          </div>
+        </a>
+        <a href="https://youtu.be/dgMinMhViOk?list=RDGMEMHDXYb1_DDSgDsobPsOFxpAVMdgMinMhViOk" data-fancybox class="video-min mb-4 hover-link-wrap">
+          <div class="video-min-img">
+            <img src="img/test.gif" alt="">
+          </div>
+          <div class="video-min-content">
+            <div class="text-body-1 text--demibold mb-3 hover-link">Зональный этап Ростсельмаш-лиги в
+              Красном Сулине
+            </div>
+            <div class="news-card-date flex flex-align-center">
+              <svg class="icon text-body-2 fade-60 mr-2">
+                <use xlink:href="img/icons.svg#calendar" />
+              </svg>
+              <span class="text-small fade-80">07 авг 2021</span>
+            </div>
+          </div>
+        </a>
+        <a href="https://youtu.be/dgMinMhViOk?list=RDGMEMHDXYb1_DDSgDsobPsOFxpAVMdgMinMhViOk" data-fancybox class="video-min mb-4 hover-link-wrap d-none d-lg-flex">
+          <div class="video-min-img">
+            <img src="img/test.gif" alt="">
+          </div>
+          <div class="video-min-content">
+            <div class="text-body-1 text--demibold mb-3 hover-link">Зональный этап Ростсельмаш-лиги в
+              Красном Сулине
+            </div>
+            <div class="news-card-date flex flex-align-center">
+              <svg class="icon text-body-2 fade-60 mr-2">
+                <use xlink:href="img/icons.svg#calendar" />
+              </svg>
+              <span class="text-small fade-80">07 авг 2021</span>
+            </div>
+          </div>
+        </a>
+        <a href="https://youtu.be/dgMinMhViOk?list=RDGMEMHDXYb1_DDSgDsobPsOFxpAVMdgMinMhViOk" data-fancybox class="video-min hover-link-wrap d-none d-lg-flex">
+          <div class="video-min-img">
+            <img src="img/test.gif" alt="">
+          </div>
+          <div class="video-min-content">
+            <div class="text-body-1 text--demibold mb-3 hover-link">Зональный этап Ростсельмаш-лиги в
+              Красном Сулине
+            </div>
+            <div class="news-card-date flex flex-align-center">
+              <svg class="icon text-body-2 fade-60 mr-2">
+                <use xlink:href="img/icons.svg#calendar" />
+              </svg>
+              <span class="text-small fade-80">07 авг 2021</span>
+            </div>
+          </div>
+        </a>
+
+        <button class="btn btn--primary btn--link mt-4">Все видеозаписи</button>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Фотоальбомы -->
+  <section class="photo">
+    <div class="text-h6 text-md-h4 mb-md-7 mb-5">Фотоальбомы</div>
+
+
+    <div class="photo-slider slider">
+      <div class="swiper grid-wrap grid-spacing-2 grid-spacing-md-5">
+        <div class="swiper-wrapper">
+          <div class="grid-col-8 grid-col-md-4 grid-col-lg-3 swiper-slide">
+            <a href="" class="photo-card  card h-100 hover-link-wrap">
+              <div class="photo-card-img">
+                <img src="img/test.gif" alt="">
+
+                <div class="photo-card-control">
+                  <div class="flex flex-align-center color-white">
+                    <svg class="icon text-body-2 mr-2">
+                      <use xlink:href="img/icons.svg#photos" />
+                    </svg>
+                    <div class="text-body-2">10 фото</div>
+                  </div>
+                </div>
+              </div>
+              <div class="photo-card-content">
+                <div class="news-card-date flex flex-align-center">
+                  <svg class="icon text-body-2 fade-60 mr-2">
+                    <use xlink:href="img/icons.svg#calendar" />
+                  </svg>
+                  <span class="text-small fade-80">07 авг 2021</span>
+                </div>
+                <div class="text-body-2 text-md-body-1 text--demibold mt-3 hover-link">
+                  Тарасовская школы №1 - финалист
+                  турнира «Ростсельмаш-лига»
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="grid-col-8 grid-col-md-4 grid-col-lg-3 swiper-slide">
+            <a href="" class="photo-card  card h-100 hover-link-wrap">
+              <div class="photo-card-img">
+                <img src="img/test.gif" alt="">
+
+                <div class="photo-card-control">
+                  <div class="flex flex-align-center color-white">
+                    <svg class="icon text-body-2 mr-2">
+                      <use xlink:href="img/icons.svg#photos" />
+                    </svg>
+                    <div class="text-body-2">10 фото</div>
+                  </div>
+                </div>
+              </div>
+              <div class="photo-card-content">
+                <div class="news-card-date flex flex-align-center">
+                  <svg class="icon text-body-2 fade-60 mr-2">
+                    <use xlink:href="img/icons.svg#calendar" />
+                  </svg>
+                  <span class="text-small fade-80">07 авг 2021</span>
+                </div>
+                <div class="text-body-2 text-md-body-1 text--demibold mt-3 hover-link">
+                  Тарасовская школы №1 - финалист
+                  турнира «Ростсельмаш-лига»
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="grid-col-8 grid-col-md-4 grid-col-lg-3 swiper-slide">
+            <a href="" class="photo-card  card h-100 hover-link-wrap">
+              <div class="photo-card-img">
+                <img src="img/test.gif" alt="">
+
+                <div class="photo-card-control">
+                  <div class="flex flex-align-center color-white">
+                    <svg class="icon text-body-2 mr-2">
+                      <use xlink:href="img/icons.svg#photos" />
+                    </svg>
+                    <div class="text-body-2">10 фото</div>
+                  </div>
+                </div>
+              </div>
+              <div class="photo-card-content">
+                <div class="news-card-date flex flex-align-center">
+                  <svg class="icon text-body-2 fade-60 mr-2">
+                    <use xlink:href="img/icons.svg#calendar" />
+                  </svg>
+                  <span class="text-small fade-80">07 авг 2021</span>
+                </div>
+                <div class="text-body-2 text-md-body-1 text--demibold mt-3 hover-link">
+                  Тарасовская школы №1 - финалист
+                  турнира «Ростсельмаш-лига»
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="grid-col-8 grid-col-md-4 grid-col-lg-3 swiper-slide">
+            <a href="" class="photo-card  card h-100 hover-link-wrap">
+              <div class="photo-card-img">
+                <img src="img/test.gif" alt="">
+
+                <div class="photo-card-control">
+                  <div class="flex flex-align-center color-white">
+                    <svg class="icon text-body-2 mr-2">
+                      <use xlink:href="img/icons.svg#photos" />
+                    </svg>
+                    <div class="text-body-2">10 фото</div>
+                  </div>
+                </div>
+              </div>
+              <div class="photo-card-content">
+                <div class="news-card-date flex flex-align-center">
+                  <svg class="icon text-body-2 fade-60 mr-2">
+                    <use xlink:href="img/icons.svg#calendar" />
+                  </svg>
+                  <span class="text-small fade-80">07 авг 2021</span>
+                </div>
+                <div class="text-body-2 text-md-body-1 text--demibold mt-3 hover-link">
+                  Тарасовская школы №1 - финалист
+                  турнира «Ростсельмаш-лига»
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="grid-col-8 grid-col-md-4 grid-col-lg-3 swiper-slide">
+            <a href="" class="photo-card  card h-100 hover-link-wrap">
+              <div class="photo-card-img">
+                <img src="img/test.gif" alt="">
+
+                <div class="photo-card-control">
+                  <div class="flex flex-align-center color-white">
+                    <svg class="icon text-body-2 mr-2">
+                      <use xlink:href="img/icons.svg#photos" />
+                    </svg>
+                    <div class="text-body-2">10 фото</div>
+                  </div>
+                </div>
+              </div>
+              <div class="photo-card-content">
+                <div class="news-card-date flex flex-align-center">
+                  <svg class="icon text-body-2 fade-60 mr-2">
+                    <use xlink:href="img/icons.svg#calendar" />
+                  </svg>
+                  <span class="text-small fade-80">07 авг 2021</span>
+                </div>
+                <div class="text-body-2 text-md-body-1 text--demibold mt-3 hover-link">
+                  Тарасовская школы №1 - финалист
+                  турнира «Ростсельмаш-лига»
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="grid-col-8 grid-col-md-4 grid-col-lg-3 swiper-slide">
+            <a href="" class="photo-card  card h-100 hover-link-wrap">
+              <div class="photo-card-img">
+                <img src="img/test.gif" alt="">
+
+                <div class="photo-card-control">
+                  <div class="flex flex-align-center color-white">
+                    <svg class="icon text-body-2 mr-2">
+                      <use xlink:href="img/icons.svg#photos" />
+                    </svg>
+                    <div class="text-body-2">10 фото</div>
+                  </div>
+                </div>
+              </div>
+              <div class="photo-card-content">
+                <div class="news-card-date flex flex-align-center">
+                  <svg class="icon text-body-2 fade-60 mr-2">
+                    <use xlink:href="img/icons.svg#calendar" />
+                  </svg>
+                  <span class="text-small fade-80">07 авг 2021</span>
+                </div>
+                <div class="text-body-2 text-md-body-1 text--demibold mt-3 hover-link">
+                  Тарасовская школы №1 - финалист
+                  турнира «Ростсельмаш-лига»
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="grid-col-8 grid-col-md-4 grid-col-lg-3 swiper-slide">
+            <a href="" class="photo-card  card h-100 hover-link-wrap">
+              <div class="photo-card-img">
+                <img src="img/test.gif" alt="">
+
+                <div class="photo-card-control">
+                  <div class="flex flex-align-center color-white">
+                    <svg class="icon text-body-2 mr-2">
+                      <use xlink:href="img/icons.svg#photos" />
+                    </svg>
+                    <div class="text-body-2">10 фото</div>
+                  </div>
+                </div>
+              </div>
+              <div class="photo-card-content">
+                <div class="news-card-date flex flex-align-center">
+                  <svg class="icon text-body-2 fade-60 mr-2">
+                    <use xlink:href="img/icons.svg#calendar" />
+                  </svg>
+                  <span class="text-small fade-80">07 авг 2021</span>
+                </div>
+                <div class="text-body-2 text-md-body-1 text--demibold mt-3 hover-link">
+                  Тарасовская школы №1 - финалист
+                  турнира «Ростсельмаш-лига»
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="grid-col-8 grid-col-md-4 grid-col-lg-3 swiper-slide">
+            <a href="" class="photo-card  card h-100 hover-link-wrap">
+              <div class="photo-card-img">
+                <img src="img/test.gif" alt="">
+
+                <div class="photo-card-control">
+                  <div class="flex flex-align-center color-white">
+                    <svg class="icon text-body-2 mr-2">
+                      <use xlink:href="img/icons.svg#photos" />
+                    </svg>
+                    <div class="text-body-2">10 фото</div>
+                  </div>
+                </div>
+              </div>
+              <div class="photo-card-content">
+                <div class="news-card-date flex flex-align-center">
+                  <svg class="icon text-body-2 fade-60 mr-2">
+                    <use xlink:href="img/icons.svg#calendar" />
+                  </svg>
+                  <span class="text-small fade-80">07 авг 2021</span>
+                </div>
+                <div class="text-body-2 text-md-body-1 text--demibold mt-3 hover-link">
+                  Тарасовская школы №1 - финалист
+                  турнира «Ростсельмаш-лига»
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <button class="slider-btn slider-prev d-none d-md-flex">
+        <svg class="icon">
+          <use xlink:href="img/icons.svg#to-left" />
+        </svg>
+      </button>
+      <button class="slider-btn slider-next d-none d-md-flex">
+        <svg class="icon">
+          <use xlink:href="img/icons.svg#to-right" />
+        </svg>
+      </button>
+    </div>
+
+  </section>
+  <script>
+    new Swiper('.photo-slider .swiper', {
       slidesPerView: 'auto',
       watchSlidesProgress: true,
       navigation: {
         nextEl: '.photo-slider .slider-next',
         prevEl: '.photo-slider .slider-prev'
       }
-    })</script><section class="about-section"><div class="about-section-content"><div class="text-h4 mb-5">Об ассоциации</div><div class="text-body-2 lh-1-5">Ассоциация "Ростсельмаш-Лига" зарегистрирована 7 сентября 2020 г. регистратором Межрайонная инспекция Федеральной налоговой службы № 26 по Ростовской области. Руководитель организации: генеральный директор Ревенко Антон Николаевич. Юридический адрес Ассоциация "Ростсельмаш-Лига" - 344029, Ростовская область, город Ростов-на-Дону, улица 1-й Конной Армии, дом 4е.<br><br>Основным видом деятельности является «Деятельность спортивных клубов», зарегистрированы 2 дополнительных вида деятельности. Организации АССОЦИАЦИЯ УЧАСТНИКОВ ДЕТСКОЙ ЛИГИ РЕГБИ "РОСТСЕЛЬМАШ-ЛИГА" присвоены ИНН 6166120286, ОГРН 1206100029871, ОКПО 45483604.</div><button class="about-section-file d-flex mt-5 btn btn--white btn--link text--left flex-align-start flex-justify-start w-100"><svg class="icon mr-4 text-body-1"><use xlink:href="img/icons.svg#download"/></svg><div class="text-body-2 text--underline">Положение о проведении Кубка Ростсельмаш по тэг-регби среди общеобразовательных учреждений</div></button> <button class="about-section-file d-flex mt-4 btn btn--white btn--link text--left flex-align-start flex-justify-start w-100"><svg class="icon mr-4 text-body-1"><use xlink:href="img/icons.svg#download"/></svg><div class="text-body-2 text--underline">Положение о проведении RUGBY FEST 2021</div></button> <button class="btn btn--white btn--link mt-8">Подробнее об ассоциации</button></div></section><section class="team"><div class="text-h6 text-md-h4 mb-md-7 mb-5">Наше руководство</div><div class="team-slider slider"><div class="swiper grid-wrap grid-spacing-2 grid-spacing-md-5"><div class="swiper-wrapper"><div class="grid-col-8 grid-col-md-4 grid-col-lg-3 swiper-slide"><a href="" class="team-card card h-100 hover-link-wrap"><div class="team-card-img"><img src="img/test.gif" alt=""></div><div class="team-card-content"><div class="text-body-1 text--demibold hover-link">Дмитрий Удрас</div><div class="text-body-2 fade-80 mt-2">Генеральный диектор группы компаний «Ростсельмаш»</div></div></a></div><div class="grid-col-8 grid-col-md-4 grid-col-lg-3 swiper-slide"><a href="" class="team-card card h-100 hover-link-wrap"><div class="team-card-img"><img src="img/test.gif" alt=""></div><div class="team-card-content"><div class="text-body-1 text--demibold hover-link">Дмитрий Удрас</div><div class="text-body-2 fade-80 mt-2">Генеральный диектор группы компаний «Ростсельмаш»</div></div></a></div><div class="grid-col-8 grid-col-md-4 grid-col-lg-3 swiper-slide"><a href="" class="team-card card h-100 hover-link-wrap"><div class="team-card-img"><img src="img/test.gif" alt=""></div><div class="team-card-content"><div class="text-body-1 text--demibold hover-link">Дмитрий Удрас</div><div class="text-body-2 fade-80 mt-2">Генеральный диектор группы компаний «Ростсельмаш»</div></div></a></div><div class="grid-col-8 grid-col-md-4 grid-col-lg-3 swiper-slide"><a href="" class="team-card card h-100 hover-link-wrap"><div class="team-card-img"><img src="img/test.gif" alt=""></div><div class="team-card-content"><div class="text-body-1 text--demibold hover-link">Дмитрий Удрас</div><div class="text-body-2 fade-80 mt-2">Генеральный диектор группы компаний «Ростсельмаш»</div></div></a></div><div class="grid-col-8 grid-col-md-4 grid-col-lg-3 swiper-slide"><a href="" class="team-card card h-100 hover-link-wrap"><div class="team-card-img"><img src="img/test.gif" alt=""></div><div class="team-card-content"><div class="text-body-1 text--demibold hover-link">Дмитрий Удрас</div><div class="text-body-2 fade-80 mt-2">Генеральный диектор группы компаний «Ростсельмаш»</div></div></a></div><div class="grid-col-8 grid-col-md-4 grid-col-lg-3 swiper-slide"><a href="" class="team-card card h-100 hover-link-wrap"><div class="team-card-img"><img src="img/test.gif" alt=""></div><div class="team-card-content"><div class="text-body-1 text--demibold hover-link">Дмитрий Удрас</div><div class="text-body-2 fade-80 mt-2">Генеральный диектор группы компаний «Ростсельмаш»</div></div></a></div></div></div><button class="slider-btn slider-prev d-none d-md-flex"><svg class="icon"><use xlink:href="img/icons.svg#to-left"/></svg></button> <button class="slider-btn slider-next d-none d-md-flex"><svg class="icon"><use xlink:href="img/icons.svg#to-right"/></svg></button></div></section><script>new Swiper('.team-slider .swiper', {
+    })
+  </script>
+
+
+  <!-- Об ассоциации -->
+  <section class="about-section">
+    <div class="about-section-content">
+      <div class="text-h4 mb-5">Об ассоциации</div>
+
+      <div class="text-body-2 lh-1-5">
+        Ассоциация "Ростсельмаш-Лига" зарегистрирована 7 сентября 2020 г. регистратором Межрайонная инспекция
+        Федеральной налоговой службы № 26 по Ростовской области. Руководитель организации: генеральный директор
+        Ревенко
+        Антон Николаевич. Юридический адрес Ассоциация "Ростсельмаш-Лига" - 344029, Ростовская область, город
+        Ростов-на-Дону, улица 1-й Конной Армии, дом 4е.
+        <br><br>
+        Основным видом деятельности является «Деятельность спортивных клубов», зарегистрированы 2 дополнительных
+        вида
+        деятельности. Организации АССОЦИАЦИЯ УЧАСТНИКОВ ДЕТСКОЙ ЛИГИ РЕГБИ "РОСТСЕЛЬМАШ-ЛИГА" присвоены ИНН
+        6166120286,
+        ОГРН 1206100029871, ОКПО 45483604.
+      </div>
+
+      <button class="about-section-file d-flex mt-5 btn btn--white btn--link text--left flex-align-start flex-justify-start w-100">
+        <svg class="icon mr-4 text-body-1">
+          <use xlink:href="img/icons.svg#download" />
+        </svg>
+        <div class="text-body-2 text--underline">
+          Положение о проведении Кубка Ростсельмаш по тэг-регби среди
+          общеобразовательных учреждений
+        </div>
+      </button>
+
+      <button class="about-section-file d-flex mt-4 btn btn--white btn--link text--left flex-align-start flex-justify-start w-100">
+        <svg class="icon mr-4 text-body-1">
+          <use xlink:href="img/icons.svg#download" />
+        </svg>
+        <div class="text-body-2 text--underline">
+          Положение о проведении RUGBY FEST 2021
+        </div>
+      </button>
+
+      <button class="btn btn--white btn--link mt-8">Подробнее об ассоциации</button>
+
+    </div>
+  </section>
+
+
+
+
+  <!-- Наше руководство -->
+  <section class="team">
+    <div class="text-h6 text-md-h4 mb-md-7 mb-5">Наше руководство</div>
+
+
+    <div class="team-slider slider">
+      <div class="swiper grid-wrap grid-spacing-2 grid-spacing-md-5">
+        <div class="swiper-wrapper">
+          <div class="grid-col-8 grid-col-md-4 grid-col-lg-3 swiper-slide">
+            <a href="" class="team-card  card h-100 hover-link-wrap">
+              <div class="team-card-img">
+                <img src="img/test.gif" alt="">
+              </div>
+              <div class="team-card-content">
+                <div class="text-body-1 text--demibold  hover-link">Дмитрий Удрас</div>
+                <div class="text-body-2 fade-80 mt-2">
+                  Генеральный диектор группы
+                  компаний «Ростсельмаш»
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="grid-col-8 grid-col-md-4 grid-col-lg-3 swiper-slide">
+            <a href="" class="team-card  card h-100 hover-link-wrap">
+              <div class="team-card-img">
+                <img src="img/test.gif" alt="">
+              </div>
+              <div class="team-card-content">
+                <div class="text-body-1 text--demibold  hover-link">Дмитрий Удрас</div>
+                <div class="text-body-2 fade-80 mt-2">
+                  Генеральный диектор группы
+                  компаний «Ростсельмаш»
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="grid-col-8 grid-col-md-4 grid-col-lg-3 swiper-slide">
+            <a href="" class="team-card  card h-100 hover-link-wrap">
+              <div class="team-card-img">
+                <img src="img/test.gif" alt="">
+              </div>
+              <div class="team-card-content">
+                <div class="text-body-1 text--demibold  hover-link">Дмитрий Удрас</div>
+                <div class="text-body-2 fade-80 mt-2">
+                  Генеральный диектор группы
+                  компаний «Ростсельмаш»
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="grid-col-8 grid-col-md-4 grid-col-lg-3 swiper-slide">
+            <a href="" class="team-card  card h-100 hover-link-wrap">
+              <div class="team-card-img">
+                <img src="img/test.gif" alt="">
+              </div>
+              <div class="team-card-content">
+                <div class="text-body-1 text--demibold  hover-link">Дмитрий Удрас</div>
+                <div class="text-body-2 fade-80 mt-2">
+                  Генеральный диектор группы
+                  компаний «Ростсельмаш»
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="grid-col-8 grid-col-md-4 grid-col-lg-3 swiper-slide">
+            <a href="" class="team-card  card h-100 hover-link-wrap">
+              <div class="team-card-img">
+                <img src="img/test.gif" alt="">
+              </div>
+              <div class="team-card-content">
+                <div class="text-body-1 text--demibold  hover-link">Дмитрий Удрас</div>
+                <div class="text-body-2 fade-80 mt-2">
+                  Генеральный диектор группы
+                  компаний «Ростсельмаш»
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="grid-col-8 grid-col-md-4 grid-col-lg-3 swiper-slide">
+            <a href="" class="team-card  card h-100 hover-link-wrap">
+              <div class="team-card-img">
+                <img src="img/test.gif" alt="">
+              </div>
+              <div class="team-card-content">
+                <div class="text-body-1 text--demibold  hover-link">Дмитрий Удрас</div>
+                <div class="text-body-2 fade-80 mt-2">
+                  Генеральный диектор группы
+                  компаний «Ростсельмаш»
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <button class="slider-btn slider-prev d-none d-md-flex">
+        <svg class="icon">
+          <use xlink:href="img/icons.svg#to-left" />
+        </svg>
+      </button>
+      <button class="slider-btn slider-next d-none d-md-flex">
+        <svg class="icon">
+          <use xlink:href="img/icons.svg#to-right" />
+        </svg>
+      </button>
+    </div>
+
+  </section>
+  <script>
+    new Swiper('.team-slider .swiper', {
       slidesPerView: 'auto',
       watchSlidesProgress: true,
       navigation: {
         nextEl: '.team-slider .slider-next',
         prevEl: '.team-slider .slider-prev'
       }
-    })</script><section class="partners"><div class="text-h6 text-md-h4 mb-md-7 mb-5">Наши партнеры</div><div class="partners-slider slider"><div class="swiper grid-wrap grid-spacing-2 grid-spacing-md-6"><div class="swiper-wrapper"><div class="grid-col-8 grid-col-md-6 grid-col-lg-4 swiper-slide"><div class="partners-item h-100"><div class="partners-item-img"><img src="img/sempl/partners-1.png" alt=""></div><div class="partners-item-content"><div class="text-body-1 text--demibold mb-2">Ростсельмаш</div><div class="text-body-2 fade-80 mb-4">Компания «Ростсельмаш» — один из крупнейших мировых производителей сельскохозяйственной техники. С момента основания в 1929 г. компания поставила своим клиентам в 48 странах мира более 2,5 миллионов единиц техники.</div><a href="" class="btn btn--primary btn--link"><svg class="icon mr-2 text-body-1"><use xlink:href="img/icons.svg#net"/></svg> rostselmash.com</a></div></div></div><div class="grid-col-8 grid-col-md-6 grid-col-lg-4 swiper-slide"><div class="partners-item h-100"><div class="partners-item-img"><img src="img/sempl/partners-2.png" alt=""></div><div class="partners-item-content"><div class="text-body-1 text--demibold mb-2">Ростсельмаш</div><div class="text-body-2 fade-80 mb-4">Компания «Ростсельмаш» — один из крупнейших мировых производителей сельскохозяйственной техники. С момента основания в 1929 г. компания поставила своим клиентам в 48 странах мира более 2,5 миллионов единиц техники.</div><button href="" class="btn btn--primary btn--link"><svg class="icon mr-2 text-body-1"><use xlink:href="img/icons.svg#net"/></svg> rostselmash.com</button></div></div></div><div class="grid-col-8 grid-col-md-6 grid-col-lg-4 swiper-slide"><div class="partners-item h-100"><div class="partners-item-img"><img src="img/sempl/partners-3.png" alt=""></div><div class="partners-item-content"><div class="text-body-1 text--demibold mb-2">Ростсельмаш</div><div class="text-body-2 fade-80 mb-4">Компания «Ростсельмаш» — один из крупнейших мировых производителей сельскохозяйственной техники. С момента основания в 1929 г. компания поставила своим клиентам в 48 странах мира более 2,5 миллионов единиц техники.</div><button href="" class="btn btn--primary btn--link"><svg class="icon mr-2 text-body-1"><use xlink:href="img/icons.svg#net"/></svg> rostselmash.com</button></div></div></div></div></div><button class="slider-btn slider-prev d-none d-md-flex d-lg-none"><svg class="icon"><use xlink:href="img/icons.svg#to-left"/></svg></button> <button class="slider-btn slider-next d-none d-md-flex d-lg-none"><svg class="icon"><use xlink:href="img/icons.svg#to-right"/></svg></button></div></section><script>new Swiper('.partners-slider .swiper', {
+    })
+  </script>
+
+
+  <!-- Наши партнеры -->
+  <section class="partners">
+    <div class="text-h6 text-md-h4 mb-md-7 mb-5">Наши партнеры</div>
+
+
+    <div class="partners-slider slider">
+      <div class="swiper grid-wrap grid-spacing-2 grid-spacing-md-6">
+        <div class="swiper-wrapper">
+          <div class="grid-col-8 grid-col-md-6 grid-col-lg-4 swiper-slide">
+            <div class="partners-item h-100">
+              <div class="partners-item-img">
+                <img src="img/sempl/partners-1.png" alt="">
+              </div>
+              <div class="partners-item-content">
+                <div class="text-body-1 text--demibold mb-2">Ростсельмаш</div>
+                <div class="text-body-2 fade-80 mb-4">
+                  Компания «Ростсельмаш» — один из крупнейших мировых производителей
+                  сельскохозяйственной техники. С
+                  момента основания в 1929 г. компания поставила своим клиентам в 48 странах мира
+                  более
+                  2,5 миллионов единиц техники.
+                </div>
+                <a href="" class="btn btn--primary btn--link">
+                  <svg class="icon mr-2 text-body-1">
+                    <use xlink:href="img/icons.svg#net" />
+                  </svg>
+                  rostselmash.com
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="grid-col-8 grid-col-md-6 grid-col-lg-4 swiper-slide">
+            <div class="partners-item h-100">
+              <div class="partners-item-img">
+                <img src="img/sempl/partners-2.png" alt="">
+              </div>
+              <div class="partners-item-content">
+                <div class="text-body-1 text--demibold mb-2">Ростсельмаш</div>
+                <div class="text-body-2 fade-80 mb-4">
+                  Компания «Ростсельмаш» — один из крупнейших мировых производителей
+                  сельскохозяйственной техники. С
+                  момента основания в 1929 г. компания поставила своим клиентам в 48 странах мира
+                  более
+                  2,5 миллионов единиц техники.
+                </div>
+                <button href="" class="btn btn--primary btn--link">
+                  <svg class="icon mr-2 text-body-1">
+                    <use xlink:href="img/icons.svg#net" />
+                  </svg>
+                  rostselmash.com
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="grid-col-8 grid-col-md-6 grid-col-lg-4 swiper-slide">
+            <div class="partners-item h-100">
+              <div class="partners-item-img">
+                <img src="img/sempl/partners-3.png" alt="">
+              </div>
+              <div class="partners-item-content">
+                <div class="text-body-1 text--demibold mb-2">Ростсельмаш</div>
+                <div class="text-body-2 fade-80 mb-4">
+                  Компания «Ростсельмаш» — один из крупнейших мировых производителей
+                  сельскохозяйственной техники. С
+                  момента основания в 1929 г. компания поставила своим клиентам в 48 странах мира
+                  более
+                  2,5 миллионов единиц техники.
+                </div>
+                <button href="" class="btn btn--primary btn--link">
+                  <svg class="icon mr-2 text-body-1">
+                    <use xlink:href="img/icons.svg#net" />
+                  </svg>
+                  rostselmash.com
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="slider-btn slider-prev d-none d-md-flex d-lg-none">
+        <svg class="icon">
+          <use xlink:href="img/icons.svg#to-left" />
+        </svg>
+      </button>
+      <button class="slider-btn slider-next d-none d-md-flex d-lg-none">
+        <svg class="icon">
+          <use xlink:href="img/icons.svg#to-right" />
+        </svg>
+      </button>
+    </div>
+
+  </section>
+  <script>
+    new Swiper('.partners-slider .swiper', {
       slidesPerView: 'auto',
       watchSlidesProgress: true,
       navigation: {
         nextEl: '.partners-slider .slider-next',
         prevEl: '.partners-slider .slider-prev'
       }
-    })</script><div class="mt-auto"></div><footer class="footer"><div class="footer-inner"><div class="footer-info"><img src="img/logo-white.png" alt=""> <img src="img/footer-logo-text.png" alt="" class="mt-6"></div><div class="footer-nav d-none d-lg-block"><div class="text-body-1 text--demibold mb-3">Об ассоциации</div><div class="text-body-2 fade-80 mb-3">Цели и задачи</div><div class="text-body-2 fade-80 mb-3">Документы</div><div class="text-body-2 fade-80 mb-3">Руководство</div><div class="text-body-2 fade-80 mb-3">Совет тренеров</div><div class="text-body-2 fade-80 mb-3">Судейство</div><div class="text-body-2 fade-80">Правила игры</div></div><div class="footer-nav"><div class="text-body-1 text--demibold mb-3">Соревнования</div><div class="text-body-2 fade-80 mb-3">Кубок “Ростсельмаш по регби”</div><div class="text-body-2 fade-80 mb-3">Кубок “Ростсельмаш по регби-7”</div><div class="text-body-2 fade-80">Rugby Fest</div></div><div class="footer-nav"><div class="text-body-1 text--demibold mb-3">Документация</div><div class="text-body-2 fade-80 mb-3">Условия доставки и возврата товара</div><div class="text-body-2 fade-80 mb-3">Политика конфиденциальности</div><div class="text-body-2 fade-80">Пользовательское соглашение</div></div><div class="footer-nav"><div class="text-body-1 text--demibold mb-3">Контакты</div><div class="flex flex-align-center mb-3"><svg class="icon mr-2"><use xlink:href="img/icons.svg#map"/></svg> Ростов-на-дону,<br>ул. 1-й конной армии 4е</div><div class="flex flex-align-center mb-3"><svg class="icon mr-2"><use xlink:href="img/icons.svg#phone"/></svg> +7(863)333-26-63</div><div class="flex flex-align-center"><svg class="icon mr-2"><use xlink:href="img/icons.svg#mail"/></svg> info@rsmliga.ru</div><div class="footer-soc mt-10"><a href="" class="footer-soc-item btn btn--white btn--fill btn-fab"><img src="img/sempl/inst.png" alt="" class="icon text-subtitle-2"> </a><a href="" class="footer-soc-item btn btn--white btn--fill btn-fab"><img src="img/sempl/yt.png" alt="" class="icon text-subtitle-2"> </a><a href="" class="footer-soc-item btn btn--white btn--fill btn-fab"><img src="img/sempl/vk.png" alt="" class="icon text-subtitle-2"></a></div></div></div><div class="footer-bottom flex text-body-2 color-text mt-10 text--demibold"><div class="footer-copy">© 2021</div><div class="footer-designer ml-auto">Разработка: Студия К.И.Т.</div></div></footer><script>const date = new Date(2023, 4, 28, 13, 0, 0).getTime()
+    })
+  </script>
+
+
+
+  <!-- <script>
+    Fancybox.modal.open('dialog-participant-edit.html')
+  </script> -->
+
+  <div class="mt-auto"></div>
+<footer class="footer">
+    <div class="footer-inner">
+        <div class="footer-info">
+            <img src="img/logo-white.png" alt="">
+            <!-- <div class="text-body-1 text--demibold mt-6">
+                Ассоциация <br>
+                "Ростсельмаш-лига"
+            </div>
+            <div class="text-body-2 fade-60">Детская лига регби</div> -->
+            <img src="img/footer-logo-text.png" alt="" class="mt-6">
+        </div>
+        <div class="footer-nav d-none d-lg-block">
+            <div class="text-body-1 text--demibold mb-3">Об ассоциации</div>
+            <div class="text-body-2 fade-80 mb-3">Цели и задачи</div>
+            <div class="text-body-2 fade-80 mb-3">Документы</div>
+            <div class="text-body-2 fade-80 mb-3">Руководство</div>
+            <div class="text-body-2 fade-80 mb-3">Совет тренеров</div>
+            <div class="text-body-2 fade-80 mb-3">Судейство</div>
+            <div class="text-body-2 fade-80">Правила игры</div>
+        </div>
+        <div class="footer-nav ">
+            <div class="text-body-1 text--demibold mb-3">Соревнования</div>
+            <div class="text-body-2 fade-80 mb-3">Кубок “Ростсельмаш по регби”</div>
+            <div class="text-body-2 fade-80 mb-3">Кубок “Ростсельмаш по регби-7”</div>
+            <div class="text-body-2 fade-80">Rugby Fest</div>
+        </div>
+        <div class="footer-nav ">
+            <div class="text-body-1 text--demibold mb-3">Документация</div>
+            <div class="text-body-2 fade-80 mb-3">
+                Условия доставки и возврата
+                товара
+            </div>
+            <div class="text-body-2 fade-80 mb-3">
+                Политика конфиденциальности
+            </div>
+            <div class="text-body-2 fade-80">
+                Пользовательское соглашение
+            </div>
+        </div>
+        <div class="footer-nav">
+            <div class="text-body-1 text--demibold mb-3">Контакты</div>
+
+            <div class="flex flex-align-center mb-3">
+                <svg class="icon mr-2">
+                    <use xlink:href="img/icons.svg#map" />
+                </svg>
+                Ростов-на-дону, <br>
+                ул. 1-й конной армии 4е
+            </div>
+            <div class="flex flex-align-center mb-3">
+                <svg class="icon mr-2">
+                    <use xlink:href="img/icons.svg#phone" />
+                </svg>
+                +7(863)333-26-63
+
+            </div>
+            <div class="flex flex-align-center">
+                <svg class="icon mr-2">
+                    <use xlink:href="img/icons.svg#mail" />
+                </svg>
+                info@rsmliga.ru
+            </div>
+
+            <div class="footer-soc mt-10">
+                <a href="" class="footer-soc-item btn btn--white btn--fill btn-fab"><img src="img/sempl/inst.png" alt=""
+                        class="icon text-subtitle-2"> </a>
+                <a href="" class="footer-soc-item btn btn--white btn--fill btn-fab"><img src="img/sempl/yt.png" alt=""
+                        class="icon text-subtitle-2"> </a>
+                <a href="" class="footer-soc-item btn btn--white btn--fill btn-fab"><img src="img/sempl/vk.png" alt=""
+                        class="icon text-subtitle-2"> </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom flex text-body-2 color-text mt-10 text--demibold">
+        <div class="footer-copy">© 2021</div>
+        <div class="footer-designer ml-auto">Разработка: Студия К.И.Т.</div>
+    </div>
+</footer>
+
+<script>
+
+    const date = new Date(2023, 4, 28, 13, 0, 0).getTime()
     const distance = date - new Date().getTime()
 
     if (distance > 0) {
@@ -80,4 +1828,8 @@
     
         })
 
-    }</script></body></html>
+    }
+</script>
+</body>
+
+</html>

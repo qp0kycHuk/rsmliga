@@ -12,8 +12,8 @@
 </head>
 
 <body>
-	<%= _.template(require('./includes/header.html').default)() %>
-	<%= _.template(require('./includes/page-top.html').default)({ page: 'Контакты' }) %>
+	<%= _.template(require('../../includes/header.html').default)() %>
+	<%= _.template(require('../../includes/page-top.html').default)({ page: 'Контакты' }) %>
 
 
 	<section class="contact">
@@ -120,7 +120,7 @@
 
 
 
-	<%= _.template(require('./includes/footer.html').default)() %>
+	<%= _.template(require('../../includes/footer.html').default)() %>
 </body>
 
 </html>

@@ -90,31 +90,24 @@
 </div>
 
   <section class="admin-content">
+    <div class="text-h3 mb-6">Список</div>
 
-
-
-    <div class="flex flex-align-center mb-6">
-      <div class="text-h3">Матчи</div>
-      <button class=" ml-auto btn btn--primary btn--link" data-fancybox-modal data-src="dialog-protocol.html"
-        data-type="ajax">
-        <svg class="icon mr-2">
-          <use xlink:href="img/icons.svg#plus" />
-        </svg>
-        <div class="text-body-2 text--demibold">Добавить протокол</div>
-      </button>
-    </div>
-
-
-
-    <div class="lk-tabs tab-links">
-      <button class="lk-tabs__item tab-link active">Новые</button>
-      <button class="lk-tabs__item tab-link ">Принятые</button>
-      <button class="lk-tabs__item tab-link ">Отклоненные</button>
-
-    </div>
 
     <div class="flex mb-6">
       <div class="admin-select" data-toggle-cover>
+        <div class="text-body-2 text--demibold">Сезон</div>
+        <button class="admin-select-btn btn btn--primary btn--link ml-2" data-toggle-link>
+          Любое
+          <svg class="icon ml-1 text-small-2">
+            <use xlink:href="img/icons.svg#triangle-right" />
+          </svg>
+        </button>
+        <div class="admin-select-list card py-1" data-toggle-content>
+          <div class="admin-select__item fade-60 py-1 px-4 text-body-2 text--demibold">Любое</div>
+          <a href="javascript:;" class="admin-select__item py-1 px-4 text-body-2 text--demibold">Не Любое</a>
+        </div>
+      </div>
+      <div class="admin-select ml-3" data-toggle-cover>
         <div class="text-body-2 text--demibold">Соревнование</div>
         <button class="admin-select-btn btn btn--primary btn--link ml-2" data-toggle-link>
           Спартакиада по тэг-регби среди учащихся 5-6 классов общ...
@@ -123,13 +116,11 @@
           </svg>
         </button>
         <div class="admin-select-list card py-1" data-toggle-content>
-          <div class="admin-select__item fade-60 py-1 px-4 text-body-2 text--demibold">Спартакиада по тэг-регби среди
-            учащихся 5-6 классов общ...</div>
-          <a href="javascript:;" class="admin-select__item py-1 px-4 text-body-2 text--demibold">Не Спартакиада по
-            тэг-регби среди учащихся 5-6 классов общ...</a>
+          <div class="admin-select__item fade-60 py-1 px-4 text-body-2 text--demibold">Спартакиада по тэг-регби среди учащихся 5-6 классов общ...</div>
+          <a href="javascript:;" class="admin-select__item py-1 px-4 text-body-2 text--demibold">Не Спартакиада по тэг-регби среди учащихся 5-6 классов общ...</a>
         </div>
       </div>
-      <div class="admin-select ml-10" data-toggle-cover>
+      <div class="admin-select ml-3" data-toggle-cover>
         <div class="text-body-2 text--demibold">Этап</div>
         <button class="admin-select-btn btn btn--primary btn--link ml-2" data-toggle-link>
           Муниципальный
@@ -142,75 +133,110 @@
           <a href="javascript:;" class="admin-select__item py-1 px-4 text-body-2 text--demibold">Не Муниципальный</a>
         </div>
       </div>
-
-    </div>
-
-    <div class="text-subtitle-2 text--bold mb-5">Матч за 5 место</div>
-
-    <div class="pleyof-grid">
-      <div class="pleyof-area">
-        <div class="pleyof-items">
-          <div class="pleyof-item"></div>
-          <div class="pleyof-item"></div>
-        </div>
-        <div class="pleyof-item"></div>
-      </div>
-    </div>
-
-    <div class="text-subtitle-2 text--bold mb-5 mt-8">Полуфиналы</div>
-
-
-    <div class="pleyof-grid">
-      <div class="pleyof-area">
-        <div class="pleyof-items">
-          <div class="pleyof-area">
-            <div class="pleyof-items">
-              <div class="pleyof-item px-6">
-                <div class="text-body-2 fade-80">Титаны</div>
-                <div class="text-body-2 text--demibold ml-auto">12</div>
-              </div>
-              <div class="pleyof-item px-6">
-                <div class="text-body-2 fade-80">Броненосцы</div>
-                <div class="text-body-2 text--demibold ml-auto">12</div>
-              </div>
-            </div>
-            <div class="pleyof__wrapper">
-              <div class="pleyof__sign text-subtitle-2 text--bold mb-5 mt-8">Финал</div>
-              <div class="pleyof-item"></div>
-            </div>
-          </div>
-          <div class="pleyof-area">
-            <div class="pleyof-items">
-              <div class="pleyof-item"></div>
-              <div class="pleyof-item"></div>
-            </div>
-            <div class="pleyof-item"></div>
+      <label  class="form-field ml-auto" style="width: 253px;">
+        <div class="form-input-cover">
+          <input type="text" class="form-input" placeholder="Поиск по фамилии">
+          <div class="form-input-end pr-3">
+            <button class="btn btn--primary btn--link">
+              <svg class="icon color-text fade-60">
+                <use xlink:href="img/icons.svg#search" />
+              </svg>
+            </button>
           </div>
         </div>
-        <div class="pleyof-item pl-5">
-          <svg class="icon color-primary">
-            <use xlink:href="img/icons.svg#trophy" />
-          </svg>
-        </div>
-      </div>
+
+      </label>
+      <button class="ml-auto btn btn--primary btn--link" data-fancybox-modal="" data-src="dialog-participant-edit.html" data-type="ajax">
+        <svg class="icon mr-2">
+          <use xlink:href="img/icons.svg#plus"></use>
+        </svg>
+        <div class="text-body-2 text--demibold">Добавить судью</div>
+      </button>
     </div>
 
-    <div class="text-subtitle-2 text--bold mb-5 mt-8">Матч за 3 место</div>
 
-    <div class="pleyof-grid">
-      <div class="pleyof-area">
-        <div class="pleyof-items">
-          <div class="pleyof-item"></div>
-          <div class="pleyof-item"></div>
-        </div>
-        <div class="pleyof-item"></div>
-      </div>
+    <table class="admin-table w-100 text--center">
+      <tr class="admin-table-head">
+        <td class="admin-table-td">
+          <div class="text-small text--demibold">№</div>
+        </td>
+        <td class="admin-table-td">
+          <div class="text-small text--demibold">ID</div>
+        </td>
+        <td class="admin-table-td">
+          <div class="text-small text--demibold">ФИО</div>
+        </td>
+        <td class="admin-table-td">
+          <div class="text-small text--demibold">Категория</div>
+        </td>
+        <td class="admin-table-td">
+          <div class="text-small text--demibold">Населенный пункт</div>
+        </td>
+        <td class="admin-table-td">
+          <div class="text-small text--demibold">Дата рождения</div>
+        </td>
+        
+        <td class="admin-table-td">
+          <div class="text-small text--demibold">Матчей проведено</div>
+        </td>
+        <td class="admin-table-td"> </td>
+      </tr>
+      <tr>
+        <td class="admin-table-td">
+          <div class="text-body-2 fade-80">1</div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2 py-4">
+          <div class="text-body-2 fade-80">124321</div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2 py-4">
+          <div class="text-body-2 fade-80 text--left">Иванов Иван Иванович</div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2 py-4">
+          <div class="text-body-2 fade-80">1</div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2 py-4">
+          <div class="text-body-2 fade-80">г. Ростов-на-Дону</div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2 py-4">
+          <div class="text-body-2 fade-80">01.01.2000</div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2 py-4">
+          <div class="text-body-2 fade-80">11</div>
+        </td>
+        <td class="admin-table-td p-2">
+          <button class="lk-team__edit btn btn--primary btn--light btn-icon">
+            <svg class="icon">
+              <use xlink:href="img/icons.svg#setting"></use>
+            </svg>
+          </button>
+        </td>
+      </tr>
+
+
+    </table>
+
+    <div class="flex flex-justify-center mt-auto mb-10">
+      <button class="btn btn-icon btn--primary btn--white-bg mx-1">
+        <svg class="icon text-small-1">
+          <use xlink:href="img/icons.svg#to-left" />
+        </svg>
+      </button>
+      <button class="btn btn-icon btn--primary btn--fill mx-1"> 1 </button>
+      <button class="btn btn-icon btn--primary btn--white-bg mx-1"> 2 </button>
+      <div class="mt-auto mx-3 fade-60"> ... </div>
+      <button class="btn btn-icon btn--primary btn--white-bg mx-1"> 3 </button>
+      <button class="btn btn-icon btn--primary btn--white-bg mx-1"> 4 </button>
+      <button class="btn btn-icon btn--primary btn--white-bg mx-1">
+        <svg class="icon text-small-1">
+          <use xlink:href="img/icons.svg#to-right" />
+        </svg>
+      </button>
     </div>
-
   </section>
 
 
 
+  <!-- fancybox modals -->
 
 </body>
 

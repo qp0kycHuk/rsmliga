@@ -12,8 +12,8 @@
 </head>
 
 <body>
-	<%= _.template(require('./includes/header.html').default)() %>
-	<%= _.template(require('./includes/page-top.html').default)({ page: 'Фотоальбомы' }) %>
+	<%= _.template(require('../../includes/header.html').default)() %>
+	<%= _.template(require('../../includes/page-top.html').default)({ page: 'Фотоальбомы' }) %>
 
 	<section class="photos">
 		<div class="text-subtitle-1 text-md-h6 mb-5 mb-md-8">Апрель 2021</div>
@@ -253,7 +253,7 @@
 
 
 
-	<%= _.template(require('./includes/footer.html').default)() %>
+	<%= _.template(require('../../includes/footer.html').default)() %>
 </body>
 
 </html>

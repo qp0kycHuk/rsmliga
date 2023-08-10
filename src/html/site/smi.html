@@ -12,8 +12,8 @@
 </head>
 
 <body>
-	<%= _.template(require('./includes/header.html').default)() %>
-	<%= _.template(require('./includes/page-top.html').default)({ page: 'О нас в СМИ' }) %>
+	<%= _.template(require('../../includes/header.html').default)() %>
+	<%= _.template(require('../../includes/page-top.html').default)({ page: 'О нас в СМИ' }) %>
 
 
 	<section class="smi">
@@ -146,7 +146,7 @@
 
 
 
-	<%= _.template(require('./includes/footer.html').default)() %>
+	<%= _.template(require('../../includes/footer.html').default)() %>
 </body>
 
 </html>

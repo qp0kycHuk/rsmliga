@@ -12,8 +12,8 @@
 </head>
 
 <body>
-	<%= _.template(require('./includes/header.html').default)() %>
-	<%= _.template(require('./includes/page-top.html').default)({ page: 'Партнеры' }) %>
+	<%= _.template(require('../../includes/header.html').default)() %>
+	<%= _.template(require('../../includes/page-top.html').default)({ page: 'Партнеры' }) %>
 
 	<section class="partners-page">
 		<div class="grid grid-spacing-2 grid-spacing-lg-6">
@@ -93,7 +93,7 @@
 
 
 
-	<%= _.template(require('./includes/footer.html').default)() %>
+	<%= _.template(require('../../includes/footer.html').default)() %>
 </body>
 
 </html>

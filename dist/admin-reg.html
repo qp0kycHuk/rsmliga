@@ -1,4 +1,20 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Личный кабинет</title><link href="css/style.css" rel="stylesheet"><script src="js/index.js"></script><script src="js/conference-map.js"></script></head><body><style>body {
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Личный кабинет</title>
+
+
+
+<link href="css/style.css" rel="stylesheet"><script src="js/index.js"></script><script src="js/conference-map.js"></script></head>
+
+<body>
+
+  <style>
+    body {
       background:
         url("img/sempl/admin-auth-top.png") repeat-x top center / auto,
         url("img/sempl/admin-dude3.png") no-repeat 35% 70% / auto 80%,
@@ -11,4 +27,119 @@
 
           url("img/sempl/admin-auth-top.png") repeat-x top center / auto, var(--color-primary);
       }
-    }</style><header class="admin-auth-header"><div class="admin-auth-header-logo"><a href="/" class="header-nav-logo d-flex flex-align-center"><div class="header-nav-logo-img"><img src="img/logo.png" alt=""></div><div class="header-nav-logo-text ml-3"><div class="text-body-2 text-md-body-0 text--demibold">Ростсельмаш-лига</div><div class="text-small fade-60">Детская лига регби</div></div></a></div><button class="admin-auth-header-btn btn btn--primary btn--fill">На главную</button></header><section class="admin-auth-content"><form class="admin-auth-form"><div class="admin-auth-form-title title text-md-h3 text-subtitle-1 text-md-h6">Регистрация</div><div class="form-dialog-fields"><label class="form-field w-100"><div class="text-body-1 text--demibold mb-2">Фамилия</div><div class="form-input-cover"><input class="form-input" name="name" required></div></label> <label class="form-field w-100 mt-4" id="label_sity"><div class="text-body-1 text--demibold mb-2">Кто вы?<span class="color-red">*</span></div><div class="form-input-cover"><select class="form-input pr-8"><option value="205" data-region="25" data-area="">г. Азов</option><option value="206" data-region="25" data-area="">г. Батайск</option><option value="207" data-region="25" data-area="">г. Волгодонск</option><option value="208" data-region="25" data-area="">г. Гуково</option><option value="209" data-region="25" data-area="">г. Донецк</option><option value="210" data-region="25" data-area="">г. Зверево</option><option value="211" data-region="25" data-area="">г. Каменск-Шахтинский</option></select><div class="form-select-icon"><svg class="icon" style="transform: rotateZ(90deg);"><use xlink:href="img/icons.svg#triangle-right"></use></svg></div></div></label> <label class="form-field w-100 mt-4"><div class="text-body-1 text--demibold mb-2">Имя</div><div class="form-input-cover"><input class="form-input" name="name" required></div></label> <label class="form-field w-100 mt-4"><div class="text-body-1 text--demibold mb-2">Отчество</div><div class="form-input-cover"><input class="form-input" name="name" required></div></label> <label class="form-field w-100 mt-4"><div class="text-body-1 text--demibold mb-2">Телефон</div><div class="form-input-cover"><input type="tel" class="form-input" name="name" required></div></label> <label class="form-field w-100 mt-4"><div class="text-body-1 text--demibold mb-2">Ваш e-mail</div><div class="form-input-cover"><input type="email" class="form-input" name="name" required></div></label></div><div class="flex flex-align-center mt-5"><button class="form-btn btn btn--primary btn--fill px-md-10 px-7">Зарегистрироваться</button></div><div class="form-agree text-small fade-60 mt-5">Отправляя форму Вы даете согласие на обработку Ваших персональных данных</div><div class="flex flex-justify-center bd-top pt-4 mt-4">Есть аккаунт? <a href="" class="btn btn--primary btn--link ml-1">Войти</a></div></form></section></body></html>
+    }
+  </style>
+
+
+  <header class="admin-auth-header">
+    <div class="admin-auth-header-logo">
+      <a href="/" class="header-nav-logo d-flex flex-align-center">
+        <div class="header-nav-logo-img">
+          <img src="img/logo.png" alt="">
+        </div>
+        <div class="header-nav-logo-text ml-3">
+          <div class="text-body-2 text-md-body-0 text--demibold">Ростсельмаш-лига</div>
+          <div class="text-small fade-60">Детская лига регби</div>
+        </div>
+      </a>
+    </div>
+
+    <button class="admin-auth-header-btn btn btn--primary btn--fill">На главную</button>
+  </header>
+  <section class="admin-auth-content">
+    <form class="admin-auth-form">
+
+      <div class="admin-auth-form-title title text-md-h3 text-subtitle-1 text-md-h6">Регистрация</div>
+
+      <div class="form-dialog-fields">
+        <label class="form-field w-100">
+          <div class="text-body-1 text--demibold mb-2">Фамилия</div>
+          <div class="form-input-cover">
+            <input type="text" class="form-input" name="name" required>
+          </div>
+        </label>
+        <label class="form-field w-100 mt-4" id="label_sity">
+          <div class="text-body-1 text--demibold mb-2">Кто вы?<span class="color-red">*</span></div>
+          <div class="form-input-cover">
+            <select class="form-input pr-8">
+              <option value="205" data-region="25" data-area="">г. Азов</option>
+              <option value="206" data-region="25" data-area="">г. Батайск</option>
+              <option value="207" data-region="25" data-area="">г. Волгодонск</option>
+              <option value="208" data-region="25" data-area="">г. Гуково</option>
+              <option value="209" data-region="25" data-area="">г. Донецк</option>
+              <option value="210" data-region="25" data-area="">г. Зверево</option>
+              <option value="211" data-region="25" data-area="">г. Каменск-Шахтинский</option>
+
+            </select>
+            <div class="form-select-icon">
+              <svg class="icon" style="transform: rotateZ(90deg);">
+                <use xlink:href="img/icons.svg#triangle-right"></use>
+              </svg>
+            </div>
+          </div>
+        </label>
+        <label class="form-field w-100 mt-4">
+          <div class="text-body-1 text--demibold mb-2">Имя</div>
+          <div class="form-input-cover">
+            <input type="text" class="form-input" name="name" required>
+          </div>
+        </label>
+        <label class="form-field w-100 mt-4">
+          <div class="text-body-1 text--demibold mb-2">Отчество</div>
+          <div class="form-input-cover">
+            <input type="text" class="form-input" name="name" required>
+          </div>
+        </label>
+        <label class="form-field w-100 mt-4">
+          <div class="text-body-1 text--demibold mb-2">Телефон</div>
+          <div class="form-input-cover">
+            <input type="tel" class="form-input" name="name" required>
+          </div>
+        </label>
+        <label class="form-field w-100 mt-4">
+          <div class="text-body-1 text--demibold mb-2">Ваш e-mail</div>
+          <div class="form-input-cover">
+            <input type="email" class="form-input" name="name" required>
+          </div>
+        </label>
+        <!-- <label class="form-field w-100 mt-4">
+          <div class="text-body-1 text--demibold mb-2">Пароль</div>
+          <div class="form-input-cover">
+            <input type="password" class="form-input" name="password" required id="password">
+            <div class="form-input-end pr-2">
+              <button class="btn btn--link btn-active--primary" data-show-pass="password">
+                <svg class="icon">
+                  <use xlink:href="img/icons.svg#eye" />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+        </label> -->
+
+      </div>
+      <div class="flex flex-align-center mt-5">
+        <button class="form-btn btn btn--primary btn--fill px-md-10 px-7">Зарегистрироваться</button>
+      </div>
+      <div class="form-agree text-small fade-60 mt-5">
+        Отправляя форму Вы даете согласие на обработку Ваших персональных
+        данных
+      </div>
+      <div class="flex flex-justify-center bd-top pt-4 mt-4">
+        Есть аккаунт?
+        <a href="" class="btn btn--primary btn--link ml-1">Войти</a>
+
+      </div>
+    </form>
+  </section>
+
+
+  <!-- <script>
+    setTimeout(() => {
+      Fancybox.modal.open('dialog-success--lk.html')
+
+    }, 500)
+  </script> -->
+</body>
+
+</html>

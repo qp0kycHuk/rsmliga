@@ -4,7 +4,7 @@ const CopyPlugin = require("copy-webpack-plugin");
 const path = require('path');
 const { VueLoaderPlugin } = require('vue-loader')
 const fs = require('fs');
-const webpack =require('webpack')
+const webpack = require('webpack')
 
 const PUBLIC_PATH = path.resolve(__dirname, 'dist')
 
@@ -17,6 +17,7 @@ const htmlWebpackPluginDefaults = {
 function generateHtmlPlugins(templateDir) {
   const templateFiles = fs.readdirSync(path.resolve(__dirname, templateDir));
   return templateFiles.map(item => {
+ 
     const parts = item.split('.');
     const name = parts[0];
     const extension = parts[1];
@@ -102,11 +103,17 @@ module.exports = {
   },
   plugins: [
     ...generateHtmlPlugins('./src'),
+    ...generateHtmlPlugins('./src/html'),
+    ...generateHtmlPlugins('./src/html/site'),
+    ...generateHtmlPlugins('./src/html/store'),
     new MiniCssExtractPlugin({ filename: "css/style.css", }),
     new CopyPlugin({
       patterns: [
         { from: "./src/img/", to: "./img/" },
-        ...generateCopyDialogsPlugins('./src')
+        ...generateCopyDialogsPlugins('./src'),
+        ...generateCopyDialogsPlugins('./src/html'),
+        ...generateCopyDialogsPlugins('./src/html/site'),
+        ...generateCopyDialogsPlugins('./src/html/store'),
       ],
     }),
     new VueLoaderPlugin(),

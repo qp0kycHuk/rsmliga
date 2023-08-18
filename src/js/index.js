@@ -86,6 +86,11 @@ function loadHandler() {
         animateFill: true,
         plugins: [animateFill],
     });
+
+    const typpies = document.querySelectorAll('[data-tippy-content]')
+    typpies.forEach((item) => {
+        item.addEventListener('click', (e) => e.preventDefault())
+    })
 }
 
 

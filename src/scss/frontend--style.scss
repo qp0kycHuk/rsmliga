@@ -2450,8 +2450,8 @@ body.new-year-theme .footer {
 
 		&__score {
 			@media (min-width:$lg) {
-				width    : 106px;
-				min-width: 106px;
+				width    : 72px;
+				min-width: 72px;
 			}
 
 			@media (max-width:$lg) {
@@ -2461,8 +2461,8 @@ body.new-year-theme .footer {
 
 		&__date {
 			@media (min-width:$lg) {
-				width    : 106px;
-				min-width: 106px;
+				width    : 100px;
+				min-width: 100px;
 			}
 
 			@media (max-width:$lg) {
@@ -2476,8 +2476,8 @@ body.new-year-theme .footer {
 
 		&__location {
 			@media (min-width:$lg) {
-				width    : 248px;
-				min-width: 248px;
+				width    : 180px;
+				min-width: 180px;
 			}
 
 			@media (max-width:$lg) {
@@ -2488,8 +2488,8 @@ body.new-year-theme .footer {
 
 		&__step {
 			@media (min-width:$lg) {
-				width    : 142px;
-				min-width: 142px;
+				width    : 110px;
+				min-width: 110px;
 			}
 
 			@media (max-width:$lg) {
@@ -2498,8 +2498,21 @@ body.new-year-theme .footer {
 			}
 		}
 
+		&__status {
+			@media (min-width:$lg) {
+				width    : 180px;
+				min-width: 180px;
+			}
+
+			@media (max-width:$lg) {
+				width     : 100%;
+				margin-top: 8px;
+			}
+		}
+
 		&__tour {
 			flex-grow: 1;
+			padding-right: 32px;
 
 			@media (max-width:$lg) {
 				width     : 100%;

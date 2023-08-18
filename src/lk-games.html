@@ -2,127 +2,108 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Личный кабинет</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Личный кабинет</title>
 
 
 
 </head>
 
 <body>
-	<%= _.template(require('./includes/header.html').default)() %>
+  <%= _.template(require('./includes/header.html').default)() %>
 
 
-	<section>
+  <section>
 
-		<div class="lk-tabs tab-links">
-			<button class="lk-tabs__item tab-link ">Инфо о команде</button>
-			<button class="lk-tabs__item tab-link active">Игры команды</button>
+    <div class="lk-tabs tab-links">
+      <button class="lk-tabs__item tab-link ">Инфо о команде</button>
+      <button class="lk-tabs__item tab-link active">Игры команды</button>
 
-		</div>
+    </div>
 
-		<div class="lk-games">
-			<table class="lk-games-table">
-				<tr class="lk-games-head">
-					<td class="lk-games-table__name">
-						<div class="text-body-2 text--demibold">Команды</div>
-					</td>
-					<td class="lk-games-table__score">
-						<div class="text-body-2 text--demibold">Результат</div>
-					</td>
-					<td class="lk-games-table__date">
-						<div class="text-body-2 text--demibold">Дата</div>
-					</td>
-					<td class="lk-games-table__location">
-						<div class="text-body-2 text--demibold">Место проведения</div>
-					</td>
-					<td class="lk-games-table__step">
-						<div class="text-body-2 text--demibold">Этап</div>
-					</td>
-					<td class="lk-games-table__tour">
-						<div class="text-body-2 text--demibold">Турнир</div>
-					</td>
-					<td class="lk-games-table__edit"></td>
-				</tr>
-				<tr data-fancybox-modal data-src="dialog-lk-games.html" data-type="ajax">
-					<td class="lk-games-table__name">
-						<div class="text-body-2 text--demibold">Броненосцы vs Богатыри</div>
-					</td>
-					<td class="lk-games-table__score">
-						<div class="text-body-2 text--demibold color-green">21:3</div>
-					</td>
-					<td class="lk-games-table__date">
-						<div class="text-body-2 ">Ср, 05.02</div>
-					</td>
-					<td class="lk-games-table__location">
-						<div class="text-body-2 ">Дворец спорта Олимп, г. Ростов</div>
-					</td>
-					<td class="lk-games-table__step">
-						<div class="text-body-2 ">Групповой этап</div>
-					</td>
-					<td class="lk-games-table__tour">
-						<div class="text-body-2 ">Спартакиада по тэг-регби среди...</div>
-					</td>
-					<td class="lk-games-table__edit mr-1">
-						<button class="lk-team__edit btn btn--primary btn--light btn-icon">
-							<svg class="icon">
-								<use xlink:href="img/icons.svg#setting" />
-							</svg>
-						</button>
-					</td>
-					<td class="lk-games-table__doc">
-						<button class="lk-team__edit btn btn--primary btn--light btn-icon">
-							<svg class="icon">
-								<use xlink:href="img/icons.svg#file-1" />
-							</svg>
-						</button>
-					</td>
-				</tr>
-				<tr data-fancybox-modal data-src="dialog-lk-games.html" data-type="ajax">
-					<td class="lk-games-table__name">
-						<div class="text-body-2 text--demibold">Броненосцы vs Богатыри</div>
-					</td>
-					<td class="lk-games-table__score">
-						<div class="text-body-2 text--demibold fade-60">0:0</div>
-					</td>
-					<td class="lk-games-table__date">
-						<div class="text-body-2 ">Ср, 05.02</div>
-					</td>
-					<td class="lk-games-table__location">
-						<div class="text-body-2 ">Дворец спорта Олимп, г. Ростов</div>
-					</td>
-					<td class="lk-games-table__step">
-						<div class="text-body-2 ">Групповой этап</div>
-					</td>
-					<td class="lk-games-table__tour">
-						<div class="text-body-2 ">Спартакиада по тэг-регби среди...</div>
-					</td>
-					<td class="lk-games-table__edit mr-1">
-						<button class="lk-team__edit btn btn--primary btn--light btn-icon">
-							<svg class="icon">
-								<use xlink:href="img/icons.svg#setting" />
-							</svg>
-						</button>
-					</td>
-					<td class="lk-games-table__doc">
-						<button class="lk-team__edit btn btn--primary btn--light btn-icon">
-							<svg class="icon">
-								<use xlink:href="img/icons.svg#file-1" />
-							</svg>
-						</button>
-					</td>
-				</tr>
-			</table>
-		</div>
+    <div class="lk-games">
+      <table class="lk-games-table">
+        <tr class="lk-games-head">
+          <td class="lk-games-table__name">
+            <div class="text-body-2 text--demibold">Команды</div>
+          </td>
+          <td class="lk-games-table__score">
+            <div class="text-body-2 text--demibold">Счет</div>
+          </td>
+          <td class="lk-games-table__date">
+            <div class="text-body-2 text--demibold">Дата</div>
+          </td>
+          <td class="lk-games-table__location">
+            <div class="text-body-2 text--demibold">Место проведения</div>
+          </td>
+          <td class="lk-games-table__step">
+            <div class="text-body-2 text--demibold">Этап</div>
+          </td>
+          <td class="lk-games-table__status">
+            <div class="text-body-2 text--demibold">Статус соревнования</div>
+          </td>
+          <td class="lk-games-table__tour">
+            <div class="text-body-2 text--demibold">Турнир</div>
+          </td>
+          <td class="lk-games-table__edit"></td>
+          <td class="lk-games-table__doc"></td>
+        </tr>
+        <tr data-fancybox-modal data-src="dialog-lk-games.html" data-type="ajax">
+          <td class="lk-games-table__name">
+            <div class="text-body-2 text--demibold">Броненосцы vs Богатыри</div>
+          </td>
+          <td class="lk-games-table__score">
+            <div class="text-body-2 text--demibold color-green">21:3</div>
+          </td>
+          <td class="lk-games-table__date">
+            <div class="text-body-2 ">Ср, 05.02</div>
+          </td>
+          <td class="lk-games-table__location">
+            <div class="text-body-2 ">Дворец спорта Олимп, г. Ростов</div>
+          </td>
+          <td class="lk-games-table__step">
+            <div class="text-body-2 ">Групповой этап</div>
+          </td>
+          <td class="lk-games-table__status">
+            <div class="text-body-2 ">
+              <div class="flex flex-align-center mt-auto">
+                <div class="image image--round image--box mr-1" style="width:12px;background: #0B3DEF;"></div>
+                <div class="text-body-2 fade-80">Прием заявок</div>
+              </div>
+            </div>
+          </td>
+          <td class="lk-games-table__tour">
+            <div class="text-body-2 ">
+				Спартакиада по тэг-регби среди...
+            </div>
+            <button class="btn btn-fab btn--contur btn--primary zayavki-title-btn" data-tippy-content="Школьная Ростсельмаш - Лига по тэг-регби сезона 2023-2024 годов">?</button>
+          </td>
+          <td class="lk-games-table__edit mr-1">
+            <button class="lk-team__edit btn btn--primary btn--light btn-icon">
+              <svg class="icon">
+                <use xlink:href="img/icons.svg#setting" />
+              </svg>
+            </button>
+          </td>
+          <td class="lk-games-table__doc">
+            <button class="lk-team__edit btn btn--primary btn--light btn-icon">
+              <svg class="icon">
+                <use xlink:href="img/icons.svg#file-1" />
+              </svg>
+            </button>
+          </td>
+        </tr>
+      </table>
+    </div>
 
 
 
-	</section>
+  </section>
 
 
-	<%= _.template(require('./includes/footer.html').default)() %>
+  <%= _.template(require('./includes/footer.html').default)() %>
 </body>
 
 </html>

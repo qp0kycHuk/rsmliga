@@ -1869,6 +1869,7 @@ body.new-year-theme .footer {
 		padding      : 9px 24px;
 		background   : var(--bg3);
 		border-radius: 12px;
+		gap: 12px;
 
 		@media(max-width:$md) {
 			width        : calc(100% + 30px);
@@ -1885,6 +1886,7 @@ body.new-year-theme .footer {
 		padding-top   : 8px;
 		padding-bottom: 8px;
 		border-bottom : 1px solid rgba(26, 26, 26, 0.2);
+		gap: 12px;
 	}
 
 	&-table {
@@ -1900,8 +1902,8 @@ body.new-year-theme .footer {
 		}
 
 		&__number {
-			width    : 64px;
-			min-width: 64px;
+			width    : 72px;
+			min-width: 72px;
 		}
 
 		&__img {
@@ -1936,6 +1938,7 @@ body.new-year-theme .footer {
 
 		&__date {
 			flex-grow: 1;
+			max-width: 30%;
 		}
 
 		&__status {
@@ -2511,7 +2514,7 @@ body.new-year-theme .footer {
 		}
 
 		&__tour {
-			flex-grow: 1;
+			flex-grow    : 1;
 			padding-right: 32px;
 
 			@media (max-width:$lg) {
@@ -2555,20 +2558,25 @@ body.new-year-theme .footer {
 
 }
 
+.cursor-pointer {
+	cursor: pointer;
+}
 
 .lk-games-dialog {
-	width    : var(--section-width);
-	max-width: 100%;
-	overflow : hidden;
-	margin   : 0 auto;
+	width       : var(--section-width);
+	max-width   : 100%;
+	// overflow : hidden;
+	margin      : 0 auto;
 
 	&-header {
-		display        : flex;
-		align-items    : center;
-		justify-content: center;
-		height         : 125px;
-		background     : url("../img/sempl/lk-games-dialog-header.png") repeat-x center / auto 100%;
-		text-align     : center;
+		display                  : flex;
+		align-items              : center;
+		justify-content          : center;
+		height                   : 125px;
+		background               : url("../img/sempl/lk-games-dialog-header.png") repeat-x center / auto 100%;
+		text-align               : center;
+		border-start-start-radius: inherit;
+		border-start-end-radius  : inherit;
 
 		@media (max-width:$md) {
 			height: 50px;
@@ -4585,7 +4593,7 @@ option {
 
 	&-row {
 		display              : flex;
-		align-items: center;
+		align-items          : center;
 		border-radius        : 12px;
 		background           : var(--bg3);
 		padding              : 8px 24px;

@@ -12,50 +12,8 @@
 </head>
 
 <body>
-
-
-  <header class="admin-header">
-    <div class="admin-header-user flex flex-align-center">
-      <div class="admin-header-user__img image image--round image--box image--cover mr-2" style="width: 34px;">
-        <img src="https://d.radikal.ru/d30/2102/dc/ab0fd85247a7.jpg" alt="">
-      </div>
-      <div class="text-body-2 text--demibold">Евгения Лиссова</div>
-
-      <button class="admin-header-user__exit ml-auto btn btn--primary btn--light btn-icon">
-        <svg class="icon">
-          <use xlink:href="img/icons.svg#exit" />
-        </svg>
-      </button>
-    </div>
-
-    <button class="btn btn--primary btn--fill admin-header-btn">На сайт</button>
-  </header>
-
-  <div class="admin-menu " data-toggle-cover data-toggle-static>
-    <button class="admin-menu__item btn btn--primary mb-1" data-toggle-link>
-      <svg class="icon text-h6">
-        <use xlink:href="img/icons.svg#menu" />
-      </svg>
-      <div class="text-body-1 color-text ml-2 active-enabled">Свернуть меню</div>
-    </button>
-    <button class="admin-menu__item btn btn--primary mb-1">
-      <svg class="icon text-subtitle-2">
-        <use xlink:href="img/icons.svg#doc" />
-      </svg>
-      <div class="text-body-1 text--demibold color-text ml-3 active-enabled">Заявки</div>
-    </button>
-    <button class="admin-menu__item btn btn--primary btn--light">
-      <svg class="icon text-subtitle-2">
-        <use xlink:href="img/icons.svg#ball" />
-      </svg>
-      <div class="text-body-1 text--demibold color-text ml-3 active-enabled">Матчи</div>
-      <div class="btn btn-fab btn--primary btn--white-bg active-enabled ml-auto admin-menu__add">
-        <svg class="icon">
-          <use xlink:href="img/icons.svg#plus" />
-        </svg>
-      </div>
-    </button>
-  </div>
+  <%= _.template(require('./includes/admin-header.html').default)() %>
+  <%= _.template(require('./includes/admin-menu.html').default)() %>
 
   <section class="admin-content">
 

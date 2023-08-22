@@ -66,6 +66,26 @@
 		min-width: calc(12 * 100% / 12);
 		width    : calc(12 * 100% / 12);
 	}
+
+	&-1\/5 {
+		min-width: calc(100% / 5);
+		width    : calc(100% / 5);
+	}
+
+	&-2\/5 {
+		min-width: calc(2 * 100% / 5);
+		width    : calc(2 * 100% / 5);
+	}
+
+	&-3\/5 {
+		min-width: calc(3 * 100% / 5);
+		width    : calc(3 * 100% / 5);
+	}
+
+	&-4\/5 {
+		min-width: calc(4 * 100% / 5);
+		width    : calc(4 * 100% / 5);
+	}
 }
 
 @mixin GridSpasing {

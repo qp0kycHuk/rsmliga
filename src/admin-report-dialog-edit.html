@@ -1,0 +1,233 @@
+<div class="dialog-participant participant card" id="fucking-shit">
+
+  <div class="participant-info">
+    <div class="participant-info-row w-100">
+      <label class="form-field w-100">
+        <div class="text-body-1 text--demibold mb-2">Место учебы</div>
+        <div class="form-input-cover">
+          <select name="school" id="" class="form-input">
+            <option value="1">МБОУ СОШ №23 (Первомайский р-н. г. Ростов-на-Дону)</option>
+            <option value="2">МБОУ СОШ №24 (Первомайский р-н. г. Ростов-на-Дону)</option>
+          </select>
+          <div class="form-input-end pe-none pr-3">
+            <svg class="icon text-small">
+              <use xlink:href="img/icons.svg#to-down" />
+            </svg>
+          </div>
+        </div>
+      </label>
+    </div>
+    <div class="participant-info-row w-100">
+      <label class="form-field w-100">
+        <div class="text-body-1 text--demibold mb-2">Место учебы</div>
+        <div class="form-input-cover">
+          <select name="school" id="" class="form-input">
+            <option value="1">МБОУ СОШ №23 (Первомайский р-н. г. Ростов-на-Дону)</option>
+            <option value="2">МБОУ СОШ №24 (Первомайский р-н. г. Ростов-на-Дону)</option>
+          </select>
+          <div class="form-input-end pe-none pr-3">
+            <svg class="icon text-small">
+              <use xlink:href="img/icons.svg#to-down" />
+            </svg>
+          </div>
+        </div>
+      </label>
+    </div>
+    <div class="participant-info-row w-100">
+      <label class="form-field w-100">
+        <div class="text-body-1 text--demibold mb-2">Место учебы</div>
+        <div class="form-input-cover">
+          <select name="school" id="" class="form-input">
+            <option value="1">МБОУ СОШ №23 (Первомайский р-н. г. Ростов-на-Дону)</option>
+            <option value="2">МБОУ СОШ №24 (Первомайский р-н. г. Ростов-на-Дону)</option>
+          </select>
+          <div class="form-input-end pe-none pr-3">
+            <svg class="icon text-small">
+              <use xlink:href="img/icons.svg#to-down" />
+            </svg>
+          </div>
+        </div>
+      </label>
+      <label class="form-field w-100">
+        <div class="text-body-1 text--demibold mb-2">Место учебы</div>
+        <div class="form-input-cover">
+          <select name="school" id="" class="form-input">
+            <option value="1">МБОУ СОШ №23 (Первомайский р-н. г. Ростов-на-Дону)</option>
+            <option value="2">МБОУ СОШ №24 (Первомайский р-н. г. Ростов-на-Дону)</option>
+          </select>
+          <div class="form-input-end pe-none pr-3">
+            <svg class="icon text-small">
+              <use xlink:href="img/icons.svg#to-down" />
+            </svg>
+          </div>
+        </div>
+      </label>
+    </div>
+
+    <div class="participant-info-row w-100">
+      <label class="form-field w-100">
+        <div class="text-body-1 text--demibold mb-2">Место учебы</div>
+        <div class="form-input-cover">
+          <select name="school" id="" class="form-input">
+            <option value="1">МБОУ СОШ №23 (Первомайский р-н. г. Ростов-на-Дону)</option>
+            <option value="2">МБОУ СОШ №24 (Первомайский р-н. г. Ростов-на-Дону)</option>
+          </select>
+          <div class="form-input-end pe-none pr-3">
+            <svg class="icon text-small">
+              <use xlink:href="img/icons.svg#to-down" />
+            </svg>
+          </div>
+        </div>
+      </label>
+      <label class="form-field w-100">
+        <div class="text-body-1 text--demibold mb-2">Место учебы</div>
+        <div class="form-input-cover">
+          <select name="school" id="" class="form-input">
+            <option value="1">МБОУ СОШ №23 (Первомайский р-н. г. Ростов-на-Дону)</option>
+            <option value="2">МБОУ СОШ №24 (Первомайский р-н. г. Ростов-на-Дону)</option>
+          </select>
+          <div class="form-input-end pe-none pr-3">
+            <svg class="icon text-small">
+              <use xlink:href="img/icons.svg#to-down" />
+            </svg>
+          </div>
+        </div>
+      </label>
+    </div>
+
+  </div>
+
+  <div class="bd-top my-8"></div>
+
+  <div class="participant-contact">
+    <div class="text-body-0 text--demibold mb-5">Документы</div>
+    <div class="lk-top-docs__item mb-4" v-for="(doc,key) in data.documents">
+      <img src="img/icons/file-add.png" alt="">
+      <div class="text-body-2 text--underline">{{doc.title}}<span class="color-primary">*</span></div>
+      <label v-show="!doc.file" class="btn btn--primary btn--link ml-auto ml-sm-2">
+        <input type="file" accept="application/*" @change="docChangeHandler(key,$event)">
+        Загрузить
+      </label>
+      <button v-show="doc.file" type="button" class="btn btn--primary btn--link ml-auto ml-sm-2" @click="docRemoveHandler(key)">Удалить</button>
+    </div>
+    <div class="lk-top-docs__item mb-4" v-for="(doc,index) in data.otherDocuments">
+      <img src="img/icons/file-add.png" alt="">
+      <div class="text-body-2 text--underline">{{doc.title}}</div>
+      <button v-show="doc.file" type="button" class="btn btn--primary btn--link ml-auto ml-sm-2" @click="otherDocRemove(index)">Удалить</button>
+    </div>
+    <div class="flex">
+      <label class="btn btn--primary btn--link">
+        <input type="file" accept="application/*" multiple @change="otherDocChange">
+        <svg class="icon text-h6 mr-2">
+          <use xlink:href="img/icons.svg#paperclip" />
+        </svg>
+        Прикрепить файл
+      </label>
+    </div>
+  </div>
+
+  <div class="flex mt-8">
+    <button class="btn btn--primary w-100 w-sm-auto btn--fill px-10" data-fancybox-close>Закрыть</button>
+  </div>
+</div>
+
+<script>
+  const app = Vue.createApp({
+    data() {
+      return {
+        avatarFile: null,
+        avatarRemove: false,
+        loading: false,
+        error: null,
+        data: {
+          id: 1000,
+          documents: {
+            skan: {
+              title: 'Скан-копия подписанной заявки',
+              file: null,
+              file_remove: false
+            },
+            strah: {
+              title: 'Страхование',
+              file: null,
+              file_remove: false
+            },
+            lichnost: {
+              title: 'Документ подтверждающий личность',
+              file: null,
+              file_remove: false
+            },
+            perdan: {
+              title: 'Заявление об обработке персональных данных',
+              file: null,
+              file_remove: false
+            }
+          },
+          otherDocuments: []
+
+        }
+      }
+    },
+    methods: {
+      submitHandler(event) {
+        event.preventDefault()
+        const formData = new FormData(event.target)
+        Object.entries(this.data.documents).forEach(([key, doc]) => {
+          formData.append(key + '_file', doc.file)
+        })
+
+        formData.append('avatar_file', this.avatarFile)
+        console.log(Object.fromEntries(formData));
+        this.loading = true
+        this.error = null
+
+        setTimeout(() => {
+          this.loading = false
+          this.error = "*Такой игрок уже зарегистрирован, обратитесь в тех. поддержку"
+        }, 1000)
+      },
+      avatarChangeHandler(event) {
+        if (event.target.files.length > 0) {
+          const file = event.target.files[0]
+          this.avatarFile = file
+
+          let reader = new FileReader();
+          reader.readAsDataURL(file);
+
+          this.avatarLodaing = true
+
+          reader.onload = () => {
+            this.data.avatar = reader.result
+            this.avatarLodaing = false
+          };
+        }
+      },
+      docChangeHandler(key, event) {
+        if (event.target.files.length <= 0) return
+
+        const file = event.target.files[0]
+        this.data.documents[key].file = file
+        this.data.documents[key].file_remove = false
+
+      },
+      docRemoveHandler(key) {
+        this.data.documents[key].file_remove = true
+        this.data.documents[key].file = null
+      },
+      otherDocChange(event) {
+        if (event.target.files.length <= 0) return
+
+        Array.from(event.target.files).forEach((file) => {
+          this.data.otherDocuments.push({
+            file,
+            title: file.name
+          })
+        })
+      },
+      otherDocRemove(index) {
+        this.data.otherDocuments.splice(index, 1)
+      }
+    }
+  })
+  app.mount(document.getElementById('fucking-shit'))
+</script>

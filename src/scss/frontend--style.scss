@@ -1869,7 +1869,7 @@ body.new-year-theme .footer {
 		padding      : 9px 24px;
 		background   : var(--bg3);
 		border-radius: 12px;
-		gap: 12px;
+		gap          : 12px;
 
 		@media(max-width:$md) {
 			width        : calc(100% + 30px);
@@ -1886,7 +1886,7 @@ body.new-year-theme .footer {
 		padding-top   : 8px;
 		padding-bottom: 8px;
 		border-bottom : 1px solid rgba(26, 26, 26, 0.2);
-		gap: 12px;
+		gap           : 12px;
 	}
 
 	&-table {
@@ -2211,20 +2211,12 @@ body.new-year-theme .footer {
 }
 
 
-.active-enabled {
+.active-enabled:not(:is(:is(.toggle-active, .tab-active, .active) .active-enabled)) {
 	display: none !important;
 }
 
-.toggle-active,
-.tab-active,
-.active {
-	.active-disabled {
-		display: none !important;
-	}
-
-	.active-enabled {
-		display: flex !important;
-	}
+.active-disabled:is(:is(.toggle-active, .tab-active, .active) .active-disabled) {
+	display: none !important;
 }
 
 .admin-success {
@@ -2875,12 +2867,13 @@ body.new-year-theme .footer {
 	color: #27A4AC;
 }
 
-.admin-table-td:first-of-type {
+.admin-table-td--id {
 	width: 50px;
 }
 
 .admin-table-td--title {
-	width: 300px;
+	width    : 300px;
+	max-width: 300px;
 
 	&-2 {
 		width: 460px;

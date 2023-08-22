@@ -16,12 +16,147 @@
   <%= _.template(require('./includes/admin-menu.html').default)() %>
 
   <section class="admin-content">
+    <div class="flex flex-align-center mb-6">
+      <div class="text-h3">Отчеты</div>
 
+    </div>
+    <div class="flex mb-6 print-d-none">
+      <div class="admin-select" data-toggle-cover>
+        <div class="text-body-2 text--demibold">Сезон</div>
+        <button class="admin-select-btn btn btn--primary btn--link ml-2" data-toggle-link>
+          2222
+          <svg class="icon ml-1 text-small-2">
+            <use xlink:href="img/icons.svg#triangle-right" />
+          </svg>
+        </button>
+        <div class="admin-select-list card py-1" data-toggle-content>
+          <div class="admin-select__item fade-60 py-1 px-4 text-body-2 text--demibold">2222</div>
+          <a href="javascript:;" class="admin-select__item py-1 px-4 text-body-2 text--demibold">2222</a>
+        </div>
+      </div>
+      <div class="admin-select ml-10" data-toggle-cover>
+        <div class="text-body-2 text--demibold">Соревнование</div>
+        <button class="admin-select-btn btn btn--primary btn--link ml-2" data-toggle-link>
+          Спартакиада по тэг-регби среди учащихся 5-6
+          <svg class="icon ml-1 text-small-2">
+            <use xlink:href="img/icons.svg#triangle-right" />
+          </svg>
+        </button>
+        <div class="admin-select-list card py-1" data-toggle-content>
+          <div class="admin-select__item fade-60 py-1 px-4 text-body-2 text--demibold">Спартакиада по тэг-регби среди
+            учащихся 5-6 классов общ...</div>
+          <a href="javascript:;" class="admin-select__item py-1 px-4 text-body-2 text--demibold">Не Спартакиада по
+            тэг-регби среди учащихся 5-6 классов общ...</a>
+        </div>
+      </div>
+      <div class="admin-select ml-10" data-toggle-cover>
+        <div class="text-body-2 text--demibold">Муниципальный район или город</div>
+        <button class="admin-select-btn btn btn--primary btn--link ml-2" data-toggle-link>
+          Железнодорожный
+          <svg class="icon ml-1 text-small-2">
+            <use xlink:href="img/icons.svg#triangle-right" />
+          </svg>
+        </button>
+        <div class="admin-select-list card py-1" data-toggle-content>
+          <div class="admin-select__item fade-60 py-1 px-4 text-body-2 text--demibold">Железнодорожный</div>
+          <a href="javascript:;" class="admin-select__item py-1 px-4 text-body-2 text--demibold">Судоходный</a>
+        </div>
+      </div>
+
+      <button class=" ml-auto btn btn--primary btn--link" data-fancybox-modal data-src="dialog-protocol.html" data-type="ajax">
+        <svg class="icon mr-2">
+          <use xlink:href="img/icons.svg#plus" />
+        </svg>
+        <div class="text-body-2 text--demibold">Создать отчет</div>
+      </button>
+    </div>
+
+
+    <table class="admin-table">
+      <tr class="admin-table-head">
+        <td class="admin-table-td">
+          <div class="text-small text--demibold">Сезон</div>
+        </td>
+        <td class="admin-table-td">
+          <div class="text-small text--demibold">Соревнование</div>
+        </td>
+        <td class="admin-table-td">
+          <div class="text-small text--demibold">Этап</div>
+        </td>
+        <td class="admin-table-td">
+          <div class="text-small text--demibold">Город/Район/Конференция</div>
+        </td>
+        <td class="admin-table-td">
+          <div class="text-small text--demibold">Место проведения</div>
+        </td>
+        <td class="admin-table-td">
+          <div class="text-small text--demibold">Дата проведения</div>
+        </td>
+        <td class="admin-table-td">
+          <div class="text-small text--demibold">Отчет</div>
+        </td>
+        <td class="admin-table-td" colspan="2"> </td>
+      </tr>
+      <tr>
+        <td class="admin-table-td pl-2 pr-2">
+          <div class="text-body-2 fade-80">2022-2023</div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2 admin-table-td--title">
+          <div class="flex">
+            <div class="zayavki-title text-body-2">
+              Спартакиада по тэг-регби среди
+              учащихся 5-6 классов и так далее
+            </div>
+            <button class="btn btn-fab btn--contur btn--primary zayavki-title-btn" data-tippy-content="Спартакиада по тэг-регби среди учащихся 5-6 классов и так далее">?</button>
+          </div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2">
+          <div class="text-body-2 fade-80">Муниципальный</div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2">
+          <div class="text-body-2 fade-80">г. Геленджик</div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2 admin-table-td--title">
+          <div class="flex">
+            <div class="zayavki-title text-body-2">
+              ГБУ РО СШОР №5 Первощихся 5-6 классов и так далее
+            </div>
+            <button class="btn btn-fab btn--contur btn--primary zayavki-title-btn" data-tippy-content="ГБУ РО СШОР №5 Первощихся 5-6 классов и так далее">?</button>
+          </div>
+        </td>
+        <td class="admin-table-td pl-2 pr-2">
+          <div class="text-body-2 fade-80">
+            12.04.2023
+          </div>
+        </td>
+        <td class="admin-table-td p-2">
+          <button class="btn btn--fill btn--primary btn-small w-100" data-fancybox-modal data-src="admin-report-dialog.html">Смотреть</button>
+        </td>
+        <td class="admin-table-td p-1">
+          <button class="lk-team__edit  btn btn--primary btn--light btn-icon">
+            <svg class="icon">
+              <use xlink:href="img/icons.svg#delete"></use>
+            </svg>
+          </button>
+        </td>
+        <td class="admin-table-td p-1">
+          <button class="lk-team__edit btn btn--primary btn--light btn-icon">
+            <svg class="icon">
+              <use xlink:href="img/icons.svg#setting"></use>
+            </svg>
+          </button>
+        </td>
+      </tr>
+
+
+    </table>
 
   </section>
 
 
-
+  <script>
+    Fancybox.modal.open('admin-report-dialog-edit.html')
+  </script>
   <!-- fancybox modals -->
 
 </body>

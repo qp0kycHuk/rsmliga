@@ -10,12 +10,31 @@
     <a href="" target="_blank" class="p-2"><img src="img/sempl/yt.png" alt="" class="icon"></a>
     <a href="" target="_blank" class="p-2"><img src="img/sempl/vk.png" alt="" class="icon"></a>
   </div>
-  <a class="header-top-auth d-flex flex-align-center ml-auto">
+  <!-- <a class="header-top-auth d-flex flex-align-center ml-auto">
     <svg class="icon mr-1 fade-60">
       <use xlink:href="img/icons.svg#user" />
     </svg>
     <div class="text-body-2">Личный кабинет</div>
-  </a>
+  </a> -->
+  <div class="header-nav-item ml-auto" data-toggle-cover>
+    <div class="d-flex flex-align-center ml-auto">
+      <svg class="icon mr-1 fade-60">
+        <use xlink:href="img/icons.svg#user" />
+      </svg>
+      <button class="header-nav-link py-2 px-2 " data-toggle-link>
+
+        Владимир К.
+        <svg class="icon fade-40 ml-1 text-small">
+          <use xlink:href="img/icons.svg#dropdown" />
+        </svg>
+      </button>
+    </div>
+    <div class="header-nav-submenu" data-toggle-content>
+      <a href="" class="text-body-2 fade-80 p-2">Бухгалтер</a>
+      <a href="" class="text-body-2 fade-80 p-2">Судья</a>
+      <a href="" class="text-body-2 fade-80 p-2">Секретарь</a>
+    </div>
+  </div>
   <button class="header-top-btn px-3 btn btn--primary btn--fill ml-8" data-fancybox-modal data-src="dialog-form.html">Заявить команду</button>
 </header>
 
@@ -177,6 +196,7 @@
 
 
 <div class="mobile-menu d-lg-none" id="mobile-menu">
+
   <a href="/" class="header-nav-logo d-flex flex-align-center mb-3 px-3 pt-2">
     <div class="header-nav-logo-img">
       <img src="img/logo.png" alt="">
@@ -190,13 +210,33 @@
       <img src="img/logo-text.png" alt="">
     </div>
   </a>
+
+  <button class="header-top-btn px-3 btn btn--primary btn--fill ml-3 mb-5">Заявить команду</button>
   <a class="header-top-auth d-flex flex-align-center ml-auto p-3 mb-5">
     <svg class="icon mr-1 fade-60">
       <use xlink:href="img/icons.svg#user" />
     </svg>
     <div class="text-body-2">Личный кабинет</div>
   </a>
-  <button class="header-top-btn px-3 btn btn--primary btn--fill ml-3 mb-5">Заявить команду</button>
+  <div class="mobile-menu-item  mb-5" data-toggle-cover>
+    <div class="d-flex flex-align-center py-2 px-3" data-toggle-link>
+      <svg class="icon mr-2 fade-60">
+        <use xlink:href="img/icons.svg#user" />
+      </svg>
+      <button class="mobile-menu-link  ">
+        Владимир К.
+        <svg class="icon fade-40 ml-1 text-small">
+          <use xlink:href="img/icons.svg#dropdown" />
+        </svg>
+      </button>
+    </div>
+
+    <div class="mobile-menu-submenu" data-toggle-content data-toggle-height data-toggle-static>
+      <a href="" class="text-body-2 fade-80 py-1 px-3">Бухгалтер</a>
+      <a href="" class="text-body-2 fade-80 py-1 px-3">Судья</a>
+      <a href="" class="text-body-2 fade-80 py-1 px-3">Секретарь</a>
+    </div>
+  </div>
   <div class="mobile-menu-item">
     <a href="" class="mobile-menu-link p-3 ">
       <svg class="icon color-primary mr-2">

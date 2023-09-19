@@ -205,6 +205,9 @@ body[data-theme="dark"] {
 }
 
 .header-top {
+	position: relative;
+	z-index: var(--zi-l3);
+
 	@media(max-width:$md) {
 		display: none;
 	}

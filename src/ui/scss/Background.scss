@@ -10,6 +10,11 @@
 
   &-primary {
     background: var(--color-primary) !important;
+    
+    &-10{
+      background: var(--color-primary-10) !important;
+
+    }
   }
 
   &-red {

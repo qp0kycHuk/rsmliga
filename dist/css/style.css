@@ -7529,6 +7529,11 @@ body.new-year-theme .footer {
   max-width: 100%;
 }
 
+.dialog-small{
+  width: 500px;
+  max-width: 100%;
+}
+
 .protocol-modal-team-table .admin-table-td {
   border: none;
 }

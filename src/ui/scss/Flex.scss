@@ -3,6 +3,9 @@
 .flex {
 	display: flex;
 
+	&-col{
+		flex-direction: column;
+	}
 
 	&-align {
 
@@ -71,7 +74,20 @@
 		flex-wrap: wrap;
 	}
 
-	&-0{
+	&-0 {
 		flex: 0 0 auto;
 	}
+}
+
+.gap {
+	&-1{gap: calc(1 * 4px);}
+	&-2{gap: calc(2 * 4px);}
+	&-3{gap: calc(3 * 4px);}
+	&-4{gap: calc(4 * 4px);}
+	&-5{gap: calc(5 * 4px);}
+	&-6{gap: calc(6 * 4px);}
+	&-7{gap: calc(7 * 4px);}
+	&-8{gap: calc(8 * 4px);}
+	&-9{gap: calc(9 * 4px);}
+	&-10{gap: calc(10 * 4px);}
 }

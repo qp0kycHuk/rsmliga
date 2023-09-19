@@ -129,105 +129,385 @@
   <div class="flex mt-8">
     <button class="btn btn--primary w-100 w-sm-auto btn--fill px-10" data-fancybox-close>Закрыть</button>
   </div>
+
+  <div class="bd-top my-8"></div>
+
+  <!-- teams images -->
+  <div class="grid">
+    <div class="grid-col-1/5" v-for="team in teams" v-show="team.image">
+      <div class="text-body-0 text--demibold mb-3">{{team.title}}</div>
+      <div class="image image--rectangle" @click="tempLoadTeamImageData.image = team.image;tempLoadTeamImageData.teamId = team.id;isAddTeamImageShow = true">
+        <img :src="team.image" alt="">
+        <div class="absolute inset-0 flex p-2">
+          <button class="btn btn--red btn--white-bg z-index-10 btn-fab btn-small ml-auto" @click.stop="teamImageRemoveHandler(team.id)">
+            <svg class="icon">
+              <use xlink:href="img/icons.svg#cross" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="grid-col-1/5 flex-self-end">
+      <button class="image image--rectangle bg-primary-10 w-100" @click="isAddTeamImageShow=true">
+        <div class="absolute inset-0 flex flex-col flex-align-center flex-justify-center color-primary">
+          <svg class="icon  text-h1">
+            <use xlink:href="img/icons.svg#camera" />
+          </svg>
+          Добавить
+        </div>
+      </button>
+    </div>
+  </div>
+
+  <div class="bd-top my-8"></div>
+
+  <!-- general images -->
+  <div class="text-body-0 text--demibold mb-3">Общее фото</div>
+  <div class="grid">
+    <div class="grid-col-1/5" v-for="(item, index) in generalImages" v-show="item.image">
+      <div class="image image--rectangle">
+        <img :src="item.image" alt="">
+        <div class="absolute inset-0 flex p-2">
+          <button class="btn btn--red btn--white-bg z-index-10 btn-fab btn-small ml-auto" @click="generalImages.splice(index, 1)">
+            <svg class="icon">
+              <use xlink:href="img/icons.svg#cross" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="grid-col-1/5 flex-self-end" v-show="generalImages.length < generalImagesMax">
+      <label class="image image--rectangle bg-primary-10 w-100">
+        <input multiple type="file" accept="image/*" @change="generalImageChangeHandler">
+        <div class="absolute inset-0 flex flex-col flex-align-center flex-justify-center color-primary">
+          <svg class="icon  text-h1">
+            <use xlink:href="img/icons.svg#camera" />
+          </svg>
+          Добавить
+        </div>
+      </label>
+    </div>
+  </div>
+
+  <div class="bd-top my-8"></div>
+
+  <!-- competition images -->
+  <div class="text-body-0 text--demibold mb-3">Фото с соревнований</div>
+  <div class="grid">
+    <div class="grid-col-1/5" v-for="(item, index) in competitionImages" v-show="item.image">
+      <div class="image image--rectangle">
+        <img :src="item.image" alt="">
+        <div class="absolute inset-0 flex p-2">
+          <button class="btn btn--red btn--white-bg z-index-10 btn-fab btn-small ml-auto" @click="competitionImages.splice(index, 1)">
+            <svg class="icon">
+              <use xlink:href="img/icons.svg#cross" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="grid-col-1/5 flex-self-end" v-show="competitionImages.length < competitionImagesMax">
+      <label class="image image--rectangle bg-primary-10 w-100">
+        <input multiple type="file" accept="image/*" @change="competitionImageChangeHandler">
+        <div class="absolute inset-0 flex flex-col flex-align-center flex-justify-center color-primary">
+          <svg class="icon  text-h1">
+            <use xlink:href="img/icons.svg#camera" />
+          </svg>
+          Добавить
+        </div>
+      </label>
+    </div>
+  </div>
+
+  <div class="bd-top my-8"></div>
+
+  <label class="form-field w-100">
+    <div class="text-body-1 text--demibold mb-2">Комментарий</div>
+    <div class="form-input-cover">
+      <textarea style="height: 246px;" name="comment" id="" class="form-input" cols="30" rows="10" value="Указан телефон отца — Иван Синельников"></textarea>
+    </div>
+  </label>
+
+  <div class="flex gap-4 mt-8">
+    <button class="btn btn--primary btn--fill">Отправить отчет в департамент проведения соревнований</button>
+    <button class="btn btn--primary btn--light" type="button">Отмена</button>
+  </div>
+
+  <!-- subdialog for teams images -->
+  <div class="subdialog" v-show="isAddTeamImageShow">
+    <div class="absolute inset-0" @click="teamImageCloseHandler"></div>
+    <form @submit="teamImageSubmitHandler" class="card dialog-small relative">
+      <div class="dialog-header">
+        <div class="dialog-header-title text-subtitle-2 text-md-h6 text--center">
+          Загрузить фото
+        </div>
+      </div>
+      <div class="dialog-content p-10">
+        <div class="bg-red px-6 py-3 mb-5 color-white" v-if="tempLoadTeamImageData.error">
+          {{tempLoadTeamImageData.error}}
+        </div>
+        <div class="flex">
+          <label class="btn btn--primary btn--link">
+            <input class="d-block w-0 h-0 bd-none" type="file" accept="image/*" @change="teamImageChangeHandler">
+            <svg class="icon text-h6 mr-2">
+              <use xlink:href="img/icons.svg#paperclip" />
+            </svg>
+            {{tempLoadTeamImageData.imageFile?.name || (tempLoadTeamImageData.image ? 'Загруженная картинка' : false) || 'Прикрепить файл'}}
+          </label>
+        </div>
+        <label class="form-field w-100 mt-8">
+          <div class="text-body-1 text--demibold mb-2">Выберите команду<span class="color-red">*</span></div>
+          <div class="form-input-cover">
+            <select name="school" id="" :value="tempLoadTeamImageData.teamId || ''" class="form-input" @change="tempLoadTeamImageData.teamId = $event.target.value;">
+              <option v-for="(team,id) in teams" :value="id">{{team.title}}</option>
+            </select>
+            <div class="form-input-end pe-none pr-3">
+              <svg class="icon text-small">
+                <use xlink:href="img/icons.svg#to-down" />
+              </svg>
+            </div>
+          </div>
+        </label>
+
+        <div class="mt-6 flex gap-4">
+          <button class="btn btn--primary btn--fill w-50" type="submit">Добавить</button>
+          <button class="btn btn--primary btn--light w-50" type="button" @click="teamImageCloseHandler">Отмена</button>
+        </div>
+      </div>
+    </form>
+  </div>
 </div>
 
 <script>
-  const app = Vue.createApp({
-    data() {
-      return {
-        avatarFile: null,
-        avatarRemove: false,
-        loading: false,
-        error: null,
-        data: {
-          id: 1000,
-          documents: {
-            skan: {
-              title: 'Скан-копия подписанной заявки',
-              file: null,
-              file_remove: false
-            },
-            strah: {
-              title: 'Страхование',
-              file: null,
-              file_remove: false
-            },
-            lichnost: {
-              title: 'Документ подтверждающий личность',
-              file: null,
-              file_remove: false
-            },
-            perdan: {
-              title: 'Заявление об обработке персональных данных',
-              file: null,
-              file_remove: false
-            }
+  Vue.createApp({
+      data() {
+        return {
+          avatarFile: null,
+          avatarRemove: false,
+          loading: false,
+          error: null,
+          isAddTeamImageShow: false,
+          tempLoadTeamImageData: {
+            teamId: null,
+            image: null, // : string | null // url or dataUrl
+            imageFile: null, // : File | null
+            error: null
           },
-          otherDocuments: []
+          generalImages: [{
+            image: '/img/test.gif', // : string | null // url or dataUrl
+            imageFile: null, // : File | null
+          }],
+          generalImagesMax: 3,
+          competitionImages: [{
+            image: '/img/test.gif', // : string | null // url or dataUrl
+            imageFile: null, // : File | null
+          }],
+          competitionImagesMax: 5,
+          teams: {
+            [0]: { // id
+              id: 0,
+              title: 'СОШ 0',
+              image: '/img/test.gif', // : string | null // url or dataUrl
+              imageFile: null, // : File | null
+            },
+            ['ooo']: { // id
+              id: 'ooo',
+              title: 'СОШ ooo',
+              image: '/img/test.gif', // : string | null // url or dataUrl
+              imageFile: null, // : File | null
+            },
+            ['OOOO']: { // id
+              id: 'OOOO',
+              title: 'СОШ OOOO',
+              image: null, // : string | null // url or dataUrl
+              imageFile: null, // : File | null
+            },
+            ['MoyaOborona']: { // id
+              id: 'MoyaOborona',
+              title: 'СОШ MoyaOborona',
+              image: null, // : string | null // url or dataUrl
+              imageFile: null, // : File | null
+            },
+          },
+          data: {
+            id: 1000,
+            documents: {
+              skan: {
+                title: 'Скан-копия подписанной заявки',
+                file: null, // : string | File | null
+                file_remove: false
+              },
+              strah: {
+                title: 'Страхование',
+                file: null, // : string | File | null
+                file_remove: false
+              },
+              lichnost: {
+                title: 'Документ подтверждающий личность',
+                file: null, // : string | File | null
+                file_remove: false
+              },
+              perdan: {
+                title: 'Заявление об обработке персональных данных',
+                file: null, // : string | File | null
+                file_remove: false
+              }
+            },
+            otherDocuments: []
 
+          }
         }
-      }
-    },
-    methods: {
-      submitHandler(event) {
-        event.preventDefault()
-        const formData = new FormData(event.target)
-        Object.entries(this.data.documents).forEach(([key, doc]) => {
-          formData.append(key + '_file', doc.file)
-        })
-
-        formData.append('avatar_file', this.avatarFile)
-        console.log(Object.fromEntries(formData));
-        this.loading = true
-        this.error = null
-
-        setTimeout(() => {
-          this.loading = false
-          this.error = "*Такой игрок уже зарегистрирован, обратитесь в тех. поддержку"
-        }, 1000)
       },
-      avatarChangeHandler(event) {
-        if (event.target.files.length > 0) {
+      methods: {
+        submitHandler(event) {
+          event.preventDefault()
+          const formData = new FormData(event.target)
+          Object.entries(this.data.documents).forEach(([key, doc]) => {
+            formData.append(key + '_file', doc.file)
+          })
+
+          formData.append('avatar_file', this.avatarFile)
+          console.log(Object.fromEntries(formData));
+          this.loading = true
+          this.error = null
+
+          setTimeout(() => {
+            this.loading = false
+            this.error = "*Такой игрок уже зарегистрирован, обратитесь в тех. поддержку"
+          }, 1000)
+        },
+        avatarChangeHandler(event) {
+          if (event.target.files.length > 0) {
+            const file = event.target.files[0]
+            this.avatarFile = file
+
+            let reader = new FileReader();
+            reader.readAsDataURL(file);
+
+            this.avatarLodaing = true
+
+            reader.onload = () => {
+              this.data.avatar = reader.result
+              this.avatarLodaing = false
+            };
+          }
+        },
+        teamImageChangeHandler(event) {
+          if (event.target.files.length <= 0) return
           const file = event.target.files[0]
-          this.avatarFile = file
+          this.tempLoadTeamImageData.imageFile = file
+          this.tempLoadTeamImageData.error = null
 
           let reader = new FileReader();
           reader.readAsDataURL(file);
 
-          this.avatarLodaing = true
 
           reader.onload = () => {
-            this.data.avatar = reader.result
-            this.avatarLodaing = false
+            this.tempLoadTeamImageData.image = reader.result
           };
-        }
-      },
-      docChangeHandler(key, event) {
-        if (event.target.files.length <= 0) return
 
-        const file = event.target.files[0]
-        this.data.documents[key].file = file
-        this.data.documents[key].file_remove = false
+        },
+        teamImageSubmitHandler(event) {
+          event.preventDefault()
+          if (!this.tempLoadTeamImageData.imageFile) {
+            this.tempLoadTeamImageData.error = 'Загрузите картинку'
+            return
+          }
 
-      },
-      docRemoveHandler(key) {
-        this.data.documents[key].file_remove = true
-        this.data.documents[key].file = null
-      },
-      otherDocChange(event) {
-        if (event.target.files.length <= 0) return
+          if (!this.tempLoadTeamImageData.teamId) {
+            this.tempLoadTeamImageData.error = 'Выберите команду'
+            return
+          }
 
-        Array.from(event.target.files).forEach((file) => {
-          this.data.otherDocuments.push({
-            file,
-            title: file.name
+          this.teams[this.tempLoadTeamImageData.teamId].imageFile = this.tempLoadTeamImageData.imageFile
+          this.teams[this.tempLoadTeamImageData.teamId].image = this.tempLoadTeamImageData.image
+
+          this.teamImageCloseHandler()
+        },
+        teamImageCloseHandler() {
+          this.isAddTeamImageShow = false
+          this.tempLoadTeamImageData.teamId = null
+          this.tempLoadTeamImageData.imageFile = null
+          this.tempLoadTeamImageData.image = null
+          this.tempLoadTeamImageData.error = null
+        },
+        teamImageRemoveHandler(teamId) {
+          this.teams[teamId].image = null
+          this.teams[teamId].imageFile = null
+        },
+        docChangeHandler(key, event) {
+          if (event.target.files.length <= 0) return
+
+          const file = event.target.files[0]
+          this.data.documents[key].file = file
+          this.data.documents[key].file_remove = false
+
+        },
+        docRemoveHandler(key) {
+          this.data.documents[key].file_remove = true
+          this.data.documents[key].file = null
+        },
+        otherDocChange(event) {
+          if (event.target.files.length <= 0) return
+
+          Array.from(event.target.files).forEach((file) => {
+            this.data.otherDocuments.push({
+              file,
+              title: file.name
+            })
           })
-        })
-      },
-      otherDocRemove(index) {
-        this.data.otherDocuments.splice(index, 1)
+        },
+        otherDocRemove(index) {
+          this.data.otherDocuments.splice(index, 1)
+        },
+        generalImageChangeHandler(event) {
+          if (event.target.files.length <= 0) return
+
+          Array.from(event.target.files).forEach((file) => {
+            if (this.generalImages.length >= this.generalImagesMax) {
+              return
+            }
+
+            let reader = new FileReader();
+            reader.readAsDataURL(file);
+
+            const index = this.generalImages.length
+            this.generalImages.push({
+              imageFile: file,
+            })
+
+
+            reader.onload = () => {
+              this.generalImages[index].image = reader.result
+            };
+          })
+
+
+        },
+        competitionImageChangeHandler(event) {
+          if (event.target.files.length <= 0) return
+          Array.from(event.target.files).forEach((file) => {
+            if (this.competitionImages.length >= this.competitionImagesMax) {
+              return
+            }
+
+            let reader = new FileReader();
+            reader.readAsDataURL(file);
+
+            const index = this.competitionImages.length
+            this.competitionImages.push({
+              imageFile: file,
+            })
+
+
+            reader.onload = () => {
+              this.competitionImages[index].image = reader.result
+            };
+          })
+
+
+        }
       }
-    }
-  })
-  app.mount(document.getElementById('fucking-shit'))
+    })
+    .mount(document.getElementById('fucking-shit'))
 </script>

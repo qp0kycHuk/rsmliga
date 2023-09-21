@@ -1931,8 +1931,8 @@ body.new-year-theme .footer {
 		}
 
 		&__name {
-			width    : 220px;
-			min-width: 220px;
+			width    : 200px;
+			min-width: 200px;
 
 			@media(max-width:$lg) {
 				width    : 200px;
@@ -1946,8 +1946,13 @@ body.new-year-theme .footer {
 		}
 
 		&__date {
-			flex-grow: 1;
 			max-width: 30%;
+			min-width: 100px;
+		}
+
+		&__document {
+			max-width: 30%;
+			min-width: 120px;
 		}
 
 		&__status {
@@ -1956,8 +1961,8 @@ body.new-year-theme .footer {
 		}
 
 		&__gayting {
-			width    : 136px;
-			min-width: 136px;
+			width    : 100px;
+			min-width: 100px;
 		}
 
 		&__edit {
@@ -1966,8 +1971,8 @@ body.new-year-theme .footer {
 		}
 
 		&__access {
-			width    : 232px;
-			min-width: 232px;
+			width    : 200px;
+			min-width: 200px;
 
 			@media(max-width:$lg) {
 				width    : 200px;

@@ -429,7 +429,7 @@
 				</div>
 				<div class="lk-team mb-5">
 					<div class="lk-team-header">
-						<div class="lk-team-table__img">
+						<div class="lk-team-table__img lk-team-table__img--min">
 							<div class="text-md-body-2 text-small text--demibold">Фото</div>
 						</div>
 						<div class="lk-team-table__name">
@@ -444,6 +444,9 @@
 						<div class="lk-team-table__gayting">
 							<div class="text-md-body-2 text-small text--demibold">Рейтинг</div>
 						</div>
+						<div class="lk-team-table__document">
+							<div class="text-md-body-2 text-small text--demibold">Вид документа</div>
+						</div>
 						<div class="lk-team-table__access" v-if="currentContest">
 							<div class="text-md-body-2 text-small text--demibold">Состав</div>
 						</div>
@@ -452,7 +455,7 @@
 					<div class="lk-team-table" ref="table">
 						<% for(let i=0; i < 10; i++){ %>
 							<div class="lk-team-row">
-								<div class="lk-team-table__img">
+								<div class="lk-team-table__img lk-team-table__img--min">
 									<div class="lk-team__avatar">
 										<img src="img/test-3.jpg" alt="">
 									</div>
@@ -486,6 +489,9 @@
 										</svg>
 										1 212
 									</div>
+								</div>
+								<div class="lk-team-table__document">
+									<button class="btn btn--link text-body-2 text--underline">Св-во о рождении</button>
 								</div>
 								<div class="lk-team-table__access" v-if="currentContest">
 									<label class="form-field form-checkbox">
@@ -731,6 +737,9 @@
 
 		</section>
 
+		<script>
+			Fancybox.modal.open('dialog-participant-edit.html')
+		</script>
 		<%= _.template(require('./includes/footer.html').default)() %>
 </body>
 

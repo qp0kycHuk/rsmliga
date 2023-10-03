@@ -4610,7 +4610,7 @@ option {
 		background           : var(--bg3);
 		padding              : 8px 24px;
 		display              : grid;
-		grid-template-columns: calc(100% * 400 / 1120) 218fr 218fr 240fr;
+		grid-template-columns: calc(100% * 400 / 1120) 218fr 218fr 240fr auto;
 	}
 
 	&-header {
@@ -4641,6 +4641,8 @@ option {
 
 	&-select {
 		// width: calc(100% * 240 / 1120);
+	}
+	&-doc{
 	}
 }
 

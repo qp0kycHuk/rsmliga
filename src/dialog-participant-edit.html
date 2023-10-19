@@ -225,8 +225,14 @@
         <span v-show="!loading">Сохранить</span>
       </button>
       <button type="button" class="btn btn--primary btn--light px-10 w-100 w-sm-auto ml-sm-4 mb-4 mb-sm-0" data-fancybox-close>Отмена</button>
-      <div class="color-red ml-lg-8 " v-show="error">{{error}}</div>
+      <button type="button" class="btn btn--primary btn--contur px-10 w-100 w-sm-auto ml-sm-auto mb-4 mb-sm-0">
+        <svg class="icon mr-2">
+          <use xlink:href="img/icons.svg#delete" />
+        </svg>
+        Удалить
+      </button>
     </div>
+    <div class="color-red mt-8 " v-show="error">{{error}}</div>
   </form>
 </div>
 

@@ -206,7 +206,7 @@ body[data-theme="dark"] {
 
 .header-top {
 	position: relative;
-	z-index: var(--zi-l3);
+	z-index : var(--zi-l3);
 
 	@media(max-width:$md) {
 		display: none;
@@ -1836,6 +1836,13 @@ body.new-year-theme .footer {
 		display       : flex;
 		align-items   : flex-start;
 		flex-direction: column;
+
+		max-width: calc(100% - 132px - 24px);
+
+		@media(max-width:$md) {
+			max-width: calc(100% - 62px - 24px);
+
+		}
 	}
 
 	&__contacts {
@@ -1848,18 +1855,26 @@ body.new-year-theme .footer {
 	}
 
 	&__img {
-		width        : 132px;
-		height       : 132px;
-		overflow     : hidden;
-		margin-right : 24px;
-		background   : var(--bg0);
-		border-radius: 50%;
+		width          : 132px;
+		height         : 132px;
+		overflow       : hidden;
+		margin-right   : 24px;
+		background     : var(--color-primary-20);
+		border-radius  : 50%;
+		display        : flex;
+		align-items    : center;
+		justify-content: center;
+		color          : var(--color-primary);
+		text-transform : uppercase;
+		font-size      : 60px;
+		font-weight    : 600;
 
 		@media(max-width:$md) {
 			align-self: flex-start;
 			width     : 62px;
 			min-width : 62px;
 			height    : 62px;
+			font-size: 32px;
 		}
 
 		img {
@@ -1867,6 +1882,13 @@ body.new-year-theme .footer {
 			height    : 100%;
 			object-fit: cover;
 		}
+	}
+
+	&__placeholder {
+		border-radius: 100px;
+		background   : #E8ECF2;
+		height       : 12px;
+		max-width    : 100%;
 	}
 }
 
@@ -4642,13 +4664,13 @@ option {
 	&-select {
 		// width: calc(100% * 240 / 1120);
 	}
-	&-doc{
-	}
+
+	&-doc {}
 }
 
 .subdialog {
 	position       : fixed;
-	z-index: var(--zi-l8);
+	z-index        : var(--zi-l8);
 	inset          : 0;
 	background     : rgba(0, 0, 0, 0.5);
 	display        : flex;

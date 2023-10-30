@@ -1791,6 +1791,18 @@ body.new-year-theme .footer {
 		&__item {
 			display    : flex;
 			align-items: center;
+			position: relative;
+
+			input {
+				display: block;
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 0;
+				height: 0;
+				border: none;
+				outline: none;
+			}
 
 			img {
 				margin-right: 8px;

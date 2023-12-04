@@ -1791,17 +1791,17 @@ body.new-year-theme .footer {
 		&__item {
 			display    : flex;
 			align-items: center;
-			position: relative;
+			position   : relative;
 
 			input {
-				display: block;
+				display : block;
 				position: absolute;
-				left: 60px;
-				top: 10px;
-				width: 1px;
-				height: 1px;
-				border: none;
-				outline: none;
+				left    : 60px;
+				top     : 10px;
+				width   : 1px;
+				height  : 1px;
+				border  : none;
+				outline : none;
 			}
 
 			img {
@@ -1886,7 +1886,7 @@ body.new-year-theme .footer {
 			width     : 62px;
 			min-width : 62px;
 			height    : 62px;
-			font-size: 32px;
+			font-size : 32px;
 		}
 
 		img {
@@ -4690,4 +4690,37 @@ option {
 	justify-content: center;
 	z-index        : 123;
 
+}
+
+.choose-predstavitel-dialog {
+	border-radius: 12px;
+	background   : var(--bg3);
+	padding      : 36px;
+	width        : 450px;
+	max-width    : 100%;
+}
+
+.choose-predstavitel {
+	&-list {
+		
+	}
+
+	&-item {
+		display              : grid;
+		grid-template-columns: 60px 1fr;
+		gap                  : 4px;
+		cursor : pointer;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	@media(hover) {
+		&-item:hover &-name {
+			text-decoration: underline;
+		}
+	}
+}
+
+.btn--color-icon.btn--contur {
+	border-color: #EAEAEA;
 }

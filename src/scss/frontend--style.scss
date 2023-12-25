@@ -2005,13 +2005,15 @@ body.new-year-theme .footer {
 		}
 
 		&__access {
-			width    : 200px;
-			min-width: 200px;
+			width    : 140px;
+			min-width: 140px;
 
-			@media(max-width:$lg) {
-				width    : 200px;
-				min-width: 200px;
-			}
+		}
+
+		&__transfer {
+			width    : 180px;
+			min-width: 180px;
+
 		}
 	}
 

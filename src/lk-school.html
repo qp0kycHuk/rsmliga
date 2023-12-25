@@ -535,13 +535,14 @@
           <div class="lk-team-table__status">
             <div class="text-md-body-2 text-small text--demibold">Статус</div>
           </div>
-          <div class="lk-team-table__gayting">
+          <!-- <div class="lk-team-table__gayting">
             <div class="text-md-body-2 text-small text--demibold">Рейтинг</div>
-          </div>
+          </div> -->
           <div class="lk-team-table__access" v-if="currentContest">
             <div class="text-md-body-2 text-small text--demibold">Состав</div>
           </div>
-          <div class="lk-team-table__edit"></div>
+          <div class="lk-team-table__transfer"> </div>
+          <div class="lk-team-table__edit ml-auto"></div>
         </div>
         <div class="lk-team-table" ref="table">
           <% for(let i=0; i < 10; i++){ %>
@@ -576,14 +577,14 @@
                 </div>
               </div>
             </div>
-            <div class="lk-team-table__gayting">
+            <!-- <div class="lk-team-table__gayting">
               <div class="text-md-body-2 text-small text--demibold flex flex-align-center">
                 <svg class="icon color-yellow mr-2">
                   <use xlink:href="img/icons.svg#star" />
                 </svg>
                 1 212
               </div>
-            </div>
+            </div> -->
             <div class="lk-team-table__access" v-if="currentContest">
               <label class="form-field form-checkbox">
                 <input type="checkbox" class="form-input-checkbox" data-team-access @change="changeHandler">
@@ -595,7 +596,15 @@
                 <div class="form-label">Участвует</div>
               </label>
             </div>
-            <div class="lk-team-table__edit">
+            <div class="lk-team-table__transfer">
+              <div class="color-green">Трансфер одобрен</div>
+              <!-- or -->
+              <button class="btn btn--primary btn--link">
+                <c-icon class="icon text-body-0 mr-2" href="img/icons.svg#refresh-circle"></c-icon>
+                Запрошен трансфер
+              </button>
+            </div>
+            <div class="lk-team-table__edit ml-auto">
               <button class="lk-team__edit btn btn--primary btn--light btn-icon">
                 <svg class="icon">
                   <use xlink:href="img/icons.svg#setting" />

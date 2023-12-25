@@ -1,0 +1,118 @@
+<div class="dialog-transfer-request" id="hoose-predstavitel">
+  <div class="text-h6 mb-8">Запросить трансфер</div>
+  <label class="form-field">
+    <div class="text--demibold mb-2">ФИО участиника или ID</div>
+    <div class="form-input-cover">
+      <input type="text" class="form-input" placeholder="Поиск..." v-model="query">
+      <div class="form-input-end">
+        <button class="btn btn-icon btn--color-icon" v-show="!query">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#search" />
+          </svg>
+        </button>
+        <button class="btn btn-icon btn--red" v-show="query" @click.stop="query = ''">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#cross" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </label>
+
+  <div class="choose-predstavitel-list mt-8 text-body-2">
+    <div class="choose-predstavitel-item" v-for="item in pageItems" :key="item.id">
+      <div class="choose-predstavitel-id fade-60">
+        {{ item.id }}
+      </div>
+      <div class="choose-predstavitel-name">
+        {{ item.name }}
+      </div>
+      <div class="fade-60 ml-auto">
+        {{ item.date }}
+      </div>
+    </div>
+  </div>
+  <div class="flex flex-justify-center  mt-10">
+    <button class="btn btn-icon btn--color-icon btn-small-1 mx-1 color-primary mr-auto" @click.stop="page=page - 1" :disabled="savePage==0">
+      <c-icon class="icon text-small-1" href="img/icons.svg#to-left" ></c-icon>
+    </button>
+    <div v-for="p in pages" class="flex">
+      <button class="btn btn-icon btn-small-1 mx-1" :class="savePage==p ? 'btn--primary btn--fill' : 'btn--color-icon btn--contur color-primary'" v-show="p !== null" @click.stop="page=p">
+        {{ p + 1 }}
+      </button>
+      <div class="mt-auto mx-3 fade-60" v-show="p === null"> ... </div>
+    </div>
+
+
+    <button class="btn btn-icon btn--color-icon btn-small-1 mx-1 color-primary ml-auto" @click.stop="page=page + 1" :disabled="savePage==maxPages">
+      <c-icon class="icon text-small-1" href="img/icons.svg#to-right" ></c-icon>
+    </button>
+  </div>
+</div>
+
+<script>
+  (() => {
+    const app = Vue.createApp({
+      data() {
+        return {
+          query: '',
+          page: 0,
+          itemsPerPage: 11,
+          items: new Array(150).fill(true).map((_, i) => ({
+            id: '5435' + i,
+            name: Math.random() > 0.5 ? 'Щербаков Иван Иванович' : 'Ярошук Александр-Платон Вячеславович',
+            date: '14.10.2003'
+          }))
+        }
+      },
+      computed: {
+        searchedItems() {
+          if (!this.query) return this.items
+
+          return this.items.filter(({
+            name
+          }) => name.includes(this.query))
+        },
+        maxPages() {
+          return Math.floor(this.searchedItems.length / this.itemsPerPage) - (this.searchedItems.length % this.itemsPerPage == 0 ? 1 : 0)
+        },
+        savePage() {
+          return Math.min(this.page, this.maxPages)
+        },
+        pageItems() {
+          const start = this.savePage * this.itemsPerPage
+          return this.searchedItems.slice(start, start + this.itemsPerPage)
+        },
+        pages() {
+          return slicePages(this.savePage, this.maxPages)
+        }
+      }
+    })
+    app.mount(document.getElementById('hoose-predstavitel'))
+
+
+    function slicePages(page, total) {
+      const sliced = []
+      let i = 0
+
+      while (i <= total) {
+        if (
+          i <= 0 || //the first three pages
+          i >= total || //the last three pages
+          (i >= page - 1 && i <= page + 1)
+        ) {
+          //the currentPage, the page before and after
+          sliced.push(i)
+          i++
+        } else {
+          //any other page should be represented by ...
+          sliced.push(null)
+          //jump to the next page to be linked in the navigation
+          i = i < page ? page - 1 : total
+        }
+      }
+
+      return sliced
+    }
+  })()
+</script>

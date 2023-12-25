@@ -523,9 +523,9 @@
           <div class="lk-team-table__img lk-team-table__img--min">
             <div class="text-md-body-2 text-small text--demibold">Фото</div>
           </div>
-          <div class="lk-team-table__number">
+          <!-- <div class="lk-team-table__number">
             <div class="text-md-body-2 text-small text--demibold text--center">№</div>
-          </div>
+          </div> -->
           <div class="lk-team-table__name">
             <div class="text-md-body-2 text-small text--demibold">ФИО</div>
           </div>
@@ -552,9 +552,9 @@
                 <img src="img/test-3.jpg" alt="">
               </div>
             </div>
-            <div class="lk-team-table__number">
+            <!-- <div class="lk-team-table__number">
               <div class="text-md-body-2 text-small text--demibold text--center"><%= i %></div>
-            </div>
+            </div> -->
             <div class="lk-team-table__name">
               <div class="text-body-2">Щербаков Иван Иванович</div>
             </div>
@@ -599,7 +599,7 @@
             <div class="lk-team-table__transfer">
               <div class="color-green">Трансфер одобрен</div>
               <!-- or -->
-              <button class="btn btn--primary btn--link">
+              <button class="btn btn--primary btn--link" data-fancybox-modal data-src="dialog-transfer-notification.html">
                 <c-icon class="icon text-body-0 mr-2" href="img/icons.svg#refresh-circle"></c-icon>
                 Запрошен трансфер
               </button>
@@ -613,9 +613,69 @@
             </div>
           </div>
           <% } %>
+          <div class="text-h6 mb-4 mt-5">
+            Трансферы
+          </div>
+          <div class="lk-team-row fade-60">
+            <div class="lk-team-table__img lk-team-table__img--min">
+              <div class="lk-team__avatar">
+                <img src="img/test-3.jpg" alt="">
+              </div>
+            </div>
+ 
+            <div class="lk-team-table__name">
+              <div class="text-body-2">Щербаков Иван Иванович</div>
+            </div>
+            <div class="lk-team-table__date">
+              <div class="text-body-2">14.10.2003</div>
+            </div>
+ 
+            <div class="lk-team-table__transfer ml-auto">
+              <div class="color-red">Трансфер отклонен</div>
+            </div>
+            <div class="lk-team-table__edit ">
+              <button class="lk-team__edit btn btn--primary btn--light btn-icon">
+                <svg class="icon">
+                  <use xlink:href="img/icons.svg#setting" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="lk-team-row">
+            <div class="lk-team-table__img lk-team-table__img--min">
+              <div class="lk-team__avatar">
+                <img src="img/test-3.jpg" alt="">
+              </div>
+            </div>
+ 
+            <div class="lk-team-table__name">
+              <div class="text-body-2 text--underline color-primary">Щербаков Иван Иванович</div>
+            </div>
+            <div class="lk-team-table__date">
+              <div class="text-body-2">14.10.2003</div>
+            </div>
+ 
+            <div class="lk-team-table__transfer ml-auto">
+
+              <div class="flex flex-align-center">
+                <c-icon class="icon text-body-0 mr-2 color-primary" href="img/icons.svg#refresh-circle"></c-icon>
+                Запрошен трансфер
+              </div>
+            </div>
+            <div class="lk-team-table__edit ">
+              <button class="lk-team__edit btn btn--primary btn--light btn-icon">
+                <svg class="icon">
+                  <use xlink:href="img/icons.svg#setting" />
+                </svg>
+              </button>
+            </div>
+          </div>
           <div class="flex mt-6">
             <button class="lk-team__add btn btn--primary btn--light">
               Добавить участника
+            </button>
+            <button class="lk-team__add btn btn--primary btn--light ml-2" data-fancybox-modal data-src="dialog-transfer-request.html">
+              Запросить трансфер
             </button>
 
             <button data-team-submit :disabled="!isAccessAdd" v-if="currentContest" class="lk-team__add btn btn--primary btn--fill px-10 ml-5">

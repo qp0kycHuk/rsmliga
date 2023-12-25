@@ -4694,6 +4694,8 @@ option {
 
 }
 
+.dialog-transfer-notification,
+.dialog-transfer-request,
 .choose-predstavitel-dialog {
 	border-radius: 12px;
 	background   : var(--bg3);
@@ -4702,16 +4704,29 @@ option {
 	max-width    : 100%;
 }
 
+.dialog-transfer-request {
+	width: 604px;
+}
+
+.dialog-transfer-notification {
+	width: 604px;
+}
+
 .choose-predstavitel {
 	&-list {}
 
 	&-item {
-		display              : grid;
-		grid-template-columns: 60px 1fr;
-		gap                  : 4px;
-		cursor               : pointer;
-		padding-top          : 10px;
-		padding-bottom       : 10px;
+		display       : flex;
+		gap           : 4px;
+		cursor        : pointer;
+		padding-top   : 10px;
+		padding-bottom: 10px;
+
+	}
+
+	&-id {
+		width      : 60px;
+		flex-shrink: 0;
 	}
 
 	@media(hover) {
@@ -4727,9 +4742,9 @@ option {
 
 .header-snowflakes {
 	position: fixed;
-	left: 0;
-	top: 48px;
-	width: 100%;
+	left    : 0;
+	top     : 48px;
+	width   : 100%;
 
 	&-left,
 	&-right {
@@ -4755,50 +4770,50 @@ option {
 
 		font-size: 40px;
 		animation: fall-1 3s ease-in infinite;
-		opacity: 0;
+		opacity  : 0;
 
 		color: #D9DDE5;
 
 		&-0 {
 			animation-delay: 2s;
-			font-size: 32px;
+			font-size      : 32px;
 		}
 
 		&-1 {
 			--animation-rotate: -60deg;
-			animation-delay: 1s;
-			font-size: 28px;
+			animation-delay   : 1s;
+			font-size         : 28px;
 		}
 
 		&-2 {
 			--animation-rotate: -60deg;
-			font-size: 38px;
+			font-size         : 38px;
 		}
 
 		&-3 {
 			animation-delay: 1.5s;
-			font-size: 30px;
+			font-size      : 30px;
 		}
 
 		&-4 {
 			animation-delay: 2s;
-			font-size: 30px;
+			font-size      : 30px;
 		}
 
 		&-5 {
 			--animation-rotate: -60deg;
-			font-size: 38px;
+			font-size         : 38px;
 		}
 
 		&-6 {
 			--animation-rotate: -60deg;
-			animation-delay: 1s;
-			font-size: 28px;
+			animation-delay   : 1s;
+			font-size         : 28px;
 		}
 
 		&-7 {
 			animation-delay: 1.5s;
-			font-size: 33px;
+			font-size      : 33px;
 		}
 	}
 }

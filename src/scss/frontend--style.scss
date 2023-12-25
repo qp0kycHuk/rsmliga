@@ -4701,17 +4701,15 @@ option {
 }
 
 .choose-predstavitel {
-	&-list {
-		
-	}
+	&-list {}
 
 	&-item {
 		display              : grid;
 		grid-template-columns: 60px 1fr;
 		gap                  : 4px;
-		cursor : pointer;
-		padding-top: 10px;
-		padding-bottom: 10px;
+		cursor               : pointer;
+		padding-top          : 10px;
+		padding-bottom       : 10px;
 	}
 
 	@media(hover) {
@@ -4723,4 +4721,97 @@ option {
 
 .btn--color-icon.btn--contur {
 	border-color: #EAEAEA;
+}
+
+.header-snowflakes {
+	position: fixed;
+	left: 0;
+	top: 48px;
+	width: 100%;
+
+	&-left,
+	&-right {
+		position: absolute;
+		top     : 0;
+
+		width: calc((100% - var(--section-width)) / 2);
+
+		display        : flex;
+		justify-content: space-around;
+	}
+
+	&-left {
+		left: 0;
+	}
+
+	&-right {
+		right: 0;
+	}
+
+	&-item {
+		--animation-rotate: 60deg;
+
+		font-size: 40px;
+		animation: fall-1 3s ease-in infinite;
+		opacity: 0;
+
+		color: #D9DDE5;
+
+		&-0 {
+			animation-delay: 2s;
+			font-size: 32px;
+		}
+
+		&-1 {
+			--animation-rotate: -60deg;
+			animation-delay: 1s;
+			font-size: 28px;
+		}
+
+		&-2 {
+			--animation-rotate: -60deg;
+			font-size: 38px;
+		}
+
+		&-3 {
+			animation-delay: 1.5s;
+			font-size: 30px;
+		}
+
+		&-4 {
+			animation-delay: 2s;
+			font-size: 30px;
+		}
+
+		&-5 {
+			--animation-rotate: -60deg;
+			font-size: 38px;
+		}
+
+		&-6 {
+			--animation-rotate: -60deg;
+			animation-delay: 1s;
+			font-size: 28px;
+		}
+
+		&-7 {
+			animation-delay: 1.5s;
+			font-size: 33px;
+		}
+	}
+}
+
+@keyframes fall-1 {
+	from {
+		opacity: 0;
+	}
+
+	25% {
+		opacity: 1;
+	}
+
+	to {
+		transform: translate(0, 100px) scale(1.2) rotateZ(var(--animation-rotate));
+		opacity  : 0;
+	}
 }

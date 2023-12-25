@@ -48,6 +48,7 @@ function generateCopyDialogsPlugins(templateDir) {
 
 module.exports = {
   entry: {
+    components: './src/js/components/index.js',
     index: './src/js/index.js',
     ['conference-map']: './src/js/conference-map/index.js'
   },

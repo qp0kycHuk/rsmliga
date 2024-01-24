@@ -4832,3 +4832,18 @@ option {
 		opacity  : 0;
 	}
 }
+
+.notification-icon {
+	position: relative;
+}
+
+.notification-marker {
+	position     : absolute;
+	right        : 0;
+	top          : 0;
+	width        : 8px;
+	height       : 8px;
+	border-radius: 50%;
+	background   : var(--color-primary);
+	border       : 1px solid var(--bg3);
+}

@@ -1,6 +1,7 @@
 import { Fancybox } from "@fancyapps/ui";
 import datepicker from "./datepicker";
 import ru from "@fancyapps/ui/src/Fancybox/l10n/ru"
+import tippy, { animateFill } from 'tippy.js';
 import "@fancyapps/ui/dist/fancybox.css";
 
 const init = () => {
@@ -17,6 +18,12 @@ const init = () => {
     on: {
       done: (fancybox, slide) => {
         datepicker.init(slide.$el)
+
+        tippy('[data-tippy-content]', {
+          placement: 'bottom-end',
+          animateFill: true,
+          plugins: [animateFill],
+      });
       }
     }
   })

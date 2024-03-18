@@ -2868,7 +2868,7 @@ body.new-year-theme .footer {
 .color-select {
 	display    : flex;
 	align-items: center;
-
+	z-index: 2;
 	position     : relative;
 	background   : #F3F3F3;
 	border-radius: 6px;

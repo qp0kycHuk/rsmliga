@@ -525,26 +525,29 @@ body[data-theme="dark"] {
 	}
 
 	&-item {
-		padding   : 10px 8px 8px;
-		background: var(--bg3);
-		position  : relative;
-		background: linear-gradient(180deg, rgba(0, 0, 0, 0) 46px, var(--bg3) 46px),
-			url("../img/sempl/live-item-clouds.png") no-repeat center 24px / auto,
-			linear-gradient(239.95deg, rgba(105, 0, 27, 0.4) 6px, rgba(210, 28, 75, 0) 32px),
-			var(--color-primary);
+		background    : var(--bg3);
+		position      : relative;
+		// background: linear-gradient(180deg, rgba(0, 0, 0, 0) 46px, var(--bg3) 46px),
+		// 	url("../img/sempl/live-item-clouds.png") no-repeat center 24px / auto,
+		// 	linear-gradient(239.95deg, rgba(105, 0, 27, 0.4) 6px, rgba(210, 28, 75, 0) 32px),
+		// 	var(--color-primary);
 		border-radius : 12px;
 		cursor        : pointer;
 		display       : flex;
 		flex-direction: column;
-
+		overflow      : hidden;
 
 
 		&-header {
 			display              : grid;
 			align-items          : center;
 			grid-template-columns: 1fr auto 1fr;
-			margin-bottom        : 30px;
-			color                : #fff;
+
+			color  : #fff;
+			padding: 12px 8px 12px;
+			background: linear-gradient(180deg, rgba(0, 0, 0, 0) 46px, var(--bg3) 46px),
+				linear-gradient(239.95deg, rgba(105, 0, 27, 0.4) 6px, rgba(210, 28, 75, 0) 32px),
+				var(--color-primary);
 
 		}
 
@@ -590,6 +593,7 @@ body[data-theme="dark"] {
 			flex-grow     : 1;
 			display       : flex;
 			flex-direction: column;
+			padding       : 10px 8px 8px;
 		}
 	}
 
@@ -1947,7 +1951,7 @@ body.new-year-theme .footer {
 		&__number {
 			width    : 52px;
 			min-width: 52px;
-			
+
 		}
 
 		&__img {
@@ -2710,7 +2714,7 @@ body.new-year-theme .footer {
 		z-index   : 2;
 
 		max-height: 400px;
-		overflow: auto;
+		overflow  : auto;
 
 		&:not(.toggle-active) {
 			opacity       : 0;
@@ -2869,9 +2873,9 @@ body.new-year-theme .footer {
 
 
 .color-select {
-	display    : flex;
-	align-items: center;
-	z-index: 2;
+	display      : flex;
+	align-items  : center;
+	z-index      : 2;
 	position     : relative;
 	background   : #F3F3F3;
 	border-radius: 6px;

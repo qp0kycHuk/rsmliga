@@ -545,8 +545,8 @@ body[data-theme="dark"] {
 
 			color  : #fff;
 			padding: 12px 8px 12px;
-			background: linear-gradient(180deg, rgba(0, 0, 0, 0) 46px, var(--bg3) 46px),
-				linear-gradient(239.95deg, rgba(105, 0, 27, 0.4) 6px, rgba(210, 28, 75, 0) 32px),
+			background: 
+				linear-gradient(239.95deg, rgba(105, 0, 27, 0.4) 0%, rgba(210, 28, 75, 0) 100%),
 				var(--color-primary);
 
 		}

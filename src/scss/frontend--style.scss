@@ -556,6 +556,7 @@ body[data-theme="dark"] {
 			display              : grid;
 			align-items          : center;
 			grid-template-columns: 1fr auto 1fr;
+			margin-bottom: auto;
 		}
 
 		&-count {
@@ -586,7 +587,6 @@ body[data-theme="dark"] {
 			--size    : 38px;
 			position  : relative;
 			z-index   : 3;
-			margin-top: auto;
 		}
 
 		&-content {

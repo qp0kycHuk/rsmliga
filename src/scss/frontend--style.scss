@@ -2709,6 +2709,9 @@ body.new-year-theme .footer {
 		box-shadow: 0 0 12px rgba(0, 0, 0, 0.16);
 		z-index   : 2;
 
+		max-height: 400px;
+		overflow: auto;
+
 		&:not(.toggle-active) {
 			opacity       : 0;
 			transform     : translateY(5px);

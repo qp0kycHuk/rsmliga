@@ -1217,8 +1217,8 @@ body.new-year-theme .footer {
 		justify-content: center;
 		position       : relative;
 
-		height : 114px;
-		padding: 24px 15px;
+		min-height : 114px;
+		padding: 40px 15px 24px;
 		background:
 			url("../img/sempl/page-top-left.png") no-repeat left top / auto,
 			url("../img/sempl/page-top-right.png") no-repeat right bottom / auto,

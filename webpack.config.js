@@ -26,7 +26,7 @@ function generateHtmlPlugins(templateDir) {
 
     return new HtmlWebpackPlugin({
       ...htmlWebpackPluginDefaults,
-      filename: `${name}.html`,
+      filename: `${templateDir.replace('./src','')}/${name}.html`,
       template: path.resolve(__dirname, `${templateDir}/${name}.${extension}`),
 
     })
@@ -41,7 +41,6 @@ function generateCopyDialogsPlugins(templateDir) {
     const extension = parts[1];
     if (extension !== 'html') return null;
     if (!name.includes('dialog')) return null;
-
     return { from: `${templateDir}/${name}.${extension}`, to: `./${name}.${extension}` }
   }).filter((item) => item !== null)
 }
@@ -104,6 +103,7 @@ module.exports = {
   },
   plugins: [
     ...generateHtmlPlugins('./src'),
+    ...generateHtmlPlugins('./src/redisign'),
     ...generateHtmlPlugins('./src/html'),
     ...generateHtmlPlugins('./src/html/site'),
     ...generateHtmlPlugins('./src/html/store'),
@@ -112,6 +112,7 @@ module.exports = {
       patterns: [
         { from: "./src/img/", to: "./img/" },
         ...generateCopyDialogsPlugins('./src'),
+        ...generateCopyDialogsPlugins('./src/dialog'),
         ...generateCopyDialogsPlugins('./src/html'),
         ...generateCopyDialogsPlugins('./src/html/site'),
         ...generateCopyDialogsPlugins('./src/html/store'),

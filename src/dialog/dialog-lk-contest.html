@@ -1,282 +1,281 @@
 <div class="lk-form-dialog fancybox-content card p-6 dialog-contest">
-	<div class="form-dialog-header mb-6">
-		<div class="form-dialog-title title text-subtitle-2 text-md-h6">Добавить соревнование</div>
-	</div>
-	<form class="form-dialog-content">
-		<div class="form-dialog-fields">
-			<label class="contest-image flex flex-align-center">
-				<input accept="image/*" type="file" placeholder="Добавить обложку">
-				<input type="hidden" name="del_file" value="N">
-				<svg class="icon color-primary mr-3">
-					<use xlink:href="img/icons.svg#image" />
-				</svg>
-				<div type="button" class="contest-image__btn btn btn--primary btn--link text-body-1 text--demibold">
-					Добавить обложку</div>
-				<div class="contest-image__name text-body-1 text--demibold"></div>
-				<button type="button" class="contest-image__delete btn btn--link ml-4 fade-40">
-					<svg class="icon">
-						<use xlink:href="img/icons.svg#cross" />
-					</svg>
-				</button>
-			</label>
-			<label class="form-field w-100 mt-4">
-				<div class="text-body-2 text--demibold mb-2">Название</div>
-				<div class="form-input-cover">
-					<input type="text" class="form-input" name="name" required>
-				</div>
-			</label>
+  <div class="form-dialog-header mb-6">
+    <div class="form-dialog-title title text-subtitle-2 text-md-h6">Добавить соревнование</div>
+  </div>
+  <form class="form-dialog-content">
+    <div class="form-dialog-fields">
+      <label class="contest-image flex flex-align-center">
+        <input accept="image/*" type="file" placeholder="Добавить обложку">
+        <input type="hidden" name="del_file" value="N">
+        <svg class="icon color-primary mr-3">
+          <use xlink:href="img/icons.svg#image" />
+        </svg>
+        <div type="button" class="contest-image__btn btn btn--primary btn--link text-body-1 text--demibold">
+          Добавить обложку</div>
+        <div class="contest-image__name text-body-1 text--demibold"></div>
+        <button type="button" class="contest-image__delete btn btn--link ml-4 fade-40">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#cross" />
+          </svg>
+        </button>
+      </label>
+			<div class="mb-4"></div>
+      <div class="text-subtitle-1 fade-60 mb-3">Регламент</div>
+      <label class="form-field w-100 mt-4">
+        <div class="text-body-2 text--demibold mb-2">Название</div>
+        <div class="form-input-cover">
+          <input type="text" class="form-input" name="name" required>
+        </div>
+      </label>
 
-			<label class="form-field w-100 mt-4">
-				<div class="text-body-2 text--demibold mb-2">Сезон</div>
-				<div class="form-input-cover">
-					<select name="" class="form-input pr-8">
-						<option value="">2021-2022</option>
-						<option value="">2021-2023</option>
-						<option value="">2021-2024</option>
-						<option value="">2021-2025</option>
-					</select>
-					<div class="form-select-icon">
-						<svg class="icon" style="transform: rotateZ(90deg);">
-							<use xlink:href="img/icons.svg#triangle-right" />
-						</svg>
-					</div>
-				</div>
-			</label>
-			<label class="form-field w-100 mt-4">
-				<div class="text-body-2 text--demibold mb-2">Статус</div>
-				<div class="form-input-cover">
-					<select name="" class="form-input pr-8">
-						<option value="">Проводится</option>
-						<option value="">Планируется</option>
-						<option value="">Прием заявок</option>
-						<option value="">Завершено</option>
-					</select>
-					<div class="form-select-icon">
-						<svg class="icon" style="transform: rotateZ(90deg);">
-							<use xlink:href="img/icons.svg#triangle-right" />
-						</svg>
-					</div>
-				</div>
-			</label>
-			<div class="grid">
-				<div class="grid-col-6">
-					<label class="form-field w-100 mt-4">
-						<div class="text-body-2 text--demibold mb-2">Минимальное количество участников</div>
-						<div class="form-input-cover">
-							<input type="number" class="form-input" name="count" required>
-						</div>
-					</label>
-				</div>
-				<div class="grid-col-6">
-					<label class="form-field w-100 mt-4">
-						<div class="text-body-2 text--demibold mb-2">Максимальное количество участников</div>
-						<div class="form-input-cover">
-							<input type="number" class="form-input" name="count" required>
-						</div>
-					</label>
-				</div>
-			</div>
-			<label class="form-field w-100 mt-4">
-				<div class="text-body-2 text--demibold mb-2">Сообщение</div>
-				<div class="form-input-cover">
-					<textarea class="form-input" name="name" required></textarea>
-				</div>
-			</label>
+      <label class="form-field w-100 mt-4">
+        <div class="text-body-2 text--demibold mb-2">Сезон</div>
+        <div class="form-input-cover">
+          <select name="" class="form-input pr-8">
+            <option value="">2021-2022</option>
+            <option value="">2021-2023</option>
+            <option value="">2021-2024</option>
+            <option value="">2021-2025</option>
+          </select>
+          <div class="form-select-icon">
+            <svg class="icon" style="transform: rotateZ(90deg);">
+              <use xlink:href="img/icons.svg#triangle-right" />
+            </svg>
+          </div>
+        </div>
+      </label>
+      <label class="form-field w-100 mt-4">
+        <div class="text-body-2 text--demibold mb-2">Статус</div>
+        <div class="form-input-cover">
+          <select name="" class="form-input pr-8">
+            <option value="">Проводится</option>
+            <option value="">Планируется</option>
+            <option value="">Прием заявок</option>
+            <option value="">Завершено</option>
+          </select>
+          <div class="form-select-icon">
+            <svg class="icon" style="transform: rotateZ(90deg);">
+              <use xlink:href="img/icons.svg#triangle-right" />
+            </svg>
+          </div>
+        </div>
+      </label>
+      <div class="grid">
+        <div class="grid-col-6">
+          <label class="form-field w-100 mt-4">
+            <div class="text-body-2 text--demibold mb-2">Минимальное количество участников</div>
+            <div class="form-input-cover">
+              <input type="number" class="form-input" name="count" required>
+            </div>
+          </label>
+        </div>
+        <div class="grid-col-6">
+          <label class="form-field w-100 mt-4">
+            <div class="text-body-2 text--demibold mb-2">Максимальное количество участников</div>
+            <div class="form-input-cover">
+              <input type="number" class="form-input" name="count" required>
+            </div>
+          </label>
+        </div>
+      </div>
+      <label class="form-field w-100 mt-4">
+        <div class="text-body-2 text--demibold mb-2">Сообщение</div>
+        <div class="form-input-cover">
+          <textarea class="form-input" name="name" required></textarea>
+        </div>
+      </label>
 
-			<label class="form-field form-checkbox mt-4">
+      <label class="form-field form-checkbox mt-4">
 
-				<input type="checkbox" class="form-input-checkbox">
-				<div class="form-checkbox-target">
-					<svg class="icon">
-						<use xlink:href="img/icons.svg#gal-ochka" />
-					</svg>
-				</div>
-				<div class="text-body-1 ml-3"> Запретить прием заявок </div>
+        <input type="checkbox" class="form-input-checkbox">
+        <div class="form-checkbox-target">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#gal-ochka" />
+          </svg>
+        </div>
+        <div class="text-body-1 ml-3"> Запретить прием заявок </div>
 
-			</label>
+      </label>
+
+      <div class="text-body-2 text--demibold mb-2  mt-6">Этапы</div>
+      <div class="bd-bottom"></div>
+      <div class="flex w-100 mt-4 -step-field-">
+        <label class="form-field flex-grow">
+          <div class="text-body-2 text--demibold mb-2"><span class="-step-number-">1</span> этап</div>
+          <div class="form-input-cover">
+            <div class="form-input-cover">
+              <select name="" class="form-input pr-8 -step-input-" required>
+                <option value="">Муниципальный</option>
+                <option value="">Внутришкольный</option>
+              </select>
+              <div class="form-select-icon">
+                <svg class="icon" style="transform: rotateZ(90deg);">
+                  <use xlink:href="img/icons.svg#triangle-right" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </label>
+        <label class="form-field ml-2">
+          <div class="text-body-2 text--demibold mb-2">Старт</div>
+          <div class="form-input-cover">
+            <div class="form-input-cover">
+              <input type="text" class="form-input -step-input-" data-contest-datepicker required>
+              <div class="form-input-end pr-4">
+                <svg class="icon fade-60">
+                  <use xlink:href="img/icons.svg#calendar" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </label>
+        <label class="form-field ml-2">
+          <div class="text-body-2 text--demibold mb-2">Финиш</div>
+          <div class="form-input-cover">
+            <div class="form-input-cover">
+              <input type="text" class="form-input -step-input-" data-contest-datepicker required>
+              <div class="form-input-end pr-4">
+                <svg class="icon fade-60">
+                  <use xlink:href="img/icons.svg#calendar" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </label>
+      </div>
+
+      <button class="btn btn--primary btn--link mt-1 -add-step-" type="button">Добавить еще</button>
 
 
-			<div class="text-body-2 text--demibold mb-2  mt-6">Этапы</div>
-			<div class="bd-bottom"></div>
-			<div class="flex w-100 mt-4 -step-field-">
-				<label class="form-field flex-grow">
-					<div class="text-body-2 text--demibold mb-2"><span class="-step-number-">1</span> этап</div>
-					<div class="form-input-cover">
-						<div class="form-input-cover">
-							<select name="" class="form-input pr-8 -step-input-" required>
-								<option value="">Муниципальный</option>
-								<option value="">Внутришкольный</option>
-							</select>
-							<div class="form-select-icon">
-								<svg class="icon" style="transform: rotateZ(90deg);">
-									<use xlink:href="img/icons.svg#triangle-right" />
-								</svg>
-							</div>
-						</div>
-					</div>
-				</label>
-				<label class="form-field ml-2">
-					<div class="text-body-2 text--demibold mb-2">Старт</div>
-					<div class="form-input-cover">
-						<div class="form-input-cover">
-							<input type="text" class="form-input -step-input-" data-contest-datepicker required>
-							<div class="form-input-end pr-4">
-								<svg class="icon fade-60">
-									<use xlink:href="img/icons.svg#calendar" />
-								</svg>
-							</div>
-						</div>
-					</div>
-				</label>
-				<label class="form-field ml-2">
-					<div class="text-body-2 text--demibold mb-2">Финиш</div>
-					<div class="form-input-cover">
-						<div class="form-input-cover">
-							<input type="text" class="form-input -step-input-" data-contest-datepicker required>
-							<div class="form-input-end pr-4">
-								<svg class="icon fade-60">
-									<use xlink:href="img/icons.svg#calendar" />
-								</svg>
-							</div>
-						</div>
-					</div>
-				</label>
-			</div>
-
-			<button class="btn btn--primary btn--link mt-1 -add-step-" type="button">Добавить еще</button>
-
-
-		</div>
-		<div class="grid">
-			<div class="grid-col-md-6">
-				<button class="form-btn btn btn--primary btn--fill mt-5 w-100">Отправить</button>
-			</div>
-			<div class="grid-col-md-6">
-				<button class="form-btn btn btn--primary btn--light mt-5 w-100" data-fancybox-close
-					type="button">Отмена</button>
-			</div>
-		</div>
-		<div class="form-agree text-small fade-60 mt-5">Отправляя форму Вы даете согласие на обработку Ваших
-			персональных
-			данных</div>
-	</form>
+    </div>
+    <div class="grid">
+      <div class="grid-col-md-6">
+        <button class="form-btn btn btn--primary btn--fill mt-5 w-100">Отправить</button>
+      </div>
+      <div class="grid-col-md-6">
+        <button class="form-btn btn btn--primary btn--light mt-5 w-100" data-fancybox-close type="button">Отмена</button>
+      </div>
+    </div>
+    <div class="form-agree text-small fade-60 mt-5">Отправляя форму Вы даете согласие на обработку Ваших
+      персональных
+      данных</div>
+  </form>
 </div>
 
 
 
 <script>
-	(() => {
+  (() => {
 
-		const pickerOptions = {
-			dateFormat: 'MMM',
-			autoClose: true,
-			view: 'months',
-			minView: 'months',
-			isMobile: true
-		}
+    const pickerOptions = {
+      dateFormat: 'MMM',
+      autoClose: true,
+      view: 'months',
+      minView: 'months',
+      isMobile: true
+    }
 
-		function initPickers(pickers) {
-			pickers.forEach(picker => {
-				new AirDatepicker(picker, {
-					...pickerOptions,
-					position: picker.getAttribute('data-position') || 'bottom center',
-				})
+    function initPickers(pickers) {
+      pickers.forEach(picker => {
+        new AirDatepicker(picker, {
+          ...pickerOptions,
+          position: picker.getAttribute('data-position') || 'bottom center',
+        })
 
-			});
-		}
+      });
+    }
 
-		const pickers = Array.from(document.querySelectorAll('[data-contest-datepicker]'))
-		initPickers(pickers)
+    const pickers = Array.from(document.querySelectorAll('[data-contest-datepicker]'))
+    initPickers(pickers)
 
-		let field = null;
-		let socCounter = 1;
-		let maxSoc = 5
-		let number = 1
+    let field = null;
+    let socCounter = 1;
+    let maxSoc = 5
+    let number = 1
 
-		document.querySelector('.-add-step-').addEventListener('click', (event) => {
-			if (socCounter >= maxSoc) return
-			if (!field) {
-				field = document.querySelector('.-step-field-');
-			}
+    document.querySelector('.-add-step-').addEventListener('click', (event) => {
+      if (socCounter >= maxSoc) return
+      if (!field) {
+        field = document.querySelector('.-step-field-');
+      }
 
-			const addBtn = event.target
-			const clone = field.cloneNode(true);
-			Array.from(clone.querySelectorAll('.-step-input-')).forEach((input) => {
-				input.value = ''
-			})
+      const addBtn = event.target
+      const clone = field.cloneNode(true);
+      Array.from(clone.querySelectorAll('.-step-input-')).forEach((input) => {
+        input.value = ''
+      })
 
-			number++
-			clone.querySelector('.-step-number-').textContent = number
+      number++
+      clone.querySelector('.-step-number-').textContent = number
 
-			const close = document.createElement('button');
-			close.type = 'button'
-			close.className = 'btn btn--red btn--fill btn-fab btn-small ml-2 mb-3 flex-self-end -step-remove-';
-			close.innerHTML = '<svg class="icon text-small-2"><use xlink:href="img/icons.svg#cross" /></svg>';
+      const close = document.createElement('button');
+      close.type = 'button'
+      close.className = 'btn btn--red btn--fill btn-fab btn-small ml-2 mb-3 flex-self-end -step-remove-';
+      close.innerHTML = '<svg class="icon text-small-2"><use xlink:href="img/icons.svg#cross" /></svg>';
 
-			clone.appendChild(close);
+      clone.appendChild(close);
 
-			const pickers = Array.from(clone.querySelectorAll('[data-contest-datepicker]'))
-			initPickers(pickers)
+      const pickers = Array.from(clone.querySelectorAll('[data-contest-datepicker]'))
+      initPickers(pickers)
 
-			addBtn.insertAdjacentElement('beforebegin', clone);
-			socCounter++
+      addBtn.insertAdjacentElement('beforebegin', clone);
+      socCounter++
 
-			if (socCounter >= maxSoc) addBtn.disabled = true
-		})
+      if (socCounter >= maxSoc) addBtn.disabled = true
+    })
 
 
-		document.querySelector('.dialog-contest').addEventListener('click', (event) => {
-			if (event.target.closest('.-step-remove-')) {
-				const field = event.target.closest('.-step-field-')
-				addBtn = document.querySelector('.-add-step-')
-				setTimeout(() => {
-					field.parentElement.removeChild(field)
-					socCounter--
-					number--
-					if (socCounter < maxSoc) addBtn.disabled = false
-				}, 100)
-			}
-		})
+    document.querySelector('.dialog-contest').addEventListener('click', (event) => {
+      if (event.target.closest('.-step-remove-')) {
+        const field = event.target.closest('.-step-field-')
+        addBtn = document.querySelector('.-add-step-')
+        setTimeout(() => {
+          field.parentElement.removeChild(field)
+          socCounter--
+          number--
+          if (socCounter < maxSoc) addBtn.disabled = false
+        }, 100)
+      }
+    })
 
-		document.querySelector('.contest-image input').addEventListener('change', (event) => {
-			const input = event.target
-			const cover = input.closest('.contest-image')
-			const name = cover.querySelector('.contest-image__name')
+    document.querySelector('.contest-image input').addEventListener('change', (event) => {
+      const input = event.target
+      const cover = input.closest('.contest-image')
+      const name = cover.querySelector('.contest-image__name')
 
-			if (cover.classList.contains('added')) {
-				event.preventDefault()
-				return
-			}
+      if (cover.classList.contains('added')) {
+        event.preventDefault()
+        return
+      }
 
-			if (input.files.length > 0) {
-				cover.classList.add('added')
-				name.textContent = input.files[0].name
-			} else {
-				cover.classList.remove('added')
+      if (input.files.length > 0) {
+        cover.classList.add('added')
+        name.textContent = input.files[0].name
+      } else {
+        cover.classList.remove('added')
 
-			}
+      }
 
-		})
+    })
 
-		document.querySelector('.contest-image').addEventListener('click', (event) => {
-			const cover = event.target.closest('.contest-image')
-			if (cover.classList.contains('added')) {
-				event.preventDefault()
-				return
-			}
-		})
+    document.querySelector('.contest-image').addEventListener('click', (event) => {
+      const cover = event.target.closest('.contest-image')
+      if (cover.classList.contains('added')) {
+        event.preventDefault()
+        return
+      }
+    })
 
-		document.querySelector('.contest-image__delete').addEventListener('click', (event) => {
-			const cover = event.target.closest('.contest-image')
-			const name = cover.querySelector('.contest-image__name')
-			const input = cover.querySelector('input')
-			const delInput = cover.querySelector('input[name="del_file"]')
+    document.querySelector('.contest-image__delete').addEventListener('click', (event) => {
+      const cover = event.target.closest('.contest-image')
+      const name = cover.querySelector('.contest-image__name')
+      const input = cover.querySelector('input')
+      const delInput = cover.querySelector('input[name="del_file"]')
 
-			delInput.value = 'Y';
-			input.value = null
-			cover.classList.remove('added')
-		})
+      delInput.value = 'Y';
+      input.value = null
+      cover.classList.remove('added')
+    })
 
-	})();
-
+  })();
 </script>

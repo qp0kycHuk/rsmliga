@@ -26,7 +26,7 @@ function generateHtmlPlugins(templateDir) {
 
     return new HtmlWebpackPlugin({
       ...htmlWebpackPluginDefaults,
-      filename: `${templateDir.replace('./src','')}/${name}.html`,
+      filename: `${name}.html`,
       template: path.resolve(__dirname, `${templateDir}/${name}.${extension}`),
 
     })
@@ -41,6 +41,7 @@ function generateCopyDialogsPlugins(templateDir) {
     const extension = parts[1];
     if (extension !== 'html') return null;
     if (!name.includes('dialog')) return null;
+
     return { from: `${templateDir}/${name}.${extension}`, to: `./${name}.${extension}` }
   }).filter((item) => item !== null)
 }
@@ -103,7 +104,6 @@ module.exports = {
   },
   plugins: [
     ...generateHtmlPlugins('./src'),
-    ...generateHtmlPlugins('./src/redisign'),
     ...generateHtmlPlugins('./src/html'),
     ...generateHtmlPlugins('./src/html/site'),
     ...generateHtmlPlugins('./src/html/store'),

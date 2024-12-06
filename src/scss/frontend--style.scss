@@ -1846,6 +1846,7 @@ body.new-year-theme .footer {
 		margin-left: -15px;
 		padding: 24px 15px;
 		border-radius: 0;
+		padding-bottom: 80px;
 	}
 
 	&__edit {
@@ -1863,6 +1864,11 @@ body.new-year-theme .footer {
 		position: absolute;
 		right: 24px;
 		bottom: 24px;
+
+		@media(max-width:$md) {
+			left: 15px;
+			bottom: 15px;
+		}
 	}
 
 	&__info {
